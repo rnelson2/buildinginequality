@@ -10,7 +10,7 @@ import CloseButton from '../../Buttons/Close';
 const Controls = () => {
   const { hash, mapview, pathname, hideCensusTracts } = useURLState();
   const { maxIncome } = useVisiblePropertiesStats();
-  const [ open, setOpen ] = useState(true);
+  const [ open, setOpen ] = useState(false);
 
   const symbolsWidth = 180;
 
