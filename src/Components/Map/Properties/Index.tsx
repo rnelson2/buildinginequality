@@ -37,9 +37,9 @@ const Properties = () => {
               click: () => {
                 console.log(property.properties.mortgages[0].proj_num);
                 if (parseInt(selectedProperty || '') === property.properties.mortgages[0].proj_num) {
-                  navigate(`${process.env.PUBLIC_URL}/map${hash}`);
+                  navigate(`/map${hash}`);
                 } else {
-                  navigate(`${process.env.PUBLIC_URL}/map/${property.properties.mortgages[0].proj_num}${hash}`);
+                  navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
                 }
               }
             }
