@@ -34,6 +34,7 @@ const App = () => {
 
             <Route path="/introduction" element={<><Menu /><Intro /></>} />
             <Route path="/about" element={<><Menu /><About /></>} />
+            <Route path="/" element={<><Menu /></>} />
           </Routes>
         </MapStateContext.Provider>
       </Router>
