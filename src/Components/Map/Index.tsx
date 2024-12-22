@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { TileLayer, MapContainer, CircleMarker } from "react-leaflet";
+import { TileLayer, MapContainer, ZoomControl } from "react-leaflet";
 import * as Styled from "./styled";
 import ContinentalUSZoomAndCenter from "./ContinentalUSZoomAndCenter";
 import HashLoc from "./HashLoc";
@@ -10,6 +10,7 @@ import { getColor } from "../../utilities";
 import CensusTracts from "./CensusTracts/Index";
 import Properties from "./Properties/Index";
 import Controls from "./Controls/Index";
+import CitySelect from "./CitySelect/Index";
 
 
 const Map = () => {
@@ -31,6 +32,8 @@ const Map = () => {
     };
   }, [map, setMap]);
 
+  console.log(zoom);
+
   return (
     <Styled.Map>
 
@@ -39,6 +42,7 @@ const Map = () => {
         zoom={zoom}
         style={{ height: '100%', width: '100%' }}
         maxZoom={21}
+        zoomControl={false} 
       >
         <ContinentalUSZoomAndCenter />
         <HashLoc />
@@ -53,9 +57,11 @@ const Map = () => {
         />
         <CensusTracts />
         <Properties />
+        <ZoomControl position="bottomleft" /> 
       </MapContainer>
 
       <Controls />
+      <CitySelect />
     </Styled.Map>
   );
 };

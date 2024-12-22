@@ -73,3 +73,26 @@ export const getColor = (feature: { properties: { median_income?: number, white_
   const other_pop = feature.properties.other_pop || 0;
   return colorScale(white_pop / (white_pop + black_pop + other_pop));
 }
+
+
+export function polygonToBounds(polygon: { type: "Polygon"; coordinates: [number, number][][]; }) {
+  // Extract the coordinates from the polygon
+  const coordinates = polygon.coordinates[0]; // Assuming it's a single polygon
+
+  // Initialize min/max values
+  let minLat = Infinity;
+  let maxLat = -Infinity;
+  let minLng = Infinity;
+  let maxLng = -Infinity;
+
+  // Loop through the points to find the bounding box
+  coordinates.forEach(([lng, lat]) => {
+    if (lat < minLat) minLat = lat;
+    if (lat > maxLat) maxLat = lat;
+    if (lng < minLng) minLng = lng;
+    if (lng > maxLng) maxLng = lng;
+  });
+
+  // Return the bounds in Leaflet's format
+  return [[minLat, minLng], [maxLat, maxLng]] as [[number, number], [number, number]];
+}

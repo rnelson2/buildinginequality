@@ -93,3 +93,19 @@ type CensusFeature = {
   };
   geometry: Geometry;
 };
+
+
+interface CityFeature {
+  type: "Feature";
+  geometry: {
+    type: "Polygon";          // The geometry type is a Polygon representing the bounding box
+    coordinates: number[][][]; // The coordinates of the polygon
+  };
+  properties: {
+    property_city: string;       // City name
+    property_state: string;      // State abbreviation
+    num_of_properties: number;   // Number of properties in the city
+    num_of_units: number;        // Total number of units across properties
+    total_mortgage: number;      // Total mortgage amount
+  }
+}

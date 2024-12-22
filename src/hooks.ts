@@ -85,6 +85,101 @@ export function useProperties() {
   return { properties, loading };
 }
 
+export function useCities() {
+  const [cities, setCities] = useState<Types.CityFeature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
+
+        setCities(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { cities, loading };
+}
+
+export function useCitiesOptions() {
+  interface GroupedOption {
+    label: string;       // The group label (e.g., state name)
+    options: Option[];   // The array of selectable items (cities in this case)
+  }
+
+  interface Option {
+    label: string;       // The city name
+    value: string;       // Any unique identifier (we’ll use a link in this case)
+    geometry: {
+      type: "Polygon";          // The geometry type is a Polygon representing the bounding box
+      coordinates: number[][][]; // The coordinates of the polygon
+    }; // The geometry of the city
+  }
+
+  const { cities } = useCities();
+  const [groupedOptions, setGroupedOptions] = useState<GroupedOption[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  function prepareMenuData(features: Types.CityFeature[]): GroupedOption[] {
+    // Organize features by state
+    const groupedByState = features.reduce<Record<string, Option[]>>((acc, feature) => {
+      const { property_city, property_state } = feature.properties;
+      const [lng, lat] = feature.geometry.coordinates[0][0]; // Approx center of the bounding box
+      // @ts-ignore
+      const state = Constants.states[property_state] as string;
+
+      // Create a link for the city
+      const link = `/map#loc=14/${lat}/${lng}`;
+
+      // Add the city as an option
+      const option: Option = {
+        label: property_city,
+        value: link,
+        geometry: feature.geometry,
+      };
+
+      // Group by state
+      if (!acc[state]) {
+        acc[state] = [];
+      }
+      acc[state].push(option);
+
+      return acc;
+    }, {});
+
+    // Convert grouped data into an array of GroupedOption objects
+    return Object.entries(groupedByState)
+      .map(([state, options]) => ({
+        label: state, // State name as the group label
+        options: options.sort((a, b) => a.label.localeCompare(b.label)), // Sort cities alphabetically
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)); // Sort states alphabetically
+  }
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
+
+        setGroupedOptions(prepareMenuData(response.data.features));
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, [cities]);
+
+  return { groupedOptions, loading };
+}
+
 export function useVisibleProperties() {
   const { properties } = useProperties();
   const [visibleProperties, setVisibleProperties] = useState<Types.Feature[]>([]);
