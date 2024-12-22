@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Styled.App>
       <Styled.GlobalStyle />
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <MapStateContext.Provider value={{ map, setMap }}>
           <Masthead />
           <Routes>
