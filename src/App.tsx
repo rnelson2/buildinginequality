@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 // import DimensionsContextProvider from "./DimensionsContextProvider";
 // import AppStateContextProvider from "./AppStateContextProvider";
 import Masthead from "./Components/Masthead/Index";
