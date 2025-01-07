@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import * as Styled from "./styled";
-import { Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
 import { scaleLinear } from "d3-scale";
 import { modifyHash, getColor } from "../../../utilities";
@@ -27,10 +26,7 @@ const Controls = () => {
 
   return (
     <Styled.Container>
-      <ToggleButton
-        open={open}
-        setOpen={setOpen}
-      />
+
 
       {open && (
         <Styled.LegendContainer>
@@ -261,6 +257,11 @@ const Controls = () => {
         <Styled.CensusTractToggle to={`${pathname}#${modifyHash(hash, [{ type: "toggle_censusTracts" }])}`}> {hideCensusTracts ? "Show" : "Hide"} Census Tracts</Styled.CensusTractToggle>
         </Styled.LegendContainer>
       )}
+
+      <ToggleButton
+        open={open}
+        setOpen={setOpen}
+      />
     </Styled.Container>
   );
 };

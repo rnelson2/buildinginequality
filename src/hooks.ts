@@ -293,3 +293,35 @@ export function useCensusTracts() {
 }
 
 export const useMapContext = () => useContext(Contexts.MapStateContext);
+
+
+export const useDimensions = () => {
+  const getDeviceType = (width: number): 'mobile' | 'tablet' | 'desktop' => {
+    if (width < Constants.sizes.tablet) return 'mobile';
+    if (width >= Constants.sizes.tablet && width < Constants.sizes.desktop) return 'tablet';
+    return 'desktop';
+  };
+  
+  const [viewport, setViewport] = useState(() => {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const device = getDeviceType(width);
+    return { width, height, device };
+  });
+
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const device = getDeviceType(width);
+      setViewport({ width, height, device });
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return viewport;
+};

@@ -12,6 +12,29 @@ export const MenuToggle = styled.div <{ menuOnByDefault: boolean }>`
 `;
 
 export const Nav = styled.ul`
+  z-index: 5001;
+  background-color: ${Constants.COLOR_BACKGROUND};
+  height: 100vh;
+  height: 100dvh;
+  grid-area: main;
+  justify-self: flex-end;
+  width: min-content;
+  margin: 0;
+  padding-right: 1rem;
+
+
+  @media ${Constants.devices.tablet} {
+    grid-area: menu;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    height: auto;
+  }
+`
+
+export const NavOLD = styled.ul`
   grid-area: main-start / 1 / -1 / -1;
   height: 100%;
   //width: calc(min(500px, 33vw) - 200px);
@@ -149,6 +172,7 @@ export const SubmenuTitle = styled.h3`
 `;
 
 export const Submenu = styled.ul`
+  display: flex;
   margin: 0;
   padding: 0;
   // background: -moz-linear-gradient(90deg, ${Constants.COLOR_BACKGROUND} 90%, ${Constants.COLOR_BACKGROUND} 100%);

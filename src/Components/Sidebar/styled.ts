@@ -3,6 +3,8 @@ import * as Constants from "../../constants";
 
 export const Sidebar = styled.div`
   grid-area: sidebar;
+  height: 100%;
+  overflow-y: auto;
 `;
 
 export const MenuToggle = styled.div`

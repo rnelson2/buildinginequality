@@ -5,18 +5,19 @@ export const Container = styled.div`
   grid-area: map;
   position: absolute;
     bottom: 20px;
-  left: 20px;
+  right: 20px;
   display: flex;
   align-items: flex-end;
   gap: 20px;
   width: 400px;
   height: 300px;
+  justify-content: flex-end;
 `;
 
 export const LegendContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: flex-end;
   justify-content: space-between;
 
   z-index: 1000;

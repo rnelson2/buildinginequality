@@ -17,33 +17,31 @@ export const App = styled.div`
   width: 100vw;
   height: 100vh;
   height: 100dvh;
-  overflow: hidden;
   background-color: ${Constants.COLOR_BACKGROUND};
-  grid-template-columns: 25vw 25vw calc(50vw - ${dimensions.menuToggle.width.mobile}px) ${dimensions.menuToggle.width.mobile}px;
-  grid-template-rows: ${dimensions.masthead.height.mobile}px 35vh auto 90px;
-  grid-template-areas:
-    "masthead   masthead   masthead  menutoggle"
-    "main       main       main      main"
-    "main       main       main      main"
-    "main       main       main      main";
+    grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.mobile}px;
+    grid-template-rows: ${dimensions.masthead.height.mobile}px 3fr 2fr;
+    grid-template-areas:
+      "masthead   masthead   menutoggle"
+      "main       main       main"
+      "sidebar    sidebar    sidebar";
 
   @media ${Constants.devices.tablet} {
     grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.tablet}px;
     grid-template-rows: ${dimensions.masthead.height.tablet}px 3fr 2fr;
     grid-template-areas:
-      "masthead   masthead   menutoggle"
+      "masthead   masthead   menu"
       "main       main       main"
-      "main       main       main";
+      "sidebar    sidebar    sidebar";
   }
 
-  @media ${Constants.devices.desktop} {
-    grid-template-columns: ${Constants.componentDimensions.sidebar.width.desktop}px 300px auto;
-    grid-template-rows: ${dimensions.masthead.height.desktop}px ${dimensions.menuToggle.height}px calc(100vh - ${dimensions.masthead.height.desktop}px - ${dimensions.menuToggle.height}px);
-    grid-template-areas:
-      "masthead   main main"
-      "menutoggle main main"
-      "sidebar    main main";
-  }
+  
+@media ${Constants.devices.desktop} {
+  grid-template-columns: auto minmax(420px, 20vw);
+  grid-template-rows: ${dimensions.masthead.height.desktop}px auto;
+  grid-template-areas:
+    "masthead menu"
+    "main  sidebar";
+}
 
 
 

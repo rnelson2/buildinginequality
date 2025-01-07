@@ -57,7 +57,7 @@ const Map = () => {
         />
         <CensusTracts />
         <Properties />
-        <ZoomControl position="bottomleft" /> 
+        <ZoomControl position="bottomright" /> 
       </MapContainer>
 
       <Controls />

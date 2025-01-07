@@ -1,36 +1,51 @@
 import styled from 'styled-components';
 import * as Constants from '../../constants';
 
+export const Container = styled.div`
+ grid-area: masthead;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Add some padding around the masthead */
+    background-color: ${Constants.COLOR_BACKGROUND}; /* Optional: Background for the masthead */
+`
+
+
 export const Masthead = styled.header`
-  grid-area: masthead;
   text-align: left;
   background-color: ${Constants.COLOR_BACKGROUND};
   display: flex;
   height: 100%;
-
-  @media ${Constants.devices.desktop} {
-    text-align: center;
+  max-width: 450px;
+  align-items: center;
+  
+  @media ${Constants.devices.tablet} {
+    padding-left: 2em;
   }
+
+
+
 `;
 
 export const Title = styled.h1`
   display: inline-block;
   font-family: ${Constants.TEXT_MASTHEAD};
   line-height: 1;
-  margin: 8px 0 1px 10px;
+  margin: 0 0 0 10px;
   font-size: 20px;
   text-transform: uppercase;
   color:   #4B0082; // ${Constants.COLOR_ACCENT_RED};
   font-weight: 400;
 
   @media ${Constants.devices.tablet} {
-    font-size: 30px;
-    margin: 0 10px;
-    line-height: ${Constants.componentDimensions.masthead.height.tablet}px;
+    font-size: 24px;
+    margin: 0;
+    line-height: 1;
   }
 
   @media ${Constants.devices.desktop} {
-    margin: 20px 5px 0 5px;
+    font-size: 30px;
+    margin: 0;
     line-height: 1;
   }
 `;
@@ -47,15 +62,16 @@ export const Subtitle = styled.h2`
   display: none;
 
   @media ${Constants.devices.tablet} {
-    display: block;
-    font-size: 14px !important;
-    margin: 0 10px;
-    line-height: ${Constants.componentDimensions.masthead.height.tablet}px;
+    display: none;
+    font-size: 13px !important;
+    margin: 3px 0 0 0;
+    line-height: 1;
   }
 
   @media ${Constants.devices.desktop} {
+    display: block;
     font-size: 13px !important;
-    margin: 3px 1rem 0 1rem;
+    margin: 3px 0 0 0;
     line-height: 1;
   }
 `;

@@ -28,6 +28,7 @@ const App = () => {
                 <>
                   <Map />
                   <Sidebar />
+                  <Menu />
                 </>
               }
             ></Route>

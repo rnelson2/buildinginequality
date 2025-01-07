@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <Styled.Sidebar>
-      <Styled.MenuToggle
+      {/* <Styled.MenuToggle
         onClick={() => {
           setIsMenuOpen(!isMenuOpen);
         }}
@@ -21,7 +21,7 @@ const Sidebar = () => {
         <MenuToggleButton $isMenuOpen={isMenuOpen} /> Menu
       </Styled.MenuToggle>
 
-      {isMenuOpen && <Menu />}
+      {isMenuOpen && <Menu />} */}
 
       {!selectedProperty && !isMenuOpen && <Chart properties={properties} />}
       {selectedProperty && !isMenuOpen && <Property property={selectedProperty} />}

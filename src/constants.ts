@@ -6,7 +6,7 @@ type Mode = 'light' | 'dark';
 
 const mode = 'light';
 
-export const COLOR_BACKGROUND = (mode as Mode) === 'light' ? '#f0f0f0' : '#1a2b2d';
+export const COLOR_BACKGROUND = (mode as Mode) === 'light' ? '#faf6f1' : '#1a2b2d';
 export const COLOR_SECONDARY_BACKGROUND = (mode as Mode) === 'light' ? '#e0e0e0' : '#22302f';
 export const COLOR_TEXT = (mode as Mode) === 'light' ? '#333333' : '#dce3e8';
 export const COLOR_TEXT_GREY = (mode as Mode) === 'light' ? '#666666' : '#999999';
@@ -40,7 +40,7 @@ export const componentDimensions = {
   masthead: {
     height: {
       mobile: 35,
-      tablet: 50,
+      tablet: 100,
       desktop: 100,
     },
   },
@@ -63,7 +63,7 @@ export const componentDimensions = {
 export const sizes = {
   mobile: 480,
   tablet: 600,
-  desktop: 1000,
+  desktop: 1200,
   desktop2: 1440,
 }
 

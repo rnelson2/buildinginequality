@@ -9,7 +9,7 @@ const Masthead = () => {
         <Styled.Title>Building Inequality</Styled.Title>
         <Styled.Subtitle>Mapping the spatial and racial inequalities of FHA Section 608 rental housing, ca. 1942-1950</Styled.Subtitle>
       </Link>
-    </Styled.Masthead>
+      </Styled.Masthead>
   );
 };
 
