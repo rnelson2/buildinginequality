@@ -109,3 +109,20 @@ interface CityFeature {
     total_mortgage: number;      // Total mortgage amount
   }
 }
+
+// Feature properties for clustered points
+interface ClusteredProperties {
+  type: "Feature";
+  geometry: {
+    type: "Point";
+    coordinates: [number, number];
+  };
+  properties: {
+    zoom: number; // Zoom level for the cluster
+    white_pop: number; // Aggregated white population
+    black_pop: number; // Aggregated black population
+    other_pop: number; // Aggregated other population
+    median_income: number; // Averaged median income
+    units: number | null; // Total number of units
+  };
+}

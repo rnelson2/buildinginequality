@@ -9,7 +9,7 @@ import { useURLState } from '../../hooks';
  * Also, if the hash changes and the loc has been removed (by a link), restores it.
  */
 const HashLoc = (): null => {
-  const { hash } = useURLState();
+  const { hash, selectedProperty } = useURLState();
   const navigate = useNavigate();
   const loc = useRef('1/0/0');
 
@@ -27,7 +27,7 @@ const HashLoc = (): null => {
           center: [currentCenter.lat, currentCenter.lng]
         }
       }]);
-      navigate(`#${updatedHash}`, { replace: true });
+      navigate(`/map${selectedProperty ? `/${selectedProperty}` : '' }#${updatedHash}`, { replace: true });
     }
   });
 

@@ -5,7 +5,6 @@ import * as L from 'leaflet';
 import * as Types from './index.d';
 import * as Contexts from './Contexts';
 import * as Constants from './constants';
-import { useMap } from 'react-leaflet';
 
 /**
  * Get the selected section (e.g. map, areadescriptions, introduction) from the url
@@ -84,6 +83,29 @@ export function useProperties() {
 
   return { properties, loading };
 }
+
+export function useClusteredProperties() {
+  const [properties, setProperties] = useState<Types.ClusteredProperties[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
+
+        setProperties(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { properties, loading };
+}
+
 
 export function useCities() {
   const [cities, setCities] = useState<Types.CityFeature[]>([]);
@@ -215,6 +237,24 @@ export function useVisiblePropertiesStats() {
   }, [visibleProperties]);
 
   return stats;
+}
+
+export function useVisibleClusteredProperties() {
+  const { properties } = useClusteredProperties();
+  const [visibleProperties, setVisibleProperties] = useState<Types.ClusteredProperties[]>([]);
+  const { center, zoom } = useURLState();
+  const { map } = useMapContext();
+
+  useEffect(() => {
+    if (map) {
+      const bounds = map.getBounds();
+      const visibleProperties = properties
+        .filter(property => property.properties.zoom === zoom && bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
+      setVisibleProperties(visibleProperties);
+    }
+  }, [center, zoom, map, properties, map]);
+
+  return visibleProperties;
 }
 
 export function useSelectedPropertyData() {

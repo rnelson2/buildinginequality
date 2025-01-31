@@ -6,9 +6,9 @@ import HashLoc from "./HashLoc";
 import DeselectProperty from "./DeselectProperty";
 import "leaflet/dist/leaflet.css";
 import { useVisibleProperties, useURLState, useMapContext } from "../../hooks";
-import { getColor } from "../../utilities";
 import CensusTracts from "./CensusTracts/Index";
 import Properties from "./Properties/Index";
+import ClusteredProperties from "./ClusteredProperties/Index";
 import Controls from "./Controls/Index";
 import CitySelect from "./CitySelect/Index";
 
@@ -56,7 +56,8 @@ const Map = () => {
           maxNativeZoom={20}
         />
         <CensusTracts />
-        <Properties />
+        {zoom >= 9 && <Properties />}
+        {zoom < 9 && <ClusteredProperties />}
         <ZoomControl position="bottomright" /> 
       </MapContainer>
 

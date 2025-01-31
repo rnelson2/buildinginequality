@@ -1,6 +1,6 @@
 import React from "react";
 import { CircleMarker } from "react-leaflet";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useVisibleProperties, useURLState } from "../../../hooks";
 import { getColor } from "../../../utilities";
 

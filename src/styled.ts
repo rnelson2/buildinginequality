@@ -36,7 +36,7 @@ export const App = styled.div`
 
   
 @media ${Constants.devices.desktop} {
-  grid-template-columns: auto minmax(420px, 20vw);
+  grid-template-columns: auto minmax(420px, 25vw);
   grid-template-rows: ${dimensions.masthead.height.desktop}px auto;
   grid-template-areas:
     "masthead menu"
