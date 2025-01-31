@@ -24,27 +24,24 @@ const Properties = () => {
   return (
     <>
       {properties.map((property, idx) => (
-          <CircleMarker
+        <CircleMarker
           key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}`}
           center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
           fillColor={getColor(property, mapview, { maxIncome })}
           color={getColor(property, mapview, { maxIncome })}
           weight={1}
-          fillOpacity={(!selectedProperty || parseInt(selectedProperty) === property.properties.mortgages[0].proj_num) ? 0.8 : 0.3}
+          fillOpacity={!selectedProperty || parseInt(selectedProperty) === property.properties.mortgages[0].proj_num ? 0.6 : 0.3}
           radius={getRadius(property.properties.mortgages.reduce((acc, mortgage) => acc + mortgage.units, 0))}
-          eventHandlers={
-            {
-              click: () => {
-                console.log(property.properties.mortgages[0].proj_num);
-                if (parseInt(selectedProperty || '') === property.properties.mortgages[0].proj_num) {
-                  navigate(`/map${hash}`);
-                } else {
-                  navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
-                }
+          eventHandlers={{
+            click: () => {
+              if (parseInt(selectedProperty || "") === property.properties.mortgages[0].proj_num) {
+                navigate(`/map${hash}`);
+              } else {
+                navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
               }
-            }
-          }
-          />
+            },
+          }}
+        />
       ))}
     </>
   );

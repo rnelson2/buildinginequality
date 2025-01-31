@@ -66,7 +66,7 @@ export const getColor = (feature: { properties: { median_income?: number, white_
     return incomeColorScale(options.maxIncome)(feature.properties.median_income || 0);
   }
   if (!feature.properties.white_pop && !feature.properties.black_pop && !feature.properties.other_pop) {
-    return 'pink';
+    return "#8B4513";
   }
   const white_pop = feature.properties.white_pop || 0;
   const black_pop = feature.properties.black_pop || 0;

@@ -24,6 +24,7 @@ const Map = () => {
 
   // a cleanup function to unset the map when the component is unmounted
   useEffect(() => {
+    console.log(map);
     return () => {
       if (map) {
         console.log("unsetting map");
@@ -31,8 +32,6 @@ const Map = () => {
       }
     };
   }, [map, setMap]);
-
-  console.log(zoom);
 
   return (
     <Styled.Map>
