@@ -293,8 +293,8 @@
         "property_city": "Birmingham",
         "property_state": "AL",
         "num_of_properties": 67,
-        "num_of_units": 3527,
-        "total_mortgage": 20865596
+        "num_of_units": 484,
+        "total_mortgage": 3030100
       }
     },
     {
@@ -404,8 +404,8 @@
         "property_city": "Fairfield",
         "property_state": "AL",
         "num_of_properties": 2,
-        "num_of_units": 195,
-        "total_mortgage": 881500
+        "num_of_units": 80,
+        "total_mortgage": 400000
       }
     },
     {
@@ -700,8 +700,8 @@
         "property_city": "Sheffield",
         "property_state": "AL",
         "num_of_properties": 2,
-        "num_of_units": 90,
-        "total_mortgage": 471996
+        "num_of_units": 50,
+        "total_mortgage": 245996
       }
     },
     {
@@ -737,8 +737,8 @@
         "property_city": "Tuscaloosa",
         "property_state": "AL",
         "num_of_properties": 3,
-        "num_of_units": 72,
-        "total_mortgage": 368400
+        "num_of_units": 42,
+        "total_mortgage": 265900
       }
     },
     {
@@ -996,8 +996,8 @@
         "property_city": "",
         "property_state": "CA",
         "num_of_properties": 1,
-        "num_of_units": 3460,
-        "total_mortgage": 22611431
+        "num_of_units": 2486,
+        "total_mortgage": 15401830
       }
     },
     {
@@ -1773,8 +1773,8 @@
         "property_city": "Washington",
         "property_state": "DC",
         "num_of_properties": 113,
-        "num_of_units": 17958,
-        "total_mortgage": 127457463
+        "num_of_units": 11289,
+        "total_mortgage": 83511604
       }
     },
     {
@@ -1847,8 +1847,8 @@
         "property_city": "Dover",
         "property_state": "DE",
         "num_of_properties": 1,
-        "num_of_units": 52,
-        "total_mortgage": 412000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -2032,8 +2032,8 @@
         "property_city": "Coral Gables",
         "property_state": "FL",
         "num_of_properties": 13,
-        "num_of_units": 188,
-        "total_mortgage": 11380114
+        "num_of_units": 8,
+        "total_mortgage": 115000
       }
     },
     {
@@ -2069,8 +2069,8 @@
         "property_city": "Fort Lauderdale",
         "property_state": "FL",
         "num_of_properties": 10,
-        "num_of_units": 360,
-        "total_mortgage": 1278900
+        "num_of_units": 76,
+        "total_mortgage": 349200
       }
     },
     {
@@ -2180,8 +2180,8 @@
         "property_city": "Miami",
         "property_state": "FL",
         "num_of_properties": 68,
-        "num_of_units": 3640,
-        "total_mortgage": 3242700
+        "num_of_units": 572,
+        "total_mortgage": 3191100
       }
     },
     {
@@ -2254,7 +2254,7 @@
         "property_city": "Miami Beach",
         "property_state": "FL",
         "num_of_properties": 2,
-        "num_of_units": 28,
+        "num_of_units": 8,
         "total_mortgage": 61200
       }
     },
@@ -2365,7 +2365,7 @@
         "property_city": "Palm Beach",
         "property_state": "FL",
         "num_of_properties": 2,
-        "num_of_units": 33,
+        "num_of_units": 16,
         "total_mortgage": 122400
       }
     },
@@ -2550,7 +2550,7 @@
         "property_city": "West Palm Beach",
         "property_state": "FL",
         "num_of_properties": 5,
-        "num_of_units": 153,
+        "num_of_units": 89,
         "total_mortgage": 657800
       }
     },
@@ -2587,8 +2587,8 @@
         "property_city": "Atlanta",
         "property_state": "GA",
         "num_of_properties": 55,
-        "num_of_units": 9222,
-        "total_mortgage": 67885152
+        "num_of_units": 642,
+        "total_mortgage": 4003900
       }
     },
     {
@@ -2624,8 +2624,8 @@
         "property_city": "Decatur",
         "property_state": "GA",
         "num_of_properties": 10,
-        "num_of_units": 988,
-        "total_mortgage": 7759000
+        "num_of_units": 226,
+        "total_mortgage": 2075000
       }
     },
     {
@@ -3253,8 +3253,8 @@
         "property_city": "Chicago",
         "property_state": "IL",
         "num_of_properties": 127,
-        "num_of_units": 9817,
-        "total_mortgage": 78167824
+        "num_of_units": 360,
+        "total_mortgage": 2947800
       }
     },
     {
@@ -3290,8 +3290,8 @@
         "property_city": "Evanston",
         "property_state": "IL",
         "num_of_properties": 23,
-        "num_of_units": 575,
-        "total_mortgage": 4764948
+        "num_of_units": 73,
+        "total_mortgage": 653100
       }
     },
     {
@@ -3327,8 +3327,8 @@
         "property_city": "Highland Park",
         "property_state": "IL",
         "num_of_properties": 3,
-        "num_of_units": 36,
-        "total_mortgage": 330300
+        "num_of_units": 16,
+        "total_mortgage": 144000
       }
     },
     {
@@ -3401,8 +3401,8 @@
         "property_city": "Oak Park",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 24,
-        "total_mortgage": 190000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -3623,8 +3623,8 @@
         "property_city": "Fort Wayne",
         "property_state": "IN",
         "num_of_properties": 2,
-        "num_of_units": 124,
-        "total_mortgage": 1091800
+        "num_of_units": 16,
+        "total_mortgage": 129600
       }
     },
     {
@@ -3697,8 +3697,8 @@
         "property_city": "Indianapolis",
         "property_state": "IN",
         "num_of_properties": 27,
-        "num_of_units": 2896,
-        "total_mortgage": 4510000
+        "num_of_units": 511,
+        "total_mortgage": 4150000
       }
     },
     {
@@ -4104,8 +4104,8 @@
         "property_city": "Louisville",
         "property_state": "KY",
         "num_of_properties": 21,
-        "num_of_units": 1850,
-        "total_mortgage": 12365856
+        "num_of_units": 52,
+        "total_mortgage": 377800
       }
     },
     {
@@ -4141,8 +4141,8 @@
         "property_city": "Baton Rouge",
         "property_state": "LA",
         "num_of_properties": 3,
-        "num_of_units": 60,
-        "total_mortgage": 420200
+        "num_of_units": 52,
+        "total_mortgage": 364600
       }
     },
     {
@@ -4215,8 +4215,8 @@
         "property_city": "New Orleans",
         "property_state": "LA",
         "num_of_properties": 9,
-        "num_of_units": 2888,
-        "total_mortgage": 24989900
+        "num_of_units": 842,
+        "total_mortgage": 7334700
       }
     },
     {
@@ -4437,8 +4437,8 @@
         "property_city": "Baltimore",
         "property_state": "MD",
         "num_of_properties": 37,
-        "num_of_units": 8445,
-        "total_mortgage": 64861624
+        "num_of_units": 7479,
+        "total_mortgage": 57990247
       }
     },
     {
@@ -4548,8 +4548,8 @@
         "property_city": "Middle River",
         "property_state": "MD",
         "num_of_properties": 6,
-        "num_of_units": 2284,
-        "total_mortgage": 10612900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -4622,8 +4622,8 @@
         "property_city": "Catonsville",
         "property_state": "MD",
         "num_of_properties": 4,
-        "num_of_units": 464,
-        "total_mortgage": 3513300
+        "num_of_units": 419,
+        "total_mortgage": 3153500
       }
     },
     {
@@ -4659,8 +4659,8 @@
         "property_city": "Bladensburg",
         "property_state": "MD",
         "num_of_properties": 3,
-        "num_of_units": 540,
-        "total_mortgage": 2753000
+        "num_of_units": 256,
+        "total_mortgage": 1134100
       }
     },
     {
@@ -4733,8 +4733,8 @@
         "property_city": "Chevy Chase",
         "property_state": "MD",
         "num_of_properties": 5,
-        "num_of_units": 444,
-        "total_mortgage": 1267200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -4807,8 +4807,8 @@
         "property_city": "Hyattsville",
         "property_state": "MD",
         "num_of_properties": 19,
-        "num_of_units": 6154,
-        "total_mortgage": 45729900
+        "num_of_units": 5496,
+        "total_mortgage": 40810500
       }
     },
     {
@@ -4844,8 +4844,8 @@
         "property_city": "Dundalk",
         "property_state": "MD",
         "num_of_properties": 2,
-        "num_of_units": 565,
-        "total_mortgage": 2638500
+        "num_of_units": 501,
+        "total_mortgage": 2430000
       }
     },
     {
@@ -4918,8 +4918,8 @@
         "property_city": "Silver Spring",
         "property_state": "MD",
         "num_of_properties": 18,
-        "num_of_units": 3167,
-        "total_mortgage": 25321639
+        "num_of_units": 2747,
+        "total_mortgage": 23102900
       }
     },
     {
@@ -4992,8 +4992,8 @@
         "property_city": "Laurel",
         "property_state": "MD",
         "num_of_properties": 2,
-        "num_of_units": 190,
-        "total_mortgage": 1487400
+        "num_of_units": 126,
+        "total_mortgage": 999400
       }
     },
     {
@@ -5140,8 +5140,8 @@
         "property_city": "Riverdale",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 486,
-        "total_mortgage": 3903800
+        "num_of_units": 239,
+        "total_mortgage": 1936800
       }
     },
     {
@@ -5214,8 +5214,8 @@
         "property_city": "Takoma Park",
         "property_state": "MD",
         "num_of_properties": 4,
-        "num_of_units": 199,
-        "total_mortgage": 1260000
+        "num_of_units": 171,
+        "total_mortgage": 1056000
       }
     },
     {
@@ -5362,8 +5362,8 @@
         "property_city": "Detroit",
         "property_state": "MI",
         "num_of_properties": 44,
-        "num_of_units": 2463,
-        "total_mortgage": 16320726
+        "num_of_units": 372,
+        "total_mortgage": 2788350
       }
     },
     {
@@ -5621,8 +5621,8 @@
         "property_city": "Morris",
         "property_state": "MN",
         "num_of_properties": 1,
-        "num_of_units": 11,
-        "total_mortgage": 86200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -5658,8 +5658,8 @@
         "property_city": "Saint Paul",
         "property_state": "MN",
         "num_of_properties": 9,
-        "num_of_units": 369,
-        "total_mortgage": 2971300
+        "num_of_units": 244,
+        "total_mortgage": 1949400
       }
     },
     {
@@ -5769,8 +5769,8 @@
         "property_city": "Kansas City",
         "property_state": "MO",
         "num_of_properties": 35,
-        "num_of_units": 3924,
-        "total_mortgage": 18393879
+        "num_of_units": 12,
+        "total_mortgage": 1788600
       }
     },
     {
@@ -5991,8 +5991,8 @@
         "property_city": "Vicksburg",
         "property_state": "MS",
         "num_of_properties": 1,
-        "num_of_units": 68,
-        "total_mortgage": 370000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -6139,8 +6139,8 @@
         "property_city": "Asheville",
         "property_state": "NC",
         "num_of_properties": 2,
-        "num_of_units": 254,
-        "total_mortgage": 1818000
+        "num_of_units": 166,
+        "total_mortgage": 1283000
       }
     },
     {
@@ -6176,8 +6176,8 @@
         "property_city": "Charlotte",
         "property_state": "NC",
         "num_of_properties": 14,
-        "num_of_units": 2603,
-        "total_mortgage": 4144100
+        "num_of_units": 538,
+        "total_mortgage": 2564000
       }
     },
     {
@@ -6213,8 +6213,8 @@
         "property_city": "Durham",
         "property_state": "NC",
         "num_of_properties": 5,
-        "num_of_units": 475,
-        "total_mortgage": 2789400
+        "num_of_units": 398,
+        "total_mortgage": 2239200
       }
     },
     {
@@ -6583,8 +6583,8 @@
         "property_city": "Camden",
         "property_state": "NJ",
         "num_of_properties": 13,
-        "num_of_units": 1504,
-        "total_mortgage": 9807624
+        "num_of_units": 242,
+        "total_mortgage": 1737600
       }
     },
     {
@@ -6620,8 +6620,8 @@
         "property_city": "Clifton",
         "property_state": "NJ",
         "num_of_properties": 8,
-        "num_of_units": 2006,
-        "total_mortgage": 12859583
+        "num_of_units": 615,
+        "total_mortgage": 4121700
       }
     },
     {
@@ -6731,8 +6731,8 @@
         "property_city": "East Orange",
         "property_state": "NJ",
         "num_of_properties": 14,
-        "num_of_units": 741,
-        "total_mortgage": 6255500
+        "num_of_units": 371,
+        "total_mortgage": 2965000
       }
     },
     {
@@ -6768,8 +6768,8 @@
         "property_city": "Elizabeth",
         "property_state": "NJ",
         "num_of_properties": 8,
-        "num_of_units": 868,
-        "total_mortgage": 6479500
+        "num_of_units": 598,
+        "total_mortgage": 4124500
       }
     },
     {
@@ -6879,8 +6879,8 @@
         "property_city": "Highland Park",
         "property_state": "NJ",
         "num_of_properties": 3,
-        "num_of_units": 435,
-        "total_mortgage": 3504000
+        "num_of_units": 200,
+        "total_mortgage": 1716000
       }
     },
     {
@@ -6916,8 +6916,8 @@
         "property_city": "Irvington",
         "property_state": "NJ",
         "num_of_properties": 2,
-        "num_of_units": 90,
-        "total_mortgage": 716000
+        "num_of_units": 64,
+        "total_mortgage": 512500
       }
     },
     {
@@ -7138,8 +7138,8 @@
         "property_city": "Millville",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 102,
-        "total_mortgage": 663400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -7249,8 +7249,8 @@
         "property_city": "Newark",
         "property_state": "NJ",
         "num_of_properties": 7,
-        "num_of_units": 475,
-        "total_mortgage": 4032978
+        "num_of_units": 426,
+        "total_mortgage": 3627978
       }
     },
     {
@@ -7360,8 +7360,8 @@
         "property_city": "Orange",
         "property_state": "NJ",
         "num_of_properties": 4,
-        "num_of_units": 226,
-        "total_mortgage": 1974500
+        "num_of_units": 177,
+        "total_mortgage": 1573500
       }
     },
     {
@@ -7471,8 +7471,8 @@
         "property_city": "Woodbury Heights",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 72,
-        "total_mortgage": 600000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -7693,8 +7693,8 @@
         "property_city": "Trenton",
         "property_state": "NJ",
         "num_of_properties": 3,
-        "num_of_units": 244,
-        "total_mortgage": 2199990
+        "num_of_units": 123,
+        "total_mortgage": 1183500
       }
     },
     {
@@ -7767,8 +7767,8 @@
         "property_city": "Woodbury",
         "property_state": "NJ",
         "num_of_properties": 3,
-        "num_of_units": 296,
-        "total_mortgage": 2293400
+        "num_of_units": 80,
+        "total_mortgage": 583600
       }
     },
     {
@@ -7804,8 +7804,8 @@
         "property_city": "Wrightstown",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 94,
-        "total_mortgage": 732700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -7841,8 +7841,8 @@
         "property_city": "South Orange",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 30,
-        "total_mortgage": 241000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -7915,7 +7915,7 @@
         "property_city": "Albany",
         "property_state": "NY",
         "num_of_properties": 6,
-        "num_of_units": 1082,
+        "num_of_units": 12,
         "total_mortgage": 93600
       }
     },
@@ -7952,8 +7952,8 @@
         "property_city": "Buffalo",
         "property_state": "NY",
         "num_of_properties": 24,
-        "num_of_units": 1924,
-        "total_mortgage": 13715900
+        "num_of_units": 1060,
+        "total_mortgage": 8707400
       }
     },
     {
@@ -8026,8 +8026,8 @@
         "property_city": "Rochester",
         "property_state": "NY",
         "num_of_properties": 17,
-        "num_of_units": 1227,
-        "total_mortgage": 10055100
+        "num_of_units": 219,
+        "total_mortgage": 1835500
       }
     },
     {
@@ -8211,8 +8211,8 @@
         "property_city": "Freeport",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 46,
-        "total_mortgage": 307800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -8322,8 +8322,8 @@
         "property_city": "Kingston",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 48,
-        "total_mortgage": 418700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -8359,8 +8359,8 @@
         "property_city": "Great Neck",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 905,
-        "total_mortgage": 1194900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -8396,7 +8396,7 @@
         "property_city": "Mount Vernon",
         "property_state": "NY",
         "num_of_properties": 5,
-        "num_of_units": 723,
+        "num_of_units": 53,
         "total_mortgage": 438700
       }
     },
@@ -8433,8 +8433,8 @@
         "property_city": "Bronx",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 311,
-        "total_mortgage": 2560900
+        "num_of_units": 208,
+        "total_mortgage": 1692900
       }
     },
     {
@@ -8470,8 +8470,8 @@
         "property_city": "Brooklyn",
         "property_state": "NY",
         "num_of_properties": 9,
-        "num_of_units": 2193,
-        "total_mortgage": 17666100
+        "num_of_units": 1977,
+        "total_mortgage": 15791500
       }
     },
     {
@@ -8507,8 +8507,8 @@
         "property_city": "New York",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 128,
-        "total_mortgage": 964300
+        "num_of_units": 90,
+        "total_mortgage": 774300
       }
     },
     {
@@ -8544,8 +8544,8 @@
         "property_city": "Far Rockaway",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 1938,
-        "total_mortgage": 17103100
+        "num_of_units": 1375,
+        "total_mortgage": 11994500
       }
     },
     {
@@ -8581,8 +8581,8 @@
         "property_city": "Forest Hills",
         "property_state": "NY",
         "num_of_properties": 5,
-        "num_of_units": 1148,
-        "total_mortgage": 9667100
+        "num_of_units": 705,
+        "total_mortgage": 5967700
       }
     },
     {
@@ -8618,8 +8618,8 @@
         "property_city": "Saint Albans",
         "property_state": "NY",
         "num_of_properties": 6,
-        "num_of_units": 114,
-        "total_mortgage": 1009800
+        "num_of_units": 100,
+        "total_mortgage": 890800
       }
     },
     {
@@ -8655,8 +8655,8 @@
         "property_city": "Cambria Heights",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 78,
-        "total_mortgage": 694400
+        "num_of_units": 48,
+        "total_mortgage": 435200
       }
     },
     {
@@ -8951,8 +8951,8 @@
         "property_city": "Jackson Heights",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 520,
-        "total_mortgage": 4410200
+        "num_of_units": 270,
+        "total_mortgage": 2306400
       }
     },
     {
@@ -9062,8 +9062,8 @@
         "property_city": "Woodhaven",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 48,
-        "total_mortgage": 422600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -9099,8 +9099,8 @@
         "property_city": "Oakland Gardens",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 3934,
-        "total_mortgage": 33149100
+        "num_of_units": 3442,
+        "total_mortgage": 29129100
       }
     },
     {
@@ -9173,8 +9173,8 @@
         "property_city": "Niagara Falls",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 207,
-        "total_mortgage": 1595300
+        "num_of_units": 89,
+        "total_mortgage": 666000
       }
     },
     {
@@ -9247,8 +9247,8 @@
         "property_city": "Syracuse",
         "property_state": "NY",
         "num_of_properties": 10,
-        "num_of_units": 2360,
-        "total_mortgage": 19493800
+        "num_of_units": 306,
+        "total_mortgage": 2676700
       }
     },
     {
@@ -9284,7 +9284,7 @@
         "property_city": "Tarrytown",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 421,
+        "num_of_units": 108,
         "total_mortgage": 821100
       }
     },
@@ -9321,8 +9321,8 @@
         "property_city": "Tonawanda",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 90,
-        "total_mortgage": 699800
+        "num_of_units": 70,
+        "total_mortgage": 552200
       }
     },
     {
@@ -9358,7 +9358,7 @@
         "property_city": "Yonkers",
         "property_state": "NY",
         "num_of_properties": 14,
-        "num_of_units": 2450,
+        "num_of_units": 527,
         "total_mortgage": 4644300
       }
     },
@@ -9432,8 +9432,8 @@
         "property_city": "Cincinnati",
         "property_state": "OH",
         "num_of_properties": 13,
-        "num_of_units": 2605,
-        "total_mortgage": 21334643
+        "num_of_units": 53,
+        "total_mortgage": 451900
       }
     },
     {
@@ -9469,8 +9469,8 @@
         "property_city": "Cleveland",
         "property_state": "OH",
         "num_of_properties": 19,
-        "num_of_units": 1864,
-        "total_mortgage": 11201740
+        "num_of_units": 55,
+        "total_mortgage": 374791
       }
     },
     {
@@ -9506,8 +9506,8 @@
         "property_city": "Bronxville",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 37,
-        "total_mortgage": 299700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -9543,8 +9543,8 @@
         "property_city": "Columbus",
         "property_state": "OH",
         "num_of_properties": 21,
-        "num_of_units": 2066,
-        "total_mortgage": 14507200
+        "num_of_units": 652,
+        "total_mortgage": 5135700
       }
     },
     {
@@ -9580,8 +9580,8 @@
         "property_city": "Dayton",
         "property_state": "OH",
         "num_of_properties": 26,
-        "num_of_units": 1190,
-        "total_mortgage": 8452900
+        "num_of_units": 50,
+        "total_mortgage": 404900
       }
     },
     {
@@ -9728,8 +9728,8 @@
         "property_city": "Toledo",
         "property_state": "OH",
         "num_of_properties": 4,
-        "num_of_units": 1396,
-        "total_mortgage": 11383800
+        "num_of_units": 600,
+        "total_mortgage": 5104800
       }
     },
     {
@@ -9876,8 +9876,8 @@
         "property_city": "Springfield",
         "property_state": "OH",
         "num_of_properties": 1,
-        "num_of_units": 24,
-        "total_mortgage": 207000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -10209,8 +10209,8 @@
         "property_city": "Pittsburgh",
         "property_state": "PA",
         "num_of_properties": 89,
-        "num_of_units": 5678,
-        "total_mortgage": 45124440
+        "num_of_units": 3218,
+        "total_mortgage": 27034500
       }
     },
     {
@@ -10468,8 +10468,8 @@
         "property_city": "Erie",
         "property_state": "PA",
         "num_of_properties": 5,
-        "num_of_units": 88,
-        "total_mortgage": 743600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -10505,8 +10505,8 @@
         "property_city": "Greensburg",
         "property_state": "PA",
         "num_of_properties": 5,
-        "num_of_units": 81,
-        "total_mortgage": 651700
+        "num_of_units": 60,
+        "total_mortgage": 481600
       }
     },
     {
@@ -10542,8 +10542,8 @@
         "property_city": "Harrisburg",
         "property_state": "PA",
         "num_of_properties": 5,
-        "num_of_units": 794,
-        "total_mortgage": 6560549
+        "num_of_units": 504,
+        "total_mortgage": 4323749
       }
     },
     {
@@ -10616,8 +10616,8 @@
         "property_city": "Ardmore",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 168,
-        "total_mortgage": 1399499
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -10690,8 +10690,8 @@
         "property_city": "Lansdowne",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 208,
-        "total_mortgage": 1897800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -10727,8 +10727,8 @@
         "property_city": "Meadville",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 18,
-        "total_mortgage": 142200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -10764,8 +10764,8 @@
         "property_city": "Mckeesport",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 36,
-        "total_mortgage": 286847
+        "num_of_units": 8,
+        "total_mortgage": 41947
       }
     },
     {
@@ -10949,8 +10949,8 @@
         "property_city": "Philadelphia",
         "property_state": "PA",
         "num_of_properties": 30,
-        "num_of_units": 2591,
-        "total_mortgage": 21112582
+        "num_of_units": 1460,
+        "total_mortgage": 12097448
       }
     },
     {
@@ -10986,8 +10986,8 @@
         "property_city": "North Versailles",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 24,
-        "total_mortgage": 144000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -11023,8 +11023,8 @@
         "property_city": "Pottstown",
         "property_state": "PA",
         "num_of_properties": 3,
-        "num_of_units": 160,
-        "total_mortgage": 1221200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -11060,8 +11060,8 @@
         "property_city": "Bryn Mawr",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 296,
-        "total_mortgage": 2501400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -11097,8 +11097,8 @@
         "property_city": "Reading",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 300,
-        "total_mortgage": 2459469
+        "num_of_units": 156,
+        "total_mortgage": 1242400
       }
     },
     {
@@ -11134,8 +11134,8 @@
         "property_city": "Sewickley",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 188,
-        "total_mortgage": 1674900
+        "num_of_units": 18,
+        "total_mortgage": 160300
       }
     },
     {
@@ -11171,8 +11171,8 @@
         "property_city": "Glenshaw",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 36,
-        "total_mortgage": 291600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -11319,8 +11319,8 @@
         "property_city": "Upper Darby",
         "property_state": "PA",
         "num_of_properties": 3,
-        "num_of_units": 74,
-        "total_mortgage": 554000
+        "num_of_units": 26,
+        "total_mortgage": 199500
       }
     },
     {
@@ -11467,8 +11467,8 @@
         "property_city": "Aberdeen",
         "property_state": "SD",
         "num_of_properties": 1,
-        "num_of_units": 33,
-        "total_mortgage": 231900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -11615,8 +11615,8 @@
         "property_city": "Chattanooga",
         "property_state": "TN",
         "num_of_properties": 3,
-        "num_of_units": 176,
-        "total_mortgage": 1038700
+        "num_of_units": 60,
+        "total_mortgage": 440200
       }
     },
     {
@@ -11653,7 +11653,7 @@
         "property_state": "TN",
         "num_of_properties": 1,
         "num_of_units": 0,
-        "total_mortgage": 112859
+        "total_mortgage": 0
       }
     },
     {
@@ -11800,8 +11800,8 @@
         "property_city": "Memphis",
         "property_state": "TN",
         "num_of_properties": 31,
-        "num_of_units": 2493,
-        "total_mortgage": 12966800
+        "num_of_units": 1176,
+        "total_mortgage": 5056800
       }
     },
     {
@@ -11874,8 +11874,8 @@
         "property_city": "Nashville",
         "property_state": "TN",
         "num_of_properties": 2,
-        "num_of_units": 332,
-        "total_mortgage": 1874000
+        "num_of_units": 216,
+        "total_mortgage": 1097000
       }
     },
     {
@@ -12614,8 +12614,8 @@
         "property_city": "Alexandria",
         "property_state": "VA",
         "num_of_properties": 20,
-        "num_of_units": 6064,
-        "total_mortgage": 41015300
+        "num_of_units": 4645,
+        "total_mortgage": 33285400
       }
     },
     {
@@ -12651,8 +12651,8 @@
         "property_city": "Arlington",
         "property_state": "VA",
         "num_of_properties": 42,
-        "num_of_units": 5373,
-        "total_mortgage": 30787200
+        "num_of_units": 3839,
+        "total_mortgage": 27523400
       }
     },
     {
@@ -12873,8 +12873,8 @@
         "property_city": "Falls Church",
         "property_state": "VA",
         "num_of_properties": 6,
-        "num_of_units": 3485,
-        "total_mortgage": 27998300
+        "num_of_units": 2849,
+        "total_mortgage": 22647500
       }
     },
     {
@@ -12984,8 +12984,8 @@
         "property_city": "Richmond",
         "property_state": "VA",
         "num_of_properties": 18,
-        "num_of_units": 2780,
-        "total_mortgage": 21071800
+        "num_of_units": 2600,
+        "total_mortgage": 19595800
       }
     },
     {
@@ -13058,8 +13058,8 @@
         "property_city": "Sandston",
         "property_state": "VA",
         "num_of_properties": 1,
-        "num_of_units": 526,
-        "total_mortgage": 3884400
+        "num_of_units": 200,
+        "total_mortgage": 1480600
       }
     },
     {
@@ -13280,8 +13280,8 @@
         "property_city": "Newport News",
         "property_state": "VA",
         "num_of_properties": 4,
-        "num_of_units": 701,
-        "total_mortgage": 5552000
+        "num_of_units": 493,
+        "total_mortgage": 2935200
       }
     },
     {
@@ -13317,8 +13317,8 @@
         "property_city": "Norfolk",
         "property_state": "VA",
         "num_of_properties": 14,
-        "num_of_units": 3250,
-        "total_mortgage": 19955717
+        "num_of_units": 2686,
+        "total_mortgage": 16610003
       }
     },
     {
@@ -13354,8 +13354,8 @@
         "property_city": "Portsmouth",
         "property_state": "VA",
         "num_of_properties": 4,
-        "num_of_units": 713,
-        "total_mortgage": 2292200
+        "num_of_units": 418,
+        "total_mortgage": 1515000
       }
     },
     {
@@ -13428,8 +13428,8 @@
         "property_city": "Roanoke",
         "property_state": "VA",
         "num_of_properties": 6,
-        "num_of_units": 348,
-        "total_mortgage": 3254300
+        "num_of_units": 166,
+        "total_mortgage": 1221700
       }
     },
     {
@@ -13502,8 +13502,8 @@
         "property_city": "Virginia Beach",
         "property_state": "VA",
         "num_of_properties": 2,
-        "num_of_units": 350,
-        "total_mortgage": 3151400
+        "num_of_units": 270,
+        "total_mortgage": 2576400
       }
     },
     {
@@ -13576,8 +13576,8 @@
         "property_city": "Waynesboro",
         "property_state": "VA",
         "num_of_properties": 2,
-        "num_of_units": 40,
-        "total_mortgage": 303000
+        "num_of_units": 20,
+        "total_mortgage": 150000
       }
     },
     {
@@ -13983,8 +13983,8 @@
         "property_city": "Milwaukee",
         "property_state": "WI",
         "num_of_properties": 13,
-        "num_of_units": 181,
-        "total_mortgage": 1419549
+        "num_of_units": 155,
+        "total_mortgage": 1207149
       }
     },
     {
@@ -14020,8 +14020,8 @@
         "property_city": "Racine",
         "property_state": "WI",
         "num_of_properties": 1,
-        "num_of_units": 12,
-        "total_mortgage": 87000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -14168,8 +14168,8 @@
         "property_city": "Homewood",
         "property_state": "AL",
         "num_of_properties": 2,
-        "num_of_units": 108,
-        "total_mortgage": 720100
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -14205,8 +14205,8 @@
         "property_city": "Mountain Brook",
         "property_state": "AL",
         "num_of_properties": 2,
-        "num_of_units": 458,
-        "total_mortgage": 3857400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15352,8 +15352,8 @@
         "property_city": "Bridgeport",
         "property_state": "CT",
         "num_of_properties": 3,
-        "num_of_units": 404,
-        "total_mortgage": 2461700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15389,8 +15389,8 @@
         "property_city": "West Hartford",
         "property_state": "CT",
         "num_of_properties": 3,
-        "num_of_units": 60,
-        "total_mortgage": 466200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15426,8 +15426,8 @@
         "property_city": "Hartford",
         "property_state": "CT",
         "num_of_properties": 4,
-        "num_of_units": 310,
-        "total_mortgage": 2323800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15463,7 +15463,7 @@
         "property_city": "Hialeah",
         "property_state": "FL",
         "num_of_properties": 1,
-        "num_of_units": 112,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -15500,7 +15500,7 @@
         "property_city": "Miami Shores",
         "property_state": "FL",
         "num_of_properties": 2,
-        "num_of_units": 54,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -15537,7 +15537,7 @@
         "property_city": "North Miami",
         "property_state": "FL",
         "num_of_properties": 4,
-        "num_of_units": 64,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -15574,8 +15574,8 @@
         "property_city": "East Point",
         "property_state": "GA",
         "num_of_properties": 2,
-        "num_of_units": 316,
-        "total_mortgage": 1538000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15611,8 +15611,8 @@
         "property_city": "Hapeville",
         "property_state": "GA",
         "num_of_properties": 1,
-        "num_of_units": 32,
-        "total_mortgage": 225800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15648,8 +15648,8 @@
         "property_city": "Smyrna",
         "property_state": "GA",
         "num_of_properties": 1,
-        "num_of_units": 50,
-        "total_mortgage": 263969
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15685,8 +15685,8 @@
         "property_city": "Marietta",
         "property_state": "GA",
         "num_of_properties": 1,
-        "num_of_units": 500,
-        "total_mortgage": 2070300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15722,8 +15722,8 @@
         "property_city": "Calumet City",
         "property_state": "IL",
         "num_of_properties": 2,
-        "num_of_units": 52,
-        "total_mortgage": 421200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15759,8 +15759,8 @@
         "property_city": "Bal Of Cook",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 60,
-        "total_mortgage": 486000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15796,8 +15796,8 @@
         "property_city": "Broadview",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 56,
-        "total_mortgage": 283500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15833,8 +15833,8 @@
         "property_city": "Chicago Heights",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 3010,
-        "total_mortgage": 27800390
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15870,8 +15870,8 @@
         "property_city": "Elmhurst",
         "property_state": "IL",
         "num_of_properties": 7,
-        "num_of_units": 370,
-        "total_mortgage": 2833464
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15907,8 +15907,8 @@
         "property_city": "La Grange Park",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 366,
-        "total_mortgage": 3076794
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15944,8 +15944,8 @@
         "property_city": "River Forest",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 36,
-        "total_mortgage": 190000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -15981,8 +15981,8 @@
         "property_city": "Wilmette",
         "property_state": "IL",
         "num_of_properties": 2,
-        "num_of_units": 54,
-        "total_mortgage": 402242
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16018,8 +16018,8 @@
         "property_city": "Riverside",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 11,
-        "total_mortgage": 73300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16055,8 +16055,8 @@
         "property_city": "Waukegan",
         "property_state": "IL",
         "num_of_properties": 1,
-        "num_of_units": 8,
-        "total_mortgage": 38300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16092,8 +16092,8 @@
         "property_city": "Lafayette",
         "property_state": "LA",
         "num_of_properties": 1,
-        "num_of_units": 28,
-        "total_mortgage": 199000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16129,8 +16129,8 @@
         "property_city": "Monroe",
         "property_state": "LA",
         "num_of_properties": 1,
-        "num_of_units": 68,
-        "total_mortgage": 550800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16166,8 +16166,8 @@
         "property_city": "Lake Charles",
         "property_state": "LA",
         "num_of_properties": 1,
-        "num_of_units": 611,
-        "total_mortgage": 857350
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16203,8 +16203,8 @@
         "property_city": "Brentwood",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 105,
-        "total_mortgage": 440000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16240,8 +16240,8 @@
         "property_city": "College Park",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 14,
-        "total_mortgage": 86000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16277,8 +16277,8 @@
         "property_city": "District Heights",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 904,
-        "total_mortgage": 5796900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16314,8 +16314,8 @@
         "property_city": "Frederick",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 52,
-        "total_mortgage": 415000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16351,8 +16351,8 @@
         "property_city": "Hagerstown",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 63,
-        "total_mortgage": 510000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16388,8 +16388,8 @@
         "property_city": "Lanham-Seabrook",
         "property_state": "MD",
         "num_of_properties": 1,
-        "num_of_units": 118,
-        "total_mortgage": 891900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16425,8 +16425,8 @@
         "property_city": "Montgomery County",
         "property_state": "MD",
         "num_of_properties": 2,
-        "num_of_units": 46,
-        "total_mortgage": 323900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16462,8 +16462,8 @@
         "property_city": "Prince George'S Co",
         "property_state": "MD",
         "num_of_properties": 15,
-        "num_of_units": 1972,
-        "total_mortgage": 15657300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16499,8 +16499,8 @@
         "property_city": "Seat Pleasant",
         "property_state": "MD",
         "num_of_properties": 3,
-        "num_of_units": 503,
-        "total_mortgage": 3184000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16536,8 +16536,8 @@
         "property_city": "Suitland-Silver Hi",
         "property_state": "MD",
         "num_of_properties": 3,
-        "num_of_units": 538,
-        "total_mortgage": 3555500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16573,8 +16573,8 @@
         "property_city": "Oak Park",
         "property_state": "MI",
         "num_of_properties": 1,
-        "num_of_units": 374,
-        "total_mortgage": 2988900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16610,8 +16610,8 @@
         "property_city": "St. Clair Shores",
         "property_state": "MI",
         "num_of_properties": 1,
-        "num_of_units": 456,
-        "total_mortgage": 3799700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16647,8 +16647,8 @@
         "property_city": "Wayne County",
         "property_state": "MI",
         "num_of_properties": 1,
-        "num_of_units": 84,
-        "total_mortgage": 680400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16684,8 +16684,8 @@
         "property_city": "St. Louis Park",
         "property_state": "MN",
         "num_of_properties": 5,
-        "num_of_units": 713,
-        "total_mortgage": 5857200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16721,8 +16721,8 @@
         "property_city": "St. Paul",
         "property_state": "MN",
         "num_of_properties": 6,
-        "num_of_units": 834,
-        "total_mortgage": 6820000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16758,8 +16758,8 @@
         "property_city": "St. Louis",
         "property_state": "MO",
         "num_of_properties": 21,
-        "num_of_units": 427,
-        "total_mortgage": 3468448
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16795,8 +16795,8 @@
         "property_city": "University City",
         "property_state": "MO",
         "num_of_properties": 7,
-        "num_of_units": 1040,
-        "total_mortgage": 8429020
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16832,8 +16832,8 @@
         "property_city": "Greensboro",
         "property_state": "NC",
         "num_of_properties": 4,
-        "num_of_units": 388,
-        "total_mortgage": 3031600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16869,8 +16869,8 @@
         "property_city": "Collingswood",
         "property_state": "NJ",
         "num_of_properties": 5,
-        "num_of_units": 384,
-        "total_mortgage": 2662300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16906,8 +16906,8 @@
         "property_city": "Fort Lee",
         "property_state": "NJ",
         "num_of_properties": 3,
-        "num_of_units": 487,
-        "total_mortgage": 3602500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16943,8 +16943,8 @@
         "property_city": "Hackensack",
         "property_state": "NJ",
         "num_of_properties": 7,
-        "num_of_units": 859,
-        "total_mortgage": 6247367
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -16980,8 +16980,8 @@
         "property_city": "Garwood",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 35,
-        "total_mortgage": 228000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17017,8 +17017,8 @@
         "property_city": "Haddon Twp.",
         "property_state": "NJ",
         "num_of_properties": 2,
-        "num_of_units": 224,
-        "total_mortgage": 1791552
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17054,8 +17054,8 @@
         "property_city": "Haddonfield",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 208,
-        "total_mortgage": 1903300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17091,8 +17091,8 @@
         "property_city": "Hamilton Twp",
         "property_state": "NJ",
         "num_of_properties": 2,
-        "num_of_units": 328,
-        "total_mortgage": 1245000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17128,8 +17128,8 @@
         "property_city": "Hasbrouck Heights",
         "property_state": "NJ",
         "num_of_properties": 5,
-        "num_of_units": 437,
-        "total_mortgage": 3307500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17165,8 +17165,8 @@
         "property_city": "Hammonton",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 24,
-        "total_mortgage": 174400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17202,8 +17202,8 @@
         "property_city": "Hillside Twp.",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 160,
-        "total_mortgage": 745000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17239,8 +17239,8 @@
         "property_city": "Merchantville",
         "property_state": "NJ",
         "num_of_properties": 2,
-        "num_of_units": 110,
-        "total_mortgage": 824800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17276,8 +17276,8 @@
         "property_city": "Oaklyn",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 100,
-        "total_mortgage": 596600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17313,8 +17313,8 @@
         "property_city": "Paulsboro",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 50,
-        "total_mortgage": 346000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17350,8 +17350,8 @@
         "property_city": "Riverton",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 36,
-        "total_mortgage": 290000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17387,8 +17387,8 @@
         "property_city": "Riverside Twp.",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 78,
-        "total_mortgage": 559623
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17424,8 +17424,8 @@
         "property_city": "Pennsauken Twp.",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 108,
-        "total_mortgage": 874800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17461,8 +17461,8 @@
         "property_city": "Somerville",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 443,
-        "total_mortgage": 3018500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17498,8 +17498,8 @@
         "property_city": "Mount Holly Twp.",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 204,
-        "total_mortgage": 1620000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17535,8 +17535,8 @@
         "property_city": "Salem",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 84,
-        "total_mortgage": 610900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17572,8 +17572,8 @@
         "property_city": "Springfield Twp.",
         "property_state": "NJ",
         "num_of_properties": 2,
-        "num_of_units": 241,
-        "total_mortgage": 1788500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17609,8 +17609,8 @@
         "property_city": "Vineland",
         "property_state": "NJ",
         "num_of_properties": 3,
-        "num_of_units": 186,
-        "total_mortgage": 1474100
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17646,8 +17646,8 @@
         "property_city": "West Deptford Twp",
         "property_state": "NJ",
         "num_of_properties": 1,
-        "num_of_units": 44,
-        "total_mortgage": 299700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17683,8 +17683,8 @@
         "property_city": "Glen Cove",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 306,
-        "total_mortgage": 2604900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17720,8 +17720,8 @@
         "property_city": "Garden City",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 192,
-        "total_mortgage": 1640700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17757,8 +17757,8 @@
         "property_city": "Harrison Town",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 228,
-        "total_mortgage": 1917500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17794,8 +17794,8 @@
         "property_city": "Hartsdale",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 74,
-        "total_mortgage": 546600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17831,8 +17831,8 @@
         "property_city": "Hempstead",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 212,
-        "total_mortgage": 1863100
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17868,8 +17868,8 @@
         "property_city": "Hempstead Town",
         "property_state": "NY",
         "num_of_properties": 6,
-        "num_of_units": 635,
-        "total_mortgage": 178700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17905,8 +17905,8 @@
         "property_city": "Hewlett",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 76,
-        "total_mortgage": 686000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17942,8 +17942,8 @@
         "property_city": "Mineola",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 208,
-        "total_mortgage": 1765000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -17979,8 +17979,8 @@
         "property_city": "Irvington",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 162,
-        "total_mortgage": 1297700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18016,7 +18016,7 @@
         "property_city": "Mount Kisco",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 54,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18053,8 +18053,8 @@
         "property_city": "New Rochelle",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 839,
-        "total_mortgage": 1830000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18090,8 +18090,8 @@
         "property_city": "New York-Bronx",
         "property_state": "NY",
         "num_of_properties": 16,
-        "num_of_units": 2337,
-        "total_mortgage": 19874100
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18127,8 +18127,8 @@
         "property_city": "New York-Brooklyn",
         "property_state": "NY",
         "num_of_properties": 27,
-        "num_of_units": 7888,
-        "total_mortgage": 33729200
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18164,8 +18164,8 @@
         "property_city": "New York-Queens",
         "property_state": "NY",
         "num_of_properties": 110,
-        "num_of_units": 19725,
-        "total_mortgage": 167554645
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18201,8 +18201,8 @@
         "property_city": "New York-Manhattan",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 653,
-        "total_mortgage": 5472500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18238,7 +18238,7 @@
         "property_city": "North Valley Strea",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 208,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18275,7 +18275,7 @@
         "property_city": "Nyack",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 60,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18312,7 +18312,7 @@
         "property_city": "Orchard Park Town",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 12,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18349,8 +18349,8 @@
         "property_city": "New York-Staten Is",
         "property_state": "NY",
         "num_of_properties": 2,
-        "num_of_units": 568,
-        "total_mortgage": 4886600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18386,7 +18386,7 @@
         "property_city": "Patchogue",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 84,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18423,7 +18423,7 @@
         "property_city": "Pelham Manor",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 54,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18460,7 +18460,7 @@
         "property_city": "Poughkeepsie",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 292,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18497,7 +18497,7 @@
         "property_city": "Ossining Town",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 79,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18534,7 +18534,7 @@
         "property_city": "Port Chester",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 72,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18571,8 +18571,8 @@
         "property_city": "Roslyn",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 151,
-        "total_mortgage": 1292700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18608,8 +18608,8 @@
         "property_city": "Rockville Centre",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 224,
-        "total_mortgage": 1881500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18645,8 +18645,8 @@
         "property_city": "Scarsdale",
         "property_state": "NY",
         "num_of_properties": 1,
-        "num_of_units": 168,
-        "total_mortgage": 1505700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18682,7 +18682,7 @@
         "property_city": "Westchester County",
         "property_state": "NY",
         "num_of_properties": 3,
-        "num_of_units": 203,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18719,7 +18719,7 @@
         "property_city": "White Plains",
         "property_state": "NY",
         "num_of_properties": 4,
-        "num_of_units": 748,
+        "num_of_units": 0,
         "total_mortgage": 0
       }
     },
@@ -18756,8 +18756,8 @@
         "property_city": "Akron",
         "property_state": "OH",
         "num_of_properties": 3,
-        "num_of_units": 442,
-        "total_mortgage": 2841300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18793,8 +18793,8 @@
         "property_city": "Cleveland Heights",
         "property_state": "OH",
         "num_of_properties": 2,
-        "num_of_units": 45,
-        "total_mortgage": 254900
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18867,8 +18867,8 @@
         "property_city": "Baden",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 52,
-        "total_mortgage": 389600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18904,8 +18904,8 @@
         "property_city": "Bethel Park",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 66,
-        "total_mortgage": 588000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18941,8 +18941,8 @@
         "property_city": "Baldwin Twp.",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 124,
-        "total_mortgage": 1037500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -18978,8 +18978,8 @@
         "property_city": "Canonsburg",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 48,
-        "total_mortgage": 388800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19015,8 +19015,8 @@
         "property_city": "Cheltenham",
         "property_state": "PA",
         "num_of_properties": 5,
-        "num_of_units": 1798,
-        "total_mortgage": 14167500
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19052,8 +19052,8 @@
         "property_city": "Collingdale",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 30,
-        "total_mortgage": 225000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19089,8 +19089,8 @@
         "property_city": "Chester",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 240,
-        "total_mortgage": 1801025
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19126,8 +19126,8 @@
         "property_city": "Delaware County",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 764,
-        "total_mortgage": 6277800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19163,8 +19163,8 @@
         "property_city": "Coatesville",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 27,
-        "total_mortgage": 195700
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19200,8 +19200,8 @@
         "property_city": "Penn Hills",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 90,
-        "total_mortgage": 750400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19237,8 +19237,8 @@
         "property_city": "Oak Lane",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 132,
-        "total_mortgage": 631600
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19274,8 +19274,8 @@
         "property_city": "Doylestown",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 28,
-        "total_mortgage": 226800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19311,8 +19311,8 @@
         "property_city": "Lower Merion Twp",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 38,
-        "total_mortgage": 329300
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19348,8 +19348,8 @@
         "property_city": "Port Vue",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 72,
-        "total_mortgage": 540000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19385,8 +19385,8 @@
         "property_city": "Warren",
         "property_state": "PA",
         "num_of_properties": 1,
-        "num_of_units": 100,
-        "total_mortgage": 879800
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19422,8 +19422,8 @@
         "property_city": "Whitehall",
         "property_state": "PA",
         "num_of_properties": 2,
-        "num_of_units": 70,
-        "total_mortgage": 580000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19459,8 +19459,8 @@
         "property_city": "Nashville-Davidson",
         "property_state": "TN",
         "num_of_properties": 10,
-        "num_of_units": 443,
-        "total_mortgage": 2916400
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
@@ -19570,8 +19570,8 @@
         "property_city": "Fairfax County",
         "property_state": "VA",
         "num_of_properties": 1,
-        "num_of_units": 26,
-        "total_mortgage": 200000
+        "num_of_units": 0,
+        "total_mortgage": 0
       }
     },
     {
