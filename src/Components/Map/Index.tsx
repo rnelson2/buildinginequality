@@ -50,10 +50,10 @@ const Map = () => {
           // positron light
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
-        <TileLayer
+        {/* <TileLayer
           url="https://s3.amazonaws.com/dsl-general/sanborns/{z}/{x}/{y}.png"
           maxNativeZoom={20}
-        />
+        /> */}
         <CensusTracts />
         {zoom >= 9 && <Properties />}
         {zoom < 9 && <ClusteredProperties />}

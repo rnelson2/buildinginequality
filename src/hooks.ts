@@ -262,7 +262,7 @@ export function useSelectedPropertyData() {
   const { properties } = useProperties();
 
   if (!selectedProperty) return undefined;
-  return properties.find(property => property.properties.mortgages[0].proj_num === parseInt(selectedProperty));
+  return properties.find(property => property.properties.mortgages[0]?.proj_num === parseInt(selectedProperty));
 }
 
 export function useCensusTracts() {
