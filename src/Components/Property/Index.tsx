@@ -32,7 +32,7 @@ const Property = ({ property }: { property: Types.Feature }) => {
   return (
     <Styled.Container>
       {/* Close Button */}
-      <Link to={`${process.env.PUBLIC_URL}/map${hash}`}>
+      <Link to={`/map${hash}`}>
         <Styled.CloseButton>
           <ArrowLeft /> Close
         </Styled.CloseButton>
