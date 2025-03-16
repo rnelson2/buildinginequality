@@ -16,24 +16,6 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
 
   // combine properities with the same racial and income data, and sum their units
 
-  // This object will map gisjoin to aggregated data
-  const gisjoinMap: {
-    [gisjoin: string]: {
-      // We'll store these once we find them
-      median_income?: number;
-      white_pop?: number;
-      black_pop?: number;
-      other_pop?: number;
-      // We'll sum units as we go
-      units: number;
-      // To detect if we've already stored census data
-      hasCensusData: boolean;
-    };
-  } = {};
-  
-  const propertiesInCensusTracts = (properties
-    .filter((feature) => feature.properties.gisjoin)) as (Types.Feature & { properties: { gisjoin: string } })[];
-  
   const racial_and_income_data: {
     gisjoin: string;
     units: number;
@@ -64,7 +46,6 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
     }
   });
 
-
   const maxIncome = racial_and_income_data.reduce((acc, property) => {
     return property.median_income > acc ? property.median_income : acc;
   }, 0);
@@ -76,7 +57,6 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
  
   
   const r = scaleSqrt().domain([0, maxUnits]).range([0, 3]);
-
   const xScale = scaleLinear().domain([1, 0]).range([0, 100]);
   const yScale = scaleLinear()
     .domain([0, maxIncome * 1.1])
@@ -91,7 +71,7 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
   return (
     <Styled.Container>
       <h2>Apartments by Race and Income</h2>
-      <Styled.Explanation>Bubbles are all apartments in a census tract.</Styled.Explanation>
+      <Styled.Explanation>Bubbles on the map are apartments; those in the chart are all apartments in a census tract.</Styled.Explanation>
       <Styled.Explanation>The chart only shows tracts with race and income data.</Styled.Explanation>
       <Styled.Explanation>Size is proportional to number of housing units.</Styled.Explanation>
     <svg viewBox="0 0 130 100">

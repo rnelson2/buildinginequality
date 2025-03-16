@@ -1,34 +1,30 @@
-import React from "react";
+import React, { useMemo, useCallback } from "react";
 import { Circle } from "react-leaflet";
 import { useVisibleClusteredProperties, useURLState } from "../../../hooks";
 import { getColor } from "../../../utilities";
 
-const Properties = () => {
+const ClusteredProperties = () => {
   const properties = useVisibleClusteredProperties();
   const { mapview, zoom } = useURLState();
 
-  // Function to size the circle markers based on the number of units and zoom level
-  const getRadius = (units: number) => {
-    // Base radius scaling factor for units
+  // Memoized max income calculation
+  const maxIncome = useMemo(() => {
+    return properties.reduce((acc, property) => {
+      return property.properties.median_income > acc ? property.properties.median_income : acc;
+    }, 0);
+  }, [properties]);
+
+  // Memoized function to size circle markers
+  const getRadius = useCallback((units: number) => {
     const baseRadius = Math.sqrt(units) * 35;
-
-    // Adjust radius based on zoom level (higher zoom = larger circles visually)
     const zoomAdjustment = 2 ** (zoom - 9); // Scale relative to zoom level 9
-
     return baseRadius / zoomAdjustment;
-  };
+  }, [zoom]);
 
-  // get the max income for the income color scale
-  const maxIncome = properties.reduce((acc, property) => {
-    if (property.properties.median_income && property.properties.median_income > acc) {
-      return property.properties.median_income;
-    }
-    return acc;
-  }, 0);
   return (
     <>
-      {properties.map((property, idx) => (
-          <Circle
+      {properties.map(property => (
+        <Circle
           key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${mapview}-${zoom}`}
           center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
           fillColor={getColor(property, mapview, { maxIncome })}
@@ -36,17 +32,13 @@ const Properties = () => {
           weight={1}
           fillOpacity={0.5}
           radius={property.properties.units ? getRadius(property.properties.units) : 5}
-          eventHandlers={
-            {
-              click: () => {
-               
-              }
-            }
-          }
-          />
+          eventHandlers={{
+            click: () => {},
+          }}
+        />
       ))}
     </>
   );
 };
 
-export default Properties;
+export default ClusteredProperties;

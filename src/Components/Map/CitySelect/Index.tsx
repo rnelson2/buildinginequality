@@ -1,5 +1,5 @@
 import React from "react";
-import Select, { SingleValue } from "react-select";
+import Select from "react-select";
 import { useCitiesOptions, useMapContext } from "../../../hooks";
 import * as Styled from "./styled";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +13,10 @@ interface GroupedOption {
 interface Option {
   label: string;
   value: string;
+  geometry: {
+    type: "Polygon";
+    coordinates: [number, number][][]; 
+  };
 }
 
 const CitySelect = () => {

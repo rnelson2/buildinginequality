@@ -22,7 +22,6 @@ const ContinentalUSZoomAndCenter = (): null => {
     }
     return () => {
       if (map && !pathname.startsWith("/map")) {
-        console.log("unsetting map");
         setMap(undefined);
         mapInitialized.current = false;
       }

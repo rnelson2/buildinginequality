@@ -15,8 +15,6 @@ const Controls = () => {
 
   const incomeScale = scaleLinear().domain([0, maxIncome]).range([0, symbolsWidth]);
 
-  
-
   // tick marks for the x axis
   const incomeTicks = incomeScale.ticks(5);
   const incomeSectionWidth = symbolsWidth / (incomeTicks.length);
@@ -26,8 +24,6 @@ const Controls = () => {
 
   return (
     <Styled.Container>
-
-
       {open && (
         <Styled.LegendContainer>
           <Styled.CloseButton
@@ -55,9 +51,7 @@ const Controls = () => {
       <Styled.Legend>
 
       {mapview === "income" && maxIncome > 0 && (
-        
         <Styled.IncomeLegend>
-          
           <Styled.Label>Properties</Styled.Label>
           <svg
             width={symbolsWidth + incomeSectionWidth / 2}

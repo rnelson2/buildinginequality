@@ -21,113 +21,66 @@ export const useURLState = () => {
   const { hash, pathname } = useLocation();
   const { selectedProperty } = useParams();
 
-  const state = useMemo(() => {
-    const state: Types.URLState = {
+  return useMemo(() => {
+    const defaultState: Types.URLState = {
       hash,
       pathname,
       selectedProperty,
       center: [40, -95] as [number, number],
       zoom: 0,
-      mapview: 'race',
+      mapview: "race",
       hideCensusTracts: false,
     };
 
-    const cleanedHash = hash.replace(/^.*#/, '');
-    const hashPairs = cleanedHash ? cleanedHash.split('&') : [];
+    if (!hash) return defaultState;
 
-    for (const hashPair of hashPairs) {
-      const [key, value] = hashPair.split('=');
-      if (key === 'loc' && value) {
-        const [z, x, y] = value.split('/');
-        const zoomVal = parseInt(z, 10);
-        const xVal = parseFloat(x);
-        const yVal = parseFloat(y);
+    const hashPairs = hash.replace(/^.*#/, "").split("&").reduce<Record<string, string>>((acc, pair) => {
+      const [key, value] = pair.split("=");
+      if (key && value) acc[key] = value;
+      return acc;
+    }, {});
 
-        if (!isNaN(zoomVal) && !isNaN(xVal) && !isNaN(yVal)) {
-          state.zoom = zoomVal;
-          state.center = [xVal, yVal];
-        }
-      }
-      if (key === 'mv' && value === 'income') {
-        state.mapview = 'income';
-      }
-      if (key === 'censusTracts' && value === 'hide') {
-        state.hideCensusTracts = true;
-      }
-    }
-
-    return state;
+    return {
+      ...defaultState,
+      zoom: hashPairs["loc"] ? parseInt(hashPairs["loc"].split("/")[0], 10) || 0 : defaultState.zoom,
+      center: hashPairs["loc"]
+        ? (hashPairs["loc"].split("/").slice(1, 3).map(parseFloat) as [number, number])
+        : defaultState.center,
+      mapview: hashPairs["mv"] === "income" ? "income" : defaultState.mapview,
+      hideCensusTracts: hashPairs["censusTracts"] === "hide",
+    };
   }, [hash, pathname, selectedProperty]);
-
-  return state;
 };
 
-export function useProperties() {
-  const [properties, setProperties] = useState<Types.Feature[]>([]);
+const useFetchGeoJSON = <T,>(url: string) => {
+  const [data, setData] = useState<T[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchProperties = async () => {
+    const fetchData = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.Feature[] }>(`${process.env.PUBLIC_URL}/points.geojson`);
-
-        setProperties(response.data.features);
-        setLoading(false);
+        const response = await axios.get<{ type: "FeatureCollection"; features: T[] }>(url);
+        setData(response.data.features);
       } catch (error) {
-        console.error(error);
+        console.error(`Error fetching ${url}:`, error);
+      } finally {
+        setLoading(false);
       }
     };
 
-    fetchProperties();
-  }, []);
+    fetchData();
+  }, [url]);
 
-  return { properties, loading };
-}
+  return { data, loading };
+};
 
-export function useClusteredProperties() {
-  const [properties, setProperties] = useState<Types.ClusteredProperties[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+export const useProperties = () => useFetchGeoJSON<Types.Feature>(`${process.env.PUBLIC_URL}/points.geojson`);
 
-  useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
+export const useNoAddressProperties = () => useFetchGeoJSON<Types.NoAddressFeature>(`${process.env.PUBLIC_URL}/no_addresses.geojson`);
 
-        setProperties(response.data.features);
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+export const useClusteredProperties = () => useFetchGeoJSON<Types.ClusteredProperties>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
 
-    fetchProperties();
-  }, []);
-
-  return { properties, loading };
-}
-
-
-export function useCities() {
-  const [cities, setCities] = useState<Types.CityFeature[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
-
-        setCities(response.data.features);
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchProperties();
-  }, []);
-
-  return { cities, loading };
-}
+export const useCities = () => useFetchGeoJSON<Types.CityFeature>(`${process.env.PUBLIC_URL}/cities.geojson`);
 
 export function useCitiesOptions() {
   interface GroupedOption {
@@ -144,7 +97,7 @@ export function useCitiesOptions() {
     }; // The geometry of the city
   }
 
-  const { cities } = useCities();
+  const { data } = useCities();
   const [groupedOptions, setGroupedOptions] = useState<GroupedOption[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -197,72 +150,153 @@ export function useCitiesOptions() {
     };
 
     fetchProperties();
-  }, [cities]);
+  }, [data]);
 
   return { groupedOptions, loading };
 }
 
 export function useVisibleProperties() {
-  const { properties } = useProperties();
-  const [visibleProperties, setVisibleProperties] = useState<Types.Feature[]>([]);
+  const { data } = useProperties();
   const { center, zoom } = useURLState();
   const { map } = useMapContext();
 
-  useEffect(() => {
-    if (map) {
-      const bounds = map.getBounds();
-      const visibleProperties = properties.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
-      setVisibleProperties(visibleProperties);
-    }
-  }, [center, zoom, map, properties, map]);
+  return useMemo(() => {
+    if (!map) return [];
 
-  return visibleProperties;
+    const bounds = map.getBounds();
+    return data.filter((property) =>
+      bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
+    );
+  }, [center, zoom, map, data]);
+}
+
+export function useVisibleNoAddressProperties() {
+  const { data } = useNoAddressProperties();
+  const { center, zoom } = useURLState();
+  const { map } = useMapContext();
+
+  return useMemo(() => {
+    if (!map) return [];
+
+    const bounds = map.getBounds();
+    return data.filter((property) =>
+      bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
+    );
+  }, [center, zoom, map, data]);
+}
+
+export function useCityStats(): Types.CityStats[] {
+  const visibleProperties = useVisibleProperties(); // Properties with addresses
+  const noAddressProperties = useVisibleNoAddressProperties(); // Properties without addresses
+  console.log(noAddressProperties);
+
+  const cityStats = useMemo(() => {
+    const cityMap = new Map<string, Types.CityStats>();
+
+    // Helper function to add a property to the cityMap
+    const addProperty = (city: string, state: string, property: Types.CityProperty) => {
+      const key = `${city}, ${state}`;
+      if (!cityMap.has(key)) {
+        cityMap.set(key, { city: key, complexes: 0, totalUnits: 0, totalAmount: 0, properties: [] });
+      }
+
+      const stats = cityMap.get(key)!;
+      stats.complexes += 1;
+      stats.totalUnits += property.units;
+      stats.totalAmount += property.amount;
+      stats.properties.push(property);
+    };
+
+    // Process properties **with addresses**
+    visibleProperties.forEach(property => {
+      const city = property.properties.property_city?.trim();
+      const state = property.properties.property_state?.trim();
+      if (!city || !state) return; // Exclude "Unknown"
+
+      property.properties.mortgages.forEach((mortgage) => {
+        addProperty(city, state, {
+          hasAddress: true,
+          name: mortgage.name || "Unknown",
+          units: mortgage.units,
+          amount: mortgage.amount,
+          proj_num: mortgage.proj_num,
+          white_pop: property.properties.white_pop,
+          black_pop: property.properties.black_pop,
+          other_pop: property.properties.other_pop,
+          median_income: property.properties.median_income,
+        });
+      });
+    });
+
+    // Process properties **without addresses**
+    noAddressProperties.forEach(property => {
+      const city = property.properties.city?.trim();
+      const state = property.properties.state?.trim();
+      if (!city || !state) return; // Exclude "Unknown"
+
+      property.properties.mortgages.forEach((mortgage) => {
+        addProperty(city, state, {
+          hasAddress: false,
+          name: mortgage.name,
+          amount: mortgage.amount,
+          units: mortgage.units,
+          proj_num: mortgage.proj_num,
+        });
+      });
+    });
+
+    // Convert map to array and sort
+    return Array.from(cityMap.values())
+      .map((stats) => ({
+        ...stats,
+        properties: stats.properties.sort((a, b) => b.amount - a.amount), // Sort properties by mortgage amount (desc)
+      }))
+      .sort((a, b) => b.complexes - a.complexes); // Sort cities by number of complexes (desc)
+  }, [visibleProperties, noAddressProperties]);
+
+  return cityStats;
 }
 
 export function useVisiblePropertiesStats() {
   const visibleProperties = useVisibleProperties();
 
-  const stats = useMemo(() => {
-    const totalUnits = visibleProperties.reduce((acc, property) => acc + property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0), 0);
-    const totalProjects = visibleProperties.length;
-    const maxIncome = visibleProperties.reduce((acc, property) => Math.max(acc, (property.properties.median_income || 0)), 0);
-    const maxUnits = visibleProperties.reduce((acc, property) => Math.max(acc, property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0)), 0);
+  return useMemo(() => {
+    if (!visibleProperties.length) {
+      return { totalUnits: 0, totalProjects: 0, maxIncome: 0, maxUnits: 0 };
+    }
 
     return {
-      totalUnits,
-      totalProjects,
-      maxIncome,
-      maxUnits,
+      totalUnits: visibleProperties.reduce((acc, property) =>
+        acc + property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0), 0),
+      totalProjects: visibleProperties.length,
+      maxIncome: Math.max(...visibleProperties.map(property => property.properties.median_income || 0)),
+      maxUnits: Math.max(...visibleProperties.map(property =>
+        property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0))),
     };
   }, [visibleProperties]);
-
-  return stats;
 }
 
 export function useVisibleClusteredProperties() {
-  const { properties } = useClusteredProperties();
-  const [visibleProperties, setVisibleProperties] = useState<Types.ClusteredProperties[]>([]);
+  const { data: properties } = useClusteredProperties();
   const { center, zoom } = useURLState();
   const { map } = useMapContext();
 
-  useEffect(() => {
-    if (map) {
-      const bounds = map.getBounds();
-      const visibleProperties = properties
-        .filter(property => property.properties.zoom === zoom && bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
-      setVisibleProperties(visibleProperties);
-    }
-  }, [center, zoom, map, properties, map]);
+  return useMemo(() => {
+    if (!map) return [];
 
-  return visibleProperties;
+    const bounds = map.getBounds();
+    return properties.filter(
+      (property) => property.properties.zoom === zoom && bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
+    );
+  }, [center, zoom, map, properties]);
 }
 
 export function useSelectedPropertyData() {
   const { selectedProperty } = useURLState();
-  const { properties } = useProperties();
+  const { data } = useProperties();
 
   if (!selectedProperty) return undefined;
-  return properties.find(property => property.properties.mortgages[0]?.proj_num === parseInt(selectedProperty));
+  return data.find(property => property.properties.mortgages[0]?.proj_num === parseInt(selectedProperty));
 }
 
 export function useCensusTracts() {

@@ -1,46 +1,36 @@
 import React from "react";
-import { CircleMarker } from "react-leaflet";
-import { useNavigate } from "react-router-dom";
-import { useVisibleProperties, useURLState } from "../../../hooks";
-import { getColor } from "../../../utilities";
+import Property from "./Property/Index";
+import EmphasizedProperty from "./EmphasizedProperty/Index";
+import { useVisibleProperties, useURLState, useMapContext } from "../../../hooks";
 
 const Properties = () => {
   const properties = useVisibleProperties();
-  const { hash, selectedProperty, mapview } = useURLState();
-  const navigate = useNavigate();
+  const { selectedProperty, mapview } = useURLState();
+  const { highlightedIds } = useMapContext();
 
-  // function to size the circle markers based on the number of units
-  const getRadius = (units: number) => {
-    return Math.sqrt(units) * 0.5;
-  };
+  let emphasizedProperties: typeof properties[0][] = [];
+  if (selectedProperty && highlightedIds.length === 0) {
+    emphasizedProperties = properties.filter(property => {
+      const { mortgages } = property.properties;
+      return mortgages.some(mortgage => mortgage.proj_num === parseInt(selectedProperty));
+    });
+  } else if (highlightedIds.length > 0) {
+    emphasizedProperties = properties.filter(property => highlightedIds.includes(property.properties.mortgages[0].proj_num));
+  }
 
-  // get the max income for the income color scale
-  const maxIncome = properties.reduce((acc, property) => {
-    if (property.properties.median_income && property.properties.median_income > acc) {
-      return property.properties.median_income;
-    }
-    return acc;
-  }, 0);
+
   return (
     <>
-      {properties.map((property, idx) => (
-        <CircleMarker
-          key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}`}
-          center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
-          fillColor={getColor(property, mapview, { maxIncome })}
-          color={getColor(property, mapview, { maxIncome })}
-          weight={1}
-          fillOpacity={!selectedProperty || parseInt(selectedProperty) === property.properties.mortgages[0].proj_num ? 0.6 : 0.3}
-          radius={getRadius(property.properties.mortgages.reduce((acc, mortgage) => acc + mortgage.units, 0))}
-          eventHandlers={{
-            click: () => {
-              if (parseInt(selectedProperty || "") === property.properties.mortgages[0].proj_num) {
-                navigate(`/map${hash}`);
-              } else {
-                navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
-              }
-            },
-          }}
+      {emphasizedProperties.map(property => (
+        <EmphasizedProperty
+          property={property}
+          key={`emphasized${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}${highlightedIds ? `-${highlightedIds.join("-")}` : ""}`}
+        />
+      ))}
+      {properties.map(property => (
+        <Property
+          property={property}
+          key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}${highlightedIds ? `-${highlightedIds.join("-")}` : ""}`}
         />
       ))}
     </>

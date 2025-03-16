@@ -30,9 +30,31 @@ export interface Feature {
   geometry: { type: "Point"; coordinates: [number, number] };
 }
 
+export type HighlightedIdActions = {
+  type: 'add_to_highlighted';
+  payload: number;
+} | {
+  type: 'set_only_highlighted';
+  payload: number;
+} | {
+  type: 'set_highlighted';
+  payload: number[];
+} | {
+  type: 'remove_from_highlighted';
+  payload: number;
+} | {
+  type: 'clear_highlighted';
+};
+
 export type MapState = {
   map: Map | undefined;
   setMap: React.Dispatch<React.SetStateAction<Map | undefined>>;
+  highlightedIds: number[];
+  addToHighlightedIds: (id: number) => void;
+  setHighlightedIds: (id: number[]) => void;
+  setOnlyHighlightedId: (id: number) => void;
+  removeFromHighlightedIds: (id: number) => void;
+  clearHighlightedIds: () => void;
 };
 
 export type URLParams = {
@@ -125,4 +147,47 @@ interface ClusteredProperties {
     median_income: number; // Averaged median income
     units: number | null; // Total number of units
   };
+}
+
+export interface NoAddressMortgage {
+  proj_num: number;
+  name: string;
+  amount: number;
+  units: number;
+}
+
+export interface NoAddressFeatureProperties {
+  city: string;
+  state: string;
+  mortgages: NoAddressMortgage[];
+}
+
+export interface NoAddressFeature {
+  type: "Feature";
+  geometry: {
+    type: "Point";
+    coordinates: [number, number]; // Longitude, Latitude
+  };
+  properties: NoAddressFeatureProperties;
+}
+
+
+interface CityProperty {
+  hasAddress: boolean;
+  name: string;
+  units: number;
+  amount: number;
+  proj_num: number;
+  white_pop?: number;
+  black_pop?: number;
+  other_pop?: number;
+  median_income?: number;
+}
+
+interface CityStats {
+  city: string;
+  complexes: number;
+  totalUnits: number;
+  totalAmount: number;
+  properties: CityProperty[];
 }

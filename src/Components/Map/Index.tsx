@@ -17,17 +17,10 @@ const Map = () => {
   const { center, zoom } = useURLState();
   const { map, setMap } = useMapContext();
 
-  // function to size the circle markers based on the number of units
-  const getRadius = (units: number) => {
-    return Math.sqrt(units) * 0.5;
-  };
-
   // a cleanup function to unset the map when the component is unmounted
   useEffect(() => {
-    console.log(map);
     return () => {
       if (map) {
-        console.log("unsetting map");
         setMap(undefined);
       }
     };
