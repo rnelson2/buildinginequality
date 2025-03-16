@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback } from "react";
+import React, { useMemo, useCallback, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useVisibleProperties, useURLState, useMapContext } from "../../../../hooks";
 import { CircleMarker } from "react-leaflet";
@@ -6,11 +6,12 @@ import { getColor } from "../../../../utilities";
 import * as Styled from "./styled";
 import { Feature } from "../../../../index.d";
 
-const Properties = ({ property }: { property: Feature}) => {
+const Property = ({ property }: { property: Feature}) => {
   const properties = useVisibleProperties();
   const { hash, selectedProperty, mapview } = useURLState();
   const { highlightedIds } = useMapContext();
   const navigate = useNavigate();
+  const circleRef = useRef<any>(null);
 
   const { mortgages } = property.properties;
   const { proj_num } = mortgages[0];
@@ -36,7 +37,6 @@ const Properties = ({ property }: { property: Feature}) => {
     [isEmphasized]
   );
 
-
   // get the max income for the income color scale
   const maxIncome = useMemo(() => {
     return properties.reduce((acc, property) => {
@@ -47,11 +47,23 @@ const Properties = ({ property }: { property: Feature}) => {
     }, 0);
   }, [properties]);
 
+  const fillColor = useMemo(() => {
+    return getColor(property, mapview, { maxIncome });
+  }, [property, mapview, maxIncome]);
+
+  // Ensure Leaflet CircleMarker updates style when `fillColor` changes
+  useEffect(() => {
+    if (circleRef.current) {
+      circleRef.current.setStyle({ fillColor, color: fillColor });
+    }
+  }, [fillColor]);
+
+
   return (
         <CircleMarker
-          key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}${highlightedIds ? `-${highlightedIds.join("-")}` : ""}`}
+        ref={circleRef}
           center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
-          fillColor={getColor(property, mapview, { maxIncome })}
+          fillColor={fillColor}
           color={getColor(property, mapview, { maxIncome })}
           weight={1}
           fillOpacity={fillOpacity}
@@ -69,4 +81,4 @@ const Properties = ({ property }: { property: Feature}) => {
   );
 };
 
-export default Properties;
+export default Property;
