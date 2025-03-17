@@ -14,7 +14,7 @@
     "react-select": "^5.9.0",
     "styled-components": "^6.1.13"
   },
-  "homepage": "https://rnelson2.github.io/buildinginequality",
+  "homepage": "https://buildinginequality.us",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js --mode development",
     "build": "webpack --config webpack.prod.js --mode production",

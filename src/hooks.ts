@@ -74,13 +74,13 @@ const useFetchGeoJSON = <T,>(url: string) => {
   return { data, loading };
 };
 
-export const useProperties = () => useFetchGeoJSON<Types.Feature>(`${process.env.PUBLIC_URL}/points.geojson`);
+export const useProperties = () => useFetchGeoJSON<Types.Feature>(`/points.geojson`);
 
-export const useNoAddressProperties = () => useFetchGeoJSON<Types.NoAddressFeature>(`${process.env.PUBLIC_URL}/no_addresses.geojson`);
+export const useNoAddressProperties = () => useFetchGeoJSON<Types.NoAddressFeature>(`/no_addresses.geojson`);
 
-export const useClusteredProperties = () => useFetchGeoJSON<Types.ClusteredProperties>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
+export const useClusteredProperties = () => useFetchGeoJSON<Types.ClusteredProperties>(`/clustered_points.geojson`);
 
-export const useCities = () => useFetchGeoJSON<Types.CityFeature>(`${process.env.PUBLIC_URL}/cities.geojson`);
+export const useCities = () => useFetchGeoJSON<Types.CityFeature>(`/cities.geojson`);
 
 export function useCitiesOptions() {
   interface GroupedOption {
@@ -140,7 +140,7 @@ export function useCitiesOptions() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`/cities.geojson`);
 
         setGroupedOptions(prepareMenuData(response.data.features));
         setLoading(false);
@@ -332,7 +332,7 @@ export function useCensusTracts() {
         try {
           const tractPromises = toLoad.map((tract) =>
             axios.get<{ type: 'FeatureCollection'; features: Types.CensusFeature[] }>(
-              `${process.env.PUBLIC_URL}/censustracts/${tract.gisjoin}.geojson`
+              `/censustracts/${tract.gisjoin}.geojson`
             )
           );
           const tractResponses = await Promise.all(tractPromises);

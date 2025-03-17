@@ -30,9 +30,9 @@ export const TextBlock = styled.div`
       }
 
       &[href*='//']::after {
-      // content: url(${process.env.PUBLIC_URL}/static/images/external_link.svg);
+      // content: url(/static/images/external_link.svg);
       padding-left: 1.5em;
-      mask-image: url(${process.env.PUBLIC_URL}/static/images/external_link.svg);
+      mask-image: url(/static/images/external_link.svg);
       background-color: #666666;
     }
   }
