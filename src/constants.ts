@@ -1,4 +1,4 @@
-import CensusTractBoundingBoxes from './data/census_tracts_bounding_boxes.json';
+import CensusTractBoundingBoxes from './Data/census_tracts_bounding_boxes.json';
 
 export const census_tract_bbs = CensusTractBoundingBoxes as { gisjoin: string; bbox: [[number, number], [number, number]] }[];
 
