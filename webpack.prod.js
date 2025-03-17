@@ -8,14 +8,14 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 const appDir = path.resolve(__dirname, 'build');
 
-const public_url = '/buildinginequality';
+const public_url = '/';
 
 module.exports = merge({
   devtool: false,
   output: {
     path: appDir,
     filename: 'index.js',
-    publicPath: '/buildinginequality/',
+    publicPath: '/',
   },
   optimization: {
     minimizer: [(compiler) => {
