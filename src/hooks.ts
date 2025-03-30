@@ -82,7 +82,7 @@ export function useProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.Feature[] }>(`${process.env.PUBLIC_URL}/points.geojson`);
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.Feature[] }>(`/points.geojson`);
 
         setData(response.data.features);
         setLoading(false);
@@ -104,7 +104,7 @@ export function useNoAddressProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.NoAddressFeature[] }>(`${process.env.PUBLIC_URL}/no_addresses.geojson`);
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.NoAddressFeature[] }>(`/no_addresses.geojson`);
 
         setData(response.data.features);
         setLoading(false);
@@ -126,7 +126,7 @@ export function useClusteredProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`/clustered_points.geojson`);
 
         setData(response.data.features);
         setLoading(false);
@@ -149,7 +149,7 @@ export function useCities() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`/cities.geojson`);
 
         setData(response.data.features);
         setLoading(false);
