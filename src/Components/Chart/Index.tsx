@@ -68,6 +68,10 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
   // use d3 to calculate y axis tick marks
   const yTicks = yScale.ticks(5);
 
+  if (racial_and_income_data.length === 0) {
+    return null;
+  }
+
   return (
     <Styled.Container>
       <h2>Apartments by Race and Income</h2>

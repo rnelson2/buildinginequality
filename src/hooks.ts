@@ -74,13 +74,95 @@ const useFetchGeoJSON = <T,>(url: string) => {
   return { data, loading };
 };
 
-export const useProperties = () => useFetchGeoJSON<Types.Feature>(`/points.geojson`);
 
-export const useNoAddressProperties = () => useFetchGeoJSON<Types.NoAddressFeature>(`/no_addresses.geojson`);
+export function useProperties() {
+  const [data, setData] = useState<Types.Feature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-export const useClusteredProperties = () => useFetchGeoJSON<Types.ClusteredProperties>(`/clustered_points.geojson`);
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.Feature[] }>(`${process.env.PUBLIC_URL}/points.geojson`);
 
-export const useCities = () => useFetchGeoJSON<Types.CityFeature>(`/cities.geojson`);
+        setData(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { data, loading };
+}
+
+export function useNoAddressProperties() {
+  const [data, setData] = useState<Types.NoAddressFeature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.NoAddressFeature[] }>(`${process.env.PUBLIC_URL}/no_addresses.geojson`);
+
+        setData(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { data, loading };
+}
+
+export function useClusteredProperties() {
+  const [data, setData] = useState<Types.ClusteredProperties[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`${process.env.PUBLIC_URL}/clustered_points.geojson`);
+
+        setData(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { data, loading };
+}
+
+
+export function useCities() {
+  const [data, setData] = useState<Types.CityFeature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`${process.env.PUBLIC_URL}/cities.geojson`);
+
+        setData(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchProperties();
+  }, []);
+
+  return { data, loading };
+}
 
 export function useCitiesOptions() {
   interface GroupedOption {
@@ -284,9 +366,9 @@ export function useVisibleClusteredProperties() {
   return useMemo(() => {
     if (!map) return [];
 
-    const bounds = map.getBounds();
+    // const bounds = map.getBounds();
     return properties.filter(
-      (property) => property.properties.zoom === zoom && bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
+      (property) => property.properties.zoom === Math.max(5, zoom) 
     );
   }, [center, zoom, map, properties]);
 }
@@ -296,7 +378,7 @@ export function useSelectedPropertyData() {
   const { data } = useProperties();
 
   if (!selectedProperty) return undefined;
-  return data.find(property => property.properties.mortgages[0]?.proj_num === parseInt(selectedProperty));
+  return data.find(property => property.properties.mortgages.length > 0 && property.properties.mortgages.some(d => d?.proj_num === parseInt(selectedProperty)));
 }
 
 export function useCensusTracts() {

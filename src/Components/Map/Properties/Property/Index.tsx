@@ -70,7 +70,7 @@ const Property = ({ property }: { property: Feature}) => {
           radius={radius}
           eventHandlers={{
             click: () => {
-              if (parseInt(selectedProperty || "") === property.properties.mortgages[0].proj_num) {
+              if (parseInt(selectedProperty || "-9999999") === property.properties.mortgages[0].proj_num) {
                 navigate(`/map${hash}`);
               } else {
                 navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);

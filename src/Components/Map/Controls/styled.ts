@@ -10,8 +10,21 @@ export const Container = styled.div`
   align-items: flex-end;
   gap: 20px;
   width: 400px;
-  height: 300px;
+  height: 400px;
   justify-content: flex-end;
+  z-index: 1000;
+  pointer-events: none;
+`;
+
+export const HexContainer = styled(Container)`
+  height: 55px;
+  width: 600px;
+  max-width: 95vw;
+  overflow-y: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 `;
 
 export const LegendContainer = styled.div`
@@ -19,15 +32,14 @@ export const LegendContainer = styled.div`
   flex-direction: column;
   align-content: flex-end;
   justify-content: space-between;
-
-  z-index: 1000;
   background-color: white;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 
   width: 330px;
-  height: 300px;
+  height: 350px;
+  pointer-events: auto;
 `
 
 export const Toggle = styled.div`
@@ -97,6 +109,8 @@ export const ToggleButton = styled.button`
   z-index: 1000;
   text-transform: uppercase;
   font-size: 10px;
+  pointer-events: auto;
+  cursor: pointer;
 `;
 
 export const CloseButton = styled.div`
@@ -109,4 +123,13 @@ export const CloseButton = styled.div`
       stroke: black;
     }
   }
+`;
+
+export const NoCensusData = styled.div`
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
 `;

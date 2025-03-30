@@ -15,7 +15,10 @@ const Properties = () => {
       return mortgages.some(mortgage => mortgage.proj_num === parseInt(selectedProperty));
     });
   } else if (highlightedIds.length > 0) {
-    emphasizedProperties = properties.filter(property => highlightedIds.includes(property.properties.mortgages[0].proj_num));
+    emphasizedProperties = properties.filter(property => {
+      const { mortgages } = property.properties;
+      return mortgages.map(d => d.proj_num).some(proj_num => highlightedIds.includes(proj_num));
+    });
   }
 
 
