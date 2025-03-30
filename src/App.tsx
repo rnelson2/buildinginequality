@@ -37,7 +37,7 @@ const App = () => {
   return (
     <Styled.App>
       <Styled.GlobalStyle />
-      <Router>
+      <Router basename={'/'}>
         <MapStateContext.Provider
           value={{
             map,
