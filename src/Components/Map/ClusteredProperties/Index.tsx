@@ -18,14 +18,11 @@ const ClusteredProperties = () => {
     return sorted[index] || 1;
   }
 
-  // If no data, return empty
-  if (!data || data.length === 0) {
-    return null;
-  }
-
-
   // Filter for only visible features and calculate max units
   const { visibleFeatures, maxUnits } = useMemo(() => {
+    if (!data || data.length === 0) {
+      return { visibleFeatures: [], maxUnits: 100 };
+    }
     const visible = data.filter(feature => {
       const coords = feature.geometry.coordinates[0];
       return coords.some(([lng, lat]) => visibleBounds.contains([lat, lng]));
@@ -34,6 +31,14 @@ const ClusteredProperties = () => {
     const maxUnits = getEffectiveMax(unitsArray, 0.95);
     return { visibleFeatures: visible, maxUnits };
   }, [data, map]);
+
+  // If no data, return empty
+  if (!data || data.length === 0) {
+    return null;
+  }
+
+
+
 
   // Color function based on proportion of max
   const getColor = (units: number) => {
