@@ -18,6 +18,11 @@ const ClusteredProperties = () => {
     return sorted[index] || 1;
   }
 
+  // If no data, return empty
+  if (!data || data.length === 0) {
+    return null;
+  }
+
 
   // Filter for only visible features and calculate max units
   const { visibleFeatures, maxUnits } = useMemo(() => {
