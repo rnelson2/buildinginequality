@@ -191,3 +191,15 @@ interface CityStats {
   totalAmount: number;
   properties: CityProperty[];
 }
+
+export interface H3HexFeature {
+  type: "Feature";
+  properties: {
+    h3_index: string;   // The H3 cell index (e.g., '85283473fffffff')
+    units: number;      // Total apartment units in this hex
+  };
+  geometry: {
+    type: "Polygon";
+    coordinates: [number, number][][]; // GeoJSON: [lng, lat] for each ring
+  };
+}

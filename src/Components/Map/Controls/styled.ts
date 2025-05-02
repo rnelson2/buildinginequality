@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const HexContainer = styled(Container)`
-  height: 55px;
+  height: 75px;
   width: 600px;
   max-width: 95vw;
   overflow-y: auto;

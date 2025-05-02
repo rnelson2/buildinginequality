@@ -5,6 +5,7 @@ import { scaleLinear } from "d3-scale";
 import { modifyHash, getColor } from "../../../utilities";
 import { useURLState, useVisiblePropertiesStats } from "../../../hooks";
 import CloseButton from "../../Buttons/Close";
+import HexbinLegend from "./HexbinLegend/Index";
 
 const Controls = () => {
   const { hash, mapview, pathname, hideCensusTracts, zoom } = useURLState();
@@ -24,8 +25,14 @@ const Controls = () => {
     .range([incomeSectionWidth / 2, symbolsWidth - incomeSectionWidth / 2]);
   const raceTicks = [0, 25, 50, 75, 100];
 
-  if (zoom <= 8) {
-    return <Styled.HexContainer>Each hexagon represents multiple apartment properties within a certain area. The size of the hexagon reflects the total number of apartment units it contains—larger hexagons indicate more units in that part of the map.</Styled.HexContainer>;
+  if (zoom <= 10) {
+
+    return (
+      <Styled.HexContainer>
+        <HexbinLegend maxUnits={maxIncome} width={symbolsWidth} height={12} ticks={5} />;
+      </Styled.HexContainer>
+    );
+    //return <Styled.HexContainer>Each hexagon represents multiple apartment properties grouped loosely by location. Its size reflects the total number of apartment units—larger hexagons indicate more units in that general area. At lower zoom levels, hexagons may appear between familiar cities; their placement reflects spatial clustering rather than exact geography.</Styled.HexContainer>;
   }
 
   return (

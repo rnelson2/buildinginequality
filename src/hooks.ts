@@ -97,6 +97,28 @@ export function useProperties() {
   return { data, loading };
 }
 
+export function useHexbins(zoom: number) {
+  const [data, setData] = useState<Types.H3HexFeature[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchHexbins = async () => {
+      try {
+        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.H3HexFeature[] }>(`/hexbins/h3_hexbin_zoom_${zoom}.geojson`);
+
+        setData(response.data.features);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchHexbins();
+  }, [zoom]);
+
+  return { data, loading };
+}
+
 export function useNoAddressProperties() {
   const [data, setData] = useState<Types.NoAddressFeature[]>([]);
   const [loading, setLoading] = useState<boolean>(true);

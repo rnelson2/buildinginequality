@@ -47,9 +47,9 @@ const Map = () => {
           url="https://s3.amazonaws.com/dsl-general/sanborns/{z}/{x}/{y}.png"
           maxNativeZoom={20}
         /> */}
-        {zoom >= 9 && <CensusTracts /> }
-        {zoom >= 9 && <Properties />}
-        {zoom < 9 && <ClusteredProperties />}
+        {zoom >= 11 && <CensusTracts /> }
+        {zoom >= 11 && <Properties />}
+        {zoom < 11 && <ClusteredProperties />}
         <ZoomControl position="bottomright" /> 
       </MapContainer>
 

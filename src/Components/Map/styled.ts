@@ -21,7 +21,7 @@ export const Map = styled.div`
   }
 
   .leaflet-control-zoom {
-    bottom: 80px;
+    bottom: 100px;
     right: 10px;
   }
 `;
