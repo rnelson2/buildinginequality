@@ -1,10 +1,17 @@
 import React, { useContext, useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import { useLocation, matchPath, useParams } from "react-router-dom";
-import * as L from 'leaflet';
-import * as Types from './index.d';
-import * as Contexts from './Contexts';
-import * as Constants from './constants';
+import * as L from "leaflet";
+import * as Types from "./index.d";
+import * as Contexts from "./Contexts";
+import * as Constants from "./constants";
+
+const propertiesDataCache = new Map<"properties", Types.Feature[]>();
+const inFlightPropertyRequest = new Map<"properties", Promise<Types.Feature[]>>();
+const citiesDataCache = new Map<"cities", Types.CityFeature[]>();
+const inFlightCitiesRequest = new Map<"cities", Promise<Types.CityFeature[]>>();
+const hexbinsDataCache = new Map<number, Types.H3HexFeature[]>();
+const inFlightHexbinRequest = new Map<number, Promise<Types.H3HexFeature[]>>();
 
 /**
  * Get the selected section (e.g. map, areadescriptions, introduction) from the url
@@ -12,10 +19,9 @@ import * as Constants from './constants';
  */
 export function useSelectedProperty() {
   const { pathname } = useLocation();
-  const selectedVizMatch = matchPath('/:selectedProperty/*', pathname);
-  return (selectedVizMatch) ? selectedVizMatch.params.selectedProperty : undefined;
+  const selectedVizMatch = matchPath("/:selectedProperty/*", pathname);
+  return selectedVizMatch ? selectedVizMatch.params.selectedProperty : undefined;
 }
-
 
 export const useURLState = () => {
   const { hash, pathname } = useLocation();
@@ -34,25 +40,26 @@ export const useURLState = () => {
 
     if (!hash) return defaultState;
 
-    const hashPairs = hash.replace(/^.*#/, "").split("&").reduce<Record<string, string>>((acc, pair) => {
-      const [key, value] = pair.split("=");
-      if (key && value) acc[key] = value;
-      return acc;
-    }, {});
+    const hashPairs = hash
+      .replace(/^.*#/, "")
+      .split("&")
+      .reduce<Record<string, string>>((acc, pair) => {
+        const [key, value] = pair.split("=");
+        if (key && value) acc[key] = value;
+        return acc;
+      }, {});
 
     return {
       ...defaultState,
       zoom: hashPairs["loc"] ? parseInt(hashPairs["loc"].split("/")[0], 10) || 0 : defaultState.zoom,
-      center: hashPairs["loc"]
-        ? (hashPairs["loc"].split("/").slice(1, 3).map(parseFloat) as [number, number])
-        : defaultState.center,
+      center: hashPairs["loc"] ? (hashPairs["loc"].split("/").slice(1, 3).map(parseFloat) as [number, number]) : defaultState.center,
       mapview: hashPairs["mv"] === "income" ? "income" : defaultState.mapview,
       hideCensusTracts: hashPairs["censusTracts"] === "hide",
     };
   }, [hash, pathname, selectedProperty]);
 };
 
-const useFetchGeoJSON = <T,>(url: string) => {
+const useFetchGeoJSON = <T>(url: string) => {
   const [data, setData] = useState<T[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -74,24 +81,46 @@ const useFetchGeoJSON = <T,>(url: string) => {
   return { data, loading };
 };
 
-
 export function useProperties() {
   const [data, setData] = useState<Types.Feature[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.Feature[] }>(`/points.geojson`);
+    if (propertiesDataCache.has("properties")) {
+      setData(propertiesDataCache.get("properties")!);
+      setLoading(false);
+      return;
+    }
 
-        setData(response.data.features);
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
+    setLoading(true);
+
+    const fetchProperties = () => {
+      if (inFlightPropertyRequest.has("properties")) {
+        // If a request is already in progress, reuse it.
+        return inFlightPropertyRequest.get("properties")!;
       }
+
+      const request = axios.get<{ type: "FeatureCollecton"; features: Types.Feature[] }>(`/points.geojson`).then(response => {
+        // Cache the response data
+        propertiesDataCache.set("properties", response.data.features);
+        inFlightPropertyRequest.delete("properties"); // Clear the in-flight request
+        return response.data.features;
+      });
+
+      inFlightPropertyRequest.set("properties", request);
+      return request;
     };
 
-    fetchProperties();
+    fetchProperties()
+      .then(data => {
+        if (data) {
+          setData(data);
+          setLoading(false);
+        }
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return { data, loading };
@@ -102,18 +131,45 @@ export function useHexbins(zoom: number) {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchHexbins = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.H3HexFeature[] }>(`/hexbins/h3_hexbin_zoom_${zoom}.geojson`);
+    if (hexbinsDataCache.has(zoom)) {
+      setData(hexbinsDataCache.get(zoom)!);
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
 
-        setData(response.data.features);
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
+    const fetchData = () => {
+      if (inFlightHexbinRequest.has(zoom)) {
+        // If a request is already in progress, reuse it.
+        return inFlightHexbinRequest.get(zoom)!;
       }
+
+      const request = axios.get<{ type: "FeatureCollecton"; features: Types.H3HexFeature[] }>(`/hexbins/h3_hexbin_zoom_${zoom}.geojson`).then(response => {
+        // Cache the response data
+        hexbinsDataCache.set(zoom, response.data.features);
+        inFlightHexbinRequest.delete(zoom); // Clear the in-flight request
+        return response.data.features;
+      });
+
+      inFlightHexbinRequest.set(zoom, request);
+      setLoading(true);
+      return request;
     };
 
-    fetchHexbins();
+    fetchData()
+      .then(data => {
+        if (data) {
+          setData(data);
+          setLoading(false);
+        }
+      })
+      .catch(error => {
+        console.error(`Error fetching hexbins for zoom ${zoom}:`, error);
+        setLoading(false);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, [zoom]);
 
   return { data, loading };
@@ -126,7 +182,7 @@ export function useNoAddressProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.NoAddressFeature[] }>(`/no_addresses.geojson`);
+        const response = await axios.get<{ type: "FeatureCollecton"; features: Types.NoAddressFeature[] }>(`/no_addresses.geojson`);
 
         setData(response.data.features);
         setLoading(false);
@@ -148,7 +204,7 @@ export function useClusteredProperties() {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.ClusteredProperties[] }>(`/clustered_points.geojson`);
+        const response = await axios.get<{ type: "FeatureCollecton"; features: Types.ClusteredProperties[] }>(`/clustered_points.geojson`);
 
         setData(response.data.features);
         setLoading(false);
@@ -163,24 +219,48 @@ export function useClusteredProperties() {
   return { data, loading };
 }
 
-
 export function useCities() {
   const [data, setData] = useState<Types.CityFeature[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`/cities.geojson`);
+    if (citiesDataCache.has("cities")) {
+      setData(citiesDataCache.get("cities")!);
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
 
-        setData(response.data.features);
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
+    const fetchProperties = () => {
+      if (inFlightCitiesRequest.has("cities")) {
+        // If a request is already in progress, reuse it.
+        return inFlightCitiesRequest.get("cities")!;
       }
+      const request = axios.get<{ type: "FeatureCollecton"; features: Types.CityFeature[] }>(`/cities.geojson`).then(response => {
+        // Cache the response data
+        citiesDataCache.set("cities", response.data.features);
+        inFlightCitiesRequest.delete("cities"); // Clear the in-flight request
+        return response.data.features;
+      });
+
+      inFlightCitiesRequest.set("cities", request);
+      return request;
     };
 
-    fetchProperties();
+    fetchProperties()
+      .then(data => {
+        if (data) {
+          setData(data);
+          setLoading(false);
+        }
+      })
+      .catch(error => {
+        console.error(`Error fetching cities:`, error);
+        setLoading(false);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   return { data, loading };
@@ -188,15 +268,15 @@ export function useCities() {
 
 export function useCitiesOptions() {
   interface GroupedOption {
-    label: string;       // The group label (e.g., state name)
-    options: Option[];   // The array of selectable items (cities in this case)
+    label: string; // The group label (e.g., state name)
+    options: Option[]; // The array of selectable items (cities in this case)
   }
 
   interface Option {
-    label: string;       // The city name
-    value: string;       // Any unique identifier (we’ll use a link in this case)
+    label: string; // The city name
+    value: string; // Any unique identifier (we’ll use a link in this case)
     geometry: {
-      type: "Polygon";          // The geometry type is a Polygon representing the bounding box
+      type: "Polygon"; // The geometry type is a Polygon representing the bounding box
       coordinates: number[][][]; // The coordinates of the polygon
     }; // The geometry of the city
   }
@@ -242,18 +322,10 @@ export function useCitiesOptions() {
   }
 
   useEffect(() => {
-    const fetchProperties = async () => {
-      try {
-        const response = await axios.get<{ type: 'FeatureCollecton'; features: Types.CityFeature[] }>(`/cities.geojson`);
-
-        setGroupedOptions(prepareMenuData(response.data.features));
-        setLoading(false);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchProperties();
+    if (data) {
+      setGroupedOptions(prepareMenuData(data));
+      setLoading(false);
+    }
   }, [data]);
 
   return { groupedOptions, loading };
@@ -268,9 +340,7 @@ export function useVisibleProperties() {
     if (!map) return [];
 
     const bounds = map.getBounds();
-    return data.filter((property) =>
-      bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
-    );
+    return data.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
   }, [center, zoom, map, data]);
 }
 
@@ -283,9 +353,7 @@ export function useVisibleNoAddressProperties() {
     if (!map) return [];
 
     const bounds = map.getBounds();
-    return data.filter((property) =>
-      bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]])
-    );
+    return data.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
   }, [center, zoom, map, data]);
 }
 
@@ -316,7 +384,7 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.property_state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
-      property.properties.mortgages.forEach((mortgage) => {
+      property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
           hasAddress: true,
           name: mortgage.name || "Unknown",
@@ -337,7 +405,7 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
-      property.properties.mortgages.forEach((mortgage) => {
+      property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
           hasAddress: false,
           name: mortgage.name,
@@ -350,7 +418,7 @@ export function useCityStats(): Types.CityStats[] {
 
     // Convert map to array and sort
     return Array.from(cityMap.values())
-      .map((stats) => ({
+      .map(stats => ({
         ...stats,
         properties: stats.properties.sort((a, b) => b.amount - a.amount), // Sort properties by mortgage amount (desc)
       }))
@@ -369,12 +437,10 @@ export function useVisiblePropertiesStats() {
     }
 
     return {
-      totalUnits: visibleProperties.reduce((acc, property) =>
-        acc + property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0), 0),
+      totalUnits: visibleProperties.reduce((acc, property) => acc + property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0), 0),
       totalProjects: visibleProperties.length,
       maxIncome: Math.max(...visibleProperties.map(property => property.properties.median_income || 0)),
-      maxUnits: Math.max(...visibleProperties.map(property =>
-        property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0))),
+      maxUnits: Math.max(...visibleProperties.map(property => property.properties.mortgages.reduce((units, mortgage) => units + mortgage.units, 0))),
     };
   }, [visibleProperties]);
 }
@@ -388,9 +454,7 @@ export function useVisibleClusteredProperties() {
     if (!map) return [];
 
     // const bounds = map.getBounds();
-    return properties.filter(
-      (property) => property.properties.zoom === Math.max(5, zoom) 
-    );
+    return properties.filter(property => property.properties.zoom === Math.max(5, zoom));
   }, [center, zoom, map, properties]);
 }
 
@@ -415,38 +479,31 @@ export function useCensusTracts() {
   useEffect(() => {
     if (!bounds) return;
 
-    const visibleCounties = Constants.census_tract_bbs.filter((tract) =>
-      bounds.intersects(new L.LatLngBounds(tract.bbox))
-    );
+    const visibleCounties = Constants.census_tract_bbs.filter(tract => bounds.intersects(new L.LatLngBounds(tract.bbox)));
 
     // if every value in visibleTracts is in loadedTracts and vice versa, then we don't need to do anything
-    if (visibleCounties.every((county) => loadedCounties.includes(county.gisjoin)) &&
-      loadedCounties.every((gisjoin) => visibleCounties.map((tract) => tract.gisjoin).includes(gisjoin))) {
+    if (visibleCounties.every(county => loadedCounties.includes(county.gisjoin)) && loadedCounties.every(gisjoin => visibleCounties.map(tract => tract.gisjoin).includes(gisjoin))) {
       setLoading(false);
       return;
     }
 
     // otherwise, make a list of still visible counties, no longer visible counties, and new counties to load
-    const toLoad = visibleCounties.filter((tract) => !loadedCounties.includes(tract.gisjoin));
+    const toLoad = visibleCounties.filter(tract => !loadedCounties.includes(tract.gisjoin));
 
     // prioritize loading new tracts
     if (toLoad.length > 0) {
       const fetchTracts = async () => {
         try {
-          const tractPromises = toLoad.map((tract) =>
-            axios.get<{ type: 'FeatureCollection'; features: Types.CensusFeature[] }>(
-              `/censustracts/${tract.gisjoin}.geojson`
-            )
-          );
+          const tractPromises = toLoad.map(tract => axios.get<{ type: "FeatureCollection"; features: Types.CensusFeature[] }>(`/censustracts/${tract.gisjoin}.geojson`));
           const tractResponses = await Promise.all(tractPromises);
-          const tractData = tractResponses.flatMap((response) => response.data.features);
+          const tractData = tractResponses.flatMap(response => response.data.features);
 
           // Append new tracts using functional updates
-          setCensusTracts((prev) => [...prev, ...tractData]);
-          setLoadedCounties((prev) => [...prev, ...toLoad.map((tract) => tract.gisjoin)]);
+          setCensusTracts(prev => [...prev, ...tractData]);
+          setLoadedCounties(prev => [...prev, ...toLoad.map(tract => tract.gisjoin)]);
           setLoading(false);
         } catch (error) {
-          console.error('Error loading census tracts:', error);
+          console.error("Error loading census tracts:", error);
           setLoading(false);
         }
       };
@@ -454,10 +511,10 @@ export function useCensusTracts() {
       fetchTracts();
     } else {
       // check if there are tracts that are no longer visible and remove them
-      const toRemove = loadedCounties.filter((gisjoin) => !visibleCounties.map((county) => county.gisjoin).includes(gisjoin));
+      const toRemove = loadedCounties.filter(gisjoin => !visibleCounties.map(county => county.gisjoin).includes(gisjoin));
       if (toRemove.length > 0) {
-        setCensusTracts((prev) => prev.filter((tract) => !toRemove.includes(tract.properties.gisjoin.slice(0, 8))));
-        setLoadedCounties((prev) => prev.filter((gisjoin) => !toRemove.includes(gisjoin)));
+        setCensusTracts(prev => prev.filter(tract => !toRemove.includes(tract.properties.gisjoin.slice(0, 8))));
+        setLoadedCounties(prev => prev.filter(gisjoin => !toRemove.includes(gisjoin)));
       }
 
       // if there are no new tracts to load, then just set loading to false
@@ -466,27 +523,24 @@ export function useCensusTracts() {
     }
   }, [map, loadedCounties, center, zoom]); // <-- Include loadedTracts so it re-checks after updates
 
-  return { censusTracts, loading, };
+  return { censusTracts, loading };
 }
 
 export const useMapContext = () => useContext(Contexts.MapStateContext);
 
-
 export const useDimensions = () => {
-  const getDeviceType = (width: number): 'mobile' | 'tablet' | 'desktop' => {
-    if (width < Constants.sizes.tablet) return 'mobile';
-    if (width >= Constants.sizes.tablet && width < Constants.sizes.desktop) return 'tablet';
-    return 'desktop';
+  const getDeviceType = (width: number): "mobile" | "tablet" | "desktop" => {
+    if (width < Constants.sizes.tablet) return "mobile";
+    if (width >= Constants.sizes.tablet && width < Constants.sizes.desktop) return "tablet";
+    return "desktop";
   };
-  
+
   const [viewport, setViewport] = useState(() => {
     const width = window.innerWidth;
     const height = window.innerHeight;
     const device = getDeviceType(width);
     return { width, height, device };
   });
-
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -496,8 +550,8 @@ export const useDimensions = () => {
       setViewport({ width, height, device });
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return viewport;

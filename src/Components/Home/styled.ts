@@ -25,7 +25,7 @@ export const Home = styled.div`
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(20, 20, 40, 0.8); /* your tint here */
+      background-color: rgba(20, 20, 40, 0.85); /* your tint here */
       pointer-events: none;
       z-index: 1;
     }
