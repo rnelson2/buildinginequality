@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import * as Types from "../../index.d";
 import ArrowLeft from "../Buttons/ArrowLeft";
 import * as Styled from "./styled";
-import { useURLState } from "../../hooks";
+import { useURLState, useMapContext } from "../../hooks";
+import { toTitleCase } from "../../utilities";
 
 const Property = ({ property }: { property: Types.Feature }) => {
-  const { hash } = useURLState();
+  const { hash, selectedProperty } = useURLState();
+  const { clearHighlightedIds } = useMapContext();
   const { street, property_city, property_state, white_pop, black_pop, other_pop, median_income, mortgages } = property.properties;
 
   const name = mortgages[0].name || "Unknown";
@@ -32,7 +34,10 @@ const Property = ({ property }: { property: Types.Feature }) => {
   return (
     <Styled.Container>
       {/* Close Button */}
-      <Link to={`/map${hash}`}>
+      <Link
+        to={`/map${hash}`}
+        onClick={() => clearHighlightedIds() }
+      >
         <Styled.CloseButton>
           <ArrowLeft /> Close
         </Styled.CloseButton>
@@ -79,8 +84,26 @@ const Property = ({ property }: { property: Types.Feature }) => {
       {mortgages.length > 0 && (
         <>
           <Styled.SectionHeader>{`Lender${mortgages.length > 1 ? "s" : ""} Information`}</Styled.SectionHeader>
-          {mortgages.map((mortgage, idx) => (
-            <Styled.StatsGrid key={idx}>
+          {mortgages
+            .sort((a, b) => {
+              // if there is no first payment date, treat it as the end of time
+              if (!a.first_payment_date) return 1;
+              if (!b.first_payment_date) return -1;
+              const dateA = new Date(
+                a.first_payment_date.year,
+                a.first_payment_date.month - 1,
+                a.first_payment_date.day
+              );
+              const dateB = new Date(
+                b.first_payment_date.year,
+                b.first_payment_date.month - 1,
+                b.first_payment_date.day
+              );
+
+              return dateA.getTime() - dateB.getTime();
+            })
+            .map((mortgage, idx) => (
+            <Styled.StatsGrid key={idx} $marginBottom={true}>
               {(mortgages.length > 1) && (
                 <>
                   <Styled.SubStatLabel>Loan Amount</Styled.SubStatLabel>
@@ -91,7 +114,7 @@ const Property = ({ property }: { property: Types.Feature }) => {
               {mortgage.holder_name && (
                 <>
                   <Styled.SubStatLabel>Lender</Styled.SubStatLabel>
-                  <Styled.StatValue>{mortgage.holder_name}</Styled.StatValue>
+                  <Styled.StatValue>{toTitleCase(mortgage.holder_name)}</Styled.StatValue>
                 </>
               )}
 

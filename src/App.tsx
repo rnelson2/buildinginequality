@@ -8,6 +8,7 @@ import Sidebar from "./Components/Sidebar/Index";
 import Intro from "./Components/Text/Intro/Index";
 import About from "./Components/Text/About/Index";
 import Menu from "./Components/Menu/Index";
+import Home from "./Components/Home/Index";
 import * as Styled from "./styled";
 import { MapStateContext } from "./Contexts";
 import type { Map as MapT } from "leaflet";
@@ -60,12 +61,13 @@ const App = () => {
             },
           }}
         >
-          <Masthead />
+          
           <Routes>
             <Route
               path="/map/:selectedProperty?"
               element={
                 <>
+                  <Masthead />
                   <Map />
                   <Sidebar />
                   <Menu />
@@ -77,6 +79,7 @@ const App = () => {
               path="/introduction"
               element={
                 <>
+                  <Masthead />
                   <Menu />
                   <Intro />
                 </>
@@ -86,6 +89,7 @@ const App = () => {
               path="/about"
               element={
                 <>
+                  <Masthead />
                   <Menu />
                   <About />
                 </>
@@ -94,9 +98,7 @@ const App = () => {
             <Route
               path="/"
               element={
-                <>
-                  <Menu />
-                </>
+                  <Home />
               }
             />
           </Routes>

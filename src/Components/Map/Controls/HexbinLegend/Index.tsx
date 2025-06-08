@@ -1,50 +1,99 @@
-import React, { useEffect, useRef } from "react";
-import { scaleSequential, interpolateYlOrRd, select, axisBottom, scaleLinear } from "d3";
+import React from "react";
+import { format } from "d3-format";
+import { scaleThreshold } from "d3-scale";
+import * as Styled from "./styled";
+import { getBlueThresholdScale } from "../../../../utilities";
 
 interface HexbinLegendProps {
   maxUnits: number;
   width?: number;
-  height?: number;
-  ticks?: number;
+  steps?: number; // number of bins/colors
 }
 
 const HexbinLegend: React.FC<HexbinLegendProps> = ({
   maxUnits,
-  width = 200,
-  height = 12,
-  ticks = 5,
+  width = 300,
+  steps = 7,
 }) => {
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const axisRef = useRef<SVGSVGElement | null>(null);
+  const label = "Number of Apartment Units";
+  const { domain, range } = getBlueThresholdScale(maxUnits, 7);
 
-  useEffect(() => {
-    const context = canvasRef.current?.getContext("2d");
-    if (!context) return;
+  const fmt = format("~s"); // e.g., 1.2k
 
-    const colorScale = scaleSequential(interpolateYlOrRd).domain([0, maxUnits]);
+  // Build bins: [start, end, color]
+  const bins = [...domain.map((end, i) => ({
+    start: i === 0 ? 0 : domain[i - 1],
+    end,
+    color: range[i],
+  })), {
+    start: domain[domain.length - 1],
+    end: maxUnits,
+    color: range[range.length - 1],
+  }];
 
-    for (let i = 0; i < width; ++i) {
-      const value = (i / width) * maxUnits;
-      context.fillStyle = colorScale(value);
-      context.fillRect(i, 0, 1, height);
-    }
+  const binCount = bins.length;
+  const gap = 10;
+  const totalGap = gap * (binCount - 1);
+  const hexWidth = (width - totalGap) / binCount;
+  const a = hexWidth / 2;
+  const hexHeight = Math.sqrt(3) * a;
 
-    // Draw axis below
-    const svg = select(axisRef.current);
-    const x = scaleLinear().domain([0, maxUnits]).range([0, width]);
-    const axis = axisBottom(x).ticks(ticks).tickSize(4);
-    // @ts-ignore
-    svg.select("g").call(axis);
-  }, [maxUnits, width, height, ticks]);
+  const padding = 10;
+  const labelFontSize = 10;
+  const labelOffset = 4;
+  const textYOffset = labelFontSize;
+  const svgHeight = labelFontSize * 2 + 3 + labelOffset + hexHeight + padding;
 
   return (
-    <div style={{ fontSize: "0.8rem", lineHeight: "1", marginTop: "8px" }}>
-      <div style={{ marginBottom: "4px" }}>Apartment Units (per hex)</div>
-      <canvas ref={canvasRef} width={width} height={height} />
-      <svg width={width} height={20} ref={axisRef}>
-        <g transform="translate(0,0)" />
+    <Styled.Container>
+      <Styled.Label>{label}</Styled.Label>
+      <svg width={width + padding * 2} height={svgHeight}>
+        <g transform={`translate(${padding}, ${labelFontSize + labelOffset})`}>
+          {bins.map(({ start, end, color }, i) => {
+            const cx = a + i * (hexWidth + gap);
+            const cy = hexHeight / 2;
+
+            const points = [
+              [cx + a, cy],
+              [cx + a / 2, cy + (Math.sqrt(3) / 2) * a],
+              [cx - a / 2, cy + (Math.sqrt(3) / 2) * a],
+              [cx - a, cy],
+              [cx - a / 2, cy - (Math.sqrt(3) / 2) * a],
+              [cx + a / 2, cy - (Math.sqrt(3) / 2) * a],
+            ]
+              .map(pt => pt.join(","))
+              .join(" ");
+
+            return (
+              <g key={i}>
+                <text
+                  x={cx}
+                  y={-labelOffset}
+                  textAnchor="middle"
+                  fontSize={labelFontSize}
+                >
+                  {`${fmt(start)}-`}
+                  <tspan
+                    x={cx}
+                    dy={labelFontSize + 3}
+                  >
+                    {fmt(end)}
+                  </tspan>
+                </text>
+                <polygon
+                  points={points}
+                  fill={color}
+                  stroke="#666"
+                  strokeWidth={0.5}
+                  fillOpacity={0.6}
+                  transform={`translate(0, ${labelFontSize + 3})`}
+                />
+              </g>
+            );
+          })}
+        </g>
       </svg>
-    </div>
+    </Styled.Container>
   );
 };
 

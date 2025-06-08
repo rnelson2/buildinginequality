@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { scaleLinear, scaleSqrt } from "d3";
 import { getColor } from "../../utilities";
 import * as Types from "../../index.d";
@@ -11,7 +12,7 @@ export type FeatureWithRacialData = Omit<Types.Feature, "properties"> & {
 };
 
 const Chart = ({ properties }: { properties: Types.Feature[] }) => {
-  const { mapview } = useURLState();
+  const { mapview, zoom, hash } = useURLState();
   const propertiesWithRacialData: FeatureWithRacialData[] = properties.filter((d): d is FeatureWithRacialData => !!(d.properties.gisjoin && d.properties.white_pop != null && d.properties.black_pop != null && d.properties.other_pop != null && d.properties.median_income != null));
 
   // combine properities with the same racial and income data, and sum their units
@@ -23,6 +24,7 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
     white_pop: number;
     black_pop: number;
     other_pop: number;
+    proj_num: number;
   }[] = [];
   
   propertiesWithRacialData.forEach((feature) => {
@@ -35,6 +37,7 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
       racial_and_income_data.push({
         gisjoin,
         units: mortgages.reduce((sum, m) => sum + (m.units || 0), 0),
+        proj_num: mortgages[0].proj_num,
         median_income,
         white_pop,
         black_pop,
@@ -68,7 +71,7 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
   // use d3 to calculate y axis tick marks
   const yTicks = yScale.ticks(5);
 
-  if (racial_and_income_data.length === 0) {
+  if (racial_and_income_data.length === 0 || zoom < 11) {
     return null;
   }
 
@@ -154,6 +157,11 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
         {racial_and_income_data.map((property, i) => {
           const y = yScale(property.median_income);
           return (
+            <Link
+              key={`chartdot-${property.white_pop}-${property.black_pop}-${property.other_pop}-${property.median_income}`}
+              to={`/map/${property.proj_num}${hash}`}
+              style={{ textDecoration: "none" }}
+            >
             <circle
               key={`chartdot-${property.white_pop}-${property.black_pop}-${property.other_pop}-${property.median_income}`}
               cx={xScale(property.white_pop / (property.white_pop + property.black_pop + property.other_pop))}
@@ -163,7 +171,8 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
               fillOpacity={0.3}
               stroke={getColor({ properties: property }, mapview, { maxIncome })}
               strokeWidth={0.5}
-            />
+              />
+            </Link>
           );
         })}
       </g>

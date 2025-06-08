@@ -32,9 +32,9 @@ const City: React.FC<CityProps> = ({ city, complexes, totalUnits, totalAmount, p
       </Styled.StatsGrid>
 
       {/* Toggle Button */}
-      <Styled.ToggleButton isExpanded={isExpanded} onClick={() => setIsExpanded((prev) => !prev)}>
+      <Styled.ToggleButton $isExpanded={isExpanded} onClick={() => setIsExpanded((prev) => !prev)}>
         {isExpanded ? "Hide Details" : "Show Details"}
-        <Styled.Caret isExpanded={isExpanded} />
+        <Styled.Caret $isExpanded={isExpanded} />
       </Styled.ToggleButton>
 
       {/* Expanded Table */}

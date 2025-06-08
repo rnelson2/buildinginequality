@@ -292,7 +292,6 @@ export function useVisibleNoAddressProperties() {
 export function useCityStats(): Types.CityStats[] {
   const visibleProperties = useVisibleProperties(); // Properties with addresses
   const noAddressProperties = useVisibleNoAddressProperties(); // Properties without addresses
-  console.log(noAddressProperties);
 
   const cityStats = useMemo(() => {
     const cityMap = new Map<string, Types.CityStats>();

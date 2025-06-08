@@ -1,5 +1,27 @@
 import * as Types from './index.d';
 import { scaleLinear } from 'd3';
+import { scaleThreshold } from "d3-scale";
+
+export function getBlueThresholdScale(maxUnits: number, steps: 5 | 7 | 9 = 7) {
+  const colorRange = {
+    5: ["#deebf7", "#9ecae1", "#6baed6", "#3182bd", "#08519c"],
+    7: ["#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#084594"],
+    9: ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"],
+  }[steps];
+
+  const binCount = colorRange.length;
+
+  // Create evenly spaced bin edges (excluding 0 and maxUnits)
+  const domain = Array.from({ length: binCount - 1 }, (_, i) =>
+    Math.round(((i + 1) / binCount) * maxUnits)
+  );
+
+  const scale = scaleThreshold<number, string>()
+    .domain(domain)
+    .range(colorRange);
+
+  return { scale, domain, range: colorRange };
+}
 
 /**
  * Gets the hash from the url and parse it into a key-value object
@@ -95,4 +117,12 @@ export function polygonToBounds(polygon: { type: "Polygon"; coordinates: [number
 
   // Return the bounds in Leaflet's format
   return [[minLat, minLng], [maxLat, maxLng]] as [[number, number], [number, number]];
+}
+
+export function toTitleCase(str: string): string {
+  return str
+    .toLowerCase()
+    .split(/\s+/) // splits on whitespace
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 }

@@ -6,7 +6,7 @@ import { getColor } from "../../../../utilities";
 import * as Styled from "./styled";
 import { Feature } from "../../../../index.d";
 
-const Property = ({ property }: { property: Feature}) => {
+const Property = ({ property }: { property: Feature }) => {
   const properties = useVisibleProperties();
   const { hash, selectedProperty, mapview } = useURLState();
   const { highlightedIds } = useMapContext();
@@ -20,22 +20,16 @@ const Property = ({ property }: { property: Feature}) => {
   // function to size the circle markers based on the number of units
   const radius = useMemo(() => Math.sqrt(units) * 0.5, [units]);
 
-  const isEmphasized = useMemo(
-    () => {
-      const isSelected = parseInt(selectedProperty || "") === proj_num;
-      const isHighlighted = highlightedIds.includes(proj_num);
-      return isSelected || isHighlighted;
-    },
-    [selectedProperty, highlightedIds]
-  )
+  const isEmphasized = useMemo(() => {
+    const isSelected = parseInt(selectedProperty || "") === proj_num;
+    const isHighlighted = highlightedIds.includes(proj_num);
+    return isSelected || isHighlighted;
+  }, [selectedProperty, highlightedIds]);
 
-  const fillOpacity = useMemo(
-    () => {
-      const notthingSelected = !selectedProperty && highlightedIds.length === 0;
-      return notthingSelected || isEmphasized ? 0.6 : 0.3;
-    },
-    [isEmphasized]
-  );
+  const fillOpacity = useMemo(() => {
+    const notthingSelected = !selectedProperty && highlightedIds.length === 0;
+    return notthingSelected || isEmphasized ? 0.6 : 0.3;
+  }, [isEmphasized, selectedProperty]);
 
   // get the max income for the income color scale
   const maxIncome = useMemo(() => {
@@ -58,26 +52,25 @@ const Property = ({ property }: { property: Feature}) => {
     }
   }, [fillColor]);
 
-
   return (
-        <CircleMarker
-        ref={circleRef}
-          center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
-          fillColor={fillColor}
-          color={getColor(property, mapview, { maxIncome })}
-          weight={1}
-          fillOpacity={fillOpacity}
-          radius={radius}
-          eventHandlers={{
-            click: () => {
-              if (parseInt(selectedProperty || "-9999999") === property.properties.mortgages[0].proj_num) {
-                navigate(`/map${hash}`);
-              } else {
-                navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
-              }
-            },
-          }}
-        />
+    <CircleMarker
+      ref={circleRef}
+      center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
+      fillColor={fillColor}
+      color={getColor(property, mapview, { maxIncome })}
+      weight={1}
+      fillOpacity={fillOpacity}
+      radius={radius}
+      eventHandlers={{
+        click: () => {
+          if (parseInt(selectedProperty || "-9999999") === property.properties.mortgages[0].proj_num) {
+            navigate(`/map${hash}`);
+          } else {
+            navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
+          }
+        },
+      }}
+    />
   );
 };
 

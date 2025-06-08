@@ -2,7 +2,8 @@ import React, { useMemo } from "react";
 import {  GeoJSON } from "react-leaflet";
 import { useHexbins, useURLState, useMapContext } from "../../../hooks";
 import { LatLngBounds } from "leaflet";
-import { scaleSequential, interpolateYlOrRd } from "d3";
+import { scaleSequential, interpolateBlues, max } from "d3";
+import { getBlueThresholdScale } from "../../../utilities";
 
 const ClusteredProperties = () => {
   const { mapview, zoom } = useURLState();
@@ -30,7 +31,7 @@ const ClusteredProperties = () => {
     const unitsArray = visible.map(f => f.properties.units);
     const maxUnits = getEffectiveMax(unitsArray, 0.95);
     return { visibleFeatures: visible, maxUnits };
-  }, [data, map]);
+  }, [data, map, zoom, visibleBounds]);
 
   // If no data, return empty
   if (!data || data.length === 0) {
@@ -51,8 +52,8 @@ const ClusteredProperties = () => {
     return `rgba(${r},${g},${b},${alpha})`;
   };
 
-  const colorScale = scaleSequential(interpolateYlOrRd).domain([0, maxUnits]);
-
+  //const colorScale = scaleSequential(interpolateBlues).domain([0, maxUnits]);
+  const { scale: colorScale } = getBlueThresholdScale(maxUnits);
   return (
     <>
       {visibleFeatures.map(property => (
@@ -61,7 +62,7 @@ const ClusteredProperties = () => {
           data={property}
           style={{
             fillColor: colorScale(property.properties.units),
-            color: '#999',
+            color: '#bbb',
             weight: 1,
             fillOpacity: 0.6,
           }}

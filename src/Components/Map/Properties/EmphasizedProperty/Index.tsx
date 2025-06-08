@@ -1,17 +1,14 @@
 import React, { useMemo, useEffect, useRef } from "react";
 import * as d3 from "d3";
-import { useNavigate } from "react-router-dom";
 import { useVisibleProperties, useURLState, useMapContext } from "../../../../hooks";
 import { getColor } from "../../../../utilities";
 import { CircleMarker } from "react-leaflet";
-import type { CircleMarker as CircleMarkerType } from "leaflet";
 import { Feature } from "../../../../index.d";
 
 const Properties = ({ property }: { property: Feature }) => {
   const properties = useVisibleProperties();
   const { selectedProperty, mapview } = useURLState();
   const { highlightedIds } = useMapContext();
-  const navigate = useNavigate();
   const circleRef = useRef<any>(null);
 
   const { mortgages } = property.properties;
@@ -62,6 +59,10 @@ const Properties = ({ property }: { property: Feature }) => {
   useEffect(() => {
     animatePulse();
   }, [baseRadius]);
+
+  if (!isEmphasized) {
+    return null;
+  }
 
   return (
     <CircleMarker

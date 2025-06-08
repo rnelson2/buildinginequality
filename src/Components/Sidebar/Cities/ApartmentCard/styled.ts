@@ -17,14 +17,14 @@ export const StatLabel = styled.div`
 `;
 
 export const SubStatLabel = styled(StatLabel)`
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 2em;
 `;
 
 // Value (Bold & Black)
 export const StatValue = styled.div`
   grid-column: 2 / span 1;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #222;
   text-align: right;

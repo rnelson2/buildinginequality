@@ -57,11 +57,12 @@ export const SectionHeader = styled.h3`
 `;
 
 // Grid for Stats
-export const StatsGrid = styled.div`
+export const StatsGrid = styled.div<{ $marginBottom?: boolean }>`
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8px 12px;
   padding-bottom: 12px;
+  margin-bottom: ${({ $marginBottom }) => ($marginBottom ? "2em" : "0")};
 `;
 
 // Label (Gray)
@@ -77,7 +78,7 @@ export const SubStatLabel = styled(StatLabel)`
 
 // Value (Bold & Black)
 export const StatValue = styled.div`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #222;
   text-align: right;

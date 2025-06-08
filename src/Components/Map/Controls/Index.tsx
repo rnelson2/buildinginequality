@@ -9,7 +9,7 @@ import HexbinLegend from "./HexbinLegend/Index";
 
 const Controls = () => {
   const { hash, mapview, pathname, hideCensusTracts, zoom } = useURLState();
-  const { maxIncome } = useVisiblePropertiesStats();
+  const { maxIncome, maxUnits } = useVisiblePropertiesStats();
   const [open, setOpen] = useState(false);
 
   const symbolsWidth = 180;
@@ -29,7 +29,7 @@ const Controls = () => {
 
     return (
       <Styled.HexContainer>
-        <HexbinLegend maxUnits={maxIncome} width={symbolsWidth} height={12} ticks={5} />;
+        <HexbinLegend maxUnits={maxUnits} />
       </Styled.HexContainer>
     );
     //return <Styled.HexContainer>Each hexagon represents multiple apartment properties grouped loosely by location. Its size reflects the total number of apartment units—larger hexagons indicate more units in that general area. At lower zoom levels, hexagons may appear between familiar cities; their placement reflects spatial clustering rather than exact geography.</Styled.HexContainer>;

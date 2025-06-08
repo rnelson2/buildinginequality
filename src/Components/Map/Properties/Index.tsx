@@ -21,6 +21,7 @@ const Properties = () => {
     });
   }
 
+  console.log(properties);
 
   return (
     <>

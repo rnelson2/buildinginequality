@@ -96,24 +96,24 @@ export const StatValue = styled.div`
 `;
 
 // Caret Icon (SVG)
-export const Caret = styled.div<{ isExpanded: boolean }>`
+export const Caret = styled.div<{ $isExpanded: boolean }>`
   width: 10px;
   height: 10px;
   border-left: 2px solid #555;
   border-bottom: 2px solid #555;
-  transform: ${({ isExpanded }) => (isExpanded ? "rotate(135deg)" : "rotate(-45deg)")};
+  transform: ${({ $isExpanded }) => ($isExpanded ? "rotate(135deg)" : "rotate(-45deg)")};
   transition: transform 0.2s ease-in-out;
 `;
 
 // Toggle Button
-export const ToggleButton = styled.button<{ isExpanded: boolean }>`
-  ${p => !p.isExpanded && `  
+export const ToggleButton = styled.button<{ $isExpanded: boolean }>`
+  ${p => !p.$isExpanded && `  
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
   `}
-  ${p => p.isExpanded && `  
+  ${p => p.$isExpanded && `  
     margin: 0 auto;
   `}
   background: white;

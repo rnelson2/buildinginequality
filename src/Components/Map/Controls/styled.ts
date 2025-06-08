@@ -17,14 +17,15 @@ export const Container = styled.div`
 `;
 
 export const HexContainer = styled(Container)`
-  height: 75px;
-  width: 600px;
+  height: 90px;
+  width: 320px;
   max-width: 95vw;
   overflow-y: auto;
   background-color: white;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 `;
 
 export const LegendContainer = styled.div`
