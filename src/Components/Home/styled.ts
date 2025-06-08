@@ -13,7 +13,7 @@ export const Home = styled.div`
     font-size: 1em;
     line-height: 1.5;
     overflow: auto;
-    background-image: url(${process.env.PUBLIC_URL}/GlenOaksVillage1600.jpeg);
+    background-image: url(/GlenOaksVillage1600.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
