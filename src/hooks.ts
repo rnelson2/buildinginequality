@@ -144,7 +144,7 @@ export function useHexbins(zoom: number) {
         return inFlightHexbinRequest.get(zoom)!;
       }
 
-      const request = axios.get<{ type: "FeatureCollecton"; features: Types.H3HexFeature[] }>(`/hexbins/h3_hexbin_zoom_${zoom}.geojson`).then(response => {
+      const request = axios.get<{ type: "FeatureCollection"; features: Types.H3HexFeature[] }>(`/hexbins/h3_hexbin_zoom_${zoom}.geojson`).then(response => {
         // Cache the response data
         hexbinsDataCache.set(zoom, response.data.features);
         inFlightHexbinRequest.delete(zoom); // Clear the in-flight request

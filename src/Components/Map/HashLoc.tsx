@@ -16,7 +16,7 @@ const HashLoc = (): null => {
 
   const updateLocation = () => {
     if (!map) return;
-    
+
     const currentCenter = map.getCenter();
     const currentZoom = map.getZoom();
     const possibleNewLoc = `${currentZoom}/${Math.round(currentCenter.lat * 10000) / 10000}/${Math.round(currentCenter.lng * 10000) / 10000}`;
@@ -31,6 +31,7 @@ const HashLoc = (): null => {
   // Update location on map move
   useMapEvent("moveend", () => {
     if (updateHash.current) clearTimeout(updateHash.current);
+
     updateHash.current = setTimeout(updateLocation, 300);
   });
 

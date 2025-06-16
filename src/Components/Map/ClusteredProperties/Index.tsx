@@ -2,7 +2,6 @@ import React, { useMemo } from "react";
 import {  GeoJSON } from "react-leaflet";
 import { useHexbins, useURLState, useMapContext } from "../../../hooks";
 import { LatLngBounds } from "leaflet";
-import { scaleSequential, interpolateBlues, max } from "d3";
 import { getBlueThresholdScale } from "../../../utilities";
 
 const ClusteredProperties = () => {
