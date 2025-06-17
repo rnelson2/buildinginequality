@@ -2,6 +2,7 @@ import React from "react";
 import Property from "./Property/Index";
 import EmphasizedProperty from "./EmphasizedProperty/Index";
 import { useVisibleProperties, useURLState, useMapContext } from "../../../hooks";
+import * as Styled from "./styled";
 
 const Properties = () => {
   const properties = useVisibleProperties();
@@ -21,7 +22,9 @@ const Properties = () => {
     });
   }
 
-  console.log(properties);
+  if (properties.length === 0) {
+    return <Styled.NoProperties>Street addresses for any properties in this area have not yet been located. Zoom out to see aggregated and approximate locations. Data about these properties is available in the sidebar.</Styled.NoProperties>;
+  }
 
   return (
     <>

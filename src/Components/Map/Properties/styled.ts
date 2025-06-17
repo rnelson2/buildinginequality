@@ -16,3 +16,19 @@ export const PulsingCircle = styled(CircleMarker)<{ $isEmphasized: boolean }>`
       transform-origin: center;
     `}
 `;
+
+export const NoProperties = styled.div`
+  grid-area: map;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  color: #aaa;
+  text-align: center;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  border-radius: 3px;
+  z-index: 1000;
+`; 

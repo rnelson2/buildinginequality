@@ -13,6 +13,29 @@ const inFlightCitiesRequest = new Map<"cities", Promise<Types.CityFeature[]>>();
 const hexbinsDataCache = new Map<number, Types.H3HexFeature[]>();
 const inFlightHexbinRequest = new Map<number, Promise<Types.H3HexFeature[]>>();
 
+function bboxForHex(hexbin: GeoJSON.Feature): L.LatLngBounds {
+  // reuse cached bbox if present
+  if ((hexbin as any)._bbox) return (hexbin as any)._bbox;
+
+  let minLat = 90, minLng = 180;
+  let maxLat = -90, maxLng = -180;
+
+  // works for Polygon; if MultiPolygon flatten first
+  for (const [lng, lat] of (hexbin.geometry as any).coordinates[0]) {
+    if (lat < minLat) minLat = lat;
+    if (lat > maxLat) maxLat = lat;
+    if (lng < minLng) minLng = lng;
+    if (lng > maxLng) maxLng = lng;
+  }
+
+  const bbox = L.latLngBounds(
+    [minLat, minLng],   // south-west
+    [maxLat, maxLng]    // north-east
+  );
+  (hexbin as any)._bbox = bbox;      // cache on the feature
+  return bbox;
+}
+
 /**
  * Get the selected section (e.g. map, areadescriptions, introduction) from the url
  * @returns The area of the site being viewed or undefined for the index
@@ -342,6 +365,19 @@ export function useVisibleProperties() {
     const bounds = map.getBounds();
     return data.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
   }, [center, zoom, map, data]);
+}
+
+export function useVisibleHexbins() {
+  const { center, zoom } = useURLState();
+  const { data } = useHexbins(zoom); 
+  const { map } = useMapContext();
+  return useMemo(() => {
+    if (!map) return [];
+
+    const bounds = map.getBounds();
+    return data.filter(hex => bounds.intersects(bboxForHex(hex)));
+  }, [center, zoom, map, data]);
+
 }
 
 export function useVisibleNoAddressProperties() {

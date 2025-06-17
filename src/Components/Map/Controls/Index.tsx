@@ -12,6 +12,8 @@ const Controls = () => {
   const { maxIncome, maxUnits } = useVisiblePropertiesStats();
   const [open, setOpen] = useState(false);
 
+  console.log("maxUnits", maxUnits);
+
   const symbolsWidth = 180;
 
   const incomeScale = scaleLinear().domain([0, maxIncome]).range([0, symbolsWidth]);
@@ -29,7 +31,7 @@ const Controls = () => {
 
     return (
       <Styled.HexContainer>
-        <HexbinLegend maxUnits={maxUnits} />
+        <HexbinLegend />
       </Styled.HexContainer>
     );
     //return <Styled.HexContainer>Each hexagon represents multiple apartment properties grouped loosely by location. Its size reflects the total number of apartment units—larger hexagons indicate more units in that general area. At lower zoom levels, hexagons may appear between familiar cities; their placement reflects spatial clustering rather than exact geography.</Styled.HexContainer>;

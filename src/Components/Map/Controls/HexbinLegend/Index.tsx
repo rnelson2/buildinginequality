@@ -3,18 +3,19 @@ import { format } from "d3-format";
 import { scaleThreshold } from "d3-scale";
 import * as Styled from "./styled";
 import { getBlueThresholdScale } from "../../../../utilities";
+import { useVisibleHexbins } from "../../../../hooks";
 
 interface HexbinLegendProps {
-  maxUnits: number;
   width?: number;
   steps?: number; // number of bins/colors
 }
 
 const HexbinLegend: React.FC<HexbinLegendProps> = ({
-  maxUnits,
   width = 300,
   steps = 7,
 }) => {
+  const hexbins = useVisibleHexbins();
+  const maxUnits = hexbins.reduce((max, bin) => Math.max(max, bin.properties.units), 0);
   const label = "Number of Apartment Units";
   const { domain, range } = getBlueThresholdScale(maxUnits, 7);
 
