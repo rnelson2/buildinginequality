@@ -19,7 +19,7 @@ const HexbinLegend: React.FC<HexbinLegendProps> = ({
   const label = "Number of Apartment Units";
   const { domain, range } = getBlueThresholdScale(maxUnits, 7);
 
-  const fmt = format("~s"); // e.g., 1.2k
+  const fmt = format(".2s"); // e.g., 1.2k
 
   // Build bins: [start, end, color]
   const bins = [...domain.map((end, i) => ({
