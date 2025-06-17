@@ -5,9 +5,9 @@ import { useMapContext, useURLState } from "../../hooks";
 
 /**
  * if the url is just /map with no zoom and center and not state, then set the view to show
- * the continental US.
+ * the  US.
  */
-const ContinentalUSZoomAndCenter = (): null => {
+const USZoomAndCenter = (): null => {
   const map = useMap();
   const { map: theMap, setMap } = useMapContext();
   const { hash, pathname } = useURLState();
@@ -29,13 +29,13 @@ const ContinentalUSZoomAndCenter = (): null => {
   }, [theMap, map, setMap]);
 
   useEffect(() => {
-    // initialize the zoom to show the continental US
+    // initialize the zoom to show the  US
     if (!loc && theMap) {
-      theMap.fitBounds([[49, -124.725], [25.17, -66.96]]);
+      theMap.fitBounds([[68.77, -169.38], [17.231, -66.96]]);
     }
   }, [theMap, loc]);
 
   return null;
 };
 
-export default ContinentalUSZoomAndCenter;
+export default USZoomAndCenter;

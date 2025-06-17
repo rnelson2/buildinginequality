@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { TileLayer, MapContainer, ZoomControl } from "react-leaflet";
 import * as Styled from "./styled";
-import ContinentalUSZoomAndCenter from "./ContinentalUSZoomAndCenter";
+import USZoomAndCenter from "./USZoomAndCenter";
 import HashLoc from "./HashLoc";
 import DeselectProperty from "./DeselectProperty";
 import "leaflet/dist/leaflet.css";
@@ -34,9 +34,11 @@ const Map = () => {
         zoom={zoom}
         style={{ height: '100%', width: '100%' }}
         maxZoom={21}
+        minZoom={1}
+        maxBounds={[[68.77, -169.38], [17.231, -66.96]]}
         zoomControl={false} 
       >
-        <ContinentalUSZoomAndCenter />
+        <USZoomAndCenter />
         <HashLoc />
         <DeselectProperty />
         <TileLayer
