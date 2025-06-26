@@ -137,7 +137,7 @@ export function useProperties() {
     fetchProperties()
       .then(data => {
         if (data) {
-          setData(data.filter(property => property.properties.mortgages.length > 0)); // Filter out properties without mortgages
+          setData(data.filter(property => property.properties.mortgages.length > 0 && property.properties.mortgages[0].proj_num)); // Filter out properties without mortgages
           setLoading(false);
         }
       })
