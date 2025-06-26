@@ -193,7 +193,7 @@
         "coordinates": [
           [
             [
-              -84.39416098599997,
+              -9384676.462,
               33.716433479000045
             ],
             [
@@ -202,14 +202,14 @@
             ],
             [
               -84.27175876499996,
-              33.88860644500005
+              3999953.916
             ],
             [
-              -84.39416098599997,
-              33.88860644500005
+              -9384676.462,
+              3999953.916
             ],
             [
-              -84.39416098599997,
+              -9384676.462,
               33.716433479000045
             ]
           ]
@@ -218,9 +218,9 @@
       "properties": {
         "property_city": "Atlanta",
         "property_state": "GA",
-        "num_of_properties": 9,
-        "num_of_units": 1802,
-        "total_mortgage": 12041500
+        "num_of_properties": 10,
+        "num_of_units": 1862,
+        "total_mortgage": 12581500
       }
     },
     {
@@ -304,7 +304,7 @@
         "coordinates": [
           [
             [
-              -78.88177404499999,
+              -8222650.125,
               42.852425167000035
             ],
             [
@@ -313,14 +313,14 @@
             ],
             [
               -78.81205009199994,
-              42.973342795000065
+              5017920.388
             ],
             [
-              -78.88177404499999,
-              42.973342795000065
+              -8222650.125,
+              5017920.388
             ],
             [
-              -78.88177404499999,
+              -8222650.125,
               42.852425167000035
             ]
           ]
@@ -329,9 +329,9 @@
       "properties": {
         "property_city": "Buffalo",
         "property_state": "NY",
-        "num_of_properties": 9,
-        "num_of_units": 922,
-        "total_mortgage": 7568800
+        "num_of_properties": 10,
+        "num_of_units": 996,
+        "total_mortgage": 8183800
       }
     },
     {
@@ -822,7 +822,7 @@
         "coordinates": [
           [
             [
-              -96.86000531099995,
+              -11340442.58,
               32.74514749000008
             ],
             [
@@ -831,14 +831,14 @@
             ],
             [
               -96.74881677999997,
-              32.86795803100006
+              4191338.887
             ],
             [
-              -96.86000531099995,
-              32.86795803100006
+              -11340442.58,
+              4191338.887
             ],
             [
-              -96.86000531099995,
+              -11340442.58,
               32.74514749000008
             ]
           ]
@@ -847,9 +847,9 @@
       "properties": {
         "property_city": "Dallas",
         "property_state": "TX",
-        "num_of_properties": 16,
-        "num_of_units": 776,
-        "total_mortgage": 4382783
+        "num_of_properties": 25,
+        "num_of_units": 956,
+        "total_mortgage": 5840583
       }
     },
     {
@@ -859,7 +859,7 @@
         "coordinates": [
           [
             [
-              -95.59924272399996,
+              -10619061.2,
               29.588120122000078
             ],
             [
@@ -868,14 +868,14 @@
             ],
             [
               -95.26187999999996,
-              31.31633475500007
+              3468914.868
             ],
             [
-              -95.59924272399996,
-              31.31633475500007
+              -10619061.2,
+              3468914.868
             ],
             [
-              -95.59924272399996,
+              -10619061.2,
               29.588120122000078
             ]
           ]
@@ -884,9 +884,9 @@
       "properties": {
         "property_city": "Houston",
         "property_state": "TX",
-        "num_of_properties": 56,
-        "num_of_units": 3549,
-        "total_mortgage": 23576064
+        "num_of_properties": 57,
+        "num_of_units": 3569,
+        "total_mortgage": 23724564
       }
     },
     {
@@ -1081,7 +1081,7 @@
         "coordinates": [
           [
             [
-              -112.09090366599997,
+              -12346563.41,
               33.46704502800003
             ],
             [
@@ -1090,14 +1090,14 @@
             ],
             [
               -112.04798211899998,
-              33.50806421800007
+              3793462.246
             ],
             [
-              -112.09090366599997,
-              33.50806421800007
+              -12346563.41,
+              3793462.246
             ],
             [
-              -112.09090366599997,
+              -12346563.41,
               33.46704502800003
             ]
           ]
@@ -1106,9 +1106,9 @@
       "properties": {
         "property_city": "Phoenix",
         "property_state": "AZ",
-        "num_of_properties": 6,
-        "num_of_units": 75,
-        "total_mortgage": 422461
+        "num_of_properties": 7,
+        "num_of_units": 91,
+        "total_mortgage": 534761
       }
     },
     {
@@ -1414,7 +1414,7 @@
         "coordinates": [
           [
             [
-              -77.64076956399998,
+              -8223133.529,
               43.12949316700008
             ],
             [
@@ -1423,14 +1423,14 @@
             ],
             [
               -77.61169441899995,
-              43.19802142800006
+              4991598.127
             ],
             [
-              -77.64076956399998,
-              43.19802142800006
+              -8223133.529,
+              4991598.127
             ],
             [
-              -77.64076956399998,
+              -8223133.529,
               43.12949316700008
             ]
           ]
@@ -1439,9 +1439,9 @@
       "properties": {
         "property_city": "Rochester",
         "property_state": "NY",
-        "num_of_properties": 3,
-        "num_of_units": 105,
-        "total_mortgage": 820800
+        "num_of_properties": 4,
+        "num_of_units": 165,
+        "total_mortgage": 1353400
       }
     },
     {
@@ -2191,7 +2191,7 @@
         "coordinates": [
           [
             [
-              -118.46738998699999,
+              -13606750.83,
               33.916616899000076
             ],
             [
@@ -2200,14 +2200,14 @@
             ],
             [
               -117.75606798799997,
-              34.158564990000066
+              4551859.611
             ],
             [
-              -118.46738998699999,
-              34.158564990000066
+              -13606750.83,
+              4551859.611
             ],
             [
-              -118.46738998699999,
+              -13606750.83,
               33.916616899000076
             ]
           ]
@@ -2216,9 +2216,9 @@
       "properties": {
         "property_city": "Los Angeles",
         "property_state": "CA",
-        "num_of_properties": 69,
-        "num_of_units": 2032,
-        "total_mortgage": 10003794
+        "num_of_properties": 70,
+        "num_of_units": 2040,
+        "total_mortgage": 10061294
       }
     },
     {
@@ -2265,7 +2265,7 @@
         "coordinates": [
           [
             [
-              -87.71370401999997,
+              -9758324.001,
               41.72211798000009
             ],
             [
@@ -2274,14 +2274,14 @@
             ],
             [
               -87.56313695899996,
-              42.014772004000065
+              5157025.222
             ],
             [
-              -87.71370401999997,
-              42.014772004000065
+              -9758324.001,
+              5157025.222
             ],
             [
-              -87.71370401999997,
+              -9758324.001,
               41.72211798000009
             ]
           ]
@@ -2290,9 +2290,9 @@
       "properties": {
         "property_city": "Chicago",
         "property_state": "IL",
-        "num_of_properties": 16,
-        "num_of_units": 429,
-        "total_mortgage": 3523800
+        "num_of_properties": 20,
+        "num_of_units": 1226,
+        "total_mortgage": 10558500
       }
     },
     {
@@ -2413,7 +2413,7 @@
         "coordinates": [
           [
             [
-              -76.15274730899995,
+              -8218124.674,
               43.02048802500008
             ],
             [
@@ -2422,14 +2422,14 @@
             ],
             [
               -76.11998660899997,
-              43.06956272700006
+              4984217.704
             ],
             [
-              -76.15274730899995,
-              43.06956272700006
+              -8218124.674,
+              4984217.704
             ],
             [
-              -76.15274730899995,
+              -8218124.674,
               43.02048802500008
             ]
           ]
@@ -2438,9 +2438,9 @@
       "properties": {
         "property_city": "Syracuse",
         "property_state": "NY",
-        "num_of_properties": 3,
-        "num_of_units": 306,
-        "total_mortgage": 2676700
+        "num_of_properties": 5,
+        "num_of_units": 448,
+        "total_mortgage": 3965400
       }
     },
     {
@@ -2487,7 +2487,7 @@
         "coordinates": [
           [
             [
-              -86.89389596999996,
+              -9672093.918,
               33.48751501800007
             ],
             [
@@ -2496,14 +2496,14 @@
             ],
             [
               -86.71878647799997,
-              33.546890003000044
+              3961056.475
             ],
             [
-              -86.89389596999996,
-              33.546890003000044
+              -9672093.918,
+              3961056.475
             ],
             [
-              -86.89389596999996,
+              -9672093.918,
               33.48751501800007
             ]
           ]
@@ -2512,9 +2512,9 @@
       "properties": {
         "property_city": "Birmingham",
         "property_state": "AL",
-        "num_of_properties": 16,
-        "num_of_units": 678,
-        "total_mortgage": 3741900
+        "num_of_properties": 19,
+        "num_of_units": 1103,
+        "total_mortgage": 6921900
       }
     },
     {
@@ -3264,7 +3264,7 @@
         "coordinates": [
           [
             [
-              -75.19862403899998,
+              -8909491.847,
               39.94661891900006
             ],
             [
@@ -3273,14 +3273,14 @@
             ],
             [
               -75.09658199499995,
-              40.075445976000026
+              4943457.386
             ],
             [
-              -75.19862403899998,
-              40.075445976000026
+              -8909491.847,
+              4943457.386
             ],
             [
-              -75.19862403899998,
+              -8909491.847,
               39.94661891900006
             ]
           ]
@@ -3289,9 +3289,9 @@
       "properties": {
         "property_city": "Philadelphia",
         "property_state": "PA",
-        "num_of_properties": 20,
-        "num_of_units": 2117,
-        "total_mortgage": 17668448
+        "num_of_properties": 25,
+        "num_of_units": 2277,
+        "total_mortgage": 18975348
       }
     },
     {
@@ -3412,7 +3412,7 @@
         "coordinates": [
           [
             [
-              -83.24416364699994,
+              -9256024.276,
               42.332006800000066
             ],
             [
@@ -3421,14 +3421,14 @@
             ],
             [
               -82.99714799999998,
-              42.445705008000054
+              5196532.699
             ],
             [
-              -83.24416364699994,
-              42.445705008000054
+              -9256024.276,
+              5196532.699
             ],
             [
-              -83.24416364699994,
+              -9256024.276,
               42.332006800000066
             ]
           ]
@@ -3437,9 +3437,9 @@
       "properties": {
         "property_city": "Detroit",
         "property_state": "MI",
-        "num_of_properties": 28,
-        "num_of_units": 766,
-        "total_mortgage": 5867650
+        "num_of_properties": 29,
+        "num_of_units": 836,
+        "total_mortgage": 6330650
       }
     },
     {
@@ -4337,7 +4337,7 @@
         "coordinates": [
           [
             [
-              -84.58620315599995,
+              -9080246.486,
               39.15711198400004
             ],
             [
@@ -4346,14 +4346,14 @@
             ],
             [
               -84.47548799399993,
-              39.22021412700008
+              5028515.787
             ],
             [
-              -84.58620315599995,
-              39.22021412700008
+              -9080246.486,
+              5028515.787
             ],
             [
-              -84.58620315599995,
+              -9080246.486,
               39.15711198400004
             ]
           ]
@@ -4362,9 +4362,9 @@
       "properties": {
         "property_city": "Cincinnati",
         "property_state": "OH",
-        "num_of_properties": 2,
-        "num_of_units": 41,
-        "total_mortgage": 350200
+        "num_of_properties": 3,
+        "num_of_units": 383,
+        "total_mortgage": 2247300
       }
     },
     {
@@ -8074,7 +8074,7 @@
         "coordinates": [
           [
             [
-              -86.31659699899996,
+              -9665134.1,
               32.34465559600005
             ],
             [
@@ -8083,14 +8083,14 @@
             ],
             [
               -86.26663499999995,
-              32.395383293000066
+              3968558.242
             ],
             [
-              -86.31659699899996,
-              32.395383293000066
+              -9665134.1,
+              3968558.242
             ],
             [
-              -86.31659699899996,
+              -9665134.1,
               32.34465559600005
             ]
           ]
@@ -8099,9 +8099,9 @@
       "properties": {
         "property_city": "Montgomery",
         "property_state": "AL",
-        "num_of_properties": 12,
-        "num_of_units": 803,
-        "total_mortgage": 4749500
+        "num_of_properties": 15,
+        "num_of_units": 878,
+        "total_mortgage": 5116500
       }
     },
     {
@@ -8222,7 +8222,7 @@
         "coordinates": [
           [
             [
-              -73.83541567199995,
+              -8216914.744,
               40.92491637400008
             ],
             [
@@ -8231,14 +8231,14 @@
             ],
             [
               -73.83541567199995,
-              40.92491637400008
+              4970932.959
             ],
             [
-              -73.83541567199995,
-              40.92491637400008
+              -8216914.744,
+              4970932.959
             ],
             [
-              -73.83541567199995,
+              -8216914.744,
               40.92491637400008
             ]
           ]
@@ -8247,9 +8247,9 @@
       "properties": {
         "property_city": "Mount Vernon",
         "property_state": "NY",
-        "num_of_properties": 1,
-        "num_of_units": 53,
-        "total_mortgage": 438700
+        "num_of_properties": 2,
+        "num_of_units": 95,
+        "total_mortgage": 782200
       }
     },
     {
@@ -8518,7 +8518,7 @@
         "coordinates": [
           [
             [
-              -73.78782903499996,
+              -8225260.899,
               42.674130310000066
             ],
             [
@@ -8527,14 +8527,14 @@
             ],
             [
               -73.78782903499996,
-              42.674130310000066
+              4977798.53
             ],
             [
-              -73.78782903499996,
-              42.674130310000066
+              -8225260.899,
+              4977798.53
             ],
             [
-              -73.78782903499996,
+              -8225260.899,
               42.674130310000066
             ]
           ]
@@ -8543,9 +8543,9 @@
       "properties": {
         "property_city": "Albany",
         "property_state": "NY",
-        "num_of_properties": 1,
-        "num_of_units": 12,
-        "total_mortgage": 93600
+        "num_of_properties": 10,
+        "num_of_units": 1422,
+        "total_mortgage": 11991700
       }
     },
     {
@@ -8814,7 +8814,7 @@
         "coordinates": [
           [
             [
-              -84.16201001199994,
+              -9394284.089,
               31.590227020000043
             ],
             [
@@ -8823,14 +8823,14 @@
             ],
             [
               -84.16201001199994,
-              31.590227020000043
+              4009757.093
             ],
             [
-              -84.16201001199994,
-              31.590227020000043
+              -9394284.089,
+              4009757.093
             ],
             [
-              -84.16201001199994,
+              -9394284.089,
               31.590227020000043
             ]
           ]
@@ -8839,9 +8839,9 @@
       "properties": {
         "property_city": "Albany",
         "property_state": "GA",
-        "num_of_properties": 1,
-        "num_of_units": 18,
-        "total_mortgage": 155000
+        "num_of_properties": 4,
+        "num_of_units": 382,
+        "total_mortgage": 2736800
       }
     },
     {
@@ -11330,7 +11330,7 @@
         "coordinates": [
           [
             [
-              -157.84722502199998,
+              -17573424.59,
               21.272190419000026
             ],
             [
@@ -11339,14 +11339,14 @@
             ],
             [
               -157.81607390299996,
-              21.30730501900007
+              2431383.319
             ],
             [
-              -157.84722502199998,
-              21.30730501900007
+              -17573424.59,
+              2431383.319
             ],
             [
-              -157.84722502199998,
+              -17573424.59,
               21.272190419000026
             ]
           ]
@@ -11355,9 +11355,9 @@
       "properties": {
         "property_city": "Honolulu",
         "property_state": "HI",
-        "num_of_properties": 7,
-        "num_of_units": 130,
-        "total_mortgage": 811100
+        "num_of_properties": 24,
+        "num_of_units": 336,
+        "total_mortgage": 2110900
       }
     },
     {
@@ -18314,6 +18314,7924 @@
         "num_of_properties": 1,
         "num_of_units": 120,
         "total_mortgage": 904600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9662477.574,
+              3959807.314
+            ],
+            [
+              -9652244.546,
+              3959807.314
+            ],
+            [
+              -9652244.546,
+              3968228.209
+            ],
+            [
+              -9662477.574,
+              3968228.209
+            ],
+            [
+              -9662477.574,
+              3959807.314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "AL",
+        "num_of_properties": 4,
+        "num_of_units": 529,
+        "total_mortgage": 3887200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9654488.732,
+              3970319.707
+            ],
+            [
+              -9654488.732,
+              3970319.707
+            ],
+            [
+              -9654488.732,
+              3970319.707
+            ],
+            [
+              -9654488.732,
+              3970319.707
+            ],
+            [
+              -9654488.732,
+              3970319.707
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 156,
+        "total_mortgage": 978000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9665597.983,
+              3967181.039
+            ],
+            [
+              -9665597.983,
+              3967181.039
+            ],
+            [
+              -9665597.983,
+              3967181.039
+            ],
+            [
+              -9665597.983,
+              3967181.039
+            ],
+            [
+              -9665597.983,
+              3967181.039
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "North Myrtle Beach",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 32,
+        "total_mortgage": 108200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9675693.443,
+              3959100.151
+            ],
+            [
+              -9653908.745,
+              3959100.151
+            ],
+            [
+              -9653908.745,
+              3969621.045
+            ],
+            [
+              -9675693.443,
+              3969621.045
+            ],
+            [
+              -9675693.443,
+              3959100.151
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "AL",
+        "num_of_properties": 13,
+        "num_of_units": 516,
+        "total_mortgage": 3005900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9664786.465,
+              3957297.862
+            ],
+            [
+              -9660740.229,
+              3957297.862
+            ],
+            [
+              -9660740.229,
+              3963220.212
+            ],
+            [
+              -9664786.465,
+              3963220.212
+            ],
+            [
+              -9664786.465,
+              3957297.862
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jersey City",
+        "property_state": "AL",
+        "num_of_properties": 3,
+        "num_of_units": 120,
+        "total_mortgage": 814400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9673545.867,
+              3958908.687
+            ],
+            [
+              -9655958.1,
+              3958908.687
+            ],
+            [
+              -9655958.1,
+              3967512.449
+            ],
+            [
+              -9673545.867,
+              3967512.449
+            ],
+            [
+              -9673545.867,
+              3958908.687
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "AL",
+        "num_of_properties": 9,
+        "num_of_units": 543,
+        "total_mortgage": 3357800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9665872.94,
+              3967443.655
+            ],
+            [
+              -9665872.94,
+              3967443.655
+            ],
+            [
+              -9665872.94,
+              3967443.655
+            ],
+            [
+              -9665872.94,
+              3967443.655
+            ],
+            [
+              -9665872.94,
+              3967443.655
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Omaha",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 17,
+        "total_mortgage": 55400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9658722.56,
+              3967531.271
+            ],
+            [
+              -9658722.56,
+              3967531.271
+            ],
+            [
+              -9658722.56,
+              3967531.271
+            ],
+            [
+              -9658722.56,
+              3967531.271
+            ],
+            [
+              -9658722.56,
+              3967531.271
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Richmond",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 56,
+        "total_mortgage": 274000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9668969.629,
+              3960792.706
+            ],
+            [
+              -9668969.629,
+              3960792.706
+            ],
+            [
+              -9668969.629,
+              3960792.706
+            ],
+            [
+              -9668969.629,
+              3960792.706
+            ],
+            [
+              -9668969.629,
+              3960792.706
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Riverside",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 20,
+        "total_mortgage": 100000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9669362.498,
+              3962402.292
+            ],
+            [
+              -9660139.445,
+              3962402.292
+            ],
+            [
+              -9660139.445,
+              3971476.739
+            ],
+            [
+              -9669362.498,
+              3971476.739
+            ],
+            [
+              -9669362.498,
+              3962402.292
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "AL",
+        "num_of_properties": 3,
+        "num_of_units": 107,
+        "total_mortgage": 528700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9673825.648,
+              3959581.683
+            ],
+            [
+              -9668538.105,
+              3959581.683
+            ],
+            [
+              -9668538.105,
+              3963622.947
+            ],
+            [
+              -9673825.648,
+              3963622.947
+            ],
+            [
+              -9673825.648,
+              3959581.683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Houston",
+        "property_state": "AL",
+        "num_of_properties": 4,
+        "num_of_units": 178,
+        "total_mortgage": 900700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9663064.772,
+              3969204.541
+            ],
+            [
+              -9663064.772,
+              3969204.541
+            ],
+            [
+              -9663064.772,
+              3969204.541
+            ],
+            [
+              -9663064.772,
+              3969204.541
+            ],
+            [
+              -9663064.772,
+              3969204.541
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Schaumburg",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 64,
+        "total_mortgage": 224000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9671800.879,
+              3961198.697
+            ],
+            [
+              -9671800.879,
+              3961198.697
+            ],
+            [
+              -9671800.879,
+              3961198.697
+            ],
+            [
+              -9671800.879,
+              3961198.697
+            ],
+            [
+              -9671800.879,
+              3961198.697
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Newark",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 10,
+        "total_mortgage": 68300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9667504.552,
+              3966362.14
+            ],
+            [
+              -9667504.552,
+              3966362.14
+            ],
+            [
+              -9667504.552,
+              3966362.14
+            ],
+            [
+              -9667504.552,
+              3966362.14
+            ],
+            [
+              -9667504.552,
+              3966362.14
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Syracuse",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 77,
+        "total_mortgage": 289600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9670955.461,
+              3959443.858
+            ],
+            [
+              -9669385.596,
+              3959443.858
+            ],
+            [
+              -9669385.596,
+              3960225.956
+            ],
+            [
+              -9670955.461,
+              3960225.956
+            ],
+            [
+              -9670955.461,
+              3959443.858
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Springfield",
+        "property_state": "AL",
+        "num_of_properties": 2,
+        "num_of_units": 256,
+        "total_mortgage": 1267300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9659436.429,
+              3960248.779
+            ],
+            [
+              -9659405.838,
+              3960248.779
+            ],
+            [
+              -9659405.838,
+              3963867.512
+            ],
+            [
+              -9659436.429,
+              3963867.512
+            ],
+            [
+              -9659436.429,
+              3960248.779
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cincinnati",
+        "property_state": "AL",
+        "num_of_properties": 2,
+        "num_of_units": 296,
+        "total_mortgage": 2480900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9660737.775,
+              3962709.009
+            ],
+            [
+              -9660737.775,
+              3962709.009
+            ],
+            [
+              -9660737.775,
+              3962709.009
+            ],
+            [
+              -9660737.775,
+              3962709.009
+            ],
+            [
+              -9660737.775,
+              3962709.009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Pittsfield",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 16,
+        "total_mortgage": 89700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9673657.33,
+              3959038.663
+            ],
+            [
+              -9673657.33,
+              3959038.663
+            ],
+            [
+              -9673657.33,
+              3959038.663
+            ],
+            [
+              -9673657.33,
+              3959038.663
+            ],
+            [
+              -9673657.33,
+              3959038.663
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Henderson",
+        "property_state": "AL",
+        "num_of_properties": 1,
+        "num_of_units": 28,
+        "total_mortgage": 141296
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12476038.34,
+              3961971.193
+            ],
+            [
+              -12476038.34,
+              3961971.193
+            ],
+            [
+              -12476038.34,
+              3961971.193
+            ],
+            [
+              -12476038.34,
+              3961971.193
+            ],
+            [
+              -12476038.34,
+              3961971.193
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Pasadena",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 48,
+        "total_mortgage": 367600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12476543.08,
+              3950150.557
+            ],
+            [
+              -12476020.19,
+              3950150.557
+            ],
+            [
+              -12476020.19,
+              3961903.565
+            ],
+            [
+              -12476543.08,
+              3961903.565
+            ],
+            [
+              -12476543.08,
+              3950150.557
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "AZ",
+        "num_of_properties": 3,
+        "num_of_units": 46,
+        "total_mortgage": 306700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12477067.38,
+              3959330.058
+            ],
+            [
+              -12477067.38,
+              3959330.058
+            ],
+            [
+              -12477067.38,
+              3959330.058
+            ],
+            [
+              -12477067.38,
+              3959330.058
+            ],
+            [
+              -12477067.38,
+              3959330.058
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Worcester",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 11,
+        "total_mortgage": 64300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12476691.1,
+              3956578.878
+            ],
+            [
+              -12476691.1,
+              3956578.878
+            ],
+            [
+              -12476691.1,
+              3956578.878
+            ],
+            [
+              -12476691.1,
+              3956578.878
+            ],
+            [
+              -12476691.1,
+              3956578.878
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 8,
+        "total_mortgage": 50000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12475128.65,
+              3959665.616
+            ],
+            [
+              -12475128.65,
+              3959665.616
+            ],
+            [
+              -12475128.65,
+              3959665.616
+            ],
+            [
+              -12475128.65,
+              3959665.616
+            ],
+            [
+              -12475128.65,
+              3959665.616
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 94,
+        "total_mortgage": 716400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12507619,
+              3953964.122
+            ],
+            [
+              -12507619,
+              3953964.122
+            ],
+            [
+              -12507619,
+              3953964.122
+            ],
+            [
+              -12507619,
+              3953964.122
+            ],
+            [
+              -12507619,
+              3953964.122
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Atlanta",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 200,
+        "total_mortgage": 831700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12346256.71,
+              3791581.778
+            ],
+            [
+              -12346256.71,
+              3791581.778
+            ],
+            [
+              -12346256.71,
+              3791581.778
+            ],
+            [
+              -12346256.71,
+              3791581.778
+            ],
+            [
+              -12346256.71,
+              3791581.778
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lansing",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 99,
+        "total_mortgage": 671500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12478912.69,
+              3792353.897
+            ],
+            [
+              -12348801.74,
+              3792353.897
+            ],
+            [
+              -12348801.74,
+              3959270.84
+            ],
+            [
+              -12478912.69,
+              3959270.84
+            ],
+            [
+              -12478912.69,
+              3792353.897
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "AZ",
+        "num_of_properties": 2,
+        "num_of_units": 161,
+        "total_mortgage": 979576
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13639450.66,
+              3989754.748
+            ],
+            [
+              -13114833.75,
+              3989754.748
+            ],
+            [
+              -13114833.75,
+              4667264.241
+            ],
+            [
+              -13639450.66,
+              4667264.241
+            ],
+            [
+              -13639450.66,
+              3989754.748
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "CA",
+        "num_of_properties": 41,
+        "num_of_units": 4855,
+        "total_mortgage": 10702622
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13187233.04,
+              4020921.305
+            ],
+            [
+              -13149875.85,
+              4020921.305
+            ],
+            [
+              -13149875.85,
+              4049275.955
+            ],
+            [
+              -13187233.04,
+              4049275.955
+            ],
+            [
+              -13187233.04,
+              4020921.305
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Denver",
+        "property_state": "CA",
+        "num_of_properties": 8,
+        "num_of_units": 190,
+        "total_mortgage": 1277560
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -12348342.17,
+              3790258.976
+            ],
+            [
+              -12348342.17,
+              3790258.976
+            ],
+            [
+              -12348342.17,
+              3790258.976
+            ],
+            [
+              -12348342.17,
+              3790258.976
+            ],
+            [
+              -12348342.17,
+              3790258.976
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "North Myrtle Beach",
+        "property_state": "AZ",
+        "num_of_properties": 1,
+        "num_of_units": 16,
+        "total_mortgage": 100600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13598773.35,
+              4023144.79
+            ],
+            [
+              -13150907.9,
+              4023144.79
+            ],
+            [
+              -13150907.9,
+              4545736.206
+            ],
+            [
+              -13598773.35,
+              4545736.206
+            ],
+            [
+              -13598773.35,
+              4023144.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "CA",
+        "num_of_properties": 13,
+        "num_of_units": 518,
+        "total_mortgage": 3988346
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13188168.57,
+              3998189.561
+            ],
+            [
+              -13155883.36,
+              3998189.561
+            ],
+            [
+              -13155883.36,
+              4051242.093
+            ],
+            [
+              -13188168.57,
+              4051242.093
+            ],
+            [
+              -13188168.57,
+              3998189.561
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cypress",
+        "property_state": "CA",
+        "num_of_properties": 9,
+        "num_of_units": 148,
+        "total_mortgage": 1009770
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13609847.03,
+              3998615.425
+            ],
+            [
+              -13151863.94,
+              3998615.425
+            ],
+            [
+              -13151863.94,
+              4553505.029
+            ],
+            [
+              -13609847.03,
+              4553505.029
+            ],
+            [
+              -13609847.03,
+              3998615.425
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "CA",
+        "num_of_properties": 11,
+        "num_of_units": 1959,
+        "total_mortgage": 13058454
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13177229.31,
+              4049002.876
+            ],
+            [
+              -13177229.31,
+              4049002.876
+            ],
+            [
+              -13177229.31,
+              4049002.876
+            ],
+            [
+              -13177229.31,
+              4049002.876
+            ],
+            [
+              -13177229.31,
+              4049002.876
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Des Moines",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 20,
+        "total_mortgage": 134000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13179966.33,
+              4024547.092
+            ],
+            [
+              -13172535.35,
+              4024547.092
+            ],
+            [
+              -13172535.35,
+              4041468.311
+            ],
+            [
+              -13179966.33,
+              4041468.311
+            ],
+            [
+              -13179966.33,
+              4024547.092
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "CA",
+        "num_of_properties": 2,
+        "num_of_units": 40,
+        "total_mortgage": 251600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13184307.35,
+              4026629.924
+            ],
+            [
+              -13108545.53,
+              4026629.924
+            ],
+            [
+              -13108545.53,
+              4041205.899
+            ],
+            [
+              -13184307.35,
+              4041205.899
+            ],
+            [
+              -13184307.35,
+              4026629.924
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "CA",
+        "num_of_properties": 5,
+        "num_of_units": 267,
+        "total_mortgage": 1966200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13157069.7,
+              4008329.129
+            ],
+            [
+              -13157069.7,
+              4008329.129
+            ],
+            [
+              -13157069.7,
+              4008329.129
+            ],
+            [
+              -13157069.7,
+              4008329.129
+            ],
+            [
+              -13157069.7,
+              4008329.129
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cumming",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 78,
+        "total_mortgage": 445645
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13186067.76,
+              4038016.439
+            ],
+            [
+              -13186067.76,
+              4038016.439
+            ],
+            [
+              -13186067.76,
+              4038016.439
+            ],
+            [
+              -13186067.76,
+              4038016.439
+            ],
+            [
+              -13186067.76,
+              4038016.439
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Friday Harbor",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 18,
+        "total_mortgage": 160000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13187339.02,
+              4027171.501
+            ],
+            [
+              -13187339.02,
+              4027171.501
+            ],
+            [
+              -13187339.02,
+              4027171.501
+            ],
+            [
+              -13187339.02,
+              4027171.501
+            ],
+            [
+              -13187339.02,
+              4027171.501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Brea",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 28,
+        "total_mortgage": 180300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13178480.42,
+              4023400.559
+            ],
+            [
+              -13178480.42,
+              4023400.559
+            ],
+            [
+              -13178480.42,
+              4023400.559
+            ],
+            [
+              -13178480.42,
+              4023400.559
+            ],
+            [
+              -13178480.42,
+              4023400.559
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Highland Village",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 140,
+        "total_mortgage": 986100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13177086.61,
+              4025507.645
+            ],
+            [
+              -13168490.07,
+              4025507.645
+            ],
+            [
+              -13168490.07,
+              4038847.982
+            ],
+            [
+              -13177086.61,
+              4038847.982
+            ],
+            [
+              -13177086.61,
+              4025507.645
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "CA",
+        "num_of_properties": 3,
+        "num_of_units": 491,
+        "total_mortgage": 3386483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13190076.48,
+              4034942.76
+            ],
+            [
+              -13190076.48,
+              4034942.76
+            ],
+            [
+              -13190076.48,
+              4034942.76
+            ],
+            [
+              -13190076.48,
+              4034942.76
+            ],
+            [
+              -13190076.48,
+              4034942.76
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Newark",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 24,
+        "total_mortgage": 178153
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13173038.79,
+              4030775.665
+            ],
+            [
+              -13173038.79,
+              4030775.665
+            ],
+            [
+              -13173038.79,
+              4030775.665
+            ],
+            [
+              -13173038.79,
+              4030775.665
+            ],
+            [
+              -13173038.79,
+              4030775.665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Charlotte",
+        "property_state": "CA",
+        "num_of_properties": 1,
+        "num_of_units": 80,
+        "total_mortgage": 397000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8574459.255,
+              4698307.563
+            ],
+            [
+              -8571941.573,
+              4698307.563
+            ],
+            [
+              -8571941.573,
+              4719354.766
+            ],
+            [
+              -8574459.255,
+              4719354.766
+            ],
+            [
+              -8574459.255,
+              4698307.563
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hartford",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 108,
+        "total_mortgage": 878900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8570501.287,
+              4697903.12
+            ],
+            [
+              -8565039.511,
+              4697903.12
+            ],
+            [
+              -8565039.511,
+              4705218.289
+            ],
+            [
+              -8570501.287,
+              4705218.289
+            ],
+            [
+              -8570501.287,
+              4697903.12
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Louisville",
+        "property_state": "DC",
+        "num_of_properties": 4,
+        "num_of_units": 410,
+        "total_mortgage": 3325100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8578210.566,
+              4699863.19
+            ],
+            [
+              -8566697.621,
+              4699863.19
+            ],
+            [
+              -8566697.621,
+              4715528.736
+            ],
+            [
+              -8578210.566,
+              4715528.736
+            ],
+            [
+              -8578210.566,
+              4699863.19
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "DC",
+        "num_of_properties": 7,
+        "num_of_units": 1084,
+        "total_mortgage": 7759900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8575493.301,
+              4696633.16
+            ],
+            [
+              -8565751.517,
+              4696633.16
+            ],
+            [
+              -8565751.517,
+              4718951.603
+            ],
+            [
+              -8575493.301,
+              4718951.603
+            ],
+            [
+              -8575493.301,
+              4696633.16
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "DC",
+        "num_of_properties": 7,
+        "num_of_units": 1058,
+        "total_mortgage": 4563485
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8572297.921,
+              4697720.123
+            ],
+            [
+              -8572297.921,
+              4697720.123
+            ],
+            [
+              -8572297.921,
+              4697720.123
+            ],
+            [
+              -8572297.921,
+              4697720.123
+            ],
+            [
+              -8572297.921,
+              4697720.123
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 30,
+        "total_mortgage": 268500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8565034.678,
+              4705220.119
+            ],
+            [
+              -8565014.65,
+              4705220.119
+            ],
+            [
+              -8565014.65,
+              4705259.189
+            ],
+            [
+              -8565034.678,
+              4705259.189
+            ],
+            [
+              -8565034.678,
+              4705220.119
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 36,
+        "total_mortgage": 270000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8576391.697,
+              4711154.927
+            ],
+            [
+              -8576391.697,
+              4711154.927
+            ],
+            [
+              -8576391.697,
+              4711154.927
+            ],
+            [
+              -8576391.697,
+              4711154.927
+            ],
+            [
+              -8576391.697,
+              4711154.927
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Des Moines",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 156,
+        "total_mortgage": 1360700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8575709.54,
+              4709985.593
+            ],
+            [
+              -8575481.777,
+              4709985.593
+            ],
+            [
+              -8575481.777,
+              4711605.488
+            ],
+            [
+              -8575709.54,
+              4711605.488
+            ],
+            [
+              -8575709.54,
+              4709985.593
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Albany",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 166,
+        "total_mortgage": 1342000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8578288.524,
+              4704353.968
+            ],
+            [
+              -8563905.244,
+              4704353.968
+            ],
+            [
+              -8563905.244,
+              4712989.31
+            ],
+            [
+              -8578288.524,
+              4712989.31
+            ],
+            [
+              -8578288.524,
+              4704353.968
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 316,
+        "total_mortgage": 2827500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8564083.815,
+              4707673.426
+            ],
+            [
+              -8564083.815,
+              4707673.426
+            ],
+            [
+              -8564083.815,
+              4707673.426
+            ],
+            [
+              -8564083.815,
+              4707673.426
+            ],
+            [
+              -8564083.815,
+              4707673.426
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Farmington Hills",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 12,
+        "total_mortgage": 68800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8570475.955,
+              4698851.808
+            ],
+            [
+              -8570475.955,
+              4698851.808
+            ],
+            [
+              -8570475.955,
+              4698851.808
+            ],
+            [
+              -8570475.955,
+              4698851.808
+            ],
+            [
+              -8570475.955,
+              4698851.808
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jersey City",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 40,
+        "total_mortgage": 247500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8572986.993,
+              4696660.341
+            ],
+            [
+              -8572986.993,
+              4696660.341
+            ],
+            [
+              -8572986.993,
+              4696660.341
+            ],
+            [
+              -8572986.993,
+              4696660.341
+            ],
+            [
+              -8572986.993,
+              4696660.341
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Denver",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 11,
+        "total_mortgage": 72400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8575006.771,
+              4712090.597
+            ],
+            [
+              -8575006.771,
+              4712090.597
+            ],
+            [
+              -8575006.771,
+              4712090.597
+            ],
+            [
+              -8575006.771,
+              4712090.597
+            ],
+            [
+              -8575006.771,
+              4712090.597
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Warwick",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 98,
+        "total_mortgage": 859600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8575448.812,
+              4708302.659
+            ],
+            [
+              -8575448.812,
+              4708302.659
+            ],
+            [
+              -8575448.812,
+              4708302.659
+            ],
+            [
+              -8575448.812,
+              4708302.659
+            ],
+            [
+              -8575448.812,
+              4708302.659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 554,
+        "total_mortgage": 4424800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571846,
+              4698120.233
+            ],
+            [
+              -8571846,
+              4698120.233
+            ],
+            [
+              -8571846,
+              4698120.233
+            ],
+            [
+              -8571846,
+              4698120.233
+            ],
+            [
+              -8571846,
+              4698120.233
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Chicago",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 45,
+        "total_mortgage": 168700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571726.332,
+              4698183.296
+            ],
+            [
+              -8571726.332,
+              4698183.296
+            ],
+            [
+              -8571726.332,
+              4698183.296
+            ],
+            [
+              -8571726.332,
+              4698183.296
+            ],
+            [
+              -8571726.332,
+              4698183.296
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Reading",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 37,
+        "total_mortgage": 128300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8573127.439,
+              4696756.929
+            ],
+            [
+              -8564346.005,
+              4696756.929
+            ],
+            [
+              -8564346.005,
+              4709057.637
+            ],
+            [
+              -8573127.439,
+              4709057.637
+            ],
+            [
+              -8573127.439,
+              4696756.929
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "DC",
+        "num_of_properties": 12,
+        "num_of_units": 623,
+        "total_mortgage": 2691674
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8580561.509,
+              4710283.678
+            ],
+            [
+              -8580561.509,
+              4710283.678
+            ],
+            [
+              -8580561.509,
+              4710283.678
+            ],
+            [
+              -8580561.509,
+              4710283.678
+            ],
+            [
+              -8580561.509,
+              4710283.678
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Friday Harbor",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 80,
+        "total_mortgage": 374300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8572529.649,
+              4696077.806
+            ],
+            [
+              -8568568.817,
+              4696077.806
+            ],
+            [
+              -8568568.817,
+              4702709.536
+            ],
+            [
+              -8572529.649,
+              4702709.536
+            ],
+            [
+              -8572529.649,
+              4696077.806
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Newark",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 368,
+        "total_mortgage": 1584000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8568012.577,
+              4703724.98
+            ],
+            [
+              -8566694.262,
+              4703724.98
+            ],
+            [
+              -8566694.262,
+              4705276.468
+            ],
+            [
+              -8568012.577,
+              4705276.468
+            ],
+            [
+              -8568012.577,
+              4703724.98
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cincinnati",
+        "property_state": "DC",
+        "num_of_properties": 2,
+        "num_of_units": 74,
+        "total_mortgage": 361700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8569689.937,
+              4699667.872
+            ],
+            [
+              -8569689.937,
+              4699667.872
+            ],
+            [
+              -8569689.937,
+              4699667.872
+            ],
+            [
+              -8569689.937,
+              4699667.872
+            ],
+            [
+              -8569689.937,
+              4699667.872
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Houston",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 118,
+        "total_mortgage": 568400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8564697.078,
+              4706017.443
+            ],
+            [
+              -8564697.078,
+              4706017.443
+            ],
+            [
+              -8564697.078,
+              4706017.443
+            ],
+            [
+              -8564697.078,
+              4706017.443
+            ],
+            [
+              -8564697.078,
+              4706017.443
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Dover",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 21,
+        "total_mortgage": 100500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8572480.386,
+              4698070.773
+            ],
+            [
+              -8572480.386,
+              4698070.773
+            ],
+            [
+              -8572480.386,
+              4698070.773
+            ],
+            [
+              -8572480.386,
+              4698070.773
+            ],
+            [
+              -8572480.386,
+              4698070.773
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Bethesda",
+        "property_state": "DC",
+        "num_of_properties": 1,
+        "num_of_units": 17,
+        "total_mortgage": 87400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8933884.246,
+              2967527.083
+            ],
+            [
+              -8933884.246,
+              2967527.083
+            ],
+            [
+              -8933884.246,
+              2967527.083
+            ],
+            [
+              -8933884.246,
+              2967527.083
+            ],
+            [
+              -8933884.246,
+              2967527.083
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Wilmington",
+        "property_state": "FL",
+        "num_of_properties": 1,
+        "num_of_units": 0,
+        "total_mortgage": 1299900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8956405.725,
+              2934580.017
+            ],
+            [
+              -8909772.804,
+              2934580.017
+            ],
+            [
+              -8909772.804,
+              3090780.135
+            ],
+            [
+              -8956405.725,
+              3090780.135
+            ],
+            [
+              -8956405.725,
+              2934580.017
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "FL",
+        "num_of_properties": 70,
+        "num_of_units": 0,
+        "total_mortgage": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8921022.701,
+              3012539.113
+            ],
+            [
+              -8921022.701,
+              3012539.113
+            ],
+            [
+              -8921022.701,
+              3012539.113
+            ],
+            [
+              -8921022.701,
+              3012539.113
+            ],
+            [
+              -8921022.701,
+              3012539.113
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "FL",
+        "num_of_properties": 1,
+        "num_of_units": 0,
+        "total_mortgage": 929700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9408505.398,
+              3986094.412
+            ],
+            [
+              -9387831.169,
+              3986094.412
+            ],
+            [
+              -9387831.169,
+              4012915.526
+            ],
+            [
+              -9408505.398,
+              4012915.526
+            ],
+            [
+              -9408505.398,
+              3986094.412
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "GA",
+        "num_of_properties": 17,
+        "num_of_units": 3427,
+        "total_mortgage": 25593677
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9392809.345,
+              3998386.9
+            ],
+            [
+              -9382048.986,
+              3998386.9
+            ],
+            [
+              -9382048.986,
+              4007570.711
+            ],
+            [
+              -9392809.345,
+              4007570.711
+            ],
+            [
+              -9392809.345,
+              3998386.9
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Buffalo",
+        "property_state": "GA",
+        "num_of_properties": 2,
+        "num_of_units": 78,
+        "total_mortgage": 542600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9392231.097,
+              3997868.079
+            ],
+            [
+              -9382575.175,
+              3997868.079
+            ],
+            [
+              -9382575.175,
+              4014428.283
+            ],
+            [
+              -9392231.097,
+              4014428.283
+            ],
+            [
+              -9392231.097,
+              3997868.079
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "GA",
+        "num_of_properties": 7,
+        "num_of_units": 1830,
+        "total_mortgage": 14522600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9391759.166,
+              4004743.444
+            ],
+            [
+              -9391759.166,
+              4004743.444
+            ],
+            [
+              -9391759.166,
+              4004743.444
+            ],
+            [
+              -9391759.166,
+              4004743.444
+            ],
+            [
+              -9391759.166,
+              4004743.444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Teaneck",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 504,
+        "total_mortgage": 4842000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9391727.14,
+              4005326.362
+            ],
+            [
+              -9391727.14,
+              4005326.362
+            ],
+            [
+              -9391727.14,
+              4005326.362
+            ],
+            [
+              -9391727.14,
+              4005326.362
+            ],
+            [
+              -9391727.14,
+              4005326.362
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 92,
+        "total_mortgage": 831600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9392763.821,
+              4010778.619
+            ],
+            [
+              -9392763.821,
+              4010778.619
+            ],
+            [
+              -9392763.821,
+              4010778.619
+            ],
+            [
+              -9392763.821,
+              4010778.619
+            ],
+            [
+              -9392763.821,
+              4010778.619
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Scarsdale",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 104,
+        "total_mortgage": 1108761
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9389803.612,
+              4001237.854
+            ],
+            [
+              -9389050.251,
+              4001237.854
+            ],
+            [
+              -9389050.251,
+              4001552.568
+            ],
+            [
+              -9389803.612,
+              4001552.568
+            ],
+            [
+              -9389803.612,
+              4001237.854
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "San Juan",
+        "property_state": "GA",
+        "num_of_properties": 2,
+        "num_of_units": 128,
+        "total_mortgage": 1171400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9396710.769,
+              3989365.03
+            ],
+            [
+              -9380253.291,
+              3989365.03
+            ],
+            [
+              -9380253.291,
+              4004813.122
+            ],
+            [
+              -9396710.769,
+              4004813.122
+            ],
+            [
+              -9396710.769,
+              3989365.03
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "GA",
+        "num_of_properties": 8,
+        "num_of_units": 642,
+        "total_mortgage": 4179800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9398352.616,
+              3983120.161
+            ],
+            [
+              -9392091.451,
+              3983120.161
+            ],
+            [
+              -9392091.451,
+              3991304.023
+            ],
+            [
+              -9398352.616,
+              3991304.023
+            ],
+            [
+              -9398352.616,
+              3983120.161
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Houston",
+        "property_state": "GA",
+        "num_of_properties": 3,
+        "num_of_units": 803,
+        "total_mortgage": 5056800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9388879.435,
+              3999906.237
+            ],
+            [
+              -9388879.435,
+              3999906.237
+            ],
+            [
+              -9388879.435,
+              3999906.237
+            ],
+            [
+              -9388879.435,
+              3999906.237
+            ],
+            [
+              -9388879.435,
+              3999906.237
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hartford",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 48,
+        "total_mortgage": 266000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9397503.554,
+              3983098.372
+            ],
+            [
+              -9391422.646,
+              3983098.372
+            ],
+            [
+              -9391422.646,
+              4008369.743
+            ],
+            [
+              -9397503.554,
+              4008369.743
+            ],
+            [
+              -9397503.554,
+              3983098.372
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Worcester",
+        "property_state": "GA",
+        "num_of_properties": 3,
+        "num_of_units": 168,
+        "total_mortgage": 1029583
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9395193.253,
+              3989574.314
+            ],
+            [
+              -9391107.501,
+              3989574.314
+            ],
+            [
+              -9391107.501,
+              3993188.595
+            ],
+            [
+              -9395193.253,
+              3993188.595
+            ],
+            [
+              -9395193.253,
+              3989574.314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "GA",
+        "num_of_properties": 4,
+        "num_of_units": 632,
+        "total_mortgage": 3520500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9395710.005,
+              3987961.275
+            ],
+            [
+              -9395710.005,
+              3987961.275
+            ],
+            [
+              -9395710.005,
+              3987961.275
+            ],
+            [
+              -9395710.005,
+              3987961.275
+            ],
+            [
+              -9395710.005,
+              3987961.275
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 48,
+        "total_mortgage": 215800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9400069.603,
+              3996394.681
+            ],
+            [
+              -9384735.012,
+              3996394.681
+            ],
+            [
+              -9384735.012,
+              4000830.571
+            ],
+            [
+              -9400069.603,
+              4000830.571
+            ],
+            [
+              -9400069.603,
+              3996394.681
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "GA",
+        "num_of_properties": 2,
+        "num_of_units": 140,
+        "total_mortgage": 840000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9383454.393,
+              3999998.384
+            ],
+            [
+              -9383454.393,
+              3999998.384
+            ],
+            [
+              -9383454.393,
+              3999998.384
+            ],
+            [
+              -9383454.393,
+              3999998.384
+            ],
+            [
+              -9383454.393,
+              3999998.384
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Pittsfield",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 24,
+        "total_mortgage": 223000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9398912.775,
+              3985097.96
+            ],
+            [
+              -9398912.775,
+              3985097.96
+            ],
+            [
+              -9398912.775,
+              3985097.96
+            ],
+            [
+              -9398912.775,
+              3985097.96
+            ],
+            [
+              -9398912.775,
+              3985097.96
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Minneapolis",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 216,
+        "total_mortgage": 1023000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -17570623.1,
+              2426023.444
+            ],
+            [
+              -17570544.75,
+              2426023.444
+            ],
+            [
+              -17570544.75,
+              2426194.444
+            ],
+            [
+              -17570623.1,
+              2426194.444
+            ],
+            [
+              -17570623.1,
+              2426023.444
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "HI",
+        "num_of_properties": 2,
+        "num_of_units": 336,
+        "total_mortgage": 1576800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9408780.354,
+              4022209.794
+            ],
+            [
+              -9408780.354,
+              4022209.794
+            ],
+            [
+              -9408780.354,
+              4022209.794
+            ],
+            [
+              -9408780.354,
+              4022209.794
+            ],
+            [
+              -9408780.354,
+              4022209.794
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "GA",
+        "num_of_properties": 1,
+        "num_of_units": 500,
+        "total_mortgage": 2070300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9791587.498,
+              5084410.852
+            ],
+            [
+              -9746983.889,
+              5084410.852
+            ],
+            [
+              -9746983.889,
+              5189103.804
+            ],
+            [
+              -9791587.498,
+              5189103.804
+            ],
+            [
+              -9791587.498,
+              5084410.852
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "IL",
+        "num_of_properties": 47,
+        "num_of_units": 6756,
+        "total_mortgage": 58370948
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9756159.067,
+              5128350.272
+            ],
+            [
+              -9753800.65,
+              5128350.272
+            ],
+            [
+              -9753800.65,
+              5151437.328
+            ],
+            [
+              -9756159.067,
+              5151437.328
+            ],
+            [
+              -9756159.067,
+              5128350.272
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Atlanta",
+        "property_state": "IL",
+        "num_of_properties": 5,
+        "num_of_units": 261,
+        "total_mortgage": 1919300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9778816.324,
+              5201598.639
+            ],
+            [
+              -9778816.324,
+              5201598.639
+            ],
+            [
+              -9778816.324,
+              5201598.639
+            ],
+            [
+              -9778816.324,
+              5201598.639
+            ],
+            [
+              -9778816.324,
+              5201598.639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Monterey Park",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 61,
+        "total_mortgage": 364893
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9762822.31,
+              5122686.309
+            ],
+            [
+              -9752957.398,
+              5122686.309
+            ],
+            [
+              -9752957.398,
+              5164159.675
+            ],
+            [
+              -9762822.31,
+              5164159.675
+            ],
+            [
+              -9762822.31,
+              5122686.309
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Buffalo",
+        "property_state": "IL",
+        "num_of_properties": 4,
+        "num_of_units": 50,
+        "total_mortgage": 413600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9761020.161,
+              5115351.357
+            ],
+            [
+              -9758130.978,
+              5115351.357
+            ],
+            [
+              -9758130.978,
+              5166025.734
+            ],
+            [
+              -9761020.161,
+              5166025.734
+            ],
+            [
+              -9761020.161,
+              5115351.357
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Bloomington",
+        "property_state": "IL",
+        "num_of_properties": 7,
+        "num_of_units": 173,
+        "total_mortgage": 1365203
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9761769.789,
+              5125123.885
+            ],
+            [
+              -9746844.405,
+              5125123.885
+            ],
+            [
+              -9746844.405,
+              5160622.039
+            ],
+            [
+              -9761769.789,
+              5160622.039
+            ],
+            [
+              -9761769.789,
+              5125123.885
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "IL",
+        "num_of_properties": 18,
+        "num_of_units": 1372,
+        "total_mortgage": 11768600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9762892.075,
+              5125672.937
+            ],
+            [
+              -9747693.768,
+              5125672.937
+            ],
+            [
+              -9747693.768,
+              5165092.059
+            ],
+            [
+              -9762892.075,
+              5165092.059
+            ],
+            [
+              -9762892.075,
+              5125672.937
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lincolnshire",
+        "property_state": "IL",
+        "num_of_properties": 20,
+        "num_of_units": 709,
+        "total_mortgage": 5743787
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9761048.172,
+              5160517.279
+            ],
+            [
+              -9761048.172,
+              5160517.279
+            ],
+            [
+              -9761048.172,
+              5160517.279
+            ],
+            [
+              -9761048.172,
+              5160517.279
+            ],
+            [
+              -9761048.172,
+              5160517.279
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Convent Station",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 40,
+        "total_mortgage": 308000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9760739.858,
+              5116045.804
+            ],
+            [
+              -9760739.858,
+              5116045.804
+            ],
+            [
+              -9760739.858,
+              5116045.804
+            ],
+            [
+              -9760739.858,
+              5116045.804
+            ],
+            [
+              -9760739.858,
+              5116045.804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lancaster",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 20,
+        "total_mortgage": 162000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9763135.345,
+              5161072.167
+            ],
+            [
+              -9763135.345,
+              5161072.167
+            ],
+            [
+              -9763135.345,
+              5161072.167
+            ],
+            [
+              -9763135.345,
+              5161072.167
+            ],
+            [
+              -9763135.345,
+              5161072.167
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Oak Brook",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 10,
+        "total_mortgage": 72000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9763910.576,
+              5128515.832
+            ],
+            [
+              -9754192.045,
+              5128515.832
+            ],
+            [
+              -9754192.045,
+              5170632.791
+            ],
+            [
+              -9763910.576,
+              5170632.791
+            ],
+            [
+              -9763910.576,
+              5128515.832
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "West Plains",
+        "property_state": "IL",
+        "num_of_properties": 4,
+        "num_of_units": 78,
+        "total_mortgage": 456394
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9758939.268,
+              5162949.005
+            ],
+            [
+              -9758939.268,
+              5162949.005
+            ],
+            [
+              -9758939.268,
+              5162949.005
+            ],
+            [
+              -9758939.268,
+              5162949.005
+            ],
+            [
+              -9758939.268,
+              5162949.005
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 49,
+        "total_mortgage": 322900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9749823.118,
+              5125176.498
+            ],
+            [
+              -9749823.118,
+              5125176.498
+            ],
+            [
+              -9749823.118,
+              5125176.498
+            ],
+            [
+              -9749823.118,
+              5125176.498
+            ],
+            [
+              -9749823.118,
+              5125176.498
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Friday Harbor",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 16,
+        "total_mortgage": 126000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9772441.348,
+              5130069.439
+            ],
+            [
+              -9750657.318,
+              5130069.439
+            ],
+            [
+              -9750657.318,
+              5185774.036
+            ],
+            [
+              -9772441.348,
+              5185774.036
+            ],
+            [
+              -9772441.348,
+              5130069.439
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hartford",
+        "property_state": "IL",
+        "num_of_properties": 4,
+        "num_of_units": 891,
+        "total_mortgage": 7424691
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9776499.369,
+              5126762.615
+            ],
+            [
+              -9748107.323,
+              5126762.615
+            ],
+            [
+              -9748107.323,
+              5163203.709
+            ],
+            [
+              -9776499.369,
+              5163203.709
+            ],
+            [
+              -9776499.369,
+              5126762.615
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "IL",
+        "num_of_properties": 8,
+        "num_of_units": 490,
+        "total_mortgage": 4053000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9747225.119,
+              5124939.734
+            ],
+            [
+              -9746569.56,
+              5124939.734
+            ],
+            [
+              -9746569.56,
+              5125719.265
+            ],
+            [
+              -9747225.119,
+              5125719.265
+            ],
+            [
+              -9747225.119,
+              5124939.734
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Scarsdale",
+        "property_state": "IL",
+        "num_of_properties": 2,
+        "num_of_units": 92,
+        "total_mortgage": 761400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9762178.772,
+              5119503.145
+            ],
+            [
+              -9748962.033,
+              5119503.145
+            ],
+            [
+              -9748962.033,
+              5164496.983
+            ],
+            [
+              -9762178.772,
+              5164496.983
+            ],
+            [
+              -9762178.772,
+              5119503.145
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jersey City",
+        "property_state": "IL",
+        "num_of_properties": 6,
+        "num_of_units": 1155,
+        "total_mortgage": 7193700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9762152.394,
+              5151805.243
+            ],
+            [
+              -9755858.419,
+              5151805.243
+            ],
+            [
+              -9755858.419,
+              5162949.752
+            ],
+            [
+              -9762152.394,
+              5162949.752
+            ],
+            [
+              -9762152.394,
+              5151805.243
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "IL",
+        "num_of_properties": 3,
+        "num_of_units": 386,
+        "total_mortgage": 3297500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9754256.949,
+              5129736.179
+            ],
+            [
+              -9753429.615,
+              5129736.179
+            ],
+            [
+              -9753429.615,
+              5131002.824
+            ],
+            [
+              -9754256.949,
+              5131002.824
+            ],
+            [
+              -9754256.949,
+              5129736.179
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Indianapolis",
+        "property_state": "IL",
+        "num_of_properties": 2,
+        "num_of_units": 34,
+        "total_mortgage": 188500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9774723.253,
+              5144347.216
+            ],
+            [
+              -9760488.61,
+              5144347.216
+            ],
+            [
+              -9760488.61,
+              5170688.569
+            ],
+            [
+              -9774723.253,
+              5170688.569
+            ],
+            [
+              -9774723.253,
+              5144347.216
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Des Moines",
+        "property_state": "IL",
+        "num_of_properties": 4,
+        "num_of_units": 96,
+        "total_mortgage": 634800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9760240.479,
+              5166063.798
+            ],
+            [
+              -9760240.479,
+              5166063.798
+            ],
+            [
+              -9760240.479,
+              5166063.798
+            ],
+            [
+              -9760240.479,
+              5166063.798
+            ],
+            [
+              -9760240.479,
+              5166063.798
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 99,
+        "total_mortgage": 814200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9761973.609,
+              5171988.403
+            ],
+            [
+              -9761973.609,
+              5171988.403
+            ],
+            [
+              -9761973.609,
+              5171988.403
+            ],
+            [
+              -9761973.609,
+              5171988.403
+            ],
+            [
+              -9761973.609,
+              5171988.403
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Scottsdale",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 30,
+        "total_mortgage": 202242
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9778751.033,
+              5217665.249
+            ],
+            [
+              -9778751.033,
+              5217665.249
+            ],
+            [
+              -9778751.033,
+              5217665.249
+            ],
+            [
+              -9778751.033,
+              5217665.249
+            ],
+            [
+              -9778751.033,
+              5217665.249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Newark",
+        "property_state": "IL",
+        "num_of_properties": 1,
+        "num_of_units": 8,
+        "total_mortgage": 38300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10255503.46,
+              3530721.601
+            ],
+            [
+              -10243032.78,
+              3530721.601
+            ],
+            [
+              -10243032.78,
+              3833055.689
+            ],
+            [
+              -10255503.46,
+              3833055.689
+            ],
+            [
+              -10255503.46,
+              3530721.601
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "LA",
+        "num_of_properties": 2,
+        "num_of_units": 96,
+        "total_mortgage": 749800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10027547.34,
+              3498277.189
+            ],
+            [
+              -10027036.9,
+              3498277.189
+            ],
+            [
+              -10027036.9,
+              3503807.056
+            ],
+            [
+              -10027547.34,
+              3503807.056
+            ],
+            [
+              -10027547.34,
+              3498277.189
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "LA",
+        "num_of_properties": 3,
+        "num_of_units": 1178,
+        "total_mortgage": 10380800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10373958.33,
+              3533906.86
+            ],
+            [
+              -10373958.33,
+              3533906.86
+            ],
+            [
+              -10373958.33,
+              3533906.86
+            ],
+            [
+              -10373958.33,
+              3533906.86
+            ],
+            [
+              -10373958.33,
+              3533906.86
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Atlanta",
+        "property_state": "LA",
+        "num_of_properties": 1,
+        "num_of_units": 611,
+        "total_mortgage": 857350
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10027053.48,
+              3496023.949
+            ],
+            [
+              -10026684.13,
+              3496023.949
+            ],
+            [
+              -10026684.13,
+              3503225.437
+            ],
+            [
+              -10027053.48,
+              3503225.437
+            ],
+            [
+              -10027053.48,
+              3496023.949
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "LA",
+        "num_of_properties": 2,
+        "num_of_units": 379,
+        "total_mortgage": 3305800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10032558.35,
+              3495182.402
+            ],
+            [
+              -10027675.43,
+              3495182.402
+            ],
+            [
+              -10027675.43,
+              3505188.071
+            ],
+            [
+              -10032558.35,
+              3505188.071
+            ],
+            [
+              -10032558.35,
+              3495182.402
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "LA",
+        "num_of_properties": 2,
+        "num_of_units": 305,
+        "total_mortgage": 2478200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10027832.28,
+              3495059.47
+            ],
+            [
+              -10027832.28,
+              3495059.47
+            ],
+            [
+              -10027832.28,
+              3495059.47
+            ],
+            [
+              -10027832.28,
+              3495059.47
+            ],
+            [
+              -10027832.28,
+              3495059.47
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Charleston",
+        "property_state": "LA",
+        "num_of_properties": 1,
+        "num_of_units": 164,
+        "total_mortgage": 1328400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8650184.781,
+              4769107.198
+            ],
+            [
+              -8534377.999,
+              4769107.198
+            ],
+            [
+              -8534377.999,
+              4817086.333
+            ],
+            [
+              -8650184.781,
+              4817086.333
+            ],
+            [
+              -8650184.781,
+              4769107.198
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "MD",
+        "num_of_properties": 4,
+        "num_of_units": 143,
+        "total_mortgage": 1130677
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8523466.243,
+              4720835.077
+            ],
+            [
+              -8522440.097,
+              4720835.077
+            ],
+            [
+              -8522440.097,
+              4772770.814
+            ],
+            [
+              -8523466.243,
+              4772770.814
+            ],
+            [
+              -8523466.243,
+              4720835.077
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Bartlett",
+        "property_state": "MD",
+        "num_of_properties": 2,
+        "num_of_units": 62,
+        "total_mortgage": 408500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8582829.996,
+              4707457.654
+            ],
+            [
+              -8527402.056,
+              4707457.654
+            ],
+            [
+              -8527402.056,
+              4774093.106
+            ],
+            [
+              -8582829.996,
+              4774093.106
+            ],
+            [
+              -8582829.996,
+              4707457.654
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "MD",
+        "num_of_properties": 12,
+        "num_of_units": 1142,
+        "total_mortgage": 4923700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8537546.375,
+              4761166.18
+            ],
+            [
+              -8537546.375,
+              4761166.18
+            ],
+            [
+              -8537546.375,
+              4761166.18
+            ],
+            [
+              -8537546.375,
+              4761166.18
+            ],
+            [
+              -8537546.375,
+              4761166.18
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Mount Vernon",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 126,
+        "total_mortgage": 959600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571768.619,
+              4700912.175
+            ],
+            [
+              -8561002.195,
+              4700912.175
+            ],
+            [
+              -8561002.195,
+              4720635.993
+            ],
+            [
+              -8571768.619,
+              4720635.993
+            ],
+            [
+              -8571768.619,
+              4700912.175
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Denver",
+        "property_state": "MD",
+        "num_of_properties": 8,
+        "num_of_units": 871,
+        "total_mortgage": 7155000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8566756.955,
+              4713060.681
+            ],
+            [
+              -8546856.194,
+              4713060.681
+            ],
+            [
+              -8546856.194,
+              4722355.499
+            ],
+            [
+              -8566756.955,
+              4722355.499
+            ],
+            [
+              -8566756.955,
+              4713060.681
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cincinnati",
+        "property_state": "MD",
+        "num_of_properties": 2,
+        "num_of_units": 173,
+        "total_mortgage": 724700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8564461.456,
+              4718599.713
+            ],
+            [
+              -8564461.456,
+              4718599.713
+            ],
+            [
+              -8564461.456,
+              4718599.713
+            ],
+            [
+              -8564461.456,
+              4718599.713
+            ],
+            [
+              -8564461.456,
+              4718599.713
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "San Juan",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 14,
+        "total_mortgage": 86000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571900.35,
+              4698709.62
+            ],
+            [
+              -8559213.654,
+              4698709.62
+            ],
+            [
+              -8559213.654,
+              4721018.988
+            ],
+            [
+              -8571900.35,
+              4721018.988
+            ],
+            [
+              -8571900.35,
+              4698709.62
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "MD",
+        "num_of_properties": 8,
+        "num_of_units": 1811,
+        "total_mortgage": 11816100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8518890.898,
+              4759776.28
+            ],
+            [
+              -8518890.898,
+              4759776.28
+            ],
+            [
+              -8518890.898,
+              4759776.28
+            ],
+            [
+              -8518890.898,
+              4759776.28
+            ],
+            [
+              -8518890.898,
+              4759776.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 64,
+        "total_mortgage": 208500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8568194.125,
+              4716169.472
+            ],
+            [
+              -8568194.125,
+              4716169.472
+            ],
+            [
+              -8568194.125,
+              4716169.472
+            ],
+            [
+              -8568194.125,
+              4716169.472
+            ],
+            [
+              -8568194.125,
+              4716169.472
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Albany",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 406,
+        "total_mortgage": 2961000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8556445.533,
+              4736725.683
+            ],
+            [
+              -8556445.533,
+              4736725.683
+            ],
+            [
+              -8556445.533,
+              4736725.683
+            ],
+            [
+              -8556445.533,
+              4736725.683
+            ],
+            [
+              -8556445.533,
+              4736725.683
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Worcester",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 64,
+        "total_mortgage": 488000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8565056.511,
+              4718603.668
+            ],
+            [
+              -8510263.283,
+              4718603.668
+            ],
+            [
+              -8510263.283,
+              4770960.433
+            ],
+            [
+              -8565056.511,
+              4770960.433
+            ],
+            [
+              -8565056.511,
+              4718603.668
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Atlanta",
+        "property_state": "MD",
+        "num_of_properties": 5,
+        "num_of_units": 1867,
+        "total_mortgage": 8774700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8511806.563,
+              4766594.246
+            ],
+            [
+              -8511806.563,
+              4766594.246
+            ],
+            [
+              -8511806.563,
+              4766594.246
+            ],
+            [
+              -8511806.563,
+              4766594.246
+            ],
+            [
+              -8511806.563,
+              4766594.246
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hartford",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 252,
+        "total_mortgage": 1063400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8588475.158,
+              4732841.39
+            ],
+            [
+              -8588475.158,
+              4732841.39
+            ],
+            [
+              -8588475.158,
+              4732841.39
+            ],
+            [
+              -8588475.158,
+              4732841.39
+            ],
+            [
+              -8588475.158,
+              4732841.39
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 22,
+        "total_mortgage": 138600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8565283.228,
+              4714603.611
+            ],
+            [
+              -8565283.228,
+              4714603.611
+            ],
+            [
+              -8565283.228,
+              4714603.611
+            ],
+            [
+              -8565283.228,
+              4714603.611
+            ],
+            [
+              -8565283.228,
+              4714603.611
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Binghamton",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 32,
+        "total_mortgage": 220000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8564014.476,
+              4703457.382
+            ],
+            [
+              -8564014.476,
+              4703457.382
+            ],
+            [
+              -8564014.476,
+              4703457.382
+            ],
+            [
+              -8564014.476,
+              4703457.382
+            ],
+            [
+              -8564014.476,
+              4703457.382
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Newark",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 110,
+        "total_mortgage": 865800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571746.394,
+              4696101.704
+            ],
+            [
+              -8571746.394,
+              4696101.704
+            ],
+            [
+              -8571746.394,
+              4696101.704
+            ],
+            [
+              -8571746.394,
+              4696101.704
+            ],
+            [
+              -8571746.394,
+              4696101.704
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Des Moines",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 761,
+        "total_mortgage": 6249200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8571540.008,
+              4714843.084
+            ],
+            [
+              -8566661.54,
+              4714843.084
+            ],
+            [
+              -8566661.54,
+              4716664.657
+            ],
+            [
+              -8571540.008,
+              4716664.657
+            ],
+            [
+              -8571540.008,
+              4714843.084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "MD",
+        "num_of_properties": 2,
+        "num_of_units": 146,
+        "total_mortgage": 1171600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8567232.839,
+              4712820.538
+            ],
+            [
+              -8567232.839,
+              4712820.538
+            ],
+            [
+              -8567232.839,
+              4712820.538
+            ],
+            [
+              -8567232.839,
+              4712820.538
+            ],
+            [
+              -8567232.839,
+              4712820.538
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Louisville",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 26,
+        "total_mortgage": 206100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8556026.081,
+              4717904.45
+            ],
+            [
+              -8556026.081,
+              4717904.45
+            ],
+            [
+              -8556026.081,
+              4717904.45
+            ],
+            [
+              -8556026.081,
+              4717904.45
+            ],
+            [
+              -8556026.081,
+              4717904.45
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Needham Heights",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 18,
+        "total_mortgage": 107800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8566478.761,
+              4698513.821
+            ],
+            [
+              -8566478.761,
+              4698513.821
+            ],
+            [
+              -8566478.761,
+              4698513.821
+            ],
+            [
+              -8566478.761,
+              4698513.821
+            ],
+            [
+              -8566478.761,
+              4698513.821
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Pittsfield",
+        "property_state": "MD",
+        "num_of_properties": 1,
+        "num_of_units": 32,
+        "total_mortgage": 209000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9265962.787,
+              5216843.452
+            ],
+            [
+              -9226357.993,
+              5216843.452
+            ],
+            [
+              -9226357.993,
+              5229922.415
+            ],
+            [
+              -9265962.787,
+              5229922.415
+            ],
+            [
+              -9265962.787,
+              5216843.452
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jersey City",
+        "property_state": "MI",
+        "num_of_properties": 2,
+        "num_of_units": 118,
+        "total_mortgage": 945000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9266106.06,
+              5215962.669
+            ],
+            [
+              -9250308.041,
+              5215962.669
+            ],
+            [
+              -9250308.041,
+              5227565.564
+            ],
+            [
+              -9266106.06,
+              5227565.564
+            ],
+            [
+              -9266106.06,
+              5215962.669
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "MI",
+        "num_of_properties": 4,
+        "num_of_units": 774,
+        "total_mortgage": 3895600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9250144.959,
+              5219903.827
+            ],
+            [
+              -9250144.959,
+              5219903.827
+            ],
+            [
+              -9250144.959,
+              5219903.827
+            ],
+            [
+              -9250144.959,
+              5219903.827
+            ],
+            [
+              -9250144.959,
+              5219903.827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cerritos",
+        "property_state": "MI",
+        "num_of_properties": 1,
+        "num_of_units": 26,
+        "total_mortgage": 171700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9262418.048,
+              5214628.775
+            ],
+            [
+              -9255707.041,
+              5214628.775
+            ],
+            [
+              -9255707.041,
+              5219395.587
+            ],
+            [
+              -9262418.048,
+              5219395.587
+            ],
+            [
+              -9262418.048,
+              5214628.775
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "MI",
+        "num_of_properties": 4,
+        "num_of_units": 400,
+        "total_mortgage": 2805793
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9251159.635,
+              5215842.137
+            ],
+            [
+              -9246290.525,
+              5215842.137
+            ],
+            [
+              -9246290.525,
+              5218729.426
+            ],
+            [
+              -9251159.635,
+              5218729.426
+            ],
+            [
+              -9251159.635,
+              5215842.137
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "MI",
+        "num_of_properties": 2,
+        "num_of_units": 47,
+        "total_mortgage": 378100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9245655.936,
+              5211013.466
+            ],
+            [
+              -9245655.936,
+              5211013.466
+            ],
+            [
+              -9245655.936,
+              5211013.466
+            ],
+            [
+              -9245655.936,
+              5211013.466
+            ],
+            [
+              -9245655.936,
+              5211013.466
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lansing",
+        "property_state": "MI",
+        "num_of_properties": 1,
+        "num_of_units": 316,
+        "total_mortgage": 2316800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9003194.106,
+              4190831.34
+            ],
+            [
+              -8996419.111,
+              4190831.34
+            ],
+            [
+              -8996419.111,
+              4198323.164
+            ],
+            [
+              -9003194.106,
+              4198323.164
+            ],
+            [
+              -9003194.106,
+              4190831.34
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "NC",
+        "num_of_properties": 4,
+        "num_of_units": 1015,
+        "total_mortgage": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9251716.33,
+              5213193.29
+            ],
+            [
+              -9251716.33,
+              5213193.29
+            ],
+            [
+              -9251716.33,
+              5213193.29
+            ],
+            [
+              -9251716.33,
+              5213193.29
+            ],
+            [
+              -9251716.33,
+              5213193.29
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Santa Rosa",
+        "property_state": "MI",
+        "num_of_properties": 1,
+        "num_of_units": 15,
+        "total_mortgage": 60300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8765996.082,
+              4951422.501
+            ],
+            [
+              -8127645.869,
+              4951422.501
+            ],
+            [
+              -8127645.869,
+              5278883.641
+            ],
+            [
+              -8765996.082,
+              5278883.641
+            ],
+            [
+              -8765996.082,
+              4951422.501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "NY",
+        "num_of_properties": 95,
+        "num_of_units": 18939,
+        "total_mortgage": 60849700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8247862.065,
+              4954091.312
+            ],
+            [
+              -8197127.743,
+              4954091.312
+            ],
+            [
+              -8197127.743,
+              4994828.482
+            ],
+            [
+              -8247862.065,
+              4994828.482
+            ],
+            [
+              -8247862.065,
+              4954091.312
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "NY",
+        "num_of_properties": 18,
+        "num_of_units": 3183,
+        "total_mortgage": 27476900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8237543.212,
+              4956365.501
+            ],
+            [
+              -8194504.652,
+              4956365.501
+            ],
+            [
+              -8194504.652,
+              5017459.719
+            ],
+            [
+              -8237543.212,
+              5017459.719
+            ],
+            [
+              -8237543.212,
+              4956365.501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "NY",
+        "num_of_properties": 22,
+        "num_of_units": 4666,
+        "total_mortgage": 39568500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8233142.227,
+              4954340.072
+            ],
+            [
+              -8196594.7,
+              4954340.072
+            ],
+            [
+              -8196594.7,
+              5017978.084
+            ],
+            [
+              -8233142.227,
+              5017978.084
+            ],
+            [
+              -8233142.227,
+              4954340.072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Brooklyn",
+        "property_state": "NY",
+        "num_of_properties": 17,
+        "num_of_units": 2553,
+        "total_mortgage": 21359793
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8218713.553,
+              4973957.585
+            ],
+            [
+              -8198651.893,
+              4973957.585
+            ],
+            [
+              -8198651.893,
+              5016386.185
+            ],
+            [
+              -8218713.553,
+              5016386.185
+            ],
+            [
+              -8218713.553,
+              4973957.585
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Floral Park",
+        "property_state": "NY",
+        "num_of_properties": 4,
+        "num_of_units": 313,
+        "total_mortgage": 2612600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8227612.865,
+              4970278.144
+            ],
+            [
+              -8195428.267,
+              4970278.144
+            ],
+            [
+              -8195428.267,
+              4995886.218
+            ],
+            [
+              -8227612.865,
+              4995886.218
+            ],
+            [
+              -8227612.865,
+              4970278.144
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "NY",
+        "num_of_properties": 7,
+        "num_of_units": 1362,
+        "total_mortgage": 11851100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8238397.841,
+              4953856.366
+            ],
+            [
+              -8217471.339,
+              4953856.366
+            ],
+            [
+              -8217471.339,
+              5019240.113
+            ],
+            [
+              -8238397.841,
+              5019240.113
+            ],
+            [
+              -8238397.841,
+              4953856.366
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "NY",
+        "num_of_properties": 9,
+        "num_of_units": 1622,
+        "total_mortgage": 13412352
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8222650.134,
+              4991677.084
+            ],
+            [
+              -8222650.134,
+              4991677.084
+            ],
+            [
+              -8222650.134,
+              4991677.084
+            ],
+            [
+              -8222650.134,
+              4991677.084
+            ],
+            [
+              -8222650.134,
+              4991677.084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New Rochelle",
+        "property_state": "NY",
+        "num_of_properties": 1,
+        "num_of_units": 66,
+        "total_mortgage": 566000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8235363.988,
+              4950874.851
+            ],
+            [
+              -8197735.027,
+              4950874.851
+            ],
+            [
+              -8197735.027,
+              4992533.932
+            ],
+            [
+              -8235363.988,
+              4992533.932
+            ],
+            [
+              -8235363.988,
+              4950874.851
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jericho",
+        "property_state": "NY",
+        "num_of_properties": 13,
+        "num_of_units": 1564,
+        "total_mortgage": 13428200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8230233.897,
+              4957273.172
+            ],
+            [
+              -8206684.621,
+              4957273.172
+            ],
+            [
+              -8206684.621,
+              4975774.473
+            ],
+            [
+              -8230233.897,
+              4975774.473
+            ],
+            [
+              -8230233.897,
+              4957273.172
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lake Success",
+        "property_state": "NY",
+        "num_of_properties": 2,
+        "num_of_units": 501,
+        "total_mortgage": 4224900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8211554.71,
+              4975451.533
+            ],
+            [
+              -8210301.766,
+              4975451.533
+            ],
+            [
+              -8210301.766,
+              4976613.814
+            ],
+            [
+              -8211554.71,
+              4976613.814
+            ],
+            [
+              -8211554.71,
+              4975451.533
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "NY",
+        "num_of_properties": 3,
+        "num_of_units": 1477,
+        "total_mortgage": 12501400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8225526.898,
+              4971475.675
+            ],
+            [
+              -8220852.67,
+              4971475.675
+            ],
+            [
+              -8220852.67,
+              4975545.866
+            ],
+            [
+              -8225526.898,
+              4975545.866
+            ],
+            [
+              -8225526.898,
+              4971475.675
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Lynbrook",
+        "property_state": "NY",
+        "num_of_properties": 7,
+        "num_of_units": 1397,
+        "total_mortgage": 11912100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8220649.512,
+              4973128.249
+            ],
+            [
+              -8220649.512,
+              4973128.249
+            ],
+            [
+              -8220649.512,
+              4973128.249
+            ],
+            [
+              -8220649.512,
+              4973128.249
+            ],
+            [
+              -8220649.512,
+              4973128.249
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "San Juan",
+        "property_state": "NY",
+        "num_of_properties": 1,
+        "num_of_units": 346,
+        "total_mortgage": 2858000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8219320.094,
+              4969044.473
+            ],
+            [
+              -8219320.094,
+              4969044.473
+            ],
+            [
+              -8219320.094,
+              4969044.473
+            ],
+            [
+              -8219320.094,
+              4969044.473
+            ],
+            [
+              -8219320.094,
+              4969044.473
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Ridgewood",
+        "property_state": "NY",
+        "num_of_properties": 1,
+        "num_of_units": 180,
+        "total_mortgage": 1577500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8225391.221,
+              4975986.556
+            ],
+            [
+              -8213425.989,
+              4975986.556
+            ],
+            [
+              -8213425.989,
+              4976863.208
+            ],
+            [
+              -8225391.221,
+              4976863.208
+            ],
+            [
+              -8225391.221,
+              4975986.556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cleveland",
+        "property_state": "NY",
+        "num_of_properties": 3,
+        "num_of_units": 330,
+        "total_mortgage": 2834600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8225363.91,
+              4969325.991
+            ],
+            [
+              -8212229.188,
+              4969325.991
+            ],
+            [
+              -8212229.188,
+              4979412.48
+            ],
+            [
+              -8225363.91,
+              4979412.48
+            ],
+            [
+              -8225363.91,
+              4969325.991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Scarsdale",
+        "property_state": "NY",
+        "num_of_properties": 8,
+        "num_of_units": 1060,
+        "total_mortgage": 8956700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8213451.416,
+              4970339.777
+            ],
+            [
+              -8213451.416,
+              4970339.777
+            ],
+            [
+              -8213451.416,
+              4970339.777
+            ],
+            [
+              -8213451.416,
+              4970339.777
+            ],
+            [
+              -8213451.416,
+              4970339.777
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Melville",
+        "property_state": "NY",
+        "num_of_properties": 1,
+        "num_of_units": 121,
+        "total_mortgage": 1041000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8221902.97,
+              4972268.142
+            ],
+            [
+              -8214913.022,
+              4972268.142
+            ],
+            [
+              -8214913.022,
+              4977460.599
+            ],
+            [
+              -8221902.97,
+              4977460.599
+            ],
+            [
+              -8221902.97,
+              4972268.142
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Garden City",
+        "property_state": "NY",
+        "num_of_properties": 3,
+        "num_of_units": 258,
+        "total_mortgage": 2254500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8217352.895,
+              4971609.638
+            ],
+            [
+              -8217352.895,
+              4971609.638
+            ],
+            [
+              -8217352.895,
+              4971609.638
+            ],
+            [
+              -8217352.895,
+              4971609.638
+            ],
+            [
+              -8217352.895,
+              4971609.638
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hoboken",
+        "property_state": "NY",
+        "num_of_properties": 1,
+        "num_of_units": 176,
+        "total_mortgage": 1512000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9080299.251,
+              5026472.827
+            ],
+            [
+              -9080208.744,
+              5026472.827
+            ],
+            [
+              -9080208.744,
+              5026695.581
+            ],
+            [
+              -9080299.251,
+              5026695.581
+            ],
+            [
+              -9080299.251,
+              5026472.827
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Convent Station",
+        "property_state": "OH",
+        "num_of_properties": 2,
+        "num_of_units": 100,
+        "total_mortgage": 944200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9081355.112,
+              5089192.736
+            ],
+            [
+              -9081355.112,
+              5089192.736
+            ],
+            [
+              -9081355.112,
+              5089192.736
+            ],
+            [
+              -9081355.112,
+              5089192.736
+            ],
+            [
+              -9081355.112,
+              5089192.736
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "OH",
+        "num_of_properties": 1,
+        "num_of_units": 174,
+        "total_mortgage": 1493900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9235958.296,
+              4860100.934
+            ],
+            [
+              -9081142.942,
+              4860100.934
+            ],
+            [
+              -9081142.942,
+              5091166.919
+            ],
+            [
+              -9235958.296,
+              5091166.919
+            ],
+            [
+              -9235958.296,
+              4860100.934
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "OH",
+        "num_of_properties": 4,
+        "num_of_units": 127,
+        "total_mortgage": 720100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9084812.367,
+              5083947.965
+            ],
+            [
+              -9077696.492,
+              5083947.965
+            ],
+            [
+              -9077696.492,
+              5091363.81
+            ],
+            [
+              -9084812.367,
+              5091363.81
+            ],
+            [
+              -9084812.367,
+              5083947.965
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Amherst",
+        "property_state": "OH",
+        "num_of_properties": 2,
+        "num_of_units": 119,
+        "total_mortgage": 516000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9095347.754,
+              5079718.826
+            ],
+            [
+              -9073527.576,
+              5079718.826
+            ],
+            [
+              -9073527.576,
+              5104018.284
+            ],
+            [
+              -9095347.754,
+              5104018.284
+            ],
+            [
+              -9095347.754,
+              5079718.826
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "OH",
+        "num_of_properties": 4,
+        "num_of_units": 192,
+        "total_mortgage": 989800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9085152.443,
+              5083811.259
+            ],
+            [
+              -9084978.117,
+              5083811.259
+            ],
+            [
+              -9084978.117,
+              5083840.982
+            ],
+            [
+              -9085152.443,
+              5083840.982
+            ],
+            [
+              -9085152.443,
+              5083811.259
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Hartford",
+        "property_state": "OH",
+        "num_of_properties": 2,
+        "num_of_units": 88,
+        "total_mortgage": 376900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9089898.792,
+              5071080.412
+            ],
+            [
+              -9082314.914,
+              5071080.412
+            ],
+            [
+              -9082314.914,
+              5084832.924
+            ],
+            [
+              -9089898.792,
+              5084832.924
+            ],
+            [
+              -9089898.792,
+              5071080.412
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "OH",
+        "num_of_properties": 3,
+        "num_of_units": 118,
+        "total_mortgage": 762500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9082628.5,
+              5082574.15
+            ],
+            [
+              -9082628.5,
+              5082574.15
+            ],
+            [
+              -9082628.5,
+              5082574.15
+            ],
+            [
+              -9082628.5,
+              5082574.15
+            ],
+            [
+              -9082628.5,
+              5082574.15
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Minneapolis",
+        "property_state": "OH",
+        "num_of_properties": 1,
+        "num_of_units": 270,
+        "total_mortgage": 1298400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10846612.73,
+              4191609.307
+            ],
+            [
+              -10682907.49,
+              4191609.307
+            ],
+            [
+              -10682907.49,
+              4318594.913
+            ],
+            [
+              -10846612.73,
+              4318594.913
+            ],
+            [
+              -10846612.73,
+              4191609.307
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "OK",
+        "num_of_properties": 2,
+        "num_of_units": 340,
+        "total_mortgage": 2635600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -9077056.733,
+              5090544.151
+            ],
+            [
+              -9077056.733,
+              5090544.151
+            ],
+            [
+              -9077056.733,
+              5090544.151
+            ],
+            [
+              -9077056.733,
+              5090544.151
+            ],
+            [
+              -9077056.733,
+              5090544.151
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Rock Island",
+        "property_state": "OH",
+        "num_of_properties": 1,
+        "num_of_units": 21,
+        "total_mortgage": 107200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10855511.28,
+              4222681.726
+            ],
+            [
+              -10855511.28,
+              4222681.726
+            ],
+            [
+              -10855511.28,
+              4222681.726
+            ],
+            [
+              -10855511.28,
+              4222681.726
+            ],
+            [
+              -10855511.28,
+              4222681.726
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "St Louis",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 22,
+        "total_mortgage": 136000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10858147.77,
+              4229554.781
+            ],
+            [
+              -10686737.68,
+              4229554.781
+            ],
+            [
+              -10686737.68,
+              4320454.922
+            ],
+            [
+              -10858147.77,
+              4320454.922
+            ],
+            [
+              -10858147.77,
+              4229554.781
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Jersey City",
+        "property_state": "OK",
+        "num_of_properties": 4,
+        "num_of_units": 108,
+        "total_mortgage": 725500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10855297.33,
+              4229568.348
+            ],
+            [
+              -10855297.33,
+              4229568.348
+            ],
+            [
+              -10855297.33,
+              4229568.348
+            ],
+            [
+              -10855297.33,
+              4229568.348
+            ],
+            [
+              -10855297.33,
+              4229568.348
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Bartlett",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 17,
+        "total_mortgage": 111000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10855281.36,
+              4229578.598
+            ],
+            [
+              -10855281.36,
+              4229578.598
+            ],
+            [
+              -10855281.36,
+              4229578.598
+            ],
+            [
+              -10855281.36,
+              4229578.598
+            ],
+            [
+              -10855281.36,
+              4229578.598
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Riverside",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 17,
+        "total_mortgage": 110000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10853675.73,
+              4230223.981
+            ],
+            [
+              -10853675.73,
+              4230223.981
+            ],
+            [
+              -10853675.73,
+              4230223.981
+            ],
+            [
+              -10853675.73,
+              4230223.981
+            ],
+            [
+              -10853675.73,
+              4230223.981
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Manchester",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 36,
+        "total_mortgage": 226000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10855297.02,
+              4229579.05
+            ],
+            [
+              -10855297.02,
+              4229579.05
+            ],
+            [
+              -10855297.02,
+              4229579.05
+            ],
+            [
+              -10855297.02,
+              4229579.05
+            ],
+            [
+              -10855297.02,
+              4229579.05
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 26,
+        "total_mortgage": 185000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10683712.18,
+              4315354.446
+            ],
+            [
+              -10683693.87,
+              4315354.446
+            ],
+            [
+              -10683693.87,
+              4315475.209
+            ],
+            [
+              -10683712.18,
+              4315475.209
+            ],
+            [
+              -10683712.18,
+              4315354.446
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Montpelier",
+        "property_state": "OK",
+        "num_of_properties": 3,
+        "num_of_units": 196,
+        "total_mortgage": 1183500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10856027.36,
+              4222508.766
+            ],
+            [
+              -10683725.29,
+              4222508.766
+            ],
+            [
+              -10683725.29,
+              4319010.896
+            ],
+            [
+              -10856027.36,
+              4319010.896
+            ],
+            [
+              -10856027.36,
+              4222508.766
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Brea",
+        "property_state": "OK",
+        "num_of_properties": 4,
+        "num_of_units": 127,
+        "total_mortgage": 942000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10858652.05,
+              4222085.394
+            ],
+            [
+              -10684335.4,
+              4222085.394
+            ],
+            [
+              -10684335.4,
+              4324921.815
+            ],
+            [
+              -10858652.05,
+              4324921.815
+            ],
+            [
+              -10858652.05,
+              4222085.394
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "OK",
+        "num_of_properties": 2,
+        "num_of_units": 32,
+        "total_mortgage": 190767
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10687035.67,
+              4323747.908
+            ],
+            [
+              -10686859.81,
+              4323747.908
+            ],
+            [
+              -10686859.81,
+              4324427.26
+            ],
+            [
+              -10687035.67,
+              4324427.26
+            ],
+            [
+              -10687035.67,
+              4323747.908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "OK",
+        "num_of_properties": 11,
+        "num_of_units": 395,
+        "total_mortgage": 3119000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10683842.16,
+              4320194.552
+            ],
+            [
+              -10683842.16,
+              4320194.552
+            ],
+            [
+              -10683842.16,
+              4320194.552
+            ],
+            [
+              -10683842.16,
+              4320194.552
+            ],
+            [
+              -10683842.16,
+              4320194.552
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Cambridge",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 24,
+        "total_mortgage": 194400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10683683.56,
+              4322198.245
+            ],
+            [
+              -10683683.56,
+              4322198.245
+            ],
+            [
+              -10683683.56,
+              4322198.245
+            ],
+            [
+              -10683683.56,
+              4322198.245
+            ],
+            [
+              -10683683.56,
+              4322198.245
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 32,
+        "total_mortgage": 184000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13649410.87,
+              5700914.991
+            ],
+            [
+              -13649410.87,
+              5700914.991
+            ],
+            [
+              -13649410.87,
+              5700914.991
+            ],
+            [
+              -13649410.87,
+              5700914.991
+            ],
+            [
+              -13649410.87,
+              5700914.991
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Houston",
+        "property_state": "OR",
+        "num_of_properties": 1,
+        "num_of_units": 66,
+        "total_mortgage": 392300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10681809.39,
+              4320082.217
+            ],
+            [
+              -10681809.39,
+              4320082.217
+            ],
+            [
+              -10681809.39,
+              4320082.217
+            ],
+            [
+              -10681809.39,
+              4320082.217
+            ],
+            [
+              -10681809.39,
+              4320082.217
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Henderson",
+        "property_state": "OK",
+        "num_of_properties": 1,
+        "num_of_units": 10,
+        "total_mortgage": 60000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13670208.02,
+              5697590.082
+            ],
+            [
+              -13645472.61,
+              5697590.082
+            ],
+            [
+              -13645472.61,
+              5718066.546
+            ],
+            [
+              -13670208.02,
+              5718066.546
+            ],
+            [
+              -13670208.02,
+              5697590.082
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "OR",
+        "num_of_properties": 68,
+        "num_of_units": 3403,
+        "total_mortgage": 279922
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8931272.948,
+              4857597.603
+            ],
+            [
+              -8359698.46,
+              4857597.603
+            ],
+            [
+              -8359698.46,
+              4960318.363
+            ],
+            [
+              -8931272.948,
+              4960318.363
+            ],
+            [
+              -8931272.948,
+              4857597.603
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "East Hartford",
+        "property_state": "PA",
+        "num_of_properties": 8,
+        "num_of_units": 965,
+        "total_mortgage": 7684634
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8911331.962,
+              4846003.85
+            ],
+            [
+              -8366363.607,
+              4846003.85
+            ],
+            [
+              -8366363.607,
+              5137959.004
+            ],
+            [
+              -8911331.962,
+              5137959.004
+            ],
+            [
+              -8911331.962,
+              4846003.85
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "PA",
+        "num_of_properties": 11,
+        "num_of_units": 1429,
+        "total_mortgage": 11143625
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8927171.43,
+              4870639.902
+            ],
+            [
+              -8370411.849,
+              4870639.902
+            ],
+            [
+              -8370411.849,
+              4944278.785
+            ],
+            [
+              -8927171.43,
+              4944278.785
+            ],
+            [
+              -8927171.43,
+              4870639.902
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Brooklyn",
+        "property_state": "PA",
+        "num_of_properties": 9,
+        "num_of_units": 467,
+        "total_mortgage": 3994500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10031816.4,
+              4854895.596
+            ],
+            [
+              -8359528.698,
+              4854895.596
+            ],
+            [
+              -8359528.698,
+              4939716.328
+            ],
+            [
+              -10031816.4,
+              4939716.328
+            ],
+            [
+              -10031816.4,
+              4854895.596
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "White Plains",
+        "property_state": "PA",
+        "num_of_properties": 7,
+        "num_of_units": 1567,
+        "total_mortgage": 13191200
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8380447.857,
+              4853193.062
+            ],
+            [
+              -8380447.857,
+              4853193.062
+            ],
+            [
+              -8380447.857,
+              4853193.062
+            ],
+            [
+              -8380447.857,
+              4853193.062
+            ],
+            [
+              -8380447.857,
+              4853193.062
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Floral Park",
+        "property_state": "PA",
+        "num_of_properties": 1,
+        "num_of_units": 30,
+        "total_mortgage": 225000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8899469.845,
+              4842243.86
+            ],
+            [
+              -8391587.598,
+              4842243.86
+            ],
+            [
+              -8391587.598,
+              4932940.947
+            ],
+            [
+              -8899469.845,
+              4932940.947
+            ],
+            [
+              -8899469.845,
+              4842243.86
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "PA",
+        "num_of_properties": 5,
+        "num_of_units": 199,
+        "total_mortgage": 1514100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8899072.674,
+              4859104.548
+            ],
+            [
+              -8363890.199,
+              4859104.548
+            ],
+            [
+              -8363890.199,
+              4931282.56
+            ],
+            [
+              -8899072.674,
+              4931282.56
+            ],
+            [
+              -8899072.674,
+              4859104.548
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Buffalo",
+        "property_state": "PA",
+        "num_of_properties": 6,
+        "num_of_units": 305,
+        "total_mortgage": 1876800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8888308.527,
+              4932940.659
+            ],
+            [
+              -8888308.527,
+              4932940.659
+            ],
+            [
+              -8888308.527,
+              4932940.659
+            ],
+            [
+              -8888308.527,
+              4932940.659
+            ],
+            [
+              -8888308.527,
+              4932940.659
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Syracuse",
+        "property_state": "PA",
+        "num_of_properties": 1,
+        "num_of_units": 26,
+        "total_mortgage": 223400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8904897.247,
+              4930498.665
+            ],
+            [
+              -8904897.247,
+              4930498.665
+            ],
+            [
+              -8904897.247,
+              4930498.665
+            ],
+            [
+              -8904897.247,
+              4930498.665
+            ],
+            [
+              -8904897.247,
+              4930498.665
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Denver",
+        "property_state": "PA",
+        "num_of_properties": 1,
+        "num_of_units": 570,
+        "total_mortgage": 1442040
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -11106642.82,
+              3512892.518
+            ],
+            [
+              -10434941.68,
+              3512892.518
+            ],
+            [
+              -10434941.68,
+              3896484.421
+            ],
+            [
+              -11106642.82,
+              3896484.421
+            ],
+            [
+              -11106642.82,
+              3512892.518
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "TX",
+        "num_of_properties": 25,
+        "num_of_units": 1747,
+        "total_mortgage": 739700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10916165.37,
+              3218066.022
+            ],
+            [
+              -10617635.98,
+              3218066.022
+            ],
+            [
+              -10617635.98,
+              3853471.447
+            ],
+            [
+              -10916165.37,
+              3853471.447
+            ],
+            [
+              -10916165.37,
+              3218066.022
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Boston",
+        "property_state": "TX",
+        "num_of_properties": 4,
+        "num_of_units": 924,
+        "total_mortgage": 7818917
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -11339703.68,
+              3465461.503
+            ],
+            [
+              -10606290.87,
+              3465461.503
+            ],
+            [
+              -10606290.87,
+              4188369.966
+            ],
+            [
+              -11339703.68,
+              4188369.966
+            ],
+            [
+              -11339703.68,
+              3465461.503
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "New York",
+        "property_state": "TX",
+        "num_of_properties": 13,
+        "num_of_units": 1559,
+        "total_mortgage": 8919000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10842564.74,
+              3465367.587
+            ],
+            [
+              -10617416.08,
+              3465367.587
+            ],
+            [
+              -10617416.08,
+              3860679.562
+            ],
+            [
+              -10842564.74,
+              3860679.562
+            ],
+            [
+              -10842564.74,
+              3465367.587
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "TX",
+        "num_of_properties": 3,
+        "num_of_units": 490,
+        "total_mortgage": 3751600
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10836122.3,
+              3862116.002
+            ],
+            [
+              -10836122.3,
+              3862116.002
+            ],
+            [
+              -10836122.3,
+              3862116.002
+            ],
+            [
+              -10836122.3,
+              3862116.002
+            ],
+            [
+              -10836122.3,
+              3862116.002
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Springfield",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 28,
+        "total_mortgage": 200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10832332.32,
+              3867306.804
+            ],
+            [
+              -10832332.32,
+              3867306.804
+            ],
+            [
+              -10832332.32,
+              3867306.804
+            ],
+            [
+              -10832332.32,
+              3867306.804
+            ],
+            [
+              -10832332.32,
+              3867306.804
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Richmond",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 16,
+        "total_mortgage": 132900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10837126.52,
+              3867031.205
+            ],
+            [
+              -10837126.52,
+              3867031.205
+            ],
+            [
+              -10837126.52,
+              3867031.205
+            ],
+            [
+              -10837126.52,
+              3867031.205
+            ],
+            [
+              -10837126.52,
+              3867031.205
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Waconia",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 16,
+        "total_mortgage": 90000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10837292.52,
+              3854266.365
+            ],
+            [
+              -10837292.52,
+              3854266.365
+            ],
+            [
+              -10837292.52,
+              3854266.365
+            ],
+            [
+              -10837292.52,
+              3854266.365
+            ],
+            [
+              -10837292.52,
+              3854266.365
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Teaneck",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 184,
+        "total_mortgage": 1162000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10844195.04,
+              3858265.928
+            ],
+            [
+              -10844195.04,
+              3858265.928
+            ],
+            [
+              -10844195.04,
+              3858265.928
+            ],
+            [
+              -10844195.04,
+              3858265.928
+            ],
+            [
+              -10844195.04,
+              3858265.928
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Buffalo",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 80,
+        "total_mortgage": 505800
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10833877.34,
+              3868618.18
+            ],
+            [
+              -10833877.34,
+              3868618.18
+            ],
+            [
+              -10833877.34,
+              3868618.18
+            ],
+            [
+              -10833877.34,
+              3868618.18
+            ],
+            [
+              -10833877.34,
+              3868618.18
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Meridian",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 216,
+        "total_mortgage": 1186300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10834701.88,
+              3863519.064
+            ],
+            [
+              -10834701.88,
+              3863519.064
+            ],
+            [
+              -10834701.88,
+              3863519.064
+            ],
+            [
+              -10834701.88,
+              3863519.064
+            ],
+            [
+              -10834701.88,
+              3863519.064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Needham Heights",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 20,
+        "total_mortgage": 119700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10838582.45,
+              3468342.974
+            ],
+            [
+              -10624531.13,
+              3468342.974
+            ],
+            [
+              -10624531.13,
+              3862457.876
+            ],
+            [
+              -10838582.45,
+              3862457.876
+            ],
+            [
+              -10838582.45,
+              3468342.974
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Nashville",
+        "property_state": "TX",
+        "num_of_properties": 2,
+        "num_of_units": 368,
+        "total_mortgage": 1949700
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10622988.91,
+              3480032.609
+            ],
+            [
+              -10622988.91,
+              3480032.609
+            ],
+            [
+              -10622988.91,
+              3480032.609
+            ],
+            [
+              -10622988.91,
+              3480032.609
+            ],
+            [
+              -10622988.91,
+              3480032.609
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Convent Station",
+        "property_state": "TX",
+        "num_of_properties": 1,
+        "num_of_units": 36,
+        "total_mortgage": 321900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8584666.248,
+              4692904.379
+            ],
+            [
+              -8576571.537,
+              4692904.379
+            ],
+            [
+              -8576571.537,
+              4707099.928
+            ],
+            [
+              -8584666.248,
+              4707099.928
+            ],
+            [
+              -8584666.248,
+              4692904.379
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "",
+        "property_state": "VA",
+        "num_of_properties": 28,
+        "num_of_units": 1373,
+        "total_mortgage": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8587174.497,
+              4701081.617
+            ],
+            [
+              -8587174.497,
+              4701081.617
+            ],
+            [
+              -8587174.497,
+              4701081.617
+            ],
+            [
+              -8587174.497,
+              4701081.617
+            ],
+            [
+              -8587174.497,
+              4701081.617
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Albany",
+        "property_state": "VA",
+        "num_of_properties": 1,
+        "num_of_units": 26,
+        "total_mortgage": 200000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8591469.423,
+              4704924.009
+            ],
+            [
+              -8591469.423,
+              4704924.009
+            ],
+            [
+              -8591469.423,
+              4704924.009
+            ],
+            [
+              -8591469.423,
+              4704924.009
+            ],
+            [
+              -8591469.423,
+              4704924.009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Frederick",
+        "property_state": "VA",
+        "num_of_properties": 1,
+        "num_of_units": 478,
+        "total_mortgage": 3840500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8590936.653,
+              4705059.724
+            ],
+            [
+              -8590936.653,
+              4705059.724
+            ],
+            [
+              -8590936.653,
+              4705059.724
+            ],
+            [
+              -8590936.653,
+              4705059.724
+            ],
+            [
+              -8590936.653,
+              4705059.724
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "property_city": "Binghamton",
+        "property_state": "VA",
+        "num_of_properties": 1,
+        "num_of_units": 24,
+        "total_mortgage": 202500
       }
     }
   ]
