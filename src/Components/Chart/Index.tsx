@@ -33,7 +33,7 @@ const Chart = ({ properties }: { properties: Types.Feature[] }) => {
     // get the index of the gisjoin in the array
     const index = racial_and_income_data.findIndex((d) => d.gisjoin === gisjoin);
     // if the gisjoin is not in the array, add it
-    if (index === -1) {
+    if (index === -1 && mortgages && mortgages.length > 0) {
       racial_and_income_data.push({
         gisjoin,
         units: mortgages.reduce((sum, m) => sum + (m.units || 0), 0),
