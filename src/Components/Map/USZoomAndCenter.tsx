@@ -31,7 +31,7 @@ const USZoomAndCenter = (): null => {
   useEffect(() => {
     // initialize the zoom to show the  US
     if (!loc && theMap) {
-      theMap.fitBounds([[68.77, -169.38], [17.231, -65.5]]);
+      theMap.fitBounds([[68.77, -169.38], [16, -65.5]]);
     }
   }, [theMap, loc]);
 
