@@ -420,6 +420,10 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.property_state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
+      console.log(`Processing property in ${city}, ${state} with mortgages:`, property.properties.mortgages);
+
+      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages   
+      
       property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
           hasAddress: true,
@@ -440,6 +444,8 @@ export function useCityStats(): Types.CityStats[] {
       const city = property.properties.city?.trim();
       const state = property.properties.state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
+
+      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages   
 
       property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
