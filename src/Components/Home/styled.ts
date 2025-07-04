@@ -33,8 +33,8 @@ export const Home = styled.div`
     @media ${Constants.devices.tablet} {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: min-content min-content min-content auto ;
-      grid-template-areas: "title" "subtitle" "description" "explore" ;
+      grid-template-rows: min-content min-content min-content auto min-content ;
+      grid-template-areas: "menu" "title" "subtitle"  "explore" "description" ;
       // max-height: clamp(600px, 100vw, 900px);
       overflow-y: visible;
       //background-image: url(${process.env.PUBLIC_URL}/static/images/bg_index_tablet.jpg);
@@ -144,18 +144,35 @@ export const ExploreButton = styled(Link)`
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  background-color: #4B0082;
+  background-color: ${Constants.COLOR_BLUE};
+  color: white !important;
   padding: 1em 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 1px solid ${Constants.COLOR_BACKGROUND};
   z-index: 1000;
   transition: all 0.25s ease-in;
+  text-transform: uppercase;
 
   &:hover,
   &:focus,
   &:active {
     background-color: rgb(178, 151, 197);
-    color: black;
+    color: black !important;;
     border-color: black
+  }
+`;
+
+export const Menu = styled.div`
+  grid-area: menu;
+  display: flex;
+  gap: 2rem;
+  z-index: 10;
+  margin: 1rem auto;
+
+  text-transform: uppercase;
+
+  a {
+    color: #eeeeee !important;
+
   }
 `;

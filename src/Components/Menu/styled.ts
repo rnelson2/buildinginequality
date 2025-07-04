@@ -34,41 +34,6 @@ export const Nav = styled.ul`
   }
 `
 
-export const NavOLD = styled.ul`
-  grid-area: main-start / 1 / -1 / -1;
-  height: 100%;
-  //width: calc(min(500px, 33vw) - 200px);
-  width: 100%;
-  overflow-y: auto;
-  margin: 0;
-  padding: 0;
-  justify-self: end;
-  font-family: ${Constants.TEXT_SANSSERIF};
-  font-size: 17px;
-  font-weight: 300;
-  z-index: 5001;
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.5);
-  // hide the scrollbar
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-
-  ::-webkit-scrollbar { 
-      display: none;  /* Safari and Chrome */
-  }
-
-  @media ${Constants.devices.tablet} {
-    grid-area: main-start / 2 / main-end / main-end;
-  }
-
-  @media ${Constants.devices.desktop} {
-    position: relative;
-    right: auto;
-    grid-area: sidebar;
-    font-size: 18px;
-    z-index: 0;
-    box-shadow: none;
-  }
-`;
 
 export const Section = styled.section`
   padding: 0.25rem 1rem;
@@ -180,56 +145,13 @@ export const Submenu = styled.ul`
   // background: linear-gradient(90deg, ${Constants.COLOR_BACKGROUND} 90%, ${Constants.COLOR_BACKGROUND} 100%);
 `;
 
-const ALink = css`
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-  color: ${Constants.COLOR_TEXT_ACCENT};
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    background-color: blue;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-    &:hover:after,
-    &:focus:after,
-    &:active:after,
-    &.active:after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-    &.active {
-      color: ${Constants.COLOR_TEXT};
-    }
-
-  * {
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: ${Constants.COLOR_TEXT};
-  }
-`
-
-export const A = styled.a`
-  ${ALink};
-`;
 
 export const Link = styled(NavLink)`
-  ${ALink}; 
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  &::after {
+    content: '' !important;
+  }
 `;
 

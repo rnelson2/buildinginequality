@@ -1,0 +1,66 @@
+<svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+    <g transform="scale(0.7)">
+      <line
+        x1="0.5"
+        x2="0.5"
+        y1="2"
+        y2="13.5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="0.5"
+        x2="12"
+        y1="13.5"
+        y2="13.5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="0.5"
+        x2="8"
+        y1="2"
+        y2="2"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="12"
+        x2="12"
+        y1="7"
+        y2="13.5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="7"
+        x2="13.5"
+        y1="7"
+        y2="0.5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="9"
+        x2="13.5"
+        y1="0.5"
+        y2="0.5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+
+      <line
+        x1="13.5"
+        x2="13.5"
+        y1="0.5"
+        y2="5"
+        strokeWidth="1.5"
+        stroke="#83d1dc"
+      />
+    </g>
+  </svg>

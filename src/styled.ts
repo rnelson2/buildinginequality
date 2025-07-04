@@ -18,12 +18,21 @@ export const App = styled.div`
   height: 100vh;
   height: 100dvh;
   background-color: ${Constants.COLOR_BACKGROUND};
-    grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.mobile}px;
-    grid-template-rows: ${dimensions.masthead.height.mobile}px 3fr 2fr;
-    grid-template-areas:
-      "masthead   masthead   menutoggle"
-      "main       main       main"
-      "sidebar    sidebar    sidebar";
+  grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.mobile}px;
+  grid-template-rows: ${dimensions.masthead.height.mobile}px 3fr 2fr;
+  grid-template-areas:
+    "masthead   masthead   menutoggle"
+    "main       main       main"
+    "sidebar    sidebar    sidebar";
+
+  a {
+    color: ${Constants.COLOR_BLUE};
+
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   @media ${Constants.devices.tablet} {
     grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.tablet}px;
@@ -34,16 +43,13 @@ export const App = styled.div`
       "sidebar    sidebar    sidebar";
   }
 
-  
-@media ${Constants.devices.desktop} {
-  grid-template-columns: auto minmax(420px, 25vw);
-  grid-template-rows: ${dimensions.masthead.height.desktop}px auto;
-  grid-template-areas:
-    "masthead menu"
-    "main  sidebar";
-}
-
-
+  @media ${Constants.devices.desktop} {
+    grid-template-columns: auto minmax(420px, 25vw);
+    grid-template-rows: ${dimensions.masthead.height.desktop}px auto;
+    grid-template-areas:
+      "masthead menu"
+      "main  sidebar";
+  }
 
   .text {
     grid-column: 2 / span 2;

@@ -24,6 +24,7 @@ export const COLOR_ACCENT_LIGHT_ORANGE = (mode as Mode) === 'light' ? 'rgb(255,2
 export const COLOR_BACKGROUND_HIGHLIGHT = (mode as Mode) === 'light' ? '#cfd8dc' : '#3a4e4b';
 export const COLOR_WHITE = (mode as Mode) === 'light' ? '#000000' : '#ffffff';  // Same for both
 export const COLOR_BLACK = (mode as Mode) === 'light' ? '#ffffff' : '#000000';  // Same for both
+export const COLOR_BLUE = 'rgb(75, 0, 130)';
 
 
 export const BUCKET_URL = 'https://s3.amazonaws.com/holc';

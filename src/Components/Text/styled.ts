@@ -3,10 +3,21 @@ import { Link } from 'react-router-dom';
 import * as Constants from "../../constants";
 
 export const TextBlock = styled.div`
-  max-width: 700px;
-  margin-left: max(0px, (100% - 700px) / 2);
-  grid-area: main;
+  max-width: min(700px, 95%);
+  max-height: calc(100vh - ${Constants.componentDimensions.masthead.height.mobile}px);
+  padding: 1em calc((100vw - min(700px, 95%)) / 2) 2em;
+  grid-row: 2 / -1;
+  grid-column: 1 / span 2;
   line-height: 1.7;
+  overflow-y: auto;
+
+  @media ${Constants.devices.tablet} {
+    max-height: calc(100vh - ${Constants.componentDimensions.masthead.height.tablet}px);
+  }
+
+  @media ${Constants.devices.desktop} {
+    max-height: calc(100vh - ${Constants.componentDimensions.masthead.height.desktop}px);
+  }
 
   ol {
     padding-bottom: 4em !important;
@@ -14,25 +25,12 @@ export const TextBlock = styled.div`
   }
 
   a {
-    ::after {
-      vertical-align: middle;
-      content: '';
-      padding-left: 1.25em;
-      // I used a mask instead of a background-image,
-      // but the same principal applies.
-      background-color: #999999;
-      // mix-blend-mode: overlay;
-      mask-image: url('data:image/svg+xml; utf8,<svg version="1.1" width="10" height="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-2 -2 18 18" style="enable-background:new 0 0 12 12;" xml:space="preserve"><g><line class="st0" x1="0.9" y1="11.1" x2="10.9" y2="1.1" width="2" stroke="white" fill="none"/><polyline class="st0" points="4.3,1.1 10.9,1.1 10.9,8.2" width="2" stroke="white" fill="none"/></g></svg>');
-      mask-size: 100% 100%;
-      mask-position: center;
-      mask-repeat: no-repeat;
 
-      }
 
       &[href*='//']::after {
       // content: url(/static/images/external_link.svg);
       padding-left: 1.5em;
-      mask-image: url(/static/images/external_link.svg);
+      mask-image: url(/images/external_link.svg);
       background-color: #666666;
     }
   }

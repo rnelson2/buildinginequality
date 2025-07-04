@@ -4,43 +4,54 @@ import { useNavigate } from 'react-router-dom';
 import { modifyHash } from '../../utilities';
 import { useURLState } from '../../hooks';
 
-/**
- * Updates the URL hash when the map moves and initializes it if missing.
- */
 const HashLoc = (): null => {
   const { hash, selectedProperty } = useURLState();
   const navigate = useNavigate();
-  const loc = useRef('1/0/0');
-  const updateHash = useRef<NodeJS.Timeout | null>(null);
-  const map = useMap(); // Get map instance
 
+  const map = useMap();                           // ← map instance
+  const loc = useRef('1/0/0');                    // last hash we wrote
+  const updateHashTID = useRef<NodeJS.Timeout>(null); // pending timeout id
+
+  // ————————————————————————————————
+  // helper that writes the new hash
+  // ————————————————————————————————
   const updateLocation = () => {
-    if (!map) return;
+    // map may exist but be *unloaded* already
+    // @ts-ignore
+    if (!map || !map._loaded) return;
 
-    const currentCenter = map.getCenter();
-    const currentZoom = map.getZoom();
-    const possibleNewLoc = `${currentZoom}/${Math.round(currentCenter.lat * 10000) / 10000}/${Math.round(currentCenter.lng * 10000) / 10000}`;
+    const c = map.getCenter();
+    const z = map.getZoom();
+    const newLoc = `${z}/${(c.lat).toFixed(4)}/${(c.lng).toFixed(4)}`;
 
-    if (possibleNewLoc !== loc.current) {
-      loc.current = possibleNewLoc;
-      const updatedHash = modifyHash(hash, [{ type: "set_loc", payload: { zoom: currentZoom, center: [currentCenter.lat, currentCenter.lng] } }]);
-      navigate(`/map${selectedProperty ? `/${selectedProperty}` : ""}#${updatedHash}`, { replace: true });
+    if (newLoc !== loc.current) {
+      loc.current = newLoc;
+      const updatedHash = modifyHash(hash, [
+        { type: 'set_loc', payload: { zoom: z, center: [c.lat, c.lng] } },
+      ]);
+      navigate(`/map${selectedProperty ? `/${selectedProperty}` : ''}#${updatedHash}`, {
+        replace: true,
+      });
     }
   };
 
-  // Update location on map move
-  useMapEvent("moveend", () => {
-    if (updateHash.current) clearTimeout(updateHash.current);
-
-    updateHash.current = setTimeout(updateLocation, 300);
+  // debounce updates after every move
+  useMapEvent('moveend', () => {
+    if (updateHashTID.current) clearTimeout(updateHashTID.current);
+    updateHashTID.current = setTimeout(updateLocation, 300);
   });
 
-  // Update location when the map first initializes
+  // write the hash once on first load
   useEffect(() => {
-    if (loc.current === '1/0/0' && map) {
-      updateLocation();
-    }
-  }, [loc, map]);
+    if (loc.current === '1/0/0') updateLocation();
+  }, []); // ← run once
+
+  // clean up on unmount so the timeout can’t fire on a dead map
+  useEffect(() => {
+    return () => {
+      if (updateHashTID.current) clearTimeout(updateHashTID.current);
+    };
+  }, []);
 
   return null;
 };

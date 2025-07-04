@@ -7,12 +7,18 @@ import Map from "./Components/Map/Index";
 import Sidebar from "./Components/Sidebar/Index";
 import Intro from "./Components/Text/Intro/Index";
 import About from "./Components/Text/About/Index";
+import Acknowledgments from "./Components/Text/Acknowledgments/Index";
+import Sources from "./Components/Text/Sources/Index";
 import Menu from "./Components/Menu/Index";
 import Home from "./Components/Home/Index";
+import Citing from "./Components/Text/Citation/Index";
+import Data from "./Components/Text/Data/Index";
+import Stories from "./Components/Text/Stories/Index";
 import * as Styled from "./styled";
 import { MapStateContext } from "./Contexts";
 import type { Map as MapT } from "leaflet";
 import * as Types from "./index.d";
+import { Citations } from "./Components/Text/AboutMenu/styled";
 
 const App = () => {
   const [map, setMap] = useState<MapT | undefined>();
@@ -92,6 +98,64 @@ const App = () => {
                   <Masthead />
                   <Menu />
                   <About />
+                </>
+              }
+            />
+
+            <Route
+              path="/sources"
+              element={
+                <>
+                  <Masthead />
+                  <Menu />
+                  <Sources />
+                </>
+              }
+            />
+
+            <Route
+              path="/citing"
+              element={
+                <>
+                  <Masthead />
+                  <Menu />
+                  <Citing />
+                </>
+              }
+            />
+
+            <Route
+              path="/data"
+              element={
+                <>
+                  <Masthead />
+                  <Menu />
+                  <Data />
+                </>
+              }
+            />
+
+<Route
+              path="/stories"
+              element={
+                <>
+                  <Masthead />
+                  <Menu />
+                  <Stories />
+                </>
+              }
+            />
+
+
+
+
+            <Route
+              path="/acknowledgments"
+              element={
+                <>
+                  <Masthead />
+                  <Menu />
+                  <Acknowledgments />
                 </>
               }
             />

@@ -134,8 +134,6 @@ export function useProperties() {
       return !(minLng > east || maxLng < west || minLat > north || maxLat < south);
     });
 
-    console.log(visibleHexes);
-
     const visibleHexFiles = visibleHexes.map(hex => hex.file);
 
     // console.log(`Fetching properties for ${visibleHexes.length} hexes at zoom ${zoom}`);
