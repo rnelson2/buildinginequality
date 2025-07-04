@@ -13,12 +13,17 @@ const inFlightCitiesRequest = new Map<"cities", Promise<Types.CityFeature[]>>();
 const hexbinsDataCache = new Map<number, Types.H3HexFeature[]>();
 const inFlightHexbinRequest = new Map<number, Promise<Types.H3HexFeature[]>>();
 
+const loadedHexPropertiesCache = new Map<string, Types.Feature[]>();
+const inFlightHexPropertiesRequests = new Map<string, Promise<Types.Feature[]>>();
+
 function bboxForHex(hexbin: GeoJSON.Feature): L.LatLngBounds {
   // reuse cached bbox if present
   if ((hexbin as any)._bbox) return (hexbin as any)._bbox;
 
-  let minLat = 90, minLng = 180;
-  let maxLat = -90, maxLng = -180;
+  let minLat = 90,
+    minLng = 180;
+  let maxLat = -90,
+    maxLng = -180;
 
   // works for Polygon; if MultiPolygon flatten first
   for (const [lng, lat] of (hexbin.geometry as any).coordinates[0]) {
@@ -29,10 +34,10 @@ function bboxForHex(hexbin: GeoJSON.Feature): L.LatLngBounds {
   }
 
   const bbox = L.latLngBounds(
-    [minLat, minLng],   // south-west
-    [maxLat, maxLng]    // north-east
+    [minLat, minLng], // south-west
+    [maxLat, maxLng] // north-east
   );
-  (hexbin as any)._bbox = bbox;      // cache on the feature
+  (hexbin as any)._bbox = bbox; // cache on the feature
   return bbox;
 }
 
@@ -105,46 +110,87 @@ const useFetchGeoJSON = <T>(url: string) => {
 };
 
 export function useProperties() {
+  const { center, zoom } = useURLState();
   const [data, setData] = useState<Types.Feature[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const { map } = useMapContext();
+
+  const H3_RESOLUTION = 2; // Adjust as needed
 
   useEffect(() => {
-    if (propertiesDataCache.has("properties")) {
-      setData(propertiesDataCache.get("properties")!);
-      setLoading(false);
-      return;
-    }
-
+    if (!map) return;
     setLoading(true);
 
-    const fetchProperties = () => {
-      if (inFlightPropertyRequest.has("properties")) {
-        // If a request is already in progress, reuse it.
-        return inFlightPropertyRequest.get("properties")!;
+    const bounds = map.getBounds();
+    const west = bounds.getWest();
+    const south = bounds.getSouth();
+    const east = bounds.getEast();
+    const north = bounds.getNorth();
+
+    // go through the hexLookup to find the hexes that intersect with the bounds
+    const visibleHexes = Constants.hexLookups.filter(hex => {
+      const [minLat, minLng] = hex.bbox[0];
+      const [maxLat, maxLng] = hex.bbox[1];
+      return !(minLng > east || maxLng < west || minLat > north || maxLat < south);
+    });
+
+    console.log(visibleHexes);
+
+    const visibleHexFiles = visibleHexes.map(hex => hex.file);
+
+    // console.log(`Fetching properties for ${visibleHexes.length} hexes at zoom ${zoom}`);
+
+    // 3. For each hex index, either get from cache, or kick off a fetch
+    const fetches = visibleHexFiles.map((hex) => {
+      // already loaded?
+      if (loadedHexPropertiesCache.has(hex)) {
+        return Promise.resolve(loadedHexPropertiesCache.get(hex)!);
       }
+      // already fetching?
+      if (inFlightHexPropertiesRequests.has(hex)) {
+        return inFlightHexPropertiesRequests.get(hex)!;
+      }
+      // kick off fetch
+      const req = axios
+        .get<{ type: "FeatureCollection"; features: Types.Feature[] }>(
+          `/points/${hex}`
+        )
+        .then((res) => {
+          const feats = res.data.features;
+          loadedHexPropertiesCache.set(hex, feats);
+          inFlightHexPropertiesRequests.delete(hex);
+          return feats;
+        })
+        // @ts-ignore
+        .catch((err) => {
+          inFlightHexPropertiesRequests.delete(hex);
+          console.error(`Failed to load hex ${hex}:`, err);
+          return [];
+        });
 
-      const request = axios.get<{ type: "FeatureCollecton"; features: Types.Feature[] }>(`/points.geojson`).then(response => {
-        // Cache the response data
-        propertiesDataCache.set("properties", response.data.features);
-        inFlightPropertyRequest.delete("properties"); // Clear the in-flight request
-        return response.data.features;
-      });
+      inFlightHexPropertiesRequests.set(hex, req);
+      return req;
+    });
 
-      inFlightPropertyRequest.set("properties", request);
-      return request;
-    };
+    // 4. Wait for _all_ the needed bins, then aggregate & filter
+    Promise.all(fetches)
+      .then((arraysOfFeatures) => {
+        const all = arraysOfFeatures.flat();
 
-    fetchProperties()
-      .then(data => {
-        if (data) {
-          setData(data.filter(property => property.properties.mortgages.length > 0 && property.properties.mortgages[0].proj_num)); // Filter out properties without mortgages
-          setLoading(false);
-        }
+        setData(
+          all.filter(
+            (property) =>
+              property.properties.mortgages.length > 0 &&
+              property.properties.mortgages[0].proj_num
+          )
+        );
       })
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [map, center[0], center[1], zoom]);
+
+  console.log(data, loading);
 
   return { data, loading };
 }
@@ -369,7 +415,7 @@ export function useVisibleProperties() {
 
 export function useVisibleHexbins() {
   const { center, zoom } = useURLState();
-  const { data } = useHexbins(zoom); 
+  const { data } = useHexbins(zoom);
   const { map } = useMapContext();
   return useMemo(() => {
     if (!map) return [];
@@ -377,7 +423,6 @@ export function useVisibleHexbins() {
     const bounds = map.getBounds();
     return data.filter(hex => bounds.intersects(bboxForHex(hex)));
   }, [center, zoom, map, data]);
-
 }
 
 export function useVisibleNoAddressProperties() {
@@ -422,8 +467,8 @@ export function useCityStats(): Types.CityStats[] {
 
       console.log(`Processing property in ${city}, ${state} with mortgages:`, property.properties.mortgages);
 
-      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages   
-      
+      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages
+
       property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
           hasAddress: true,
@@ -445,7 +490,7 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
-      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages   
+      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages
 
       property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {

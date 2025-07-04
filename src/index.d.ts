@@ -203,3 +203,10 @@ export interface H3HexFeature {
     coordinates: [number, number][][]; // GeoJSON: [lng, lat] for each ring
   };
 }
+
+export interface H3HexLookup {
+  h3_index: string;   // The H3 cell index (e.g., '85283473fffffff')
+  file: string;       // The filename where this hex's data is stored
+  bbox: [[number, number], [number, number]]; // Bounding box: [[minLng, minLat], [maxLng, maxLat]]
+  count: number;      // Number of features in this hex
+}

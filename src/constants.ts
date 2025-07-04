@@ -1,4 +1,9 @@
 import CensusTractBoundingBoxes from './Data/census_tracts_bounding_boxes.json';
+import HexLookups from './Data/hexLookup.json';
+import * as Types from './index';
+
+export const hexLookups = HexLookups as unknown as Types.H3HexLookup[];
+
 
 export const census_tract_bbs = CensusTractBoundingBoxes as { gisjoin: string; bbox: [[number, number], [number, number]] }[];
 
