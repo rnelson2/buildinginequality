@@ -6,7 +6,6 @@ import Masthead from "./Components/Masthead/Index";
 import Map from "./Components/Map/Index";
 import Sidebar from "./Components/Sidebar/Index";
 import Intro from "./Components/Text/Intro/Index";
-import About from "./Components/Text/About/Index";
 import Acknowledgments from "./Components/Text/Acknowledgments/Index";
 import Sources from "./Components/Text/Sources/Index";
 import Menu from "./Components/Menu/Index";
@@ -18,7 +17,6 @@ import * as Styled from "./styled";
 import { MapStateContext } from "./Contexts";
 import type { Map as MapT } from "leaflet";
 import * as Types from "./index.d";
-import { Citations } from "./Components/Text/AboutMenu/styled";
 
 const App = () => {
   const [map, setMap] = useState<MapT | undefined>();
@@ -88,16 +86,6 @@ const App = () => {
                   <Masthead />
                   <Menu />
                   <Intro />
-                </>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <>
-                  <Masthead />
-                  <Menu />
-                  <About />
                 </>
               }
             />

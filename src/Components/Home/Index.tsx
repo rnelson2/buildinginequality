@@ -10,7 +10,7 @@ const Home = () => {
       <Styled.Menu>
         <Link to="/map">Map</Link>
         <Link to="/stories">Stories of the Program</Link>
-        <Link to="/about">About</Link>
+        <Link to="/sources">About</Link>
       </Styled.Menu>
       <Styled.Title>
         Building Inequality
