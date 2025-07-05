@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as Constants from "../../constants";
+import * as Constants from "../../../constants";
 
 // Main Container
 export const Container = styled.div`

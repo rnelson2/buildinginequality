@@ -1,8 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import * as Styled from "./styled";
 import { CityProperty } from "../../../../index.d";
-import { useMapContext, useURLState, useVisibleProperties } from "../../../../hooks";
+import { useMapContext, useURLState, useVisibleProperties, useLinkBuilder } from "../../../../hooks";
 import { modifyHash } from "../../../../utilities";
 import { latLng } from "leaflet";
 
@@ -11,6 +11,8 @@ const ApartmentCard: React.FC<{ property: CityProperty }> = ({ property }) => {
   const { zoom, hash } = useURLState();
   const navigate = useNavigate();
   const visibleProperties = useVisibleProperties();
+  const buildLink = useLinkBuilder();
+
   // get the lat/lng of the property
   const [lng, lat] = visibleProperties.find(p => {
     const project_nums = p.properties.mortgages.map(m => m.proj_num);
@@ -26,29 +28,26 @@ const ApartmentCard: React.FC<{ property: CityProperty }> = ({ property }) => {
   const blackPercentage = totalPopulation === 0 ? 0 : (black_pop ?? 0) / totalPopulation;
   const otherPercentage = totalPopulation === 0 ? 0 : (other_pop ?? 0) / totalPopulation;
 
+  const newHash = zoom <= 10 ?
+    modifyHash(hash, [
+      {
+        type: 'set_loc',
+        payload: {
+          zoom: 11,
+          center: [lat, lng],
+        }
+      }
+    ]) :
+    hash;
+  const link = buildLink("map", { selectedProperty: proj_num }, newHash);
+
   return (
     <Styled.ApartmentCard
       onMouseEnter={() => (zoom >= 10 && hasAddress ? setOnlyHighlightedId(proj_num) : false)}
       onMouseLeave={() => (zoom >= 10 && hasAddress ? clearHighlightedIds() : false)}
       onClick={() => {
-        if (zoom > 10 && hasAddress) {
-          navigate(`/map/${proj_num}${hash}`)
-        }
-        // if zoom is less than 11, zoom in and center on the property
-        else if (hasAddress) {
-          const newHash = modifyHash(hash, [
-            {
-              type: 'set_loc',
-              payload: {
-                zoom: 11,
-                center: [lat, lng],
-            } }
-          ]);
-          if (map) {
-            const latLngPosition = latLng(lat, lng);
-            map.setView(latLngPosition, 11);
-          }
-          navigate(`/map/${proj_num}#${newHash}`);
+        if (hasAddress) {
+          navigate(link);
         }
       }}
       $hasAddress={hasAddress}
@@ -90,18 +89,6 @@ const ApartmentCard: React.FC<{ property: CityProperty }> = ({ property }) => {
             <Styled.StatValue>${median_income?.toLocaleString() || "N/A"}</Styled.StatValue>
           </>
         )}
-
-        {/* <Styled.StatLabel>White Pop:</Styled.StatLabel>
-              <Styled.StatValue>{property.properties.white_pop ?? "N/A"}</Styled.StatValue>
-
-              <Styled.StatLabel>Black Pop:</Styled.StatLabel>
-              <Styled.StatValue>{property.properties.black_pop ?? "N/A"}</Styled.StatValue>
-
-              <Styled.StatLabel>Other Pop:</Styled.StatLabel>
-              <Styled.StatValue>{property.properties.other_pop ?? "N/A"}</Styled.StatValue>
-
-              <Styled.StatLabel>Median Income:</Styled.StatLabel>
-              <Styled.StatValue>${property.properties.median_income?.toLocaleString() || "N/A"}</Styled.StatValue> */}
       </Styled.StatsGrid>
     </Styled.ApartmentCard>
   );

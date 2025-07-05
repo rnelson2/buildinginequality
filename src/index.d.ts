@@ -159,7 +159,10 @@ export interface NoAddressMortgage {
 export interface NoAddressFeatureProperties {
   city: string;
   state: string;
-  mortgages: NoAddressMortgage[];
+  units: number;
+  proj_num: number;
+  name: string;
+  amount: number;
 }
 
 export interface NoAddressFeature {

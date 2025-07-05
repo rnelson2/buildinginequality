@@ -144,11 +144,6 @@ const Sources = () => {
           </a>
         </li>
       </ul>
-
-      Feel free to download and use our data
-
-      GEOJSON files (this will be our housing data organized as a downloadable GIS shapefile)
-
     </Styled.TextBlock>
   );
 };

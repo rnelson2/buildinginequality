@@ -133,3 +133,13 @@ export const states = {
   WY: "Wyoming",
   DC: "District of Columbia"
 };
+
+export const ROUTES = {
+  home: "/",
+  map: "/map/:selectedProperty?",     // note the optional param
+  sources: "/sources",
+  citing: "/citing",
+  data: "/data",
+  stories: "/stories",
+  acknowledgments: "/acknowledgments",
+} as const;

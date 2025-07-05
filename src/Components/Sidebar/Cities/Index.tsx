@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { useCityStats } from "../../../hooks";
 import City from "./City";
 import * as Styled from "./styled";
@@ -11,7 +11,7 @@ const CityStats = () => {
 
   return (
     <Styled.Container>
-      <Styled.Header>Visible Cities, Towns, etc.</Styled.Header>
+      <Styled.Header>Visible Properties</Styled.Header>
       <Styled.List>
         {cityStats.map(({ city, complexes, totalUnits, totalAmount, properties }) => (
           <City

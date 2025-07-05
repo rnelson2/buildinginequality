@@ -1,11 +1,8 @@
 import React, { Suspense, useState, useReducer } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import DimensionsContextProvider from "./DimensionsContextProvider";
-// import AppStateContextProvider from "./AppStateContextProvider";
 import Masthead from "./Components/Masthead/Index";
 import Map from "./Components/Map/Index";
 import Sidebar from "./Components/Sidebar/Index";
-import Intro from "./Components/Text/Intro/Index";
 import Acknowledgments from "./Components/Text/Acknowledgments/Index";
 import Sources from "./Components/Text/Sources/Index";
 import Menu from "./Components/Menu/Index";
@@ -42,7 +39,7 @@ const App = () => {
   return (
     <Styled.App>
       <Styled.GlobalStyle />
-      <Router basename={'/'}>
+      <Router basename={"/"}>
         <MapStateContext.Provider
           value={{
             map,
@@ -65,7 +62,6 @@ const App = () => {
             },
           }}
         >
-          
           <Routes>
             <Route
               path="/map/:selectedProperty?"
@@ -78,17 +74,6 @@ const App = () => {
                 </>
               }
             ></Route>
-
-            <Route
-              path="/introduction"
-              element={
-                <>
-                  <Masthead />
-                  <Menu />
-                  <Intro />
-                </>
-              }
-            />
 
             <Route
               path="/sources"
@@ -123,7 +108,7 @@ const App = () => {
               }
             />
 
-<Route
+            <Route
               path="/stories"
               element={
                 <>
@@ -133,9 +118,6 @@ const App = () => {
                 </>
               }
             />
-
-
-
 
             <Route
               path="/acknowledgments"
@@ -149,9 +131,7 @@ const App = () => {
             />
             <Route
               path="/"
-              element={
-                  <Home />
-              }
+              element={<Home />}
             />
           </Routes>
         </MapStateContext.Provider>

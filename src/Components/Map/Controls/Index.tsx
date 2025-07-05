@@ -9,10 +9,8 @@ import HexbinLegend from "./HexbinLegend/Index";
 
 const Controls = () => {
   const { hash, mapview, pathname, hideCensusTracts, zoom } = useURLState();
-  const { maxIncome, maxUnits } = useVisiblePropertiesStats();
+  const { maxIncome } = useVisiblePropertiesStats();
   const [open, setOpen] = useState(false);
-
-  console.log("maxUnits", maxUnits);
 
   const symbolsWidth = 180;
 

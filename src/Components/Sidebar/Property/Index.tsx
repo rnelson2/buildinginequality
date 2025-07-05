@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import * as Types from "../../index.d";
-import ArrowLeft from "../Buttons/ArrowLeft";
+import * as Types from "../../../index.d";
+import ArrowLeft from "../../Buttons/ArrowLeft";
 import * as Styled from "./styled";
-import { useURLState, useMapContext } from "../../hooks";
-import { toTitleCase } from "../../utilities";
+import { useURLState, useMapContext } from "../../../hooks";
+import { toTitleCase } from "../../../utilities";
 
 const Property = ({ property }: { property: Types.Feature }) => {
-  const { hash, selectedProperty } = useURLState();
+  const { hash } = useURLState();
   const { clearHighlightedIds } = useMapContext();
   const { street, property_city, property_state, white_pop, black_pop, other_pop, median_income, mortgages } = property.properties;
 

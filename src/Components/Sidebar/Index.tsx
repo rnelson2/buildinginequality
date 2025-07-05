@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as Styled from "./styled";
 import Chart from "../Chart/Index";
 import Cities from "./Cities/Index";
-import Property from "../Property/Index";
+import Property from "./Property/Index";
 import { useSelectedPropertyData, useVisibleProperties } from "../../hooks";
 
 const Sidebar = () => {

@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState, useMemo } from "react";
+import React, { useContext, useEffect, useState, useMemo, useCallback } from "react";
 import axios from "axios";
-import { useLocation, matchPath, useParams } from "react-router-dom";
+import { useLocation, matchPath, useParams, generatePath } from "react-router-dom";
 import * as L from "leaflet";
 import * as Types from "./index.d";
 import * as Contexts from "./Contexts";
@@ -115,8 +115,6 @@ export function useProperties() {
   const [loading, setLoading] = useState<boolean>(true);
   const { map } = useMapContext();
 
-  const H3_RESOLUTION = 2; // Adjust as needed
-
   useEffect(() => {
     if (!map) return;
     setLoading(true);
@@ -135,8 +133,6 @@ export function useProperties() {
     });
 
     const visibleHexFiles = visibleHexes.map(hex => hex.file);
-
-    // console.log(`Fetching properties for ${visibleHexes.length} hexes at zoom ${zoom}`);
 
     // 3. For each hex index, either get from cache, or kick off a fetch
     const fetches = visibleHexFiles.map((hex) => {
@@ -187,8 +183,6 @@ export function useProperties() {
         setLoading(false);
       });
   }, [map, center[0], center[1], zoom]);
-
-  console.log(data, loading);
 
   return { data, loading };
 }
@@ -463,22 +457,25 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.property_state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
-      console.log(`Processing property in ${city}, ${state} with mortgages:`, property.properties.mortgages);
-
       if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages
 
-      property.properties.mortgages.forEach(mortgage => {
+      // aggregate mortgages for properties with addresses to calculate amount and units
+      const mortgageAmounts = property.properties.mortgages.reduce((acc, mortgage) => {
+        acc.amount += mortgage.amount || 0;
+        acc.units += mortgage.units || 0;
+        return acc;
+      }, { amount: 0, units: 0 });
+
         addProperty(city, state, {
           hasAddress: true,
-          name: mortgage.name || "Unknown",
-          units: mortgage.units,
-          amount: mortgage.amount,
-          proj_num: mortgage.proj_num,
+          name: property.properties.mortgages[0].name || "Unknown",
+          units: mortgageAmounts.units,
+          amount: mortgageAmounts.amount,
+          proj_num: property.properties.mortgages[0].proj_num,
           white_pop: property.properties.white_pop,
           black_pop: property.properties.black_pop,
           other_pop: property.properties.other_pop,
           median_income: property.properties.median_income,
-        });
       });
     });
 
@@ -488,17 +485,13 @@ export function useCityStats(): Types.CityStats[] {
       const state = property.properties.state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
-      if (!property.properties.mortgages || property.properties.mortgages.length === 0) return; // Skip properties without mortgages
-
-      property.properties.mortgages.forEach(mortgage => {
         addProperty(city, state, {
           hasAddress: false,
-          name: mortgage.name,
-          amount: mortgage.amount,
-          units: mortgage.units,
-          proj_num: mortgage.proj_num,
+          amount: property.properties.amount || 0,
+          units: property.properties.units,
+          proj_num: property.properties.proj_num,
+          name: property.properties.name || "Unknown",
         });
-      });
     });
 
     // Convert map to array and sort
@@ -641,3 +634,42 @@ export const useDimensions = () => {
 
   return viewport;
 };
+
+
+// routeParams.ts
+export type RouteParams = {
+  home: void;                                   // no params
+  map: { selectedProperty?: string | number }; // same name as in template
+  sources: void;
+  citing: void;
+  data: void;
+  stories: void;
+  acknowledgments: void;
+};
+
+export function useLinkBuilder() {
+  /**
+   * Build a pathname, then (optionally) tack on search & hash.
+   */
+  const build = useCallback(
+    <
+      R extends keyof typeof Constants.ROUTES
+    >(
+      route: R,
+      params?: RouteParams[R],
+      hash?: string
+    ) => {
+      // 1. Fill in any :params in the template
+      let path = generatePath(Constants.ROUTES[route], params as any);
+
+      // 3. Add the hash (if provided)
+      if (hash) path += `#${hash}`;
+
+      return path;
+    },
+    []
+  );
+
+  return build;
+}
+
