@@ -4,7 +4,7 @@ import * as Constants from '../../../constants';
 // Sidebar Container
 export const Container = styled.div`
   padding: 16px;
-  max-width: 500px;
+  
   margin: 0 auto;
 `;
 
@@ -16,6 +16,40 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media ${Constants.devices.tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  @media ${Constants.devices.desktop} {
+    display: block;
+    max-width: 500px;
+  }
+
+
+`;
+
+// List Item (City Container)
+export const ListItem = styled.li`
+  padding: 16px;
+  background: white;
+  margin-bottom: 30px;
+  border: 1px solid #666;
+  border-radius: 8px;
+  position: relative;
+
+  @media ${Constants.devices.tablet} {
+    width: calc(50% - 3em);
+  }
+
+  @media ${Constants.devices.desktop} {
+    width: auto;
+  }
 `;
 
 
@@ -52,15 +86,7 @@ export const Td = styled.td`
   border-bottom: 1px solid #ddd;
 `;
 
-// List Item (City Container)
-export const ListItem = styled.li`
-  padding: 16px;
-  background: white;
-  margin-bottom: 30px;
-  border: 1px solid #666;
-  border-radius: 8px;
-  position: relative;
-`;
+
 
 // City Name (Large & Bold)
 export const CityName = styled.h2`

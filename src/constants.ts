@@ -26,6 +26,8 @@ export const COLOR_WHITE = (mode as Mode) === 'light' ? '#000000' : '#ffffff';  
 export const COLOR_BLACK = (mode as Mode) === 'light' ? '#ffffff' : '#000000';  // Same for both
 export const COLOR_BLUE = 'rgb(75, 0, 130)';
 
+export const COLOR_ACCENT_RED_LIGHT = '#EB9292';
+
 
 export const BUCKET_URL = 'https://s3.amazonaws.com/holc';
 
@@ -38,15 +40,13 @@ export const lightenDarkenColor = (col: string, amt: number) => (((parseInt(col,
 
 export const TEXT_SERIF = '"Merriweather", serif';
 export const TEXT_SANSSERIF = '"Lato", sans-serif';
-export const TEXT_SANSSERIF_ALT = '"News Cycle", sans-serif';
-export const TEXT_TYPEWRITER = '"Special Elite", serif';
-export const TEXT_MASTHEAD = '"Krona One", "EB Garamond", sans-serif';
+export const TEXT_MASTHEAD = '"Krona One", sans-serif';
 
 export const componentDimensions = {
   masthead: {
     height: {
       mobile: 35,
-      tablet: 100,
+      tablet: 40,
       desktop: 100,
     },
   },

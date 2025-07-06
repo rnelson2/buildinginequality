@@ -79,10 +79,9 @@ const Chart = ({ properties, omitHeader }: { properties: Types.Feature[]; omitHe
     <Styled.Container>
       {!omitHeader && (
         <>
-          <h2>Apartments by Race and Income</h2>
-          <Styled.Explanation>Bubbles on the map are apartments; those in the chart are all apartments in a census tract.</Styled.Explanation>
+          <h2>Rental Housing by Race and Income</h2>
+          <Styled.Explanation>Circles in the chart aggregate rental housing properties in a census tract. Size is proportional to number of housing units.</Styled.Explanation>
           <Styled.Explanation>The chart only shows tracts with race and income data.</Styled.Explanation>
-          <Styled.Explanation>Size is proportional to number of housing units.</Styled.Explanation>
         </>
       )}
       <svg viewBox="0 0 130 100">

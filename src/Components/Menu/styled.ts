@@ -2,15 +2,6 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import * as Constants from '../../constants';
 
-export const MenuToggle = styled.div <{ menuOnByDefault: boolean }>`
-  margin: 2rem 1rem 0 0;
-  color: ${Constants.COLOR_TEXT_ACCENT};
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 300;
-  display: ${p => p.menuOnByDefault ? 'none' : 'block'};
-`;
-
 export const Nav = styled.ul`
   z-index: 5001;
   background-color: ${Constants.COLOR_BACKGROUND};
@@ -21,32 +12,24 @@ export const Nav = styled.ul`
   width: min-content;
   margin: 0;
   padding-right: 1rem;
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
 
 
   @media ${Constants.devices.tablet} {
     grid-area: menu;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 2rem;
     height: auto;
   }
-`
-
-
-export const Section = styled.section`
-  padding: 0.25rem 1rem;
-  border-bottom: 1px solid black;
 
   @media ${Constants.devices.desktop} {
-    padding: 0.25rem 2rem;
+    gap: 2rem;
+    margin-right: 1rem;
   }
-
-  &:last-child {
-    border: none;
-  }
-`;
+`
 
 export const Item = styled.li`
   position: relative;
@@ -86,72 +69,16 @@ export const Item = styled.li`
   }
 `;
 
-export const ItemProminent = styled(Item)`
-  font-size: 1.25em;
-
-  @media ${Constants.devices.desktop} {
-    font-size: 1.5em;
-  }
-`;
-
-export const ItemDeemphasized = styled(Item)`
-  margin-bottom: 1rem;
-  transform: translateY(-1rem);
-`;
-
-
-export const SubmenuTitle = styled.h3`
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    gap: 0.5rem;
-    font-size: inherit;
-    font-weight: 300;
-
-    + ul {
-      margin-bottom: 3rem;
-
-      a {
-        font-size: 0.875em;
-        font-weight: 300;
-      }
-    }
-
-    svg {
-      height: 15px;
-      width: 15px;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-
-      color: ${Constants.COLOR_TEXT};
-      
-      line {
-        stroke: ${Constants.COLOR_ACCENT_RED};
-      }
-    }
-`;
-
-export const Submenu = styled.ul`
-  display: flex;
-  margin: 0;
-  padding: 0;
-  // background: -moz-linear-gradient(90deg, ${Constants.COLOR_BACKGROUND} 90%, ${Constants.COLOR_BACKGROUND} 100%);
-  // background: -webkit-linear-gradient(90deg, ${Constants.COLOR_BACKGROUND} 90%, ${Constants.COLOR_BACKGROUND} 100%);
-  // background: linear-gradient(90deg, ${Constants.COLOR_BACKGROUND} 90%, ${Constants.COLOR_BACKGROUND} 100%);
-`;
-
-
 export const Link = styled(NavLink)`
   white-space: nowrap;
   text-transform: uppercase;
 
   &::after {
     content: '' !important;
+  }
+
+  &.active, &:hover {
+    border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED};
   }
 `;
 

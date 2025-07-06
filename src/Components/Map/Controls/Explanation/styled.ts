@@ -12,7 +12,7 @@ export const Container = styled.div`
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 8px;
   padding: 16px;
-  z-index: 1010;
+  z-index: 2600;
   line-height: 1.5;
   overflow-y: auto;
 

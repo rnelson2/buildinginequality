@@ -18,12 +18,12 @@ export const App = styled.div`
   height: 100vh;
   height: 100dvh;
   background-color: ${Constants.COLOR_BACKGROUND};
-  grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.mobile}px;
+  grid-template-columns: 75vw 25vw;
   grid-template-rows: ${dimensions.masthead.height.mobile}px 3fr 2fr;
   grid-template-areas:
-    "masthead   masthead   menutoggle"
-    "main       main       main"
-    "sidebar    sidebar    sidebar";
+    "masthead      menutoggle"
+    "main              main"
+    "sidebar        sidebar";
 
   a {
     color: ${Constants.COLOR_ACCENT_RED};
@@ -32,12 +32,12 @@ export const App = styled.div`
   }
 
   @media ${Constants.devices.tablet} {
-    grid-template-columns: 50vw calc(50vw - ${dimensions.menuToggle.width.tablet}px) ${dimensions.menuToggle.width.tablet}px;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: ${dimensions.masthead.height.tablet}px 3fr 2fr;
     grid-template-areas:
-      "masthead   masthead   menu"
-      "main       main       main"
-      "sidebar    sidebar    sidebar";
+      "masthead      menu"
+      "main              main"
+      "sidebar        sidebar";
   }
 
   @media ${Constants.devices.desktop} {

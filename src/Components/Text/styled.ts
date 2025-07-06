@@ -11,6 +11,10 @@ export const TextBlock = styled.div`
   line-height: 1.7;
   overflow-y: auto;
 
+    p {
+      font-family: ${Constants.TEXT_SERIF};
+    }
+
   @media ${Constants.devices.tablet} {
     max-height: calc(100vh - ${Constants.componentDimensions.masthead.height.tablet}px);
   }

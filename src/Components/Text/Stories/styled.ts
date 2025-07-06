@@ -20,6 +20,10 @@ export const Container = styled.div`
 export const TextBlock = styled.div`
   max-width: min(700px, 95%);
   padding: 1em calc((100vw - min(700px, 95%)) / 2) 2em;
+  
+  p {
+    font-family: ${Constants.TEXT_SERIF};
+  }
 
   line-height: 1.7;
 

@@ -69,7 +69,7 @@ export const Title = styled.h1`
     margin-bottom: 0.5rem;
     font-size: 24px;
       text-transform: uppercase;
-      color: #EB9292;
+      color: ${Constants.COLOR_ACCENT_RED_LIGHT};
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
@@ -168,11 +168,17 @@ export const Menu = styled.div`
   gap: 2rem;
   z-index: 10;
   margin: 1rem auto;
+  
 
   text-transform: uppercase;
 
   a {
     color: #eeeeee !important;
-
+    border-bottom: 2px solid transparent;
+    &:hover {
+      color: ${Constants.COLOR_ACCENT_RED_LIGHT} !important;;
+      border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED_LIGHT};
+  
+    }
   }
 `;

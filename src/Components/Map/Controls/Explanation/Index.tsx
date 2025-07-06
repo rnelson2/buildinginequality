@@ -8,7 +8,7 @@ const Explanation = ({ setShowExplanation }: { setShowExplanation: React.Dispatc
     <Styled.Container>
       <Styled.Close onClick={() => setShowExplanation(false)}><CloseButton /></Styled.Close>
       <h2>How to Read & Use the Map</h2>
-      <p>The map always shows apartments and other rental housing underwritten by <Link to='/stories'>FHA Section 608 financing</Link> but shows that data differently depending on how zoomed in it is.</p>
+      <p>The map shows rental housing underwritten by <Link to='/stories'>FHA Section 608 financing</Link>,differently depending on how zoomed in it is.</p>
 
       <p><strong>Aggregated view (zoomed out):</strong> When you're zoomed out, space is split into a honeycomb of hexagons. Each hexagons represents an area where at least one apartment property was located. Lighter colors indicate fewer units, darker more. As you zoom in, hexagons get smaller and the legend updates to show the new unit range.</p>
 

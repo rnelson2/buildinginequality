@@ -32,7 +32,7 @@ export const Title = styled.h1`
   font-family: 'Krona One', ${Constants.TEXT_MASTHEAD};
   line-height: 1;
   margin: 0 0 0 10px;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
   color:  ${Constants.COLOR_ACCENT_RED}; // #4B0082; // 
   font-weight: 400;
