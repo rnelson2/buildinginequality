@@ -1,19 +1,23 @@
 import styled from 'styled-components';
 import { Link as RRLink } from "react-router-dom";
+import * as Constants from '../../../constants';
+import { hexToRgba } from '../../../utilities';
 
 export const Container = styled.div`
   grid-area: map;
   position: absolute;
-    bottom: 20px;
+  bottom: 20px;
   right: 20px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  width: 400px;
-  height: 400px;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   z-index: 1000;
-  pointer-events: none;
+  background-color: white;
+  border-radius: 0.25em;
+  border: 0.5px solid #777;
+  padding: 1em;
 `;
 
 export const HexContainer = styled(Container)`
@@ -80,9 +84,8 @@ export const IncomeLegend = styled.div`
 `;
 
 export const Label = styled.div`
-  grid-column: 1 / 1;
-  text-align: right;
-  font-size: 13px;
+  font-size: 15px;
+  text-align: center;
 `
 
 export const CensusTractToggle = styled(RRLink)`
@@ -172,4 +175,21 @@ export const LabelCircle = styled.span<{ $topOffset: number }>`
   white-space: nowrap;
   text-align: left;
 `;
+
+export const HowToUseButton = styled.button`
+  background-color: ${hexToRgba(Constants.COLOR_ACCENT_RED, 0.5)};
+  color: black;
+  border: 1px solid #444;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 0.7em;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: ${Constants.COLOR_ACCENT_RED};;
+    color: white; 
+  }
+`; 
 

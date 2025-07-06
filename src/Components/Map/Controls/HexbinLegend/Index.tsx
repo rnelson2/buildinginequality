@@ -46,7 +46,7 @@ const HexbinLegend: React.FC<HexbinLegendProps> = ({
   const svgHeight = labelFontSize * 2 + 3 + labelOffset + hexHeight + padding;
 
   return (
-    <Styled.Container>
+    <>
       <Styled.Label>{label}</Styled.Label>
       <svg width={width + padding * 2} height={svgHeight}>
         <g transform={`translate(${padding}, ${labelFontSize + labelOffset})`}>
@@ -94,7 +94,7 @@ const HexbinLegend: React.FC<HexbinLegendProps> = ({
           })}
         </g>
       </svg>
-    </Styled.Container>
+    </>
   );
 };
 

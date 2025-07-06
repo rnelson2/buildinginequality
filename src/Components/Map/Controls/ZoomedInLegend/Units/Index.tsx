@@ -9,7 +9,7 @@ const Units = () => {
 
   return (
     <Styled.Container>
-      <Styled.Title>Number of<br />Property Units</Styled.Title>
+      <Styled.Label>Number of<br />Property Units</Styled.Label>
     <Styled.LegendWrapper>
       <Styled.CirclesWrapper>
         {legendValues.map(value => (

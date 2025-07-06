@@ -1,4 +1,5 @@
 import styled from "styled-components";
+export { Label } from '../../styled';
 
 export const Container = styled.div`
   width: 160px;
