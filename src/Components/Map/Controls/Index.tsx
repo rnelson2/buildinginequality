@@ -8,7 +8,7 @@ import { useURLState } from "../../../hooks";
 const Controls = () => {
   const { zoom } = useURLState();
 
-  const [showExplanation, setShowExplanation] = useState(true);
+  const [showExplanation, setShowExplanation] = useState(false);
 
   if (zoom <= 10) {
     return (
