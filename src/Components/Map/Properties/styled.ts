@@ -1,5 +1,6 @@
 import { CircleMarker } from "react-leaflet";
 import styled, { keyframes, css } from "styled-components";
+import { Pane } from "react-leaflet";
 
 // Define keyframe animation
 const pulse = keyframes`
@@ -31,4 +32,9 @@ export const NoProperties = styled.div`
   padding: 5px 10px;
   border-radius: 3px;
   z-index: 1000;
+`; 
+
+export const PropertiesPane = styled(Pane)`
+  z-index:650;
+  pointer-events: auto;
 `; 

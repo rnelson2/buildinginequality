@@ -57,6 +57,7 @@ const Property = ({ property }: { property: Feature }) => {
   return (
     <CircleMarker
       ref={circleRef}
+      pane='properties'
       center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
       //fillColor={fillColor}
       fillColor={Constants.COLOR_ACCENT_RED}

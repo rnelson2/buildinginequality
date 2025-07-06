@@ -2,7 +2,7 @@ import React from "react";
 import Select from "react-select";
 import { useCitiesOptions, useMapContext } from "../../../hooks";
 import * as Styled from "./styled";
-import { useNavigate } from "react-router-dom";
+import { useDimensions } from "../../../hooks";
 import { polygonToBounds } from "../../../utilities";
 
 interface GroupedOption {
@@ -21,7 +21,7 @@ interface Option {
 
 const CitySelect = () => {
   const { groupedOptions } = useCitiesOptions();
-  const navigate = useNavigate();
+  const { device } = useDimensions();
   const { map } = useMapContext();
 
   const handleChange = (selectedOption: any) => {
@@ -36,8 +36,9 @@ const CitySelect = () => {
         bounds[0][1] -= 0.01;
         bounds[1][1] += 0.01;
       }
-      map.fitBounds(bounds); // Fit the map to the selected city's bounds
-      navigate(selectedOption.value); // Navigate to the selected city's link
+      // on desktop, pad the right boundary because of the legend
+      map.fitBounds(bounds, { maxZoom: 16, paddingBottomRight: (device === 'desktop') ? [213, 0] : [0, 0] }); // Fit the map to the selected city's bounds
+      //navigate(selectedOption.value); // Navigate to the selected city's link
     }
   };
 

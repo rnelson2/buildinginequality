@@ -28,6 +28,8 @@ const Properties = () => {
 
   return (
     <>
+      <Styled.PropertiesPane name="properties" />
+        {/* This pane is used to ensure properties are rendered above other layers */}
       {emphasizedProperties.map(property => (
         <EmphasizedProperty
           property={property}
