@@ -30,6 +30,10 @@ export const TextBlock = styled.div`
 
   a {
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &[href*='//']::after
     {
       // content: url(/static/images/external_link.svg);

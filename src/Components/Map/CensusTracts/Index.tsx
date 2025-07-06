@@ -36,7 +36,7 @@ const CensusTracts = () => {
     const black_pop = feature.properties.black_pop || 0;
     const other_pop = feature.properties.other_pop || 0;
     const populationDensity = (white_pop + black_pop + other_pop) / feature.properties.area;
-    return populationDensity / maxPopulationDensity * 0.5;
+    return 0.075 + populationDensity / maxPopulationDensity * 0.425;
   }
 
 
@@ -47,7 +47,14 @@ const CensusTracts = () => {
         <GeoJSON
           key={censusTract.properties.gisjoin}
           data={censusTract}
-          style={{ fillColor: getColor(censusTract, mapview, { maxIncome, }), stroke: false, fillOpacity: getFillOpacity(censusTract) }}
+          style={{
+            fillColor: getColor(censusTract, mapview, { maxIncome, }),
+            stroke: true,
+            fillOpacity: getFillOpacity(censusTract),
+            color: getColor(censusTract, mapview, { maxIncome }),
+            weight: 0.25,
+            opacity: 0.5,
+          }}
         />
       ))}
     </>

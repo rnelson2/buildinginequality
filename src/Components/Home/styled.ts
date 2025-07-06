@@ -69,7 +69,7 @@ export const Title = styled.h1`
     margin-bottom: 0.5rem;
     font-size: 24px;
       text-transform: uppercase;
-      color:rgb(178, 151, 197); // ${Constants.COLOR_ACCENT_RED};
+      color: #EB9292;
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
@@ -90,7 +90,7 @@ export const Subtitle = styled.h2`
   text-align: center;
   line-height: 1.1;
   z-index: 10;
-  color: #f0f0f0;
+  color: #F3BDBD;
   font-family: ${Constants.TEXT_SANSSERIF};
   font-weight: 400;
 
@@ -144,7 +144,7 @@ export const ExploreButton = styled(Link)`
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  background-color: ${Constants.COLOR_BLUE};
+  background-color: ${Constants.COLOR_ACCENT_RED};
   color: white !important;
   padding: 1em 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

@@ -34,7 +34,7 @@ export const Title = styled.h1`
   margin: 0 0 0 10px;
   font-size: 20px;
   text-transform: uppercase;
-  color:   #4B0082; // ${Constants.COLOR_ACCENT_RED};
+  color:  ${Constants.COLOR_ACCENT_RED}; // #4B0082; // 
   font-weight: 400;
 
   @media ${Constants.devices.tablet} {

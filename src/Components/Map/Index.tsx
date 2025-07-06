@@ -36,7 +36,7 @@ const Map = () => {
         maxZoom={21}
         minZoom={1}
         maxBounds={[[68.77, -169.38], [16, -65.5]]}
-        zoomControl={false} 
+        zoomControl={false}
       >
         <USZoomAndCenter />
         <HashLoc />
@@ -52,7 +52,7 @@ const Map = () => {
         {zoom >= 11 && <CensusTracts /> }
         {zoom >= 11 && <Properties />}
         {zoom < 11 && <ClusteredProperties />}
-        <ZoomControl position="bottomright" /> 
+        <ZoomControl position="topright" /> 
       </MapContainer>
 
       <Controls />

@@ -5,7 +5,7 @@ import { modifyHash } from '../../utilities';
 import { useURLState } from '../../hooks';
 
 const HashLoc = (): null => {
-  const { hash, selectedProperty } = useURLState();
+  const { hash, selectedProperty, center, zoom } = useURLState();
   const navigate = useNavigate();
 
   const map = useMap();                           // ← map instance
@@ -34,6 +34,25 @@ const HashLoc = (): null => {
       });
     }
   };
+
+  // ————————————————————————————————
+  //   updates the map if the zoom or center changes
+  // 
+  useEffect(() => {
+    // map may exist but be *unloaded* already
+    // @ts-ignore
+    if (!map || !map._loaded) return;
+
+    // if the zoom or center changed, update the hash
+    const c = map.getCenter();
+    const currentLat = Math.round(c.lat * 10000) / 10000; // round to 4 decimal places
+    const currentLng = Math.round(c.lng * 10000) / 10000; // round to 4 decimal places
+    const currentZoom = map.getZoom();
+
+    if (currentLat !== center[0] || currentLng !== center[1] || currentZoom !== zoom) {
+      map.setView(center, zoom);
+    }
+  }, [center[0], center[1], zoom]); // ← run on center or zoom change
 
   // debounce updates after every move
   useMapEvent('moveend', () => {

@@ -33,23 +33,23 @@ export const Container = styled.div`
 export const Link = styled(NavLink)`
   text-decoration: none;
   text-transform: uppercase;
-  color: ${Constants.COLOR_BLUE} !important;
+  color: ${Constants.COLOR_ACCENT_RED} !important;
 
 
   &.active {
     color: ${Constants.COLOR_INTERACTIVE};
-    border-bottom: 2px solid ${Constants.COLOR_BLUE} !important;
+    border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED} !important;
   }
   &:hover {
     color: ${Constants.COLOR_INTERACTIVE_DARK};
-    border-bottom: 2px solid ${Constants.COLOR_BLUE};
+    border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED};
     text-decoration: none !important;
   }
 
   &:focus {
     outline: none;
-    color: ${Constants.COLOR_BLUE};
-    border-bottom: 2px solid ${Constants.COLOR_BLUE};
+    color: ${Constants.COLOR_ACCENT_RED};
+    border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED};
   }
 `;
 

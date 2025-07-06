@@ -20,8 +20,8 @@ export const Map = styled.div`
     margin: 0 0 2rem 2rem;
   }
 
-  .leaflet-control-zoom {
+  /* .leaflet-control-zoom {
     bottom: 100px;
     right: 10px;
-  }
+  } */
 `;

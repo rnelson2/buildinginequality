@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import {  GeoJSON } from "react-leaflet";
 import { useHexbins, useURLState, useMapContext } from "../../../hooks";
 import { LatLngBounds } from "leaflet";
-import { getBlueThresholdScale } from "../../../utilities";
+import { getBlueThresholdScale, getRedThresholdScale } from "../../../utilities";
 
 const ClusteredProperties = () => {
   const { mapview, zoom } = useURLState();
@@ -52,7 +52,7 @@ const ClusteredProperties = () => {
   };
 
   //const colorScale = scaleSequential(interpolateBlues).domain([0, maxUnits]);
-  const { scale: colorScale } = getBlueThresholdScale(maxUnits);
+  const { scale: colorScale } = getRedThresholdScale(maxUnits);
   return (
     <>
       {visibleFeatures.map(property => (

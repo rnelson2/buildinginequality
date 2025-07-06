@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import * as Styled from "./styled";
 import ToggleButton from "./ToggleButton";
 import { scaleLinear } from "d3-scale";
-import { modifyHash, getColor } from "../../../utilities";
+import { modifyHash, getColor, hexToRgba } from "../../../utilities";
 import { useURLState, useVisiblePropertiesStats } from "../../../hooks";
 import CloseButton from "../../Buttons/Close";
 import HexbinLegend from "./HexbinLegend/Index";
+import ZoomedInLegend from "./ZoomedInLegend/Index";
+import * as Constants from "../../../constants";
 
 const Controls = () => {
   const { hash, mapview, pathname, hideCensusTracts, zoom } = useURLState();
   const { maxIncome } = useVisiblePropertiesStats();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const symbolsWidth = 180;
 
@@ -35,17 +37,50 @@ const Controls = () => {
     //return <Styled.HexContainer>Each hexagon represents multiple apartment properties grouped loosely by location. Its size reflects the total number of apartment units—larger hexagons indicate more units in that general area. At lower zoom levels, hexagons may appear between familiar cities; their placement reflects spatial clustering rather than exact geography.</Styled.HexContainer>;
   }
 
+  if (zoom > 10) {
+    return <ZoomedInLegend />;
+  }
+
+  const radius = (units: number) => Math.sqrt(units) * 0.5;
+  const legendValues = [3000, 1500, 500, 100];
+
   return (
     <Styled.Container>
       {open && (
         <Styled.LegendContainer>
+          <Styled.LegendWrapper>
+            <Styled.CirclesWrapper>
+              {legendValues.map(value => (
+                <Styled.Circle
+                  key={`circle-${value}`}
+                  size={radius(value) * 2}
+                  color={'white'}
+
+                  fill={hexToRgba(Constants.COLOR_ACCENT_RED, 0.5)}
+                />
+              ))}
+            </Styled.CirclesWrapper>
+            <Styled.LabelsWrapper>
+              {[...legendValues].reverse().map(value => (
+                <Styled.LabelCircle
+                  key={`label-${value}`}
+                  $topOffset={radius(value)}
+                >
+                  {value} Units
+                </Styled.LabelCircle>
+              ))}
+            </Styled.LabelsWrapper>
+
+          </Styled.LegendWrapper>
+{/* 
           <Styled.CloseButton
             onClick={() => {
               setOpen(false);
             }}
           >
             <CloseButton />
-          </Styled.CloseButton>
+          </Styled.CloseButton> */}
+          <div>
           <Styled.Toggle>
             <Styled.Link
               to={`${pathname}#${modifyHash(hash, [{ type: "set_mapview", payload: "race" }])}`}
@@ -126,68 +161,9 @@ const Controls = () => {
 
             {mapview === "race" && (
               <Styled.IncomeLegend>
-                <Styled.Label>Properties</Styled.Label>
-                <svg
-                  width={symbolsWidth}
-                  height={incomeSectionWidth}
-                >
-                  {raceTicks.map(tick => (
-                    <circle
-                      cx={raceScale(tick)}
-                      cy={incomeSectionWidth / 2}
-                      r={incomeSectionWidth / 2 - 4}
-                      fill={getColor({ properties: { white_pop: tick, black_pop: 100 - tick } })}
-                      fillOpacity={0.8}
-                      stroke={getColor({ properties: { white_pop: tick, black_pop: 100 - tick } })}
-                      strokeWidth={1}
-                      key={`race-properties-${tick}`}
-                    />
-                  ))}
-                </svg>
+               
 
-                <svg
-                  width={symbolsWidth}
-                  height="25"
-                >
-                  <text
-                    x={raceScale(0)}
-                    y={12}
-                    textAnchor="middle"
-                    fontSize={11}
-                  >
-                    100%
-                    <tspan
-                      x={raceScale(0)}
-                      dy={10}
-                    >
-                      of color
-                    </tspan>
-                  </text>
-
-                  <text
-                    x={raceScale(50)}
-                    y={12}
-                    textAnchor="middle"
-                    fontSize={11}
-                  >
-                    50/50%
-                  </text>
-
-                  <text
-                    x={raceScale(100)}
-                    y={12}
-                    textAnchor="middle"
-                    fontSize={11}
-                  >
-                    100%
-                    <tspan
-                      x={raceScale(100)}
-                      dy={10}
-                    >
-                      white
-                    </tspan>
-                  </text>
-                </svg>
+                
 
                 {!hideCensusTracts && (
                   <>
@@ -260,32 +236,9 @@ const Controls = () => {
             )}
           </Styled.Legend>
           <Styled.CensusTractToggle to={`${pathname}#${modifyHash(hash, [{ type: "toggle_censusTracts" }])}`}> {hideCensusTracts ? "Show" : "Hide"} Census Tracts</Styled.CensusTractToggle>
-
-          <Styled.NoCensusData>
-            <svg
-              width={30}
-              height={30}
-              viewBox="0 0 30 30"
-            >
-              <circle
-                cx={15}
-                cy={15}
-                r={14}
-                fill={mapview === 'race' ? "#8B4513" : 'rgb(119, 119, 119)'}
-                fillOpacity={0.8}
-                stroke={mapview === 'race' ? "#8B4513" : 'rgb(119, 119, 119)'}
-                strokeWidth={1}
-              />
-            </svg>
-            <div>No census data for property</div>
-          </Styled.NoCensusData>
+          </div>
         </Styled.LegendContainer>
       )}
-
-      <ToggleButton
-        open={open}
-        setOpen={setOpen}
-      />
     </Styled.Container>
   );
 };

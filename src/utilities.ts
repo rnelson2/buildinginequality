@@ -1,5 +1,5 @@
 import * as Types from './index.d';
-import { scaleLinear } from 'd3';
+import { scaleLinear, interpolateHcl } from 'd3';
 import { scaleThreshold } from "d3-scale";
 
 export function getBlueThresholdScale(maxUnits: number, steps: 5 | 7 | 9 = 7) {
@@ -8,6 +8,47 @@ export function getBlueThresholdScale(maxUnits: number, steps: 5 | 7 | 9 = 7) {
     7: ["#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#084594"],
     9: ["#f7fbff", "#deebf7", "#c6dbef", "#9ecae1", "#6baed6", "#4292c6", "#2171b5", "#08519c", "#08306b"],
   }[steps];
+
+  const binCount = colorRange.length;
+
+  // Create evenly spaced bin edges (excluding 0 and maxUnits)
+  const domain = Array.from({ length: binCount - 1 }, (_, i) =>
+    Math.round(((i + 1) / binCount) * maxUnits)
+  );
+
+  const scale = scaleThreshold<number, string>()
+    .domain(domain)
+    .range(colorRange);
+
+  return { scale, domain, range: colorRange };
+}
+
+export function getRedThresholdScale(maxUnits: number, steps: 5 | 7 | 9 = 7) {
+  // colour ranges built around #D62424
+  const colorRange = {
+    5: ["#fee5d9", "#fcae91", "#fb6a4a", "#ef3b2c", "#d62424"],
+    7: [
+      "#fee5d9",
+      "#fcbba1",
+      "#fc9272",
+      "#fb6a4a",
+      "#ef3b2c",
+      "#cb181d",
+      "#d62424",
+    ],
+    9: [
+      "#fff5f0",
+      "#fee0d2",
+      "#fcbba1",
+      "#fc9272",
+      "#fb6a4a",
+      "#ef3b2c",
+      "#d62424",
+      "#a50f15",
+      "#67000d",
+    ],
+  }[steps];
+
 
   const binCount = colorRange.length;
 
@@ -77,7 +118,14 @@ return getKeys(hashValues)
 }
 
 // function for color 
-const colorScale = scaleLinear<string>().domain([0, 0.5, 1]).range(["#802380", "#777777", "#239923"]);
+//const colorScale = scaleLinear<string>().domain([0, 0.5, 1]).range(["#802380", "#777777", "#239923"]);
+
+// const colorScale = scaleLinear<string>().domain([0, 0.25, 0.5, 0.75, 1]).range(['#732d82', '#5b65a5', '#a5a5a5', '#4f9fb5', '#00978f']);
+
+export const colorScale = scaleLinear<string>()
+  .domain([0, 0.5, 1])              // 0 = 100 % non-white, 1 = 100 % white
+  .range(["#802380", "#d9d9d9", "#1D7E45"]) // purple → neutral → darker green
+  .interpolate(interpolateHcl);      // keeps perceived lightness smooth
 
 const incomeColorScale = (maxIncome: number) => {
   return scaleLinear<string>().domain([maxIncome, 1, 0]).range(["#0000ff", "#eeeeff", "#777777"])
@@ -126,3 +174,24 @@ export function toTitleCase(str: string): string {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 }
+
+/**
+ * Converts a hex color to an RGBA string.
+ * @param hex - The hex color string (e.g., "#ff5733" or "#f53").
+ * @param opacity - The opacity value (0 to 1).
+ * @returns The RGBA string (e.g., "rgba(255, 87, 51, 0.5)").
+ */
+export const hexToRgba = (hex: string, opacity: number): string => {
+  // Expand shorthand hex format (e.g., "#f53" -> "#ff5533")
+  let fullHex = hex.replace(/^#/, '');
+  if (fullHex.length === 3) {
+    fullHex = fullHex.split('').map((char) => char + char).join('');
+  }
+
+  // Parse RGB values
+  const r = parseInt(fullHex.substring(0, 2), 16);
+  const g = parseInt(fullHex.substring(2, 4), 16);
+  const b = parseInt(fullHex.substring(4, 6), 16);
+
+  return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+};

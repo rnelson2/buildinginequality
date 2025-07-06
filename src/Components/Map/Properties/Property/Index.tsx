@@ -1,13 +1,15 @@
 import React, { useMemo, useCallback, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useVisibleProperties, useURLState, useMapContext } from "../../../../hooks";
+import { useVisibleProperties, useURLState, useMapContext, useLinkBuilder } from "../../../../hooks";
 import { CircleMarker } from "react-leaflet";
 import { getColor } from "../../../../utilities";
 import * as Styled from "./styled";
+import * as Constants from "../../../../constants";
 import { Feature } from "../../../../index.d";
 
 const Property = ({ property }: { property: Feature }) => {
   const properties = useVisibleProperties();
+  const buildLink = useLinkBuilder();
   const { hash, selectedProperty, mapview } = useURLState();
   const { highlightedIds } = useMapContext();
   const navigate = useNavigate();
@@ -41,23 +43,25 @@ const Property = ({ property }: { property: Feature }) => {
     }, 0);
   }, [properties]);
 
-  const fillColor = useMemo(() => {
-    return getColor(property, mapview, { maxIncome });
-  }, [property, mapview, maxIncome]);
+  // const fillColor = useMemo(() => {
+  //   return getColor(property, mapview, { maxIncome });
+  // }, [property, mapview, maxIncome]);
 
   // Ensure Leaflet CircleMarker updates style when `fillColor` changes
-  useEffect(() => {
-    if (circleRef.current) {
-      circleRef.current.setStyle({ fillColor, color: fillColor });
-    }
-  }, [fillColor]);
+  // useEffect(() => {
+  //   if (circleRef.current) {
+  //     circleRef.current.setStyle({ fillColor, color: fillColor });
+  //   }
+  // }, [fillColor]);
 
   return (
     <CircleMarker
       ref={circleRef}
       center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
-      fillColor={fillColor}
-      color={getColor(property, mapview, { maxIncome })}
+      //fillColor={fillColor}
+      fillColor={Constants.COLOR_ACCENT_RED}
+      color='white'
+      //color={getColor(property, mapview, { maxIncome })}
       weight={1}
       fillOpacity={fillOpacity}
       radius={radius}
@@ -66,7 +70,7 @@ const Property = ({ property }: { property: Feature }) => {
           if (parseInt(selectedProperty || "-9999999") === property.properties.mortgages[0].proj_num) {
             navigate(`/map${hash}`);
           } else {
-            navigate(`/map/${property.properties.mortgages[0].proj_num}${hash}`);
+            navigate(buildLink("map", { selectedProperty: property.properties.mortgages[0].proj_num }, hash));
           }
         },
       }}

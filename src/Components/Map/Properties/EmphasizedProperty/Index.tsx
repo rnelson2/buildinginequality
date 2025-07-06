@@ -4,6 +4,8 @@ import { useVisibleProperties, useURLState, useMapContext } from "../../../../ho
 import { getColor } from "../../../../utilities";
 import { CircleMarker } from "react-leaflet";
 import { Feature } from "../../../../index.d";
+import * as Constants from "../../../../constants";
+import { constants } from "buffer";
 
 const Properties = ({ property }: { property: Feature }) => {
   const properties = useVisibleProperties();
@@ -69,8 +71,8 @@ const Properties = ({ property }: { property: Feature }) => {
       ref={circleRef}
       key={`${property.geometry.coordinates[0]}-${property.geometry.coordinates[1]}-${selectedProperty}-${mapview}${highlightedIds ? `-${highlightedIds.join("-")}` : ""}`}
       center={[property.geometry.coordinates[1], property.geometry.coordinates[0]]}
-      fillColor={getColor(property, mapview, { maxIncome })}
-      color={getColor(property, mapview, { maxIncome })}
+      fillColor={Constants.COLOR_ACCENT_RED}
+      color={Constants.COLOR_ACCENT_RED}
       weight={0}
       fillOpacity={0.7}
       radius={baseRadius}

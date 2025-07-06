@@ -26,12 +26,9 @@ export const App = styled.div`
     "sidebar    sidebar    sidebar";
 
   a {
-    color: ${Constants.COLOR_BLUE};
+    color: ${Constants.COLOR_ACCENT_RED};
 
     text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   @media ${Constants.devices.tablet} {

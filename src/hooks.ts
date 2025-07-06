@@ -172,11 +172,22 @@ export function useProperties() {
         const all = arraysOfFeatures.flat();
 
         setData(
-          all.filter(
-            (property) =>
-              property.properties.mortgages.length > 0 &&
-              property.properties.mortgages[0].proj_num
+          all
+            .filter(
+              (property) =>
+                property.properties.mortgages.length > 0 &&
+                property.properties.mortgages[0].proj_num
           )
+            // sort by units descending
+            .sort((a, b) => {
+              const aUnits = (a.properties.mortgages.length > 0)
+                ? a.properties.mortgages.reduce((sum: number, m: typeof a.properties.mortgages[0]) => sum + (m.units || 0), 0)
+                : 0;
+              const bUnits = (b.properties.mortgages.length > 0)
+                ? b.properties.mortgages.reduce((sum: number, m: typeof b.properties.mortgages[0]) => sum + (m.units || 0), 0)
+                : 0;
+              return bUnits - aUnits;
+            })
         );
       })
       .finally(() => {
@@ -662,10 +673,10 @@ export function useLinkBuilder() {
       // 1. Fill in any :params in the template
       let path = generatePath(Constants.ROUTES[route], params as any);
 
-      // 3. Add the hash (if provided)
-      if (hash) path += `#${hash}`;
-
-      return path;
+      return {
+        pathname: path,
+        hash: hash ? hash : "",
+      }
     },
     []
   );

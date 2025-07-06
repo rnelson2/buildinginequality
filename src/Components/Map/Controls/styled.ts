@@ -7,10 +7,10 @@ export const Container = styled.div`
     bottom: 20px;
   right: 20px;
   display: flex;
-  align-items: flex-end;
   gap: 20px;
   width: 400px;
   height: 400px;
+  align-items: flex-end;
   justify-content: flex-end;
   z-index: 1000;
   pointer-events: none;
@@ -30,16 +30,13 @@ export const HexContainer = styled(Container)`
 
 export const LegendContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-content: flex-end;
+  align-content: center;
   justify-content: space-between;
   background-color: white;
   padding: 10px;
   border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 
-  width: 330px;
-  height: 350px;
   pointer-events: auto;
 `
 
@@ -134,3 +131,45 @@ export const NoCensusData = styled.div`
   height: 100%;
   font-size: 14px;
 `;
+
+export const LegendWrapper = styled.div`
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  width: 150px
+  
+`;
+
+export const CirclesWrapper = styled.div`
+  position: relative;
+  width: 50px;
+`;
+
+export const Circle = styled.div<{ size: number; color: string; fill: string }>`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: ${({ size }) => size}px;
+  height: ${({ size }) => size}px;
+  border-radius: 50%;
+  background-color: ${({ fill }) => fill};
+  border: 2px solid ${({ color }) => color};
+  fill-opacity: 0.1;
+`;
+
+export const LabelsWrapper = styled.div`
+  position: relative;
+  height: 100px; /* Match CirclesWrapper height */
+`;
+
+export const LabelCircle = styled.span<{ $topOffset: number }>`
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: ${({ $topOffset }) => `calc(100% - ${$topOffset * 2}px)`}; 
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-align: left;
+`;
+

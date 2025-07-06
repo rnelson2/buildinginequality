@@ -4,8 +4,8 @@ import * as Constants from '../../../constants';
 export const SelectCity = styled.div`
   grid-area: map;
   position: absolute;
-    top: 20px;
-  right: 20px;
+    top: 0px;
+  right: 80px;
   gap: 20px;
   width: calc(100% - 40px);
   max-height: calc(100% - 40px);
@@ -19,7 +19,7 @@ export const SelectCity = styled.div`
     width: 400px;
     grid-column: 2 / span 1;
     grid-row: 1 / span 3;
-    width: 300px;
+    width: 200px;
     max-height: calc(100vh - 200px);
 
   }

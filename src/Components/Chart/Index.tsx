@@ -4,6 +4,7 @@ import { scaleLinear, scaleSqrt } from "d3";
 import { getColor } from "../../utilities";
 import * as Types from "../../index.d";
 import { useURLState } from "../../hooks";
+import * as Constants from "../../constants";
 import * as Styled from "./styled";
 
 // Define a new type where white_pop, black_pop, and other_pop are required
@@ -170,10 +171,12 @@ const Chart = ({ properties, omitHeader }: { properties: Types.Feature[]; omitHe
                   cx={xScale(property.white_pop / (property.white_pop + property.black_pop + property.other_pop))}
                   cy={y}
                   r={r(property.units)}
-                  fill={getColor({ properties: property }, mapview, { maxIncome })}
-                  fillOpacity={0.3}
-                  stroke={getColor({ properties: property }, mapview, { maxIncome })}
-                  strokeWidth={0.5}
+                  //fill={getColor({ properties: property }, mapview, { maxIncome })}
+                  fill={Constants.COLOR_ACCENT_RED}
+                  fillOpacity={0.7}
+                  //stroke={getColor({ properties: property }, mapview, { maxIncome })}
+                  stroke='silver'
+                  strokeWidth={0.15}
                 />
               </Link>
             );

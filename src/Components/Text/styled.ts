@@ -26,12 +26,18 @@ export const TextBlock = styled.div`
 
   a {
 
+    &:hover {
+      text-decoration: underline;
+    }
+
 
       &[href*='//']::after {
       // content: url(/static/images/external_link.svg);
       padding-left: 1.5em;
       mask-image: url(/images/external_link.svg);
       background-color: #666666;
+
+      
     }
   }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import { format } from "d3-format";
 import { scaleThreshold } from "d3-scale";
 import * as Styled from "./styled";
-import { getBlueThresholdScale } from "../../../../utilities";
+import { getRedThresholdScale } from "../../../../utilities";
 import { useVisibleHexbins } from "../../../../hooks";
 
 interface HexbinLegendProps {
@@ -16,8 +16,8 @@ const HexbinLegend: React.FC<HexbinLegendProps> = ({
 }) => {
   const hexbins = useVisibleHexbins();
   const maxUnits = hexbins.reduce((max, bin) => Math.max(max, bin.properties.units), 0);
-  const label = "Number of Apartment Units";
-  const { domain, range } = getBlueThresholdScale(maxUnits, 7);
+  const label = "Number of Property Units";
+  const { domain, range } = getRedThresholdScale(maxUnits, 7);
 
   const fmt = format(".2s"); // e.g., 1.2k
 
