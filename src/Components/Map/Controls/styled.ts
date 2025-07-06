@@ -18,6 +18,8 @@ export const Container = styled.div`
   border-radius: 0.25em;
   border: 0.5px solid #777;
   padding: 1em;
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
 `;
 
 
