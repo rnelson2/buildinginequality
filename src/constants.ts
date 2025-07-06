@@ -40,7 +40,7 @@ export const TEXT_SERIF = '"Merriweather", serif';
 export const TEXT_SANSSERIF = '"Lato", sans-serif';
 export const TEXT_SANSSERIF_ALT = '"News Cycle", sans-serif';
 export const TEXT_TYPEWRITER = '"Special Elite", serif';
-export const TEXT_MASTHEAD = '"EB Garamond", sans-serif';
+export const TEXT_MASTHEAD = '"Krona One", "EB Garamond", sans-serif';
 
 export const componentDimensions = {
   masthead: {

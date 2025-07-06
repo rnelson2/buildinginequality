@@ -29,7 +29,7 @@ export const Masthead = styled.header`
 
 export const Title = styled.h1`
   display: inline-block;
-  font-family: ${Constants.TEXT_MASTHEAD};
+  font-family: 'Krona One', ${Constants.TEXT_MASTHEAD};
   line-height: 1;
   margin: 0 0 0 10px;
   font-size: 20px;
@@ -44,7 +44,7 @@ export const Title = styled.h1`
   }
 
   @media ${Constants.devices.desktop} {
-    font-size: 30px;
+    font-size: 24px;
     margin: 0;
     line-height: 1;
   }

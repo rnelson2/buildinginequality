@@ -36,7 +36,7 @@ module.exports = merge({
       }
     }),
     new HtmlWebpackPlugin({
-      templateContent: '<html> <head> <title>Building Inequality</title> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" /> <link href="https://fonts.googleapis.com" rel="preconnect" /> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Special+Elite|News+Cycle|Merriweather:300|Lato:400,100,300,700|Lora:100,400|Crimson+Text:400i|PT+Sans:400&display=swap" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#ffffff" /> </head> <body> <div id="app-container" /> </body> </html>',
+      templateContent: '<html> <head> <title>Building Inequality</title> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" /> <link href="https://fonts.googleapis.com" rel="preconnect" /> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Special+Elite|News+Cycle|Merriweather:300|Krona+One:400|Lato:400,100,300,700|Lora:100,400|Crimson+Text:400i|PT+Sans:400&display=swap" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#ffffff" /> </head> <body> <div id="app-container" /> </body> </html>',
     }),
     new CopyWebpackPlugin({
       patterns: [ { from: 'public', to: './' } ]
