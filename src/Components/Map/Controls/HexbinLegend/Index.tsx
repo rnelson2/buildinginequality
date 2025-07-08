@@ -15,7 +15,7 @@ const HexbinLegend: React.FC<HexbinLegendProps> = ({
   steps = 7,
 }) => {
   const hexbins = useVisibleHexbins();
-  const maxUnits = hexbins.reduce((max, bin) => Math.max(max, bin.properties.units), 0);
+  const maxUnits = hexbins.reduce((max, bin) => Math.max(max, bin.properties.units || 0), 0);
   const label = "Number of Property Units";
   const { domain, range } = getRedThresholdScale(maxUnits, 7);
 

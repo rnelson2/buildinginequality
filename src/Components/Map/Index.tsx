@@ -35,7 +35,7 @@ const Map = () => {
         style={{ height: '100%', width: '100%' }}
         maxZoom={21}
         minZoom={1}
-        maxBounds={[[68.77, -169.38], [16, -65.5]]}
+        maxBounds={[[78, -179], [0, -45]]}
         zoomControl={false}
       >
         <USZoomAndCenter />

@@ -65,7 +65,7 @@ const Property = ({ property }: { property: Feature }) => {
       //color={getColor(property, mapview, { maxIncome })}
       weight={1}
       fillOpacity={fillOpacity}
-      radius={radius}
+      radius={Math.max(radius, 3.5)}
       eventHandlers={{
         click: () => {
           if (parseInt(selectedProperty || "-9999999") === property.properties.mortgages[0].proj_num) {
