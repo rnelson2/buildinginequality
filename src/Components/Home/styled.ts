@@ -7,6 +7,7 @@ export const Home = styled.div`
     // grid-row: 2 / -1;
     grid-row: 1 / -1;
     height: 100vh;
+    height: 100svh; /* Static viewport height for mobile */
     height: 100dvh; /* Dynamic viewport height for mobile */
     width: 100%;
     margin: 0 auto;
@@ -113,6 +114,7 @@ export const Explore = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-start;
   max-width: min(90%, 800px);
   margin: 1rem auto;
   position: relative;
@@ -122,7 +124,7 @@ export const Explore = styled.div`
 
   @media ${Constants.devices.tablet} {
     
-    
+    align-self: center;    
     margin: 0 auto 3rem auto;
   }
 `;
