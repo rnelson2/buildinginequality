@@ -7,19 +7,25 @@ export const Home = styled.div`
     // grid-row: 2 / -1;
     grid-row: 1 / -1;
     height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    font-size: 1em;
     line-height: 1.5;
-    overflow: auto;
+    overflow: hidden;
     background-image: url(/GlenOaksVillage1600.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-size: 100vw auto;
+    background-size: auto 100vh;
     position: relative;
     z-index: 0;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 25vh calc((100vh - 50px - 25vh) / 2) calc((100vh - 50px - 25vh) / 2);
+    grid-template-areas: "menu" "title" "description" "explore" ;
 
     &::before {
       content: "";
@@ -31,18 +37,9 @@ export const Home = styled.div`
     }
 
     @media ${Constants.devices.tablet} {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: min-content min-content min-content auto min-content ;
-      grid-template-areas: "menu" "title" "subtitle"  "explore" "description" ;
-      // max-height: clamp(600px, 100vw, 900px);
-      overflow-y: visible;
-      //background-image: url(${process.env.PUBLIC_URL}/static/images/bg_index_tablet.jpg);
+      background-size: 100vw auto;
     }
 
-    @media ${Constants.devices.desktop} {
-      //background-image: url(${process.env.PUBLIC_URL}/static/images/bg_index_desktop.jpg);
-    }
 
     @media ${Constants.devices.desktop2} {
       //background-image: url(${process.env.PUBLIC_URL}/static/images/bg_index_desktop2.jpg);
@@ -61,31 +58,31 @@ export const Home = styled.div`
     }
 `;
 
+export const TitleArea = styled.div`
+  grid-area: title;
+  z-index: 10;
+`;
+
 export const Title = styled.h1`
     font-family: ${Constants.TEXT_MASTHEAD};
     position: relative;
-    display: block;
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
     font-size: 24px;
-      text-transform: uppercase;
-      color: ${Constants.COLOR_ACCENT_RED_LIGHT};
+    text-transform: uppercase;
+    color: ${Constants.COLOR_ACCENT_RED_LIGHT};
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
-    z-index: 10;
 
     @media ${Constants.devices.tablet} {
       font-size: calc(1rem + ((1vw - 4.8px) * 2.5));
-        grid-area: title;
-        margin-top: 12vh;
     }
 `;
 
 
 export const Subtitle = styled.h2`
   display: block;
-  margin-top: 0;
+  margin: 0;
   font-size: calc(1rem + ((1vw - 4.8px) * 0.5)) !important;
   text-align: center;
   line-height: 1.1;
@@ -93,10 +90,8 @@ export const Subtitle = styled.h2`
   color: #F3BDBD;
   font-family: ${Constants.TEXT_SANSSERIF};
   font-weight: 400;
-
-  @media ${Constants.devices.tablet} {
-    grid-area: subtitle;
-  }
+  max-width: min(90%, 800px);
+  margin: 0 auto;
 `;
 
 export const Description = styled.p`
@@ -106,12 +101,11 @@ export const Description = styled.p`
   font-weight: 300;
   text-align: center;
   line-height: 1.4;
-  position: relative;
   z-index: 10;
+  grid-area: description;
 
   @media ${Constants.devices.tablet} {
-    grid-area: description;
-    padding: 10vh 0;
+    font-size: 1.3em;
   }
 `;
 
@@ -120,16 +114,15 @@ export const Explore = styled.div`
   justify-content: center;
   align-items: center;
   max-width: min(90%, 800px);
-  height: 300px;
   margin: 1rem auto;
   position: relative;
   overflow: visible;
+  width: 100%;
+  grid-area: explore;
 
   @media ${Constants.devices.tablet} {
-    grid-area: explore;
-    height: 500px;
-    width: 100%;
-    align-self: flex-end;
+    
+    
     margin: 0 auto 3rem auto;
   }
 `;
@@ -165,11 +158,9 @@ export const ExploreButton = styled(Link)`
 export const Menu = styled.div`
   grid-area: menu;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   z-index: 10;
   margin: 1rem auto;
-  
-
   text-transform: uppercase;
 
   a {
@@ -180,5 +171,9 @@ export const Menu = styled.div`
       border-bottom: 2px solid ${Constants.COLOR_ACCENT_RED_LIGHT};
   
     }
+  }
+
+  @media ${Constants.devices.tablet} {
+    gap: 2rem;
   }
 `;
