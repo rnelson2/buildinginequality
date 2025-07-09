@@ -157,8 +157,6 @@ export interface NoAddressMortgage {
 }
 
 export interface NoAddressFeatureProperties {
-  city: string;
-  state: string;
   units: number;
   proj_num: number;
   name: string;
@@ -171,7 +169,11 @@ export interface NoAddressFeature {
     type: "Point";
     coordinates: [number, number]; // Longitude, Latitude
   };
-  properties: NoAddressFeatureProperties;
+  properties: {
+    city: string;
+    state: string;
+    properties: NoAddressFeatureProperties[];
+  };
 }
 
 

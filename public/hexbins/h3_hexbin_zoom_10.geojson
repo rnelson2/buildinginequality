@@ -51,7 +51,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87464b968ffffff",
-        "units": 26
+        "units": 174
       },
       "geometry": {
         "type": "Polygon",
@@ -925,7 +925,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728f0023ffffff",
-        "units": 1308
+        "units": 1685
       },
       "geometry": {
         "type": "Polygon",
@@ -1109,7 +1109,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728f00e6ffffff",
-        "units": 32
+        "units": 106
       },
       "geometry": {
         "type": "Polygon",
@@ -2489,7 +2489,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87283429bffffff",
-        "units": 28
+        "units": 161
       },
       "geometry": {
         "type": "Polygon",
@@ -2719,7 +2719,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872830832ffffff",
-        "units": 89
+        "units": 129
       },
       "geometry": {
         "type": "Polygon",
@@ -3777,7 +3777,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a19aaffffff",
-        "units": 73
+        "units": 600
       },
       "geometry": {
         "type": "Polygon",
@@ -4191,7 +4191,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1880ffffff",
-        "units": 342
+        "units": 400
       },
       "geometry": {
         "type": "Polygon",
@@ -4927,7 +4927,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1894ffffff",
-        "units": 120
+        "units": 161
       },
       "geometry": {
         "type": "Polygon",
@@ -5341,7 +5341,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1d6affffff",
-        "units": 58
+        "units": 78
       },
       "geometry": {
         "type": "Polygon",
@@ -5939,7 +5939,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1c64ffffff",
-        "units": 17
+        "units": 65
       },
       "geometry": {
         "type": "Polygon",
@@ -6261,7 +6261,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1d5cffffff",
-        "units": 104
+        "units": 461
       },
       "geometry": {
         "type": "Polygon",
@@ -6491,7 +6491,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a56f0ffffff",
-        "units": 151
+        "units": 159
       },
       "geometry": {
         "type": "Polygon",
@@ -6675,7 +6675,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a5614ffffff",
-        "units": 67
+        "units": 283
       },
       "geometry": {
         "type": "Polygon",
@@ -6905,7 +6905,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1c21ffffff",
-        "units": 100
+        "units": 222
       },
       "geometry": {
         "type": "Polygon",
@@ -6997,7 +6997,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1c25ffffff",
-        "units": 25
+        "units": 101
       },
       "geometry": {
         "type": "Polygon",
@@ -7181,7 +7181,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1c24ffffff",
-        "units": 36
+        "units": 71
       },
       "geometry": {
         "type": "Polygon",
@@ -7273,7 +7273,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1d05ffffff",
-        "units": 148
+        "units": 384
       },
       "geometry": {
         "type": "Polygon",
@@ -7963,7 +7963,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a0ad2ffffff",
-        "units": 44
+        "units": 52
       },
       "geometry": {
         "type": "Polygon",
@@ -8147,7 +8147,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8712db775ffffff",
-        "units": 18
+        "units": 38
       },
       "geometry": {
         "type": "Polygon",
@@ -9757,7 +9757,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87268cda8ffffff",
-        "units": 344
+        "units": 542
       },
       "geometry": {
         "type": "Polygon",
@@ -10585,7 +10585,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726d1500ffffff",
-        "units": 16
+        "units": 132
       },
       "geometry": {
         "type": "Polygon",
@@ -10723,7 +10723,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87489c1adffffff",
-        "units": 43
+        "units": 1196
       },
       "geometry": {
         "type": "Polygon",
@@ -10769,7 +10769,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872631896ffffff",
-        "units": 55
+        "units": 110
       },
       "geometry": {
         "type": "Polygon",
@@ -12195,7 +12195,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726cbda1ffffff",
-        "units": 259
+        "units": 311
       },
       "geometry": {
         "type": "Polygon",
@@ -14449,7 +14449,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726ee2d3ffffff",
-        "units": 49
+        "units": 185
       },
       "geometry": {
         "type": "Polygon",
@@ -15139,7 +15139,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726e5121ffffff",
-        "units": 124
+        "units": 142
       },
       "geometry": {
         "type": "Polygon",
@@ -16933,7 +16933,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872656088ffffff",
-        "units": 612
+        "units": 1026
       },
       "geometry": {
         "type": "Polygon",
@@ -17209,7 +17209,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726ecb99ffffff",
-        "units": 18
+        "units": 28
       },
       "geometry": {
         "type": "Polygon",
@@ -17623,7 +17623,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87446ea90ffffff",
-        "units": 24
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -17991,7 +17991,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87262cd26ffffff",
-        "units": 158
+        "units": 250
       },
       "geometry": {
         "type": "Polygon",
@@ -18497,7 +18497,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872752689ffffff",
-        "units": 141
+        "units": 283
       },
       "geometry": {
         "type": "Polygon",
@@ -19739,7 +19739,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874440c18ffffff",
-        "units": 44
+        "units": 1014
       },
       "geometry": {
         "type": "Polygon",
@@ -20475,7 +20475,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872640c82ffffff",
-        "units": 116
+        "units": 920
       },
       "geometry": {
         "type": "Polygon",
@@ -20521,7 +20521,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87445c045ffffff",
-        "units": 40
+        "units": 759
       },
       "geometry": {
         "type": "Polygon",
@@ -20797,7 +20797,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874446425ffffff",
-        "units": 880
+        "units": 1600
       },
       "geometry": {
         "type": "Polygon",
@@ -21027,7 +21027,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872659a33ffffff",
-        "units": 620
+        "units": 1144
       },
       "geometry": {
         "type": "Polygon",
@@ -21993,7 +21993,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872662c86ffffff",
-        "units": 228
+        "units": 266
       },
       "geometry": {
         "type": "Polygon",
@@ -22223,7 +22223,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87445e1a0ffffff",
-        "units": 69
+        "units": 77
       },
       "geometry": {
         "type": "Polygon",
@@ -22545,7 +22545,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874450012ffffff",
-        "units": 370
+        "units": 1334
       },
       "geometry": {
         "type": "Polygon",
@@ -23419,7 +23419,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87275d395ffffff",
-        "units": 636
+        "units": 688
       },
       "geometry": {
         "type": "Polygon",
@@ -25535,7 +25535,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872664c1affffff",
-        "units": 57
+        "units": 1139
       },
       "geometry": {
         "type": "Polygon",
@@ -26317,7 +26317,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872664199ffffff",
-        "units": 31
+        "units": 226
       },
       "geometry": {
         "type": "Polygon",
@@ -26685,7 +26685,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872664031ffffff",
-        "units": 104
+        "units": 1319
       },
       "geometry": {
         "type": "Polygon",
@@ -26777,7 +26777,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ec35effffff",
-        "units": 32
+        "units": 48
       },
       "geometry": {
         "type": "Polygon",
@@ -27973,7 +27973,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e835cffffff",
-        "units": 402
+        "units": 476
       },
       "geometry": {
         "type": "Polygon",
@@ -28157,7 +28157,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87264d106ffffff",
-        "units": 58
+        "units": 566
       },
       "geometry": {
         "type": "Polygon",
@@ -28847,7 +28847,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ec6a6ffffff",
-        "units": 175
+        "units": 1506
       },
       "geometry": {
         "type": "Polygon",
@@ -29675,7 +29675,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744eb1b5ffffff",
-        "units": 112
+        "units": 132
       },
       "geometry": {
         "type": "Polygon",
@@ -30549,7 +30549,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a96192ffffff",
-        "units": 153
+        "units": 549
       },
       "geometry": {
         "type": "Polygon",
@@ -31929,7 +31929,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744c1a81ffffff",
-        "units": 306
+        "units": 1385
       },
       "geometry": {
         "type": "Polygon",
@@ -32159,7 +32159,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a9300dffffff",
-        "units": 24
+        "units": 34
       },
       "geometry": {
         "type": "Polygon",
@@ -33539,7 +33539,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e3418ffffff",
-        "units": 34
+        "units": 90
       },
       "geometry": {
         "type": "Polygon",
@@ -33585,7 +33585,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a90643ffffff",
-        "units": 248
+        "units": 266
       },
       "geometry": {
         "type": "Polygon",
@@ -34597,7 +34597,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2d8dffffff",
-        "units": 74
+        "units": 268
       },
       "geometry": {
         "type": "Polygon",
@@ -35517,7 +35517,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a956a9ffffff",
-        "units": 44
+        "units": 1734
       },
       "geometry": {
         "type": "Polygon",
@@ -35609,7 +35609,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2c61ffffff",
-        "units": 32
+        "units": 62
       },
       "geometry": {
         "type": "Polygon",
@@ -36161,7 +36161,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744f421dffffff",
-        "units": 28
+        "units": 152
       },
       "geometry": {
         "type": "Polygon",
@@ -36299,7 +36299,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744c2759ffffff",
-        "units": 296
+        "units": 1301
       },
       "geometry": {
         "type": "Polygon",
@@ -36713,7 +36713,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744f009cffffff",
-        "units": 218
+        "units": 901
       },
       "geometry": {
         "type": "Polygon",
@@ -36989,7 +36989,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab380cffffff",
-        "units": 67
+        "units": 143
       },
       "geometry": {
         "type": "Polygon",
@@ -38139,7 +38139,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744a18c0ffffff",
-        "units": 36
+        "units": 68
       },
       "geometry": {
         "type": "Polygon",
@@ -38231,7 +38231,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744a18c2ffffff",
-        "units": 637
+        "units": 821
       },
       "geometry": {
         "type": "Polygon",
@@ -39243,7 +39243,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744a112bffffff",
-        "units": 227
+        "units": 692
       },
       "geometry": {
         "type": "Polygon",
@@ -39611,7 +39611,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a844e1ffffff",
-        "units": 207
+        "units": 327
       },
       "geometry": {
         "type": "Polygon",
@@ -40577,7 +40577,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a847a8ffffff",
-        "units": 233
+        "units": 265
       },
       "geometry": {
         "type": "Polygon",
@@ -40669,7 +40669,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8444effffff",
-        "units": 525
+        "units": 537
       },
       "geometry": {
         "type": "Polygon",
@@ -41313,7 +41313,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84714ffffff",
-        "units": 616
+        "units": 790
       },
       "geometry": {
         "type": "Polygon",
@@ -42371,7 +42371,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84720ffffff",
-        "units": 239
+        "units": 279
       },
       "geometry": {
         "type": "Polygon",
@@ -42509,7 +42509,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84772ffffff",
-        "units": 49
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -42693,7 +42693,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84773ffffff",
-        "units": 20
+        "units": 44
       },
       "geometry": {
         "type": "Polygon",
@@ -43429,7 +43429,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b9b301ffffff",
-        "units": 83
+        "units": 227
       },
       "geometry": {
         "type": "Polygon",
@@ -43935,7 +43935,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a896b2ffffff",
-        "units": 70
+        "units": 86
       },
       "geometry": {
         "type": "Polygon",
@@ -44119,7 +44119,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b9b363ffffff",
-        "units": 114
+        "units": 547
       },
       "geometry": {
         "type": "Polygon",
@@ -44165,7 +44165,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b9b36effffff",
-        "units": 90
+        "units": 170
       },
       "geometry": {
         "type": "Polygon",
@@ -44809,7 +44809,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa6ca0ffffff",
-        "units": 44
+        "units": 1086
       },
       "geometry": {
         "type": "Polygon",
@@ -45131,7 +45131,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa38c1ffffff",
-        "units": 54
+        "units": 102
       },
       "geometry": {
         "type": "Polygon",
@@ -46419,7 +46419,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8d9a1ffffff",
-        "units": 182
+        "units": 1004
       },
       "geometry": {
         "type": "Polygon",
@@ -47339,7 +47339,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa84ebffffff",
-        "units": 460
+        "units": 485
       },
       "geometry": {
         "type": "Polygon",
@@ -48213,7 +48213,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa845affffff",
-        "units": 797
+        "units": 939
       },
       "geometry": {
         "type": "Polygon",
@@ -49961,7 +49961,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa844cffffff",
-        "units": 468
+        "units": 500
       },
       "geometry": {
         "type": "Polygon",
@@ -51709,7 +51709,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa8c76ffffff",
-        "units": 304
+        "units": 560
       },
       "geometry": {
         "type": "Polygon",
@@ -53733,7 +53733,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa5d6effffff",
-        "units": 58
+        "units": 92
       },
       "geometry": {
         "type": "Polygon",
@@ -55573,7 +55573,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a134d6ffffff",
-        "units": 249
+        "units": 854
       },
       "geometry": {
         "type": "Polygon",
@@ -57367,7 +57367,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a12a40ffffff",
-        "units": 499
+        "units": 641
       },
       "geometry": {
         "type": "Polygon",
@@ -57505,7 +57505,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a13d20ffffff",
-        "units": 253
+        "units": 357
       },
       "geometry": {
         "type": "Polygon",
@@ -57735,7 +57735,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1078affffff",
-        "units": 174
+        "units": 299
       },
       "geometry": {
         "type": "Polygon",
@@ -57827,7 +57827,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a107a3ffffff",
-        "units": 179
+        "units": 266
       },
       "geometry": {
         "type": "Polygon",
@@ -57919,7 +57919,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a107aeffffff",
-        "units": 387
+        "units": 2143
       },
       "geometry": {
         "type": "Polygon",
@@ -57965,7 +57965,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1078dffffff",
-        "units": 308
+        "units": 917
       },
       "geometry": {
         "type": "Polygon",
@@ -58057,7 +58057,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a107a4ffffff",
-        "units": 393
+        "units": 653
       },
       "geometry": {
         "type": "Polygon",
@@ -58149,7 +58149,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a107a5ffffff",
-        "units": 465
+        "units": 1813
       },
       "geometry": {
         "type": "Polygon",
@@ -58195,7 +58195,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10636ffffff",
-        "units": 216
+        "units": 1087
       },
       "geometry": {
         "type": "Polygon",
@@ -58793,7 +58793,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10461ffffff",
-        "units": 208
+        "units": 460
       },
       "geometry": {
         "type": "Polygon",
@@ -59529,7 +59529,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10724ffffff",
-        "units": 159
+        "units": 352
       },
       "geometry": {
         "type": "Polygon",
@@ -59667,7 +59667,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100b3ffffff",
-        "units": 137
+        "units": 373
       },
       "geometry": {
         "type": "Polygon",
@@ -59943,7 +59943,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10569ffffff",
-        "units": 123
+        "units": 385
       },
       "geometry": {
         "type": "Polygon",
@@ -60035,7 +60035,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100b4ffffff",
-        "units": 253
+        "units": 805
       },
       "geometry": {
         "type": "Polygon",
@@ -60495,7 +60495,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10085ffffff",
-        "units": 286
+        "units": 1638
       },
       "geometry": {
         "type": "Polygon",
@@ -60587,7 +60587,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10762ffffff",
-        "units": 2928
+        "units": 4058
       },
       "geometry": {
         "type": "Polygon",
@@ -61185,7 +61185,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100a8ffffff",
-        "units": 95
+        "units": 274
       },
       "geometry": {
         "type": "Polygon",
@@ -64359,7 +64359,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10051ffffff",
-        "units": 878
+        "units": 1238
       },
       "geometry": {
         "type": "Polygon",
@@ -64451,7 +64451,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1000dffffff",
-        "units": 94
+        "units": 290
       },
       "geometry": {
         "type": "Polygon",
@@ -65003,7 +65003,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1006affffff",
-        "units": 859
+        "units": 875
       },
       "geometry": {
         "type": "Polygon",
@@ -65049,7 +65049,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10049ffffff",
-        "units": 298
+        "units": 350
       },
       "geometry": {
         "type": "Polygon",
@@ -65095,7 +65095,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10330ffffff",
-        "units": 76
+        "units": 230
       },
       "geometry": {
         "type": "Polygon",
@@ -65325,7 +65325,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1416dffffff",
-        "units": 76
+        "units": 210
       },
       "geometry": {
         "type": "Polygon",
@@ -65647,7 +65647,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a14820ffffff",
-        "units": 279
+        "units": 294
       },
       "geometry": {
         "type": "Polygon",
@@ -66383,7 +66383,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "870c73384ffffff",
-        "units": 68
+        "units": 866
       },
       "geometry": {
         "type": "Polygon",
@@ -66429,7 +66429,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8712b03a4ffffff",
-        "units": 108
+        "units": 141
       },
       "geometry": {
         "type": "Polygon",
@@ -66659,7 +66659,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e8359ffffff",
-        "units": 64
+        "units": 299
       },
       "geometry": {
         "type": "Polygon",
@@ -67073,7 +67073,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872649acdffffff",
-        "units": 44
+        "units": 112
       },
       "geometry": {
         "type": "Polygon",
@@ -67211,7 +67211,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e918dffffff",
-        "units": 16
+        "units": 24
       },
       "geometry": {
         "type": "Polygon",
@@ -67395,7 +67395,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e8080ffffff",
-        "units": 60
+        "units": 92
       },
       "geometry": {
         "type": "Polygon",
@@ -67533,7 +67533,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e12c0ffffff",
-        "units": 8
+        "units": 48
       },
       "geometry": {
         "type": "Polygon",
@@ -67579,7 +67579,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ed74bffffff",
-        "units": 20
+        "units": 274
       },
       "geometry": {
         "type": "Polygon",
@@ -67625,7 +67625,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ee063ffffff",
-        "units": 8
+        "units": 68
       },
       "geometry": {
         "type": "Polygon",
@@ -67671,7 +67671,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87444b8b1ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -67717,7 +67717,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87265a250ffffff",
-        "units": 16
+        "units": 32
       },
       "geometry": {
         "type": "Polygon",
@@ -67763,7 +67763,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726ed7aeffffff",
-        "units": 20
+        "units": 58
       },
       "geometry": {
         "type": "Polygon",
@@ -67947,7 +67947,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874448354ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -67993,7 +67993,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87444b02bffffff",
-        "units": 58
+        "units": 180
       },
       "geometry": {
         "type": "Polygon",
@@ -68085,7 +68085,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87265b4e6ffffff",
-        "units": 164
+        "units": 355
       },
       "geometry": {
         "type": "Polygon",
@@ -68269,7 +68269,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87444d680ffffff",
-        "units": 36
+        "units": 60
       },
       "geometry": {
         "type": "Polygon",
@@ -68407,7 +68407,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872659b9bffffff",
-        "units": 16
+        "units": 82
       },
       "geometry": {
         "type": "Polygon",
@@ -68499,7 +68499,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729b6d35ffffff",
-        "units": 8
+        "units": 36
       },
       "geometry": {
         "type": "Polygon",
@@ -68545,7 +68545,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8748e8545ffffff",
-        "units": 16
+        "units": 62
       },
       "geometry": {
         "type": "Polygon",
@@ -68637,7 +68637,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a1d75ffffff",
-        "units": 13
+        "units": 2421
       },
       "geometry": {
         "type": "Polygon",
@@ -68729,7 +68729,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a41adffffff",
-        "units": 9
+        "units": 349
       },
       "geometry": {
         "type": "Polygon",
@@ -68775,7 +68775,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a56d3ffffff",
-        "units": 44
+        "units": 56
       },
       "geometry": {
         "type": "Polygon",
@@ -68821,7 +68821,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728308a9ffffff",
-        "units": 36
+        "units": 158
       },
       "geometry": {
         "type": "Polygon",
@@ -69005,7 +69005,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a19b6ffffff",
-        "units": 22
+        "units": 148
       },
       "geometry": {
         "type": "Polygon",
@@ -69097,7 +69097,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87283474effffff",
-        "units": 18
+        "units": 76
       },
       "geometry": {
         "type": "Polygon",
@@ -69281,7 +69281,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872830810ffffff",
-        "units": 16
+        "units": 250
       },
       "geometry": {
         "type": "Polygon",
@@ -69465,7 +69465,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728308c6ffffff",
-        "units": 8
+        "units": 64
       },
       "geometry": {
         "type": "Polygon",
@@ -69557,7 +69557,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729a0074ffffff",
-        "units": 16
+        "units": 112
       },
       "geometry": {
         "type": "Polygon",
@@ -69695,7 +69695,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872830828ffffff",
-        "units": 8
+        "units": 301
       },
       "geometry": {
         "type": "Polygon",
@@ -69879,7 +69879,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87265a431ffffff",
-        "units": 20
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -69925,7 +69925,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87268cd56ffffff",
-        "units": 26
+        "units": 167
       },
       "geometry": {
         "type": "Polygon",
@@ -69971,7 +69971,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87268c6f5ffffff",
-        "units": 17
+        "units": 34
       },
       "geometry": {
         "type": "Polygon",
@@ -70017,7 +70017,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872688156ffffff",
-        "units": 20
+        "units": 74
       },
       "geometry": {
         "type": "Polygon",
@@ -70155,7 +70155,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a14205ffffff",
-        "units": 38
+        "units": 68
       },
       "geometry": {
         "type": "Polygon",
@@ -70247,7 +70247,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a14b9cffffff",
-        "units": 36
+        "units": 108
       },
       "geometry": {
         "type": "Polygon",
@@ -70339,7 +70339,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a14badffffff",
-        "units": 102
+        "units": 122
       },
       "geometry": {
         "type": "Polygon",
@@ -70385,7 +70385,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a14256ffffff",
-        "units": 24
+        "units": 393
       },
       "geometry": {
         "type": "Polygon",
@@ -70477,7 +70477,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10889ffffff",
-        "units": 176
+        "units": 1049
       },
       "geometry": {
         "type": "Polygon",
@@ -70569,7 +70569,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441a845ffffff",
-        "units": 28
+        "units": 600
       },
       "geometry": {
         "type": "Polygon",
@@ -70615,7 +70615,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744f052dffffff",
-        "units": 18
+        "units": 60
       },
       "geometry": {
         "type": "Polygon",
@@ -70661,7 +70661,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744f6c61ffffff",
-        "units": 36
+        "units": 143
       },
       "geometry": {
         "type": "Polygon",
@@ -70707,7 +70707,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744f0418ffffff",
-        "units": 28
+        "units": 194
       },
       "geometry": {
         "type": "Polygon",
@@ -70753,7 +70753,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441a5acffffff",
-        "units": 127
+        "units": 199
       },
       "geometry": {
         "type": "Polygon",
@@ -70799,7 +70799,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744a111dffffff",
-        "units": 12
+        "units": 182
       },
       "geometry": {
         "type": "Polygon",
@@ -70891,7 +70891,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744a9009ffffff",
-        "units": 12
+        "units": 252
       },
       "geometry": {
         "type": "Polygon",
@@ -70937,7 +70937,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441e705ffffff",
-        "units": 25
+        "units": 281
       },
       "geometry": {
         "type": "Polygon",
@@ -70983,7 +70983,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441a940ffffff",
-        "units": 17
+        "units": 54
       },
       "geometry": {
         "type": "Polygon",
@@ -71075,7 +71075,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441a919ffffff",
-        "units": 17
+        "units": 584
       },
       "geometry": {
         "type": "Polygon",
@@ -71121,7 +71121,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e2969ffffff",
-        "units": 12
+        "units": 68
       },
       "geometry": {
         "type": "Polygon",
@@ -71167,7 +71167,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87441a89affffff",
-        "units": 8
+        "units": 247
       },
       "geometry": {
         "type": "Polygon",
@@ -71305,7 +71305,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ee4d1ffffff",
-        "units": 32
+        "units": 1134
       },
       "geometry": {
         "type": "Polygon",
@@ -71535,7 +71535,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744c0a34ffffff",
-        "units": 100
+        "units": 463
       },
       "geometry": {
         "type": "Polygon",
@@ -71673,7 +71673,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d5cecffffff",
-        "units": 148
+        "units": 1616
       },
       "geometry": {
         "type": "Polygon",
@@ -71719,7 +71719,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e214bffffff",
-        "units": 12
+        "units": 28
       },
       "geometry": {
         "type": "Polygon",
@@ -71765,7 +71765,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744e24f4ffffff",
-        "units": 20
+        "units": 76
       },
       "geometry": {
         "type": "Polygon",
@@ -71949,7 +71949,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872675d8dffffff",
-        "units": 15
+        "units": 71
       },
       "geometry": {
         "type": "Polygon",
@@ -72087,7 +72087,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87260d870ffffff",
-        "units": 24
+        "units": 615
       },
       "geometry": {
         "type": "Polygon",
@@ -72409,7 +72409,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726290e2ffffff",
-        "units": 28
+        "units": 77
       },
       "geometry": {
         "type": "Polygon",
@@ -72547,7 +72547,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87288439cffffff",
-        "units": 202
+        "units": 297
       },
       "geometry": {
         "type": "Polygon",
@@ -72823,7 +72823,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872640ceaffffff",
-        "units": 10
+        "units": 26
       },
       "geometry": {
         "type": "Polygon",
@@ -72869,7 +72869,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872663d21ffffff",
-        "units": 12
+        "units": 36
       },
       "geometry": {
         "type": "Polygon",
@@ -73145,7 +73145,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87266448affffff",
-        "units": 10
+        "units": 20
       },
       "geometry": {
         "type": "Polygon",
@@ -73237,7 +73237,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8727594d6ffffff",
-        "units": 190
+        "units": 249
       },
       "geometry": {
         "type": "Polygon",
@@ -73421,7 +73421,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872640da4ffffff",
-        "units": 17
+        "units": 34
       },
       "geometry": {
         "type": "Polygon",
@@ -73513,7 +73513,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87266c59effffff",
-        "units": 11
+        "units": 22
       },
       "geometry": {
         "type": "Polygon",
@@ -73559,7 +73559,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87266a1a5ffffff",
-        "units": 13
+        "units": 264
       },
       "geometry": {
         "type": "Polygon",
@@ -73605,7 +73605,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872668865ffffff",
-        "units": 16
+        "units": 32
       },
       "geometry": {
         "type": "Polygon",
@@ -73651,7 +73651,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726640a2ffffff",
-        "units": 25
+        "units": 37
       },
       "geometry": {
         "type": "Polygon",
@@ -73881,7 +73881,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87265609dffffff",
-        "units": 48
+        "units": 692
       },
       "geometry": {
         "type": "Polygon",
@@ -74019,7 +74019,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726e5b1cffffff",
-        "units": 14
+        "units": 42
       },
       "geometry": {
         "type": "Polygon",
@@ -74111,7 +74111,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726e3c6cffffff",
-        "units": 18
+        "units": 405
       },
       "geometry": {
         "type": "Polygon",
@@ -74203,7 +74203,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87266dad0ffffff",
-        "units": 9
+        "units": 63
       },
       "geometry": {
         "type": "Polygon",
@@ -74249,7 +74249,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872668845ffffff",
-        "units": 8
+        "units": 178
       },
       "geometry": {
         "type": "Polygon",
@@ -74295,7 +74295,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87266aaa1ffffff",
-        "units": 20
+        "units": 52
       },
       "geometry": {
         "type": "Polygon",
@@ -74341,7 +74341,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872641288ffffff",
-        "units": 16
+        "units": 32
       },
       "geometry": {
         "type": "Polygon",
@@ -74479,7 +74479,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87444c30effffff",
-        "units": 390
+        "units": 1213
       },
       "geometry": {
         "type": "Polygon",
@@ -74939,7 +74939,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aae71effffff",
-        "units": 40
+        "units": 49
       },
       "geometry": {
         "type": "Polygon",
@@ -75031,7 +75031,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa9880ffffff",
-        "units": 52
+        "units": 100
       },
       "geometry": {
         "type": "Polygon",
@@ -75077,7 +75077,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa8706ffffff",
-        "units": 54
+        "units": 66
       },
       "geometry": {
         "type": "Polygon",
@@ -75215,7 +75215,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a34c43ffffff",
-        "units": 12
+        "units": 102
       },
       "geometry": {
         "type": "Polygon",
@@ -75261,7 +75261,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a34091ffffff",
-        "units": 28
+        "units": 457
       },
       "geometry": {
         "type": "Polygon",
@@ -75307,7 +75307,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b1158dffffff",
-        "units": 36
+        "units": 84
       },
       "geometry": {
         "type": "Polygon",
@@ -75491,7 +75491,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2cc1ffffff",
-        "units": 20
+        "units": 228
       },
       "geometry": {
         "type": "Polygon",
@@ -75537,7 +75537,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2c58ffffff",
-        "units": 14
+        "units": 1523
       },
       "geometry": {
         "type": "Polygon",
@@ -75629,7 +75629,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872748cc1ffffff",
-        "units": 101
+        "units": 381
       },
       "geometry": {
         "type": "Polygon",
@@ -75675,7 +75675,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87274864cffffff",
-        "units": 72
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -75721,7 +75721,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872749c65ffffff",
-        "units": 18
+        "units": 36
       },
       "geometry": {
         "type": "Polygon",
@@ -75767,7 +75767,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872748b6effffff",
-        "units": 24
+        "units": 56
       },
       "geometry": {
         "type": "Polygon",
@@ -75905,7 +75905,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2c00ffffff",
-        "units": 60
+        "units": 168
       },
       "geometry": {
         "type": "Polygon",
@@ -75951,7 +75951,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2785ffffff",
-        "units": 20
+        "units": 40
       },
       "geometry": {
         "type": "Polygon",
@@ -75997,7 +75997,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab2c34ffffff",
-        "units": 18
+        "units": 94
       },
       "geometry": {
         "type": "Polygon",
@@ -76089,7 +76089,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872628958ffffff",
-        "units": 10
+        "units": 18
       },
       "geometry": {
         "type": "Polygon",
@@ -76365,7 +76365,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87262cd33ffffff",
-        "units": 145
+        "units": 167
       },
       "geometry": {
         "type": "Polygon",
@@ -76457,7 +76457,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87262eb1effffff",
-        "units": 14
+        "units": 28
       },
       "geometry": {
         "type": "Polygon",
@@ -76503,7 +76503,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872621981ffffff",
-        "units": 10
+        "units": 21
       },
       "geometry": {
         "type": "Polygon",
@@ -76549,7 +76549,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8727526eeffffff",
-        "units": 36
+        "units": 621
       },
       "geometry": {
         "type": "Polygon",
@@ -76687,7 +76687,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872653331ffffff",
-        "units": 42
+        "units": 90
       },
       "geometry": {
         "type": "Polygon",
@@ -76733,7 +76733,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874455408ffffff",
-        "units": 14
+        "units": 78
       },
       "geometry": {
         "type": "Polygon",
@@ -76871,7 +76871,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874458ad8ffffff",
-        "units": 16
+        "units": 32
       },
       "geometry": {
         "type": "Polygon",
@@ -76963,7 +76963,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87444381affffff",
-        "units": 20
+        "units": 502
       },
       "geometry": {
         "type": "Polygon",
@@ -77101,7 +77101,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d9806ffffff",
-        "units": 112
+        "units": 264
       },
       "geometry": {
         "type": "Polygon",
@@ -77147,7 +77147,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8b148ffffff",
-        "units": 72
+        "units": 318
       },
       "geometry": {
         "type": "Polygon",
@@ -77239,7 +77239,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d84daffffff",
-        "units": 19
+        "units": 51
       },
       "geometry": {
         "type": "Polygon",
@@ -77377,7 +77377,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ad639bffffff",
-        "units": 66
+        "units": 122
       },
       "geometry": {
         "type": "Polygon",
@@ -77423,7 +77423,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ad2d9affffff",
-        "units": 12
+        "units": 32
       },
       "geometry": {
         "type": "Polygon",
@@ -77469,7 +77469,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8b089ffffff",
-        "units": 8
+        "units": 310
       },
       "geometry": {
         "type": "Polygon",
@@ -77791,7 +77791,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ad69b0ffffff",
-        "units": 284
+        "units": 836
       },
       "geometry": {
         "type": "Polygon",
@@ -77837,7 +77837,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dac9effffff",
-        "units": 20
+        "units": 60
       },
       "geometry": {
         "type": "Polygon",
@@ -77929,7 +77929,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744da266ffffff",
-        "units": 33
+        "units": 73
       },
       "geometry": {
         "type": "Polygon",
@@ -78113,7 +78113,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8b4c2ffffff",
-        "units": 153
+        "units": 775
       },
       "geometry": {
         "type": "Polygon",
@@ -78389,7 +78389,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87260a133ffffff",
-        "units": 16
+        "units": 228
       },
       "geometry": {
         "type": "Polygon",
@@ -78481,7 +78481,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87260e26cffffff",
-        "units": 8
+        "units": 848
       },
       "geometry": {
         "type": "Polygon",
@@ -78527,7 +78527,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872601709ffffff",
-        "units": 12
+        "units": 36
       },
       "geometry": {
         "type": "Polygon",
@@ -78573,7 +78573,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a3621affffff",
-        "units": 12
+        "units": 26
       },
       "geometry": {
         "type": "Polygon",
@@ -78803,7 +78803,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a132c8ffffff",
-        "units": 222
+        "units": 755
       },
       "geometry": {
         "type": "Polygon",
@@ -78849,7 +78849,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1070affffff",
-        "units": 215
+        "units": 380
       },
       "geometry": {
         "type": "Polygon",
@@ -78987,7 +78987,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1044dffffff",
-        "units": 403
+        "units": 534
       },
       "geometry": {
         "type": "Polygon",
@@ -79079,7 +79079,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1044effffff",
-        "units": 350
+        "units": 1424
       },
       "geometry": {
         "type": "Polygon",
@@ -79125,7 +79125,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a12a68ffffff",
-        "units": 336
+        "units": 396
       },
       "geometry": {
         "type": "Polygon",
@@ -79263,7 +79263,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10456ffffff",
-        "units": 60
+        "units": 119
       },
       "geometry": {
         "type": "Polygon",
@@ -79355,7 +79355,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a134c5ffffff",
-        "units": 251
+        "units": 1036
       },
       "geometry": {
         "type": "Polygon",
@@ -79447,7 +79447,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10464ffffff",
-        "units": 426
+        "units": 666
       },
       "geometry": {
         "type": "Polygon",
@@ -79493,7 +79493,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100a2ffffff",
-        "units": 103
+        "units": 513
       },
       "geometry": {
         "type": "Polygon",
@@ -79539,7 +79539,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1055dffffff",
-        "units": 94
+        "units": 859
       },
       "geometry": {
         "type": "Polygon",
@@ -79677,7 +79677,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1072effffff",
-        "units": 263
+        "units": 480
       },
       "geometry": {
         "type": "Polygon",
@@ -79723,7 +79723,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10080ffffff",
-        "units": 74
+        "units": 423
       },
       "geometry": {
         "type": "Polygon",
@@ -79769,7 +79769,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10614ffffff",
-        "units": 41
+        "units": 262
       },
       "geometry": {
         "type": "Polygon",
@@ -79815,7 +79815,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10096ffffff",
-        "units": 576
+        "units": 600
       },
       "geometry": {
         "type": "Polygon",
@@ -79861,7 +79861,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1391dffffff",
-        "units": 39
+        "units": 163
       },
       "geometry": {
         "type": "Polygon",
@@ -79907,7 +79907,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a104cbffffff",
-        "units": 79
+        "units": 118
       },
       "geometry": {
         "type": "Polygon",
@@ -79953,7 +79953,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aad960ffffff",
-        "units": 80
+        "units": 202
       },
       "geometry": {
         "type": "Polygon",
@@ -80045,7 +80045,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10549ffffff",
-        "units": 120
+        "units": 335
       },
       "geometry": {
         "type": "Polygon",
@@ -80091,7 +80091,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1068cffffff",
-        "units": 68
+        "units": 591
       },
       "geometry": {
         "type": "Polygon",
@@ -80137,7 +80137,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10443ffffff",
-        "units": 48
+        "units": 135
       },
       "geometry": {
         "type": "Polygon",
@@ -80183,7 +80183,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a104d8ffffff",
-        "units": 139
+        "units": 643
       },
       "geometry": {
         "type": "Polygon",
@@ -80275,7 +80275,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100b6ffffff",
-        "units": 259
+        "units": 1625
       },
       "geometry": {
         "type": "Polygon",
@@ -80367,7 +80367,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a12b6dffffff",
-        "units": 151
+        "units": 230
       },
       "geometry": {
         "type": "Polygon",
@@ -80413,7 +80413,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10710ffffff",
-        "units": 352
+        "units": 1310
       },
       "geometry": {
         "type": "Polygon",
@@ -80459,7 +80459,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10736ffffff",
-        "units": 130
+        "units": 899
       },
       "geometry": {
         "type": "Polygon",
@@ -80505,7 +80505,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10099ffffff",
-        "units": 240
+        "units": 833
       },
       "geometry": {
         "type": "Polygon",
@@ -80551,7 +80551,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1046affffff",
-        "units": 80
+        "units": 420
       },
       "geometry": {
         "type": "Polygon",
@@ -80689,7 +80689,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a106f5ffffff",
-        "units": 42
+        "units": 87
       },
       "geometry": {
         "type": "Polygon",
@@ -80735,7 +80735,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a134e6ffffff",
-        "units": 44
+        "units": 200
       },
       "geometry": {
         "type": "Polygon",
@@ -80781,7 +80781,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a106b3ffffff",
-        "units": 107
+        "units": 325
       },
       "geometry": {
         "type": "Polygon",
@@ -80827,7 +80827,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a132daffffff",
-        "units": 232
+        "units": 400
       },
       "geometry": {
         "type": "Polygon",
@@ -80873,7 +80873,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10610ffffff",
-        "units": 32
+        "units": 56
       },
       "geometry": {
         "type": "Polygon",
@@ -80919,7 +80919,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a13912ffffff",
-        "units": 16
+        "units": 503
       },
       "geometry": {
         "type": "Polygon",
@@ -80965,7 +80965,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10083ffffff",
-        "units": 53
+        "units": 603
       },
       "geometry": {
         "type": "Polygon",
@@ -81011,7 +81011,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1046dffffff",
-        "units": 42
+        "units": 761
       },
       "geometry": {
         "type": "Polygon",
@@ -81103,7 +81103,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a107a2ffffff",
-        "units": 22
+        "units": 79
       },
       "geometry": {
         "type": "Polygon",
@@ -81149,7 +81149,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a13161ffffff",
-        "units": 16
+        "units": 24
       },
       "geometry": {
         "type": "Polygon",
@@ -81195,7 +81195,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a12a99ffffff",
-        "units": 91
+        "units": 361
       },
       "geometry": {
         "type": "Polygon",
@@ -81333,7 +81333,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1045bffffff",
-        "units": 8
+        "units": 421
       },
       "geometry": {
         "type": "Polygon",
@@ -81425,7 +81425,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aadb9affffff",
-        "units": 28
+        "units": 56
       },
       "geometry": {
         "type": "Polygon",
@@ -81517,7 +81517,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aaca51ffffff",
-        "units": 76
+        "units": 132
       },
       "geometry": {
         "type": "Polygon",
@@ -81563,7 +81563,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8748d894bffffff",
-        "units": 12
+        "units": 146
       },
       "geometry": {
         "type": "Polygon",
@@ -81609,7 +81609,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8748d0264ffffff",
-        "units": 16
+        "units": 34
       },
       "geometry": {
         "type": "Polygon",
@@ -81701,7 +81701,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872986b98ffffff",
-        "units": 16
+        "units": 168
       },
       "geometry": {
         "type": "Polygon",
@@ -81747,7 +81747,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8729890e6ffffff",
-        "units": 24
+        "units": 72
       },
       "geometry": {
         "type": "Polygon",
@@ -82023,7 +82023,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b8c735ffffff",
-        "units": 190
+        "units": 422
       },
       "geometry": {
         "type": "Polygon",
@@ -82069,7 +82069,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa429affffff",
-        "units": 20
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -82207,7 +82207,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa5d50ffffff",
-        "units": 38
+        "units": 82
       },
       "geometry": {
         "type": "Polygon",
@@ -82299,7 +82299,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa6cd2ffffff",
-        "units": 160
+        "units": 350
       },
       "geometry": {
         "type": "Polygon",
@@ -82391,7 +82391,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa421cffffff",
-        "units": 32
+        "units": 208
       },
       "geometry": {
         "type": "Polygon",
@@ -82483,7 +82483,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10b91ffffff",
-        "units": 100
+        "units": 344
       },
       "geometry": {
         "type": "Polygon",
@@ -82529,7 +82529,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa4aa8ffffff",
-        "units": 58
+        "units": 155
       },
       "geometry": {
         "type": "Polygon",
@@ -82805,7 +82805,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab5a4bffffff",
-        "units": 48
+        "units": 162
       },
       "geometry": {
         "type": "Polygon",
@@ -82851,7 +82851,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10725ffffff",
-        "units": 42
+        "units": 205
       },
       "geometry": {
         "type": "Polygon",
@@ -82897,7 +82897,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a100c9ffffff",
-        "units": 378
+        "units": 8738
       },
       "geometry": {
         "type": "Polygon",
@@ -83035,7 +83035,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b9931affffff",
-        "units": 31
+        "units": 544
       },
       "geometry": {
         "type": "Polygon",
@@ -83127,7 +83127,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1015bffffff",
-        "units": 109
+        "units": 328
       },
       "geometry": {
         "type": "Polygon",
@@ -83173,7 +83173,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b8bd33ffffff",
-        "units": 125
+        "units": 180
       },
       "geometry": {
         "type": "Polygon",
@@ -83219,7 +83219,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b89181ffffff",
-        "units": 24
+        "units": 608
       },
       "geometry": {
         "type": "Polygon",
@@ -83265,7 +83265,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a10106ffffff",
-        "units": 158
+        "units": 168
       },
       "geometry": {
         "type": "Polygon",
@@ -83357,7 +83357,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a1018affffff",
-        "units": 61
+        "units": 347
       },
       "geometry": {
         "type": "Polygon",
@@ -83817,7 +83817,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a930f4ffffff",
-        "units": 16
+        "units": 470
       },
       "geometry": {
         "type": "Polygon",
@@ -83909,7 +83909,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab381bffffff",
-        "units": 27
+        "units": 292
       },
       "geometry": {
         "type": "Polygon",
@@ -83955,7 +83955,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3a19ffffff",
-        "units": 12
+        "units": 72
       },
       "geometry": {
         "type": "Polygon",
@@ -84001,7 +84001,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a90673ffffff",
-        "units": 42
+        "units": 208
       },
       "geometry": {
         "type": "Polygon",
@@ -84047,7 +84047,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3952ffffff",
-        "units": 10
+        "units": 1177
       },
       "geometry": {
         "type": "Polygon",
@@ -84185,7 +84185,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a93c5affffff",
-        "units": 24
+        "units": 48
       },
       "geometry": {
         "type": "Polygon",
@@ -84277,7 +84277,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3889ffffff",
-        "units": 11
+        "units": 344
       },
       "geometry": {
         "type": "Polygon",
@@ -84599,7 +84599,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3124ffffff",
-        "units": 16
+        "units": 43
       },
       "geometry": {
         "type": "Polygon",
@@ -84645,7 +84645,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3850ffffff",
-        "units": 158
+        "units": 226
       },
       "geometry": {
         "type": "Polygon",
@@ -84691,7 +84691,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab3874ffffff",
-        "units": 72
+        "units": 324
       },
       "geometry": {
         "type": "Polygon",
@@ -84737,7 +84737,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a956a2ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -84783,7 +84783,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a903a1ffffff",
-        "units": 12
+        "units": 24
       },
       "geometry": {
         "type": "Polygon",
@@ -84829,7 +84829,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ab1703ffffff",
-        "units": 37
+        "units": 87
       },
       "geometry": {
         "type": "Polygon",
@@ -84967,7 +84967,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726c2a51ffffff",
-        "units": 8
+        "units": 40
       },
       "geometry": {
         "type": "Polygon",
@@ -85059,7 +85059,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726c5572ffffff",
-        "units": 20
+        "units": 94
       },
       "geometry": {
         "type": "Polygon",
@@ -85197,7 +85197,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726c3ac8ffffff",
-        "units": 12
+        "units": 172
       },
       "geometry": {
         "type": "Polygon",
@@ -85335,7 +85335,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726c18f2ffffff",
-        "units": 23
+        "units": 77
       },
       "geometry": {
         "type": "Polygon",
@@ -85473,7 +85473,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726c532dffffff",
-        "units": 24
+        "units": 64
       },
       "geometry": {
         "type": "Polygon",
@@ -85749,7 +85749,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87281b59bffffff",
-        "units": 71
+        "units": 225
       },
       "geometry": {
         "type": "Polygon",
@@ -85887,7 +85887,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87281eb88ffffff",
-        "units": 8
+        "units": 91
       },
       "geometry": {
         "type": "Polygon",
@@ -86071,7 +86071,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872818794ffffff",
-        "units": 24
+        "units": 64
       },
       "geometry": {
         "type": "Polygon",
@@ -86393,7 +86393,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aacb12ffffff",
-        "units": 171
+        "units": 459
       },
       "geometry": {
         "type": "Polygon",
@@ -86577,7 +86577,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aae931ffffff",
-        "units": 72
+        "units": 144
       },
       "geometry": {
         "type": "Polygon",
@@ -86623,7 +86623,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84534ffffff",
-        "units": 20
+        "units": 40
       },
       "geometry": {
         "type": "Polygon",
@@ -86669,7 +86669,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a84300ffffff",
-        "units": 20
+        "units": 50
       },
       "geometry": {
         "type": "Polygon",
@@ -86807,7 +86807,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872aa11aaffffff",
-        "units": 22
+        "units": 46
       },
       "geometry": {
         "type": "Polygon",
@@ -86899,7 +86899,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a80d20ffffff",
-        "units": 52
+        "units": 68
       },
       "geometry": {
         "type": "Polygon",
@@ -86991,7 +86991,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a33155ffffff",
-        "units": 20
+        "units": 116
       },
       "geometry": {
         "type": "Polygon",
@@ -87037,7 +87037,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874cc5b69ffffff",
-        "units": 240
+        "units": 640
       },
       "geometry": {
         "type": "Polygon",
@@ -87083,7 +87083,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874cc54f4ffffff",
-        "units": 122
+        "units": 622
       },
       "geometry": {
         "type": "Polygon",
@@ -87129,7 +87129,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874cc5394ffffff",
-        "units": 122
+        "units": 842
       },
       "geometry": {
         "type": "Polygon",
@@ -87175,7 +87175,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "874cc0b64ffffff",
-        "units": 200
+        "units": 2409
       },
       "geometry": {
         "type": "Polygon",
@@ -87221,7 +87221,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ddd6cffffff",
-        "units": 100
+        "units": 402
       },
       "geometry": {
         "type": "Polygon",
@@ -87451,7 +87451,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744de11affffff",
-        "units": 30
+        "units": 106
       },
       "geometry": {
         "type": "Polygon",
@@ -87589,7 +87589,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d071dffffff",
-        "units": 234
+        "units": 462
       },
       "geometry": {
         "type": "Polygon",
@@ -87635,7 +87635,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dd8e6ffffff",
-        "units": 50
+        "units": 301
       },
       "geometry": {
         "type": "Polygon",
@@ -87681,7 +87681,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d8c36ffffff",
-        "units": 25
+        "units": 100
       },
       "geometry": {
         "type": "Polygon",
@@ -87773,7 +87773,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744de940ffffff",
-        "units": 26
+        "units": 1283
       },
       "geometry": {
         "type": "Polygon",
@@ -87911,7 +87911,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872ad261cffffff",
-        "units": 30
+        "units": 130
       },
       "geometry": {
         "type": "Polygon",
@@ -87957,7 +87957,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d8166ffffff",
-        "units": 26
+        "units": 176
       },
       "geometry": {
         "type": "Polygon",
@@ -88003,7 +88003,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dd568ffffff",
-        "units": 94
+        "units": 906
       },
       "geometry": {
         "type": "Polygon",
@@ -88049,7 +88049,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dca11ffffff",
-        "units": 50
+        "units": 396
       },
       "geometry": {
         "type": "Polygon",
@@ -88095,7 +88095,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dc721ffffff",
-        "units": 36
+        "units": 86
       },
       "geometry": {
         "type": "Polygon",
@@ -88141,7 +88141,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744c2662ffffff",
-        "units": 75
+        "units": 277
       },
       "geometry": {
         "type": "Polygon",
@@ -88233,7 +88233,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d10c2ffffff",
-        "units": 50
+        "units": 86
       },
       "geometry": {
         "type": "Polygon",
@@ -88371,7 +88371,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744dd49affffff",
-        "units": 36
+        "units": 600
       },
       "geometry": {
         "type": "Polygon",
@@ -88463,7 +88463,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744ded89ffffff",
-        "units": 75
+        "units": 191
       },
       "geometry": {
         "type": "Polygon",
@@ -88509,7 +88509,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744de945ffffff",
-        "units": 116
+        "units": 266
       },
       "geometry": {
         "type": "Polygon",
@@ -88555,7 +88555,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744d8ccbffffff",
-        "units": 77
+        "units": 105
       },
       "geometry": {
         "type": "Polygon",
@@ -88605,7 +88605,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744cd5a3ffffff",
-        "units": 20
+        "units": 116
       },
       "geometry": {
         "type": "Polygon",
@@ -88881,7 +88881,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8744caacaffffff",
-        "units": 200
+        "units": 389
       },
       "geometry": {
         "type": "Polygon",
@@ -88973,7 +88973,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87264a48bffffff",
-        "units": 76
+        "units": 100
       },
       "geometry": {
         "type": "Polygon",
@@ -89111,7 +89111,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87446caabffffff",
-        "units": 24
+        "units": 56
       },
       "geometry": {
         "type": "Polygon",
@@ -89157,7 +89157,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87489e346ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -89203,7 +89203,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87488b6d1ffffff",
-        "units": 40
+        "units": 80
       },
       "geometry": {
         "type": "Polygon",
@@ -89341,7 +89341,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726cb912ffffff",
-        "units": 16
+        "units": 2316
       },
       "geometry": {
         "type": "Polygon",
@@ -89433,7 +89433,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726d0a34ffffff",
-        "units": 8
+        "units": 22
       },
       "geometry": {
         "type": "Polygon",
@@ -89617,7 +89617,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726de78affffff",
-        "units": 26
+        "units": 754
       },
       "geometry": {
         "type": "Polygon",
@@ -89663,7 +89663,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87446b9b4ffffff",
-        "units": 18
+        "units": 36
       },
       "geometry": {
         "type": "Polygon",
@@ -89755,7 +89755,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87488b204ffffff",
-        "units": 8
+        "units": 262
       },
       "geometry": {
         "type": "Polygon",
@@ -89801,7 +89801,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8748d6db3ffffff",
-        "units": 24
+        "units": 252
       },
       "geometry": {
         "type": "Polygon",
@@ -89847,7 +89847,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726d1955ffffff",
-        "units": 8
+        "units": 24
       },
       "geometry": {
         "type": "Polygon",
@@ -89939,7 +89939,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87488a6e2ffffff",
-        "units": 32
+        "units": 164
       },
       "geometry": {
         "type": "Polygon",
@@ -89985,7 +89985,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87446cc50ffffff",
-        "units": 16
+        "units": 112
       },
       "geometry": {
         "type": "Polygon",
@@ -90123,7 +90123,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726ddb25ffffff",
-        "units": 14
+        "units": 434
       },
       "geometry": {
         "type": "Polygon",
@@ -90169,7 +90169,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728b6c65ffffff",
-        "units": 36
+        "units": 50
       },
       "geometry": {
         "type": "Polygon",
@@ -90261,7 +90261,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8726905a6ffffff",
-        "units": 45
+        "units": 55
       },
       "geometry": {
         "type": "Polygon",
@@ -90353,7 +90353,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872696ab2ffffff",
-        "units": 40
+        "units": 134
       },
       "geometry": {
         "type": "Polygon",
@@ -90445,7 +90445,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a88534ffffff",
-        "units": 8
+        "units": 20
       },
       "geometry": {
         "type": "Polygon",
@@ -90675,7 +90675,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872af605bffffff",
-        "units": 124
+        "units": 1148
       },
       "geometry": {
         "type": "Polygon",
@@ -90721,7 +90721,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872af6202ffffff",
-        "units": 124
+        "units": 582
       },
       "geometry": {
         "type": "Polygon",
@@ -90767,7 +90767,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a8dbb0ffffff",
-        "units": 84
+        "units": 222
       },
       "geometry": {
         "type": "Polygon",
@@ -90951,7 +90951,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872b8cb56ffffff",
-        "units": 92
+        "units": 121
       },
       "geometry": {
         "type": "Polygon",
@@ -91181,7 +91181,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87288ad24ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -91365,7 +91365,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728f3823ffffff",
-        "units": 30
+        "units": 60
       },
       "geometry": {
         "type": "Polygon",
@@ -91641,7 +91641,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728d5552ffffff",
-        "units": 23
+        "units": 1566
       },
       "geometry": {
         "type": "Polygon",
@@ -91687,7 +91687,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8728d6db4ffffff",
-        "units": 11
+        "units": 27
       },
       "geometry": {
         "type": "Polygon",
@@ -91825,7 +91825,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872888c00ffffff",
-        "units": 30
+        "units": 38
       },
       "geometry": {
         "type": "Polygon",
@@ -91963,7 +91963,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872758008ffffff",
-        "units": 216
+        "units": 478
       },
       "geometry": {
         "type": "Polygon",
@@ -92055,7 +92055,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87275d39bffffff",
-        "units": 10
+        "units": 394
       },
       "geometry": {
         "type": "Polygon",
@@ -92193,7 +92193,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "87275d74dffffff",
-        "units": 28
+        "units": 92
       },
       "geometry": {
         "type": "Polygon",
@@ -92377,7 +92377,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a9cae1ffffff",
-        "units": 8
+        "units": 60
       },
       "geometry": {
         "type": "Polygon",
@@ -92423,7 +92423,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a9c733ffffff",
-        "units": 8
+        "units": 16
       },
       "geometry": {
         "type": "Polygon",
@@ -92469,7 +92469,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872a9caf1ffffff",
-        "units": 8
+        "units": 24
       },
       "geometry": {
         "type": "Polygon",
@@ -92515,7 +92515,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "872685b68ffffff",
-        "units": 8
+        "units": 71
       },
       "geometry": {
         "type": "Polygon",

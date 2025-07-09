@@ -491,18 +491,20 @@ export function useCityStats(): Types.CityStats[] {
     });
 
     // Process properties **without addresses**
-    noAddressProperties.forEach(property => {
-      const city = property.properties.city?.trim();
-      const state = property.properties.state?.trim();
+    noAddressProperties.forEach(location => {
+      const city = location.properties.city?.trim();
+      const state = location.properties.state?.trim();
       if (!city || !state) return; // Exclude "Unknown"
 
+      location.properties.properties.forEach(property => {
         addProperty(city, state, {
           hasAddress: false,
-          amount: property.properties.amount || 0,
-          units: property.properties.units,
-          proj_num: property.properties.proj_num,
-          name: property.properties.name || "Unknown",
+          amount: property.amount || 0,
+          units: property.units,
+          proj_num: property.proj_num,
+          name: property.name || "Unknown",
         });
+      });
     });
 
     // Convert map to array and sort
