@@ -347,9 +347,13 @@ export function useCitiesOptions() {
   interface Option {
     label: string; // The city name
     value: string; // Any unique identifier (we’ll use a link in this case)
+    noGeocoded: boolean; // Flag to indicate if the city has no geocoded data
     geometry: {
       type: "Polygon"; // The geometry type is a Polygon representing the bounding box
       coordinates: number[][][]; // The coordinates of the polygon
+    } | {
+      type: "Point";
+      coordinates: [number, number]; // Longitude, Latitude for a point
     }; // The geometry of the city
   }
 
@@ -361,17 +365,14 @@ export function useCitiesOptions() {
     // Organize features by state
     const groupedByState = features.reduce<Record<string, Option[]>>((acc, feature) => {
       const { property_city, property_state } = feature.properties;
-      const [lng, lat] = feature.geometry.coordinates[0][0]; // Approx center of the bounding box
       // @ts-ignore
       const state = Constants.states[property_state] as string;
-
-      // Create a link for the city
-      const link = `/map#loc=14/${lat}/${lng}`;
 
       // Add the city as an option
       const option: Option = {
         label: property_city,
-        value: link,
+        value: property_city,
+        noGeocoded: feature.properties.noGeocoded || false, // Flag to indicate if the city has no geocoded data
         geometry: feature.geometry,
       };
 
@@ -405,40 +406,48 @@ export function useCitiesOptions() {
 
 export function useVisibleProperties() {
   const { data } = useProperties();
-  const { center, zoom } = useURLState();
   const { map } = useMapContext();
+
+  // Use the move event trigger as a dependency
+  const moveToken = useMapMoveTrigger(map);
 
   return useMemo(() => {
     if (!map) return [];
 
     const bounds = map.getBounds();
     return data.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
-  }, [center, zoom, map, data]);
+  }, [moveToken, map, data]);
 }
 
 export function useVisibleHexbins() {
-  const { center, zoom } = useURLState();
+  const { zoom } = useURLState();
   const { data } = useHexbins(zoom);
   const { map } = useMapContext();
+
+  // Use the move event trigger as a dependency
+  const moveToken = useMapMoveTrigger(map);
+
   return useMemo(() => {
     if (!map) return [];
 
     const bounds = map.getBounds();
     return data.filter(hex => bounds.intersects(bboxForHex(hex)));
-  }, [center, zoom, map, data]);
+  }, [moveToken, map, data]);
 }
 
 export function useVisibleNoAddressProperties() {
   const { data } = useNoAddressProperties();
-  const { center, zoom } = useURLState();
   const { map } = useMapContext();
+
+  // Use the move event trigger as a dependency
+  const moveToken = useMapMoveTrigger(map);
 
   return useMemo(() => {
     if (!map) return [];
 
     const bounds = map.getBounds();
     return data.filter(property => bounds.contains([property.geometry.coordinates[1], property.geometry.coordinates[0]]));
-  }, [center, zoom, map, data]);
+  }, [moveToken, map, data]);
 }
 
 export function useCityStats(): Types.CityStats[] {
@@ -538,15 +547,18 @@ export function useVisiblePropertiesStats() {
 
 export function useVisibleClusteredProperties() {
   const { data: properties } = useClusteredProperties();
-  const { center, zoom } = useURLState();
+  const { zoom } = useURLState();
   const { map } = useMapContext();
+
+  // Use the move event trigger as a dependency
+  const moveToken = useMapMoveTrigger(map);
 
   return useMemo(() => {
     if (!map) return [];
 
     // const bounds = map.getBounds();
     return properties.filter(property => property.properties.zoom === Math.max(5, zoom));
-  }, [center, zoom, map, properties]);
+  }, [moveToken, map, properties]);
 }
 
 export function useSelectedPropertyData() {
@@ -686,3 +698,24 @@ export function useLinkBuilder() {
   return build;
 }
 
+// Generalized hook to subscribe to a Leaflet event and update state
+function useMapMoveTrigger(map: L.Map | undefined) {
+  const [moveToken, setMoveToken] = useState(0);
+
+  useEffect(() => {
+    if (!map) return;
+
+    const onMoveEnd = () => setMoveToken(t => t + 1);
+
+    map.on('moveend', onMoveEnd);
+
+    // Call once on mount for the initial state
+    setMoveToken(t => t + 1);
+
+    return () => {
+      map.off('moveend', onMoveEnd);
+    };
+  }, [map]);
+
+  return moveToken;
+}

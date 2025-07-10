@@ -122,6 +122,9 @@ interface CityFeature {
   geometry: {
     type: "Polygon";          // The geometry type is a Polygon representing the bounding box
     coordinates: number[][][]; // The coordinates of the polygon
+  } | {
+    type: "Point";
+    coordinates: [number, number]; // Longitude, Latitude for a point
   };
   properties: {
     property_city: string;       // City name
@@ -129,6 +132,7 @@ interface CityFeature {
     num_of_properties: number;   // Number of properties in the city
     num_of_units: number;        // Total number of units across properties
     total_mortgage: number;      // Total mortgage amount
+    noGeocoded?: boolean; // Flag indicating if the city has no geocoded data
   }
 }
 

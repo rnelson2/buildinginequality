@@ -28,10 +28,22 @@ const CitySelect = () => {
   const { map } = useMapContext();
   const { selectedProperty, hash } = useURLState();
 
-  console.log(hash);
-
   const handleChange = (selectedOption: any) => {
     if (selectedOption && map) {
+      // handle cities without geocoded data by zooming into their point at the max hex level
+      if (selectedOption.geometry.type === "Point") {
+        const [lng, lat] = selectedOption.geometry.coordinates;
+        const newZoom = 10; // max zoom level for hexes
+        const newLat = Math.round(lat * 10000) / 10000; // round to 4 decimal places
+        const newLng = Math.round(lng * 10000) / 10000; // round to 4 decimal places
+        const newHash = modifyHash(hash, [
+          { type: 'set_loc', payload: { zoom: newZoom, center: [newLat, newLng] } },
+        ]);
+        navigate(`/map#${newHash}`, { replace: true });
+        return;
+      }
+
+      // handle cities with geocoded data by zooming into their polygon bounds
       const bounds = polygonToBounds(selectedOption.geometry);
       // if either max or min lats and longs are less than 0.02 degrees apart, pad them to make the bounds at least 0.02 degrees apart
       if (bounds[0][0] === bounds[1][0]) {

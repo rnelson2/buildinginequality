@@ -119,7 +119,9 @@ export const states = {
   OK: "Oklahoma",
   OR: "Oregon",
   PA: "Pennsylvania",
+  PR: "Puerto Rico",
   RI: "Rhode Island",
+  RQ: "Puerto Rico", // a legacy code for Puerto Rico
   SC: "South Carolina",
   SD: "South Dakota",
   TN: "Tennessee",

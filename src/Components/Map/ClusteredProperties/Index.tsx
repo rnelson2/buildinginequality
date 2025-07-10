@@ -1,16 +1,29 @@
-import React, { useMemo } from "react";
-import {  GeoJSON } from "react-leaflet";
+import React, { useMemo, useState, useEffect } from "react";
+import {  GeoJSON, useMapEvent } from "react-leaflet";
 import { useHexbins, useURLState, useMapContext } from "../../../hooks";
 import { LatLngBounds } from "leaflet";
 import { getBlueThresholdScale, getRedThresholdScale } from "../../../utilities";
 
 const ClusteredProperties = () => {
-  const { mapview, zoom } = useURLState();
+  const { mapview, zoom, center } = useURLState();
   const { data } = useHexbins(zoom);
   const { map } = useMapContext();
+  
 
   // Compute visible bounds once (or default to full map)
-  const visibleBounds = map?.getBounds?.() ?? new LatLngBounds([[-90, -180], [90, 180]]);
+  const [visibleBounds, setVisibleBounds] = useState(
+    map?.getBounds?.() ?? new LatLngBounds([[-90, -180], [90, 180]])
+  );
+
+  useMapEvent('moveend', () => {
+    if (map) setVisibleBounds(map.getBounds());
+  });
+
+  useEffect(() => {
+    if (map) {
+      setVisibleBounds(map.getBounds());
+    }
+  }, [map, mapview, zoom, center[0], center[1]]);
 
   function getEffectiveMax(unitsArray: number[], quantile: number = 0.95): number {
     const sorted = [...unitsArray].sort((a, b) => a - b);
@@ -30,26 +43,12 @@ const ClusteredProperties = () => {
     const unitsArray = visible.map(f => f.properties.units);
     const maxUnits = getEffectiveMax(unitsArray, 0.95);
     return { visibleFeatures: visible, maxUnits };
-  }, [data, map, zoom, visibleBounds]);
+  }, [data, map, zoom, visibleBounds, center[0], center[1]]);
 
   // If no data, return empty
   if (!data || data.length === 0) {
     return null;
   }
-
-
-
-
-  // Color function based on proportion of max
-  const getColor = (units: number) => {
-    const ratio = units / maxUnits;
-    const alpha = 0.6;
-    // simple blue-to-red scale (low to high)
-    const r = Math.round(255 * ratio);
-    const g = Math.round(100 * (1 - ratio));
-    const b = Math.round(255 * (1 - ratio));
-    return `rgba(${r},${g},${b},${alpha})`;
-  };
 
   //const colorScale = scaleSequential(interpolateBlues).domain([0, maxUnits]);
   const { scale: colorScale } = getRedThresholdScale(maxUnits);
@@ -66,7 +65,6 @@ const ClusteredProperties = () => {
             fillOpacity: 0.6,
           }}
         />
-
       ))}
       
     </>
