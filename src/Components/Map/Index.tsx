@@ -33,7 +33,7 @@ const Map = () => {
       center={center}
         zoom={zoom}
         style={{ height: '100%', width: '100%' }}
-        maxZoom={21}
+        maxZoom={18}
         minZoom={1}
         maxBounds={[[78, -179], [0, -45]]}
         zoomControl={false}

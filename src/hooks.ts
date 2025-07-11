@@ -575,35 +575,39 @@ export function useCensusTracts() {
   // keep track of the counties that have been loaded; the value is equal to the first 8 characters of the gisjoin of tracts
   const [loadedCounties, setLoadedCounties] = useState<string[]>([]);
   const { map } = useMapContext();
-  const { center, zoom } = useURLState();
+
+  const mapToken = useMapMoveTrigger(map);
 
   const bounds = map ? map.getBounds() : null;
 
   useEffect(() => {
     if (!bounds) return;
 
-    const visibleCounties = Constants.census_tract_bbs.filter(tract => bounds.intersects(new L.LatLngBounds(tract.bbox)));
+    const visibleCounties = Constants.census_tract_bbs.filter(tract =>
+      bounds.intersects(new L.LatLngBounds(tract.bbox))
+    );
+    const visibleGisjoins = visibleCounties.map(c => c.gisjoin);
 
-    // if every value in visibleTracts is in loadedTracts and vice versa, then we don't need to do anything
-    if (visibleCounties.every(county => loadedCounties.includes(county.gisjoin)) && loadedCounties.every(gisjoin => visibleCounties.map(tract => tract.gisjoin).includes(gisjoin))) {
-      setLoading(false);
-      return;
-    }
-
-    // otherwise, make a list of still visible counties, no longer visible counties, and new counties to load
-    const toLoad = visibleCounties.filter(tract => !loadedCounties.includes(tract.gisjoin));
-
-    // prioritize loading new tracts
+    // Load new counties
+    const toLoad = visibleGisjoins.filter(gisjoin => !loadedCounties.includes(gisjoin));
     if (toLoad.length > 0) {
       const fetchTracts = async () => {
         try {
-          const tractPromises = toLoad.map(tract => axios.get<{ type: "FeatureCollection"; features: Types.CensusFeature[] }>(`/censustracts/${tract.gisjoin}.geojson`));
+          const tractPromises = toLoad.map(gisjoin =>
+            axios.get<{ type: "FeatureCollection"; features: Types.CensusFeature[] }>(`/censustracts/${gisjoin}.geojson`)
+          );
           const tractResponses = await Promise.all(tractPromises);
-          const tractData = tractResponses.flatMap(response => response.data.features);
+          const tractData = tractResponses
+            .flatMap(response => response.data.features)
+          // filter out features that don't have population or income data
+            .filter(feature => feature.properties.white_pop !== null && feature.properties.black_pop !== null && feature.properties.other_pop !== null && feature.properties.median_income !== null);
 
-          // Append new tracts using functional updates
-          setCensusTracts(prev => [...prev, ...tractData]);
-          setLoadedCounties(prev => [...prev, ...toLoad.map(tract => tract.gisjoin)]);
+          setCensusTracts(prev => {
+            const existingGisjoins = new Set(prev.map(f => f.properties.gisjoin));
+            const newFeatures = tractData.filter(f => !existingGisjoins.has(f.properties.gisjoin));
+            return [...prev, ...newFeatures];
+          });
+          setLoadedCounties(prev => [...prev, ...toLoad]);
           setLoading(false);
         } catch (error) {
           console.error("Error loading census tracts:", error);
@@ -612,19 +616,23 @@ export function useCensusTracts() {
       };
 
       fetchTracts();
-    } else {
-      // check if there are tracts that are no longer visible and remove them
-      const toRemove = loadedCounties.filter(gisjoin => !visibleCounties.map(county => county.gisjoin).includes(gisjoin));
-      if (toRemove.length > 0) {
-        setCensusTracts(prev => prev.filter(tract => !toRemove.includes(tract.properties.gisjoin.slice(0, 8))));
-        setLoadedCounties(prev => prev.filter(gisjoin => !toRemove.includes(gisjoin)));
-      }
-
-      // if there are no new tracts to load, then just set loading to false
-
-      setLoading(false);
+      return;
     }
-  }, [map, loadedCounties, center, zoom]); // <-- Include loadedTracts so it re-checks after updates
+
+    // Remove tracts for counties that are no longer visible
+    const toRemove = loadedCounties.filter(gisjoin => !visibleGisjoins.includes(gisjoin));
+    if (toRemove.length > 0) {
+      setCensusTracts(prev =>
+        prev.filter(tract =>
+          !toRemove.includes(tract.properties.gisjoin.slice(0, 8)) // You might want to use the full gisjoin!
+        )
+      );
+      setLoadedCounties(prev => prev.filter(gisjoin => !toRemove.includes(gisjoin)));
+    }
+
+    setLoading(false);
+  }, [bounds, loadedCounties, mapToken]);
+  
 
   return { censusTracts, loading };
 }

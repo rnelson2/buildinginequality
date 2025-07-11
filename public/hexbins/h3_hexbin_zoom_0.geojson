@@ -50,44 +50,44 @@
     {
       "type": "Feature",
       "properties": {
-        "h3_index": "820d57fffffffff",
-        "units": 272
+        "h3_index": "820d5ffffffffff",
+        "units": 763
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -148.083,
-              68.748
-            ],
-            [
-              -152.088,
-              67.932
-            ],
-            [
-              -152.214,
-              66.304
+              -145.243,
+              66.258
             ],
             [
               -148.881,
               65.523
             ],
             [
+              -149.203,
+              63.948
+            ],
+            [
+              -146.313,
+              63.15
+            ],
+            [
+              -142.996,
+              63.82
+            ],
+            [
+              -142.262,
+              65.349
+            ],
+            [
               -145.243,
               66.258
             ],
             [
-              -144.586,
-              67.848
-            ],
-            [
-              -148.083,
-              68.748
-            ],
-            [
-              -148.083,
-              68.748
+              -145.243,
+              66.258
             ]
           ]
         ]
@@ -134,52 +134,6 @@
             [
               -149.203,
               63.948
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "h3_index": "820d5ffffffffff",
-        "units": 491
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -145.243,
-              66.258
-            ],
-            [
-              -148.881,
-              65.523
-            ],
-            [
-              -149.203,
-              63.948
-            ],
-            [
-              -146.313,
-              63.15
-            ],
-            [
-              -142.996,
-              63.82
-            ],
-            [
-              -142.262,
-              65.349
-            ],
-            [
-              -145.243,
-              66.258
-            ],
-            [
-              -145.243,
-              66.258
             ]
           ]
         ]
@@ -419,7 +373,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "82288ffffffffff",
-        "units": 522
+        "units": 378
       },
       "geometry": {
         "type": "Polygon",
@@ -603,7 +557,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8212dffffffffff",
-        "units": 198
+        "units": 342
       },
       "geometry": {
         "type": "Polygon",
@@ -1799,7 +1753,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "822677fffffffff",
-        "units": 627
+        "units": 475
       },
       "geometry": {
         "type": "Polygon",
@@ -1937,7 +1891,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "822647fffffffff",
-        "units": 4360
+        "units": 4415
       },
       "geometry": {
         "type": "Polygon",
@@ -1974,6 +1928,52 @@
             [
               -89.749,
               36.659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "h3_index": "822aaffffffffff",
+        "units": 76583
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.961,
+              40.48
+            ],
+            [
+              -78.104,
+              40.064
+            ],
+            [
+              -78.619,
+              38.54
+            ],
+            [
+              -77.1,
+              37.464
+            ],
+            [
+              -75.063,
+              37.849
+            ],
+            [
+              -74.443,
+              39.341
+            ],
+            [
+              -75.961,
+              40.48
+            ],
+            [
+              -75.961,
+              40.48
             ]
           ]
         ]
@@ -2029,7 +2029,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "822667fffffffff",
-        "units": 21035
+        "units": 20980
       },
       "geometry": {
         "type": "Polygon",
@@ -2397,7 +2397,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "8244cffffffffff",
-        "units": 1921
+        "units": 1681
       },
       "geometry": {
         "type": "Polygon",
@@ -3124,52 +3124,6 @@
             [
               -77.619,
               35.999
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "h3_index": "822aaffffffffff",
-        "units": 76431
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -75.961,
-              40.48
-            ],
-            [
-              -78.104,
-              40.064
-            ],
-            [
-              -78.619,
-              38.54
-            ],
-            [
-              -77.1,
-              37.464
-            ],
-            [
-              -75.063,
-              37.849
-            ],
-            [
-              -74.443,
-              39.341
-            ],
-            [
-              -75.961,
-              40.48
-            ],
-            [
-              -75.961,
-              40.48
             ]
           ]
         ]

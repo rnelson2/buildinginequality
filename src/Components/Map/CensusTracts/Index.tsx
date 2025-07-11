@@ -7,6 +7,8 @@ import { getColor } from '../../../utilities';
 
 const CensusTracts = () => {
   const { censusTracts } = useCensusTracts();
+
+  console.log('CensusTracts', censusTracts);
   const { zoom, mapview, hideCensusTracts } = useURLState();
 
   // if the zoom is less than 8, don't show the census tracts

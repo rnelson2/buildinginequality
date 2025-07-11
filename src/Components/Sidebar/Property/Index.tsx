@@ -31,6 +31,7 @@ const Property = ({ property }: { property: Types.Feature }) => {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const getDateString = ({ year, month, day }: { year: number; month: number; day: number }) => `${months[month - 1]} ${day}, ${year}`;
 
+  console.log(amount);
   return (
     <Styled.Container>
       {/* Close Button */}
