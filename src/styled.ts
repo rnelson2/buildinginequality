@@ -26,7 +26,7 @@ export const App = styled.div`
     "sidebar        sidebar";
 
   a {
-    color: ${Constants.COLOR_ACCENT_RED};
+    color: ${Constants.COLOR_ACCENT_TEXT_RED};
 
     text-decoration: none;
   }

@@ -20,6 +20,7 @@ export const COLOR_INTERACTIVE = (mode as Mode) === 'light' ? '#00796b' : '#85c4
 export const COLOR_INTERACTIVE_LIGHT = (mode as Mode) === 'light' ? '#4dd0e1' : '#98f6ff';
 export const COLOR_INTERACTIVE_DARK = (mode as Mode) === 'light' ? '#004d40' : '#18b9cf';
 export const COLOR_ACCENT_RED = (mode as Mode) === 'light' ? '#D62424' : 'rgb(251, 140, 35)';
+export const COLOR_ACCENT_TEXT_RED = (mode as Mode) === 'light' ? '#C33737' : 'rgb(251, 140, 35)';
 export const COLOR_ACCENT_LIGHT_ORANGE = (mode as Mode) === 'light' ? 'rgb(255,204,188)' : 'rgb(254,224,195)';
 export const COLOR_BACKGROUND_HIGHLIGHT = (mode as Mode) === 'light' ? '#cfd8dc' : '#3a4e4b';
 export const COLOR_WHITE = (mode as Mode) === 'light' ? '#000000' : '#ffffff';  // Same for both
