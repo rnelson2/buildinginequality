@@ -21,7 +21,7 @@ const Explanation = ({ setShowExplanation }: { setShowExplanation: React.Dispatc
 
       <Styled.Figure>
         <img src='/images/explanation/circles.png' alt='Map zoomed in with circles representing individual properties' />
-        <figcaption>Zoomed in, the map shows individual properties. Several apartments were built in Brooklyn's Flatbush area using 608 financing. Flat Bush Gardens in the lower right was the largest with nearly 2,500. The other three properties shown here were much smaller, with 107, 139, and 216 units. </figcaption>
+        <figcaption>Zoomed in, the map shows individual properties. Several apartments were built in Brooklyn's Flatbush area using 608 financing. Flat Bush Gardens in the lower right was the largest with nearly 2,500 units. The other three properties shown here were much smaller, with 107, 139, and 216 units. </figcaption>
       </Styled.Figure>
 
       <p><strong>Race and Income Layers:</strong> Detailed 1950 census data about race and income is shown for many cities when zoomed in, like Flatbush above. (In 1950 not all areas had compact census tracts, so this data is not shown in all areas.) Use this data to explore racial and socioeconomic patterns of 608 financed housing, which was disproportionally built in whiter and more well-to-do areas. You can toggle between race and income or turn the underlying census data on or off in the legend on the bottom right.</p>

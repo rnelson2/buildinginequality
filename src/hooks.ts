@@ -363,7 +363,14 @@ export function useCitiesOptions() {
 
   function prepareMenuData(features: Types.CityFeature[]): GroupedOption[] {
     // Organize features by state
-    const groupedByState = features.reduce<Record<string, Option[]>>((acc, feature) => {
+    const groupedByState = features
+      .filter(d => {
+        const { property_state } = d.properties;
+        // @ts-ignore
+        const state = Constants.states[property_state] as string;
+        return state !== undefined;
+      })
+      .reduce<Record<string, Option[]>>((acc, feature) => {
       const { property_city, property_state } = feature.properties;
       // @ts-ignore
       const state = Constants.states[property_state] as string;

@@ -35747,7 +35747,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "862a10057ffffff",
-        "units": 9783
+        "units": 11611
       },
       "geometry": {
         "type": "Polygon",
@@ -36115,7 +36115,7 @@
       "type": "Feature",
       "properties": {
         "h3_index": "862a10047ffffff",
-        "units": 2456
+        "units": 628
       },
       "geometry": {
         "type": "Polygon",
