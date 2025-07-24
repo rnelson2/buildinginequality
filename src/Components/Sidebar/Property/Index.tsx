@@ -33,7 +33,7 @@ const Property = ({ property }: { property: Types.Feature }) => {
 
   // if the property has multiple mortgages and the name ends in a single digit, assume those are numbers and remove them
   const cleanName = (name: string) => {
-    const match = name.match(/(\d+)$/);
+    const match = name.match(/(\s\d+)$/);
     return match && mortgages.length > 1 ? name.slice(0, -match[0].length).trim() : name;
   };
 
