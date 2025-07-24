@@ -13,6 +13,13 @@ const ApartmentCard: React.FC<{ property: CityProperty }> = ({ property }) => {
   const visibleProperties = useVisibleProperties();
   const buildLink = useLinkBuilder();
 
+  // if the property has multiple mortgages and the name ends in a single digit, assume those are numbers and remove them
+  const cleanName = (name: string) => {
+    const match = name.match(/(\d+)$/);
+    return match ? name.slice(0, -match[0].length).trim() : name;
+  };
+
+
   // get the lat/lng of the property
   const [lng, lat] = visibleProperties.find(p => {
     const project_nums = p.properties.mortgages.map(m => m.proj_num);
@@ -54,7 +61,7 @@ const ApartmentCard: React.FC<{ property: CityProperty }> = ({ property }) => {
     >
       {!hasAddress && <Styled.Unmapped>Currently unmapped</Styled.Unmapped>}
       <Styled.ApartmentHeader>
-        <Styled.ApartmentName>{name || "Unknown"}</Styled.ApartmentName>
+        <Styled.ApartmentName>{cleanName(name)}</Styled.ApartmentName>
         <Styled.ApartmentAmount>${amount.toLocaleString()}</Styled.ApartmentAmount>
       </Styled.ApartmentHeader>
 

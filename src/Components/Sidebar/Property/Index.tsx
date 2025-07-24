@@ -31,7 +31,12 @@ const Property = ({ property }: { property: Types.Feature }) => {
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const getDateString = ({ year, month, day }: { year: number; month: number; day: number }) => `${months[month - 1]} ${day}, ${year}`;
 
-  console.log(amount);
+  // if the property has multiple mortgages and the name ends in a single digit, assume those are numbers and remove them
+  const cleanName = (name: string) => {
+    const match = name.match(/(\d+)$/);
+    return match && mortgages.length > 1 ? name.slice(0, -match[0].length).trim() : name;
+  };
+
   return (
     <Styled.Container>
       {/* Close Button */}
@@ -46,7 +51,7 @@ const Property = ({ property }: { property: Types.Feature }) => {
 
       {/* Property Header */}
       <Styled.PropertyHeader>
-        <Styled.PropertyName>{name}</Styled.PropertyName>
+        <Styled.PropertyName>{cleanName(name)}</Styled.PropertyName>
         <Styled.PropertyAmount>${amount.toLocaleString()}</Styled.PropertyAmount>
       </Styled.PropertyHeader>
 
