@@ -43,7 +43,7 @@ const Map = () => {
         <DeselectProperty />
         <TileLayer
           // positron light
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_4mtc_1_4a53f9af129e6dc868ae3dd8"
         />
         {/* <TileLayer
           url="https://s3.amazonaws.com/dsl-general/sanborns/{z}/{x}/{y}.png"
